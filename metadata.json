@@ -1,0 +1,6 @@
+{
+  "name": "Studio Medico 4M",
+  "description": "Sito web ufficiale di Studio Medico 4M a Bollate (MI). Poliambulatorio di liberi professionisti per la salute, la prevenzione e il benessere psicofisico.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
