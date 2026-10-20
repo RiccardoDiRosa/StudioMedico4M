@@ -319,63 +319,69 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
       <WaveDivider position="bottom" fillColor="#FFFFFF" accentColor="#039be5" height={42} className="bg-transparent" />
 
       {/* 2. PRESENTAZIONE DELLO STUDIO */}
-      <section className="py-16 sm:py-20 bg-white">
+      <section className="py-10 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#0277bd]">
+          <div className="max-w-3xl mx-auto text-center space-y-2 sm:space-y-4 mb-6 sm:mb-14">
+            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd]">
               Chi Siamo
             </span>
-            <h2 className="text-3xl sm:text-4xl font-normal text-[#01579b] tracking-tight font-heading">
+            <h2 className="text-2xl sm:text-4xl font-normal text-[#01579b] tracking-tight font-heading">
               Uno spazio dedicato al benessere di mente e corpo
             </h2>
-            <p className="text-base text-slate-600 leading-relaxed">
+            <p className="text-xs sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
               Studio Medico 4M nasce con l'intento di offrire a Bollate una sede confortevole e professionale dove differenti discipline sanitarie e del benessere convivono armoniosamente.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-[#f4f9fd]/80 rounded-2xl p-7 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-lg hover:shadow-[#039be5]/10 transition-all">
-              <div className="w-12 h-12 rounded-xl bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 flex items-center justify-center mb-4 shadow-xs">
-                <Users className="w-6 h-6 text-[#0277bd]" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-8">
+            <div className="bg-[#f4f9fd]/80 rounded-2xl p-4 sm:p-7 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-lg hover:shadow-[#039be5]/10 transition-all flex md:flex-col items-start gap-3.5 md:gap-0">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 flex items-center justify-center shrink-0 md:mb-4 shadow-xs">
+                <Users className="w-5 h-5 sm:w-6 sm:h-6 text-[#0277bd]" />
               </div>
-              <h3 className="text-base font-bold text-[#01579b] font-sans mb-2">
-                12 Liberi Professionisti
-              </h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                I professionisti che operano presso lo studio esercitano individualmente la propria attività, mettendo a disposizione competenze qualificate e approcci mirati per ogni specifica esigenza.
-              </p>
+              <div>
+                <h3 className="text-sm sm:text-base font-bold text-[#01579b] font-sans mb-1 sm:mb-2">
+                  12 Liberi Professionisti
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Competenze qualificate e approcci mirati per ogni specifica esigenza, in piena autonomia professionale.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-[#f4f9fd]/80 rounded-2xl p-7 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-lg hover:shadow-[#039be5]/10 transition-all">
-              <div className="w-12 h-12 rounded-xl bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 flex items-center justify-center mb-4 shadow-xs">
-                <Clock className="w-6 h-6 text-[#0277bd]" />
+            <div className="bg-[#f4f9fd]/80 rounded-2xl p-4 sm:p-7 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-lg hover:shadow-[#039be5]/10 transition-all flex md:flex-col items-start gap-3.5 md:gap-0">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 flex items-center justify-center shrink-0 md:mb-4 shadow-xs">
+                <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-[#0277bd]" />
               </div>
-              <h3 className="text-base font-bold text-[#01579b] font-sans mb-2">
-                Gestione Diretta Appuntamenti
-              </h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Non essendovi una segreteria unificata, le visite vengono concordate direttamente con il professionista scelto, garantendo contatto immediato e massima riservatezza.
-              </p>
+              <div>
+                <h3 className="text-sm sm:text-base font-bold text-[#01579b] font-sans mb-1 sm:mb-2">
+                  Gestione Diretta Appuntamenti
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Visite concordate direttamente con lo specialista scelto, garantendo contatto immediato e massima riservatezza.
+                </p>
+              </div>
             </div>
 
-            <div className="bg-[#f4f9fd]/80 rounded-2xl p-7 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-lg hover:shadow-[#039be5]/10 transition-all">
-              <div className="w-12 h-12 rounded-xl bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 flex items-center justify-center mb-4 shadow-xs">
-                <MapPin className="w-6 h-6 text-[#0277bd]" />
+            <div className="bg-[#f4f9fd]/80 rounded-2xl p-4 sm:p-7 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-lg hover:shadow-[#039be5]/10 transition-all flex md:flex-col items-start gap-3.5 md:gap-0">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 flex items-center justify-center shrink-0 md:mb-4 shadow-xs">
+                <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-[#0277bd]" />
               </div>
-              <h3 className="text-base font-bold text-[#01579b] font-sans mb-2">
-                Posizione Strategica a Bollate
-              </h3>
-              <p className="text-xs text-slate-600 leading-relaxed">
-                Situato in Via Madonnina 17, lo studio è facilmente raggiungibile sia in automobile che con i mezzi pubblici, a breve distanza dalla stazione ferroviaria di Bollate Centro.
-              </p>
+              <div>
+                <h3 className="text-sm sm:text-base font-bold text-[#01579b] font-sans mb-1 sm:mb-2">
+                  Posizione Strategica a Bollate
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  In Via Madonnina 17, a breve distanza dalla stazione di Bollate Centro, facilmente raggiungibile in treno o in auto.
+                </p>
+              </div>
             </div>
           </div>
 
-          <div className="mt-10 text-center">
+          <div className="mt-6 sm:mt-10 text-center">
             <button
               type="button"
               onClick={() => onNavigate('/lo-studio')}
-              className="inline-flex items-center gap-2 text-xs font-bold text-[#0277bd] hover:text-[#039be5] focus-ring py-2 px-4 rounded-xl hover:bg-[#b3e5fc]/25 transition-colors"
+              className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0277bd] hover:text-[#039be5] focus-ring py-1.5 px-3 rounded-xl hover:bg-[#b3e5fc]/25 transition-colors"
             >
               <span>Approfondisci la presentazione dello studio</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#039be5]" />
