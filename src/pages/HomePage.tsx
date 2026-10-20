@@ -592,18 +592,18 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
       )}
 
       {/* 4. PRESENTAZIONE DEI PROFESSIONISTI */}
-      <section id="professionisti" className="py-16 sm:py-24 bg-white border-t border-[#b3e5fc]/60 scroll-mt-20">
+      <section id="professionisti" className="py-10 sm:py-24 bg-white border-t border-[#b3e5fc]/60 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-3 sm:gap-6 mb-4 sm:mb-10">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-[#0277bd]">
+              <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd]">
                 I Professionisti
               </span>
-              <h2 className="text-3xl sm:text-4xl font-normal text-[#01579b] tracking-tight font-heading mt-1">
+              <h2 className="text-2xl sm:text-4xl font-normal text-[#01579b] tracking-tight font-heading mt-1">
                 12 Specialisti al tuo fianco
               </h2>
-              <p className="text-sm text-slate-600 mt-2 max-w-xl">
+              <p className="text-xs sm:text-sm text-slate-600 mt-1 sm:mt-2 max-w-xl">
                 Ciascun professionista opera in autonomia. Seleziona una disciplina per individuare il profilo più adatto alle tue esigenze.
               </p>
             </div>
@@ -611,7 +611,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             <button
               type="button"
               onClick={() => onNavigate('/professionisti')}
-              className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0277bd] hover:text-[#039be5] focus-ring py-2 px-3 rounded-xl hover:bg-[#b3e5fc]/25 transition-colors"
+              className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0277bd] hover:text-[#039be5] focus-ring py-1.5 px-3 rounded-xl hover:bg-[#b3e5fc]/25 transition-colors self-start md:self-auto"
             >
               <span>Elenco completo dei 12 profili</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#039be5]" />
@@ -619,13 +619,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
           </div>
 
           {/* Interactive Category Filter Tabs */}
-          <div className="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none">
+          <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto pb-2.5 sm:pb-4 mb-4 sm:mb-8 scrollbar-none">
             {CATEGORIES_CONFIG.map((cat) => (
               <button
                 key={cat.id}
                 type="button"
                 onClick={() => setSelectedCategory(cat.id)}
-                className={`px-4 py-2 text-xs font-semibold rounded-xl whitespace-nowrap shrink-0 transition-all ${
+                className={`px-3 sm:px-4 py-1.5 sm:py-2 text-[11px] sm:text-xs font-semibold rounded-xl whitespace-nowrap shrink-0 transition-all ${
                   selectedCategory === cat.id
                     ? 'bg-gradient-to-r from-[#01579b] to-[#0277bd] text-white shadow-md shadow-[#0277bd]/25 scale-[1.02]'
                     : 'bg-white text-[#01579b] hover:bg-[#b3e5fc]/25 hover:text-[#0277bd] border border-[#b3e5fc]'
@@ -636,8 +636,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             ))}
           </div>
 
-          {/* 12 Professionals Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {/* 12 Professionals Grid: 2 columns on mobile, 3/4 on desktop */}
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2.5 sm:gap-6">
             {filteredProfessionals.map((prof) => (
               <ProfessionalCard
                 key={prof.id}
@@ -648,7 +648,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
           </div>
 
           {/* Transparency note below the grid */}
-          <div className="mt-12 p-6 rounded-2xl bg-[#b3e5fc]/25 border border-[#b3e5fc] text-xs text-slate-700 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="mt-6 sm:mt-12 p-4 sm:p-6 rounded-2xl bg-[#b3e5fc]/25 border border-[#b3e5fc] text-xs text-slate-700 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
             <div className="flex items-center gap-3">
               <HelpCircle className="w-5 h-5 text-[#0277bd] shrink-0" />
               <p>
