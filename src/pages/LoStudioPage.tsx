@@ -177,21 +177,21 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
         </section>
 
         {/* Section 3: Griglia completa dei 12 professionisti */}
-        <section className="py-16 sm:py-24 bg-white border-t border-[#b3e5fc]/60">
+        <section className="py-10 sm:py-24 bg-white border-t border-[#b3e5fc]/60">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mb-12">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#0277bd]">
+            <div className="max-w-3xl mb-6 sm:mb-12">
+              <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd]">
                 Il Team di Professionisti
               </span>
               <h2 className="text-2xl sm:text-3xl font-normal text-[#01579b] tracking-tight font-heading mt-1">
                 Tutti i 12 professionisti ospitati
               </h2>
-              <p className="text-sm text-slate-600 mt-2">
+              <p className="text-xs sm:text-sm text-slate-600 mt-1 sm:mt-2">
                 Consulta le schede per visualizzare le prestazioni, gli orari indicativi e le note informative relative a ciascun professionista.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2.5 sm:gap-6">
               {PROFESSIONISTI.map((prof) => (
                 <ProfessionalCard
                   key={prof.id}
