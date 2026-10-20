@@ -391,24 +391,24 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
       </section>
 
       {/* 2.5 GLI SPAZI DELLO STUDIO (FOTO E AMBIENTI) */}
-      <section className="py-14 sm:py-20 bg-gradient-to-b from-white via-[#f4f9fd] to-white border-t border-[#b3e5fc]/60">
+      <section className="py-10 sm:py-20 bg-gradient-to-b from-white via-[#f4f9fd] to-white border-t border-[#b3e5fc]/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="max-w-3xl mx-auto text-center space-y-3 mb-12 sm:mb-16">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#0277bd] inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#b3e5fc]/35 border border-[#039be5]/20">
+          <div className="max-w-3xl mx-auto text-center space-y-2 sm:space-y-3 mb-6 sm:mb-16">
+            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd] inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#b3e5fc]/35 border border-[#039be5]/20">
               <Camera className="w-3.5 h-3.5 text-[#039be5]" />
               <span>La Nostra Sede a Bollate</span>
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-[#01579b] tracking-tight font-heading">
               Gli ambienti e gli spazi dello studio
             </h2>
-            <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+            <p className="text-xs sm:text-base text-slate-600 leading-relaxed">
               Un contesto curato, riservato e rilassante nel centro di Bollate, progettato per accogliere visite specialistiche, sedute riabilitative e consulenze per il benessere della persona.
             </p>
           </div>
 
           {/* Studio Photos Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8">
             
             {/* Photo 1: Accoglienza & Ricevimento */}
             <div className="group bg-white rounded-3xl overflow-hidden border border-[#b3e5fc]/80 hover:border-[#039be5] shadow-sm hover:shadow-xl hover:shadow-[#039be5]/10 transition-all flex flex-col">
@@ -423,16 +423,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                   Accoglienza & Ricevimento
                 </span>
               </div>
-              <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+              <div className="p-4 sm:p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-base font-bold text-[#01579b] mb-1.5">
+                  <h3 className="text-sm sm:text-base font-bold text-[#01579b] mb-1 sm:mb-1.5">
                     Ambiente Luminoso e Confortevole
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Spazi pensati per accogliere con tranquillità, offrendo la massima privacy e rispetto dei tempi di ciascun paziente prima dell'incontro con il medico.
                   </p>
                 </div>
-                <div className="mt-4 pt-3 border-t border-[#b3e5fc]/40 flex items-center justify-between text-[11px] text-[#0277bd] font-medium">
+                <div className="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-[#b3e5fc]/40 flex items-center justify-between text-[11px] text-[#0277bd] font-medium">
                   <span>Luce naturale & comfort</span>
                   <CheckCircle2 className="w-3.5 h-3.5 text-[#039be5]" />
                 </div>
@@ -452,16 +452,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                   Ambulatori & Trattamenti
                 </span>
               </div>
-              <div className="p-5 sm:p-6 flex-1 flex flex-col justify-between">
+              <div className="p-4 sm:p-6 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-base font-bold text-[#01579b] mb-1.5">
+                  <h3 className="text-sm sm:text-base font-bold text-[#01579b] mb-1 sm:mb-1.5">
                     Spazi Visite e Sedute Specialistici
                   </h3>
                   <p className="text-xs text-slate-600 leading-relaxed">
                     Sale attrezzate per visite ortopediche, valutazioni posturali, osteopatia, fisioterapia e percorsi nutrizionali e psicologici individuali.
                   </p>
                 </div>
-                <div className="mt-4 pt-3 border-t border-[#b3e5fc]/40 flex items-center justify-between text-[11px] text-[#0277bd] font-medium">
+                <div className="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-[#b3e5fc]/40 flex items-center justify-between text-[11px] text-[#0277bd] font-medium">
                   <span>Attrezzature igienizzate</span>
                   <CheckCircle2 className="w-3.5 h-3.5 text-[#039be5]" />
                 </div>
@@ -469,15 +469,15 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             </div>
 
             {/* Photo 3: Spazio Predisposto per le Foto dello Studio */}
-            <div className="group bg-gradient-to-br from-white to-[#f4f9fd] rounded-3xl overflow-hidden border-2 border-dashed border-[#b3e5fc] hover:border-[#039be5] shadow-sm hover:shadow-lg transition-all flex flex-col p-6 text-center justify-between">
-              <div className="flex-1 flex flex-col items-center justify-center py-6">
-                <div className="w-14 h-14 rounded-2xl bg-[#b3e5fc]/40 border border-[#039be5]/30 flex items-center justify-center text-[#01579b] mb-4 group-hover:scale-110 transition-transform">
-                  <Camera className="w-7 h-7 text-[#0277bd]" />
+            <div className="group bg-gradient-to-br from-white to-[#f4f9fd] rounded-3xl overflow-hidden border-2 border-dashed border-[#b3e5fc] hover:border-[#039be5] shadow-sm hover:shadow-lg transition-all flex flex-col p-5 sm:p-6 text-center justify-between">
+              <div className="flex-1 flex flex-col items-center justify-center py-4 sm:py-6">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#b3e5fc]/40 border border-[#039be5]/30 flex items-center justify-center text-[#01579b] mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
+                  <Camera className="w-6 h-6 sm:w-7 sm:h-7 text-[#0277bd]" />
                 </div>
-                <span className="px-2.5 py-0.5 rounded-full bg-[#b3e5fc]/40 text-[#01579b] text-[10px] font-bold tracking-wide uppercase mb-2">
+                <span className="px-2.5 py-0.5 rounded-full bg-[#b3e5fc]/40 text-[#01579b] text-[10px] font-bold tracking-wide uppercase mb-1.5 sm:mb-2">
                   Galleria in Aggiornamento
                 </span>
-                <h3 className="text-base font-bold text-[#01579b] mb-2">
+                <h3 className="text-sm sm:text-base font-bold text-[#01579b] mb-1.5 sm:mb-2">
                   Nuove Fotografie della Sede
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed max-w-xs">
@@ -485,7 +485,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-[#b3e5fc]/40 text-[11px] text-slate-500 flex items-center justify-center gap-1.5">
+              <div className="pt-3 sm:pt-4 border-t border-[#b3e5fc]/40 text-[11px] text-slate-500 flex items-center justify-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5 text-[#039be5]" />
                 <span>Aggiornato con le foto ufficiali dello studio</span>
               </div>
@@ -494,7 +494,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
           </div>
 
           {/* Quick Info Strip */}
-          <div className="mt-10 p-5 rounded-2xl bg-white border border-[#b3e5fc] shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-700">
+          <div className="mt-6 sm:mt-10 p-4 sm:p-5 rounded-2xl bg-white border border-[#b3e5fc] shadow-xs flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-xs text-slate-700">
             <div className="flex items-center gap-3">
               <MapPin className="w-5 h-5 text-[#0277bd] shrink-0" />
               <p>
@@ -516,22 +516,22 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
       </section>
 
       {/* 3. PANORAMICA DEI SERVIZI (I NOSTRI SERVIZI DAL VOLANTINO) */}
-      <section id="servizi" className="py-16 sm:py-20 bg-gradient-to-b from-[#f4f9fd] to-white border-t border-[#b3e5fc]/60 scroll-mt-20">
+      <section id="servizi" className="py-10 sm:py-20 bg-gradient-to-b from-[#f4f9fd] to-white border-t border-[#b3e5fc]/60 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center space-y-4 mb-14">
-            <span className="text-xs font-bold uppercase tracking-wider text-[#0277bd]">
+          <div className="max-w-3xl mx-auto text-center space-y-2 sm:space-y-4 mb-6 sm:mb-14">
+            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd]">
               I Nostri Servizi
             </span>
-            <h2 className="text-3xl sm:text-4xl font-normal text-[#01579b] tracking-tight font-heading">
+            <h2 className="text-2xl sm:text-4xl font-normal text-[#01579b] tracking-tight font-heading">
               Ambiti di competenza e prestazioni disponibili
             </h2>
-            <p className="text-base text-slate-600 leading-relaxed">
+            <p className="text-xs sm:text-base text-slate-600 leading-relaxed">
               Dalla valutazione ortopedica alla riabilitazione, dal supporto psicologico ai percorsi olistici e nutrizionali: le 8 aree di attività svolte dai professionisti presso la sede di Bollate.
             </p>
           </div>
 
-          {/* 8 Services Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* 8 Services Grid: 2 columns on mobile, 4 on desktop */}
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6">
             {STUDIO_SERVICES.map((service) => (
               <ServiceCard 
                 key={service.id} 
