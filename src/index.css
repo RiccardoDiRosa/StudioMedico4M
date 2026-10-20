@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-palette-light: #b3e5fc;
+  --color-palette-vibrant: #039be5;
+  --color-palette-medium: #0277bd;
+  --color-palette-dark: #01579b;
+}
+
+@layer base {
+  :root {
+    --color-primary: #01579b;
+    --color-secondary: #0277bd;
+    --color-accent: #039be5;
+    --color-accent-soft: #b3e5fc;
+    --color-surface: #f4f9fd;
+    --color-card: #ffffff;
+    --color-text-main: #0c2340;
+    --color-text-muted: #3a6080;
+    --color-border: #b3e5fc;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: var(--color-text-main);
+    background-color: var(--color-surface);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.015em;
+  }
+
+  .font-brand {
+    font-family: 'Cinzel', Georgia, serif;
+    letter-spacing: 0.05em;
+  }
+}
+
+/* Custom smooth transitions and palette utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .focus-ring {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-[#039be5] focus-visible:ring-offset-2;
+  }
+
+  /* Palette-specific reusable styles */
+  .gradient-palette-primary {
+    background: linear-gradient(135deg, #01579b 0%, #0277bd 50%, #039be5 100%);
+  }
+
+  .gradient-palette-btn {
+    background: linear-gradient(135deg, #01579b 0%, #0277bd 100%);
+  }
+
+  .gradient-palette-btn:hover {
+    background: linear-gradient(135deg, #0277bd 0%, #039be5 100%);
+  }
+
+  .text-palette-gradient {
+    background: linear-gradient(135deg, #01579b 0%, #0277bd 60%, #039be5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

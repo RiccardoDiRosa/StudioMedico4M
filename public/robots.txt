@@ -1,0 +1,8 @@
+# Robots.txt per Studio Medico 4M (Bollate, MI)
+# Dominio definitivo configurabile: https://studiomedico4m.it
+
+User-agent: *
+Allow: /
+
+# Sitemap ufficiale
+Sitemap: https://studiomedico4m.it/sitemap.xml
