@@ -30,7 +30,7 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
     'name': 'Lo Studio Medico 4M a Bollate | I professionisti e la struttura',
-    'description': 'Informazioni sulla struttura di Studio Medico 4M a Bollate (MI). Spazio polifunzionale per 12 professionisti della salute e del benessere.',
+    'description': 'Informazioni sulla struttura di Studio Medico 4M a Bollate (MI). Spazio polifunzionale per professionisti della salute e del benessere.',
     'url': `${STUDIO_CONFIG.canonicalBaseUrl}/lo-studio`
   };
 
@@ -38,7 +38,7 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
     <>
       <SEOHead
         title="Lo Studio Medico 4M a Bollate | I professionisti e la sede"
-        description="Scopri la filosofia e la struttura di Studio Medico 4M a Bollate (MI). Spazio professionale che ospita 12 specialisti della salute e del benessere psicofisico."
+        description="Scopri la filosofia e la struttura di Studio Medico 4M a Bollate (MI). Spazio professionale dove trovi specialisti della salute e del benessere psicofisico."
         canonicalPath="/lo-studio"
         schemaJson={loStudioSchema}
       />
@@ -184,7 +184,7 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
                 Il Team di Professionisti
               </span>
               <h2 className="text-2xl sm:text-3xl font-normal text-[#01579b] tracking-tight font-heading mt-1">
-                Tutti i 12 professionisti ospitati
+                Tutti i professionisti dello studio
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 mt-1 sm:mt-2">
                 Consulta le schede per visualizzare le prestazioni, gli orari indicativi e le note informative relative a ciascun professionista.

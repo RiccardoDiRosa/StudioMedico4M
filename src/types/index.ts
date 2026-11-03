@@ -70,6 +70,7 @@ export interface StudioConfig {
   country: string;
   googleMapsUrl: string;
   googleMapsDirectionsUrl: string;
+  googleMapsEmbedUrl?: string;
   publicPhoneConfirmed: boolean;
   publicPhone?: string;
   publicEmailConfirmed: boolean;

@@ -14,6 +14,7 @@ export const STUDIO_CONFIG: StudioConfig = {
   // Official Google Maps direct link with precise search address
   googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Via+Madonnina+17+20021+Bollate+MI',
   googleMapsDirectionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=Via+Madonnina+17+20021+Bollate+MI',
+  googleMapsEmbedUrl: 'https://maps.google.com/maps?q=Via%20Madonnina%2017%2C%2020021%20Bollate%20MI&t=&z=16&ie=UTF8&iwloc=&output=embed',
   
   // Explicitly tracked confirmation flags to ensure no fake contact numbers/emails are published
   publicPhoneConfirmed: false,
@@ -39,7 +40,7 @@ export const STUDIO_CONFIG: StudioConfig = {
 
 export const STUDIO_MODEL_NOTE = {
   title: 'Come funzionano gli appuntamenti',
-  summary: 'Presso Studio Medico 4M operano 12 liberi professionisti indipendenti. Non è presente una segreteria centralizzata: ogni professionista gestisce in piena autonomia le visite, le tariffe e il proprio calendario.',
+  summary: 'Presso Studio Medico 4M operano liberi professionisti indipendenti. Non è presente una segreteria centralizzata: ogni professionista gestisce in piena autonomia le visite, le tariffe e il proprio calendario.',
   instructions: 'Per richiedere un appuntamento, una visita specialistica o informazioni su un trattamento, contatta direttamente il professionista di riferimento tramite i suoi recapiti dedicati.'
 };
 
@@ -75,4 +76,3 @@ export const STUDIO_PHOTOS: StudioPhotoItem[] = [
     badge: 'Massimo Comfort'
   }
 ];
-

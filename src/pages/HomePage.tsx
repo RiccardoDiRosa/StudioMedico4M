@@ -49,7 +49,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
     '@context': 'https://schema.org',
     '@type': 'MedicalBusiness',
     'name': STUDIO_CONFIG.name,
-    'description': 'Studio Medico 4M a Bollate (MI). Spazio polifunzionale per la salute e il benessere che ospita 12 liberi professionisti indipendenti.',
+    'description': 'Studio Medico 4M a Bollate (MI). Spazio polifunzionale per la salute e il benessere dove trovi liberi professionisti indipendenti.',
     'url': STUDIO_CONFIG.canonicalBaseUrl,
     'slogan': STUDIO_CONFIG.payoff,
     'address': {
@@ -83,7 +83,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
     <>
       <SEOHead
         title="Studio Medico 4M a Bollate | Professionisti e servizi per la salute"
-        description="Studio Medico 4M a Bollate (MI): spazio professionale per la salute e il benessere che ospita 12 specialisti. Ortopedia, Fisioterapia, Osteopatia, Nutrizione, Psicologia."
+        description="Studio Medico 4M a Bollate (MI): spazio professionale per la salute e il benessere dove trovi professionisti della salute. Ortopedia, Fisioterapia, Osteopatia, Nutrizione, Psicologia."
         canonicalPath="/"
         schemaJson={homeSchema}
       />
@@ -108,7 +108,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
 
             {/* Mobile Title & Payoff */}
             <h1 className="text-3xl sm:text-4xl font-normal text-[#01579b] tracking-tight leading-tight font-heading mt-2.5">
-              Studio Medico <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5]">4M</span>
+              Studio Medico <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums"><span className="inline-block">4</span><span className="inline-block">M</span></span>
             </h1>
             <p className="text-base sm:text-lg text-[#0277bd] font-serif italic mt-1 font-medium">
               “Dove mente e corpo ritrovano equilibrio”
@@ -129,7 +129,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               {/* Badges on top of the image */}
               <div className="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-lg border border-[#b3e5fc] shadow-sm flex items-center gap-1.5">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-[11px] font-bold text-[#01579b]">12 Professionisti della Salute</span>
+                <span className="text-[11px] font-bold text-[#01579b]">Professionisti della Salute</span>
               </div>
 
               <div className="absolute top-2.5 right-2.5 bg-white/95 backdrop-blur-md px-2 py-1 rounded-lg border border-[#b3e5fc] shadow-sm flex items-center gap-1">
@@ -172,9 +172,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
 
             {/* Key Trust Pillars Strip */}
             <div className="grid grid-cols-3 gap-2 pt-3">
-              <div className="bg-white/80 backdrop-blur-xs p-2.5 rounded-xl border border-[#b3e5fc]/70 text-center">
-                <span className="block text-sm font-bold text-[#01579b]">12</span>
-                <span className="block text-[10px] text-slate-600 font-medium">Specialisti</span>
+              <div className="bg-white/80 backdrop-blur-xs p-2.5 rounded-xl border border-[#b3e5fc]/70 text-center flex flex-col items-center justify-center">
+                <Users className="w-4 h-4 text-[#01579b] mb-0.5" aria-hidden="true" />
+                <span className="block text-[10px] text-slate-600 font-medium">Professionisti</span>
               </div>
               <div className="bg-white/80 backdrop-blur-xs p-2.5 rounded-xl border border-[#b3e5fc]/70 text-center">
                 <span className="block text-sm font-bold text-[#01579b]">8</span>
@@ -190,7 +190,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             <div className="mt-3.5 p-3 rounded-xl bg-white/90 border border-[#b3e5fc] shadow-xs flex items-start gap-2.5 text-[11px] text-slate-700">
               <Users className="w-3.5 h-3.5 text-[#0277bd] shrink-0 mt-0.5" aria-hidden="true" />
               <p>
-                Sede condivisa da <strong className="text-[#01579b]">12 liberi professionisti indipendenti</strong>. Ciascuno gestisce i propri appuntamenti in autonomia, senza segreteria centralizzata.
+                Sede condivisa da <strong className="text-[#01579b]">liberi professionisti indipendenti</strong>. Ciascuno gestisce i propri appuntamenti in autonomia, senza segreteria centralizzata.
               </p>
             </div>
           </div>
@@ -211,7 +211,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
 
               {/* Main Headline */}
               <h1 className="text-5xl lg:text-6xl font-normal text-[#01579b] tracking-tight leading-[1.15] text-balance font-heading">
-                Studio Medico <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5]">4M</span>
+                Studio Medico <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums"><span className="inline-block">4</span><span className="inline-block">M</span></span>
               </h1>
 
               {/* Payoff */}
@@ -221,14 +221,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
 
               {/* Verified Editorial Copy */}
               <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
-                Studio Medico 4M ospita professionisti che operano in diversi ambiti della salute e del benessere. Scopri i servizi disponibili e le competenze dei professionisti presenti nella sede di Bollate.
+                Presso Studio Medico 4M trovi professionisti che operano in diversi ambiti della salute e del benessere. Scopri i servizi disponibili e le competenze dei professionisti presenti nella sede di Bollate.
               </p>
 
               {/* Transparent Clinic Model Note */}
               <div className="p-4 rounded-2xl bg-white/90 border border-[#b3e5fc] shadow-xs flex items-start gap-3 text-xs text-slate-700 max-w-xl backdrop-blur-xs">
                 <Users className="w-4 h-4 text-[#0277bd] shrink-0 mt-0.5" aria-hidden="true" />
                 <p>
-                  Sede condivisa da <strong className="text-[#01579b]">12 liberi professionisti indipendenti</strong>. Ciascuno gestisce i propri appuntamenti in autonomia, senza segreteria centralizzata.
+                  Sede condivisa da <strong className="text-[#01579b]">liberi professionisti indipendenti</strong>. Ciascuno gestisce i propri appuntamenti in autonomia, senza segreteria centralizzata.
                 </p>
               </div>
 
@@ -281,7 +281,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                         </span>
                       </div>
                       <span className="text-[11px] font-semibold bg-white/20 backdrop-blur-md px-2.5 py-1 rounded-lg border border-white/30">
-                        12 Specialisti
+                        Professionisti
                       </span>
                     </div>
                   </div>
@@ -340,7 +340,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               </div>
               <div>
                 <h3 className="text-sm sm:text-base font-bold text-[#01579b] font-sans mb-1 sm:mb-2">
-                  12 Liberi Professionisti
+                  Liberi Professionisti
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
                   Competenze qualificate e approcci mirati per ogni specifica esigenza, in piena autonomia professionale.
@@ -468,26 +468,32 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               </div>
             </div>
 
-            {/* Photo 3: Spazio Predisposto per le Foto dello Studio */}
-            <div className="group bg-gradient-to-br from-white to-[#f4f9fd] rounded-3xl overflow-hidden border-2 border-dashed border-[#b3e5fc] hover:border-[#039be5] shadow-sm hover:shadow-lg transition-all flex flex-col p-5 sm:p-6 text-center justify-between">
-              <div className="flex-1 flex flex-col items-center justify-center py-4 sm:py-6">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#b3e5fc]/40 border border-[#039be5]/30 flex items-center justify-center text-[#01579b] mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
-                  <Camera className="w-6 h-6 sm:w-7 sm:h-7 text-[#0277bd]" />
-                </div>
-                <span className="px-2.5 py-0.5 rounded-full bg-[#b3e5fc]/40 text-[#01579b] text-[10px] font-bold tracking-wide uppercase mb-1.5 sm:mb-2">
-                  Galleria in Aggiornamento
+            {/* Photo 3: Cura della Persona & Visite (dal Volantino Ufficiale) */}
+            <div className="group bg-white rounded-3xl overflow-hidden border border-[#b3e5fc]/80 hover:border-[#039be5] shadow-sm hover:shadow-xl hover:shadow-[#039be5]/10 transition-all flex flex-col">
+              <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                <img
+                  src="/images/studio/doctor-flyer.png"
+                  alt="Cura della persona e visite specialistiche Studio Medico 4M"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+                <span className="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-white/95 backdrop-blur-md text-[11px] font-bold text-[#01579b] border border-[#b3e5fc] shadow-xs">
+                  Cura della Persona
                 </span>
-                <h3 className="text-sm sm:text-base font-bold text-[#01579b] mb-1.5 sm:mb-2">
-                  Nuove Fotografie della Sede
-                </h3>
-                <p className="text-xs text-slate-600 leading-relaxed max-w-xs">
-                  Spazio predisposto per ulteriori scatti degli ambulatori specialistici e dei particolari della sede di Via Madonnina 17.
-                </p>
               </div>
-
-              <div className="pt-3 sm:pt-4 border-t border-[#b3e5fc]/40 text-[11px] text-slate-500 flex items-center justify-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-[#039be5]" />
-                <span>Aggiornato con le foto ufficiali dello studio</span>
+              <div className="p-4 sm:p-6 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 className="text-sm sm:text-base font-bold text-[#01579b] mb-1 sm:mb-1.5">
+                    Attenzione Specialistica e Riservatezza
+                  </h3>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Percorsi diagnostici e riabilitativi concordati direttamente con i singoli professionisti, con attenzione dedicata al benessere globale e all'ascolto di ogni paziente.
+                  </p>
+                </div>
+                <div className="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-[#b3e5fc]/40 flex items-center justify-between text-[11px] text-[#0277bd] font-medium">
+                  <span>Esperienza & Dedizione</span>
+                  <CheckCircle2 className="w-3.5 h-3.5 text-[#039be5]" />
+                </div>
               </div>
             </div>
 
@@ -601,7 +607,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                 I Professionisti
               </span>
               <h2 className="text-2xl sm:text-4xl font-normal text-[#01579b] tracking-tight font-heading mt-1">
-                12 Specialisti al tuo fianco
+                I Professionisti al tuo fianco
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 mt-1 sm:mt-2 max-w-xl">
                 Ciascun professionista opera in autonomia. Seleziona una disciplina per individuare il profilo più adatto alle tue esigenze.
@@ -613,7 +619,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               onClick={() => onNavigate('/professionisti')}
               className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0277bd] hover:text-[#039be5] focus-ring py-1.5 px-3 rounded-xl hover:bg-[#b3e5fc]/25 transition-colors self-start md:self-auto"
             >
-              <span>Elenco completo dei 12 profili</span>
+              <span>Elenco completo dei professionisti</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#039be5]" />
             </button>
           </div>
@@ -748,40 +754,47 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               </div>
             </div>
 
-            {/* Right Column: Interactive Map Card */}
+            {/* Right Column: Interactive Google Maps Preview */}
             <div className="lg:col-span-6">
-              <div className="relative rounded-3xl overflow-hidden border-2 border-[#b3e5fc] shadow-lg bg-[#f4f9fd] aspect-[4/3] flex flex-col justify-between p-6">
+              <div className="relative rounded-3xl overflow-hidden border-2 border-[#b3e5fc] shadow-xl bg-white flex flex-col">
                 
-                {/* Visual Map Representation */}
-                <div className="absolute inset-0 bg-[#f4f9fd] flex items-center justify-center">
-                  <div className="w-full h-full opacity-60 bg-[radial-gradient(#039be5_1.5px,transparent_1.5px)] [background-size:16px_16px]" />
-                </div>
-
-                {/* Pin Card overlay */}
-                <div className="relative z-10 bg-white/95 backdrop-blur-sm p-5 rounded-2xl border border-[#b3e5fc] shadow-md max-w-xs space-y-2">
-                  <div className="flex items-center gap-2 text-[#01579b] font-bold text-sm">
-                    <MapPin className="w-4 h-4 text-[#039be5]" />
-                    <span>Studio Medico 4M</span>
+                {/* Header bar sopra la mappa - zero sovrapposizioni visive */}
+                <div className="px-4 sm:px-5 py-3 sm:py-3.5 bg-white border-b border-[#b3e5fc]/80 flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-8 h-8 rounded-xl bg-[#b3e5fc]/40 border border-[#039be5]/30 flex items-center justify-center shrink-0">
+                      <MapPin className="w-4 h-4 text-[#01579b]" />
+                    </div>
+                    <div>
+                      <span className="text-xs sm:text-sm font-bold text-[#01579b] block leading-tight">
+                        Studio Medico 4M · Bollate
+                      </span>
+                      <span className="text-[10px] sm:text-[11px] text-slate-500 block mt-0.5">
+                        Via Madonnina 17 (a pochi minuti dalla stazione)
+                      </span>
+                    </div>
                   </div>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Via Madonnina 17, Bollate (MI)
-                  </p>
-                  <p className="text-[11px] text-[#0277bd] font-medium">
-                    Coordinate certificate nel centro di Bollate
-                  </p>
-                </div>
 
-                {/* Privacy-friendly Click-to-Action */}
-                <div className="relative z-10 text-right">
                   <a
                     href={STUDIO_CONFIG.googleMapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-bold text-[#01579b] bg-white hover:bg-[#b3e5fc]/25 border-2 border-[#b3e5fc] hover:border-[#039be5] rounded-xl shadow-xs transition-all"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-[#01579b] bg-[#b3e5fc]/30 hover:bg-[#b3e5fc]/60 border border-[#b3e5fc] rounded-xl transition-all shrink-0 focus-ring"
                   >
-                    <span>Visualizza mappa dettagliata</span>
+                    <span>Apri in Maps</span>
                     <ExternalLink className="w-3.5 h-3.5 text-[#039be5]" />
                   </a>
+                </div>
+
+                {/* Embedded Interactive Google Maps senza elementi sovrapposti */}
+                <div className="w-full h-[360px] sm:h-[440px] bg-slate-100">
+                  <iframe
+                    title="Posizione di Studio Medico 4M su Google Maps"
+                    src={STUDIO_CONFIG.googleMapsEmbedUrl || "https://maps.google.com/maps?q=Via%20Madonnina%2017%2C%2020021%20Bollate%20MI&t=&z=16&ie=UTF8&iwloc=&output=embed"}
+                    className="w-full h-full border-0"
+                    loading="lazy"
+                    allowFullScreen
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                 </div>
               </div>
             </div>
@@ -805,7 +818,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               onClick={() => onNavigate('/professionisti')}
               className="px-7 py-3.5 text-xs font-semibold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] rounded-xl transition-all shadow-md shadow-[#0277bd]/25 focus-ring"
             >
-              Consulta i 12 professionisti
+              Consulta i professionisti
             </button>
             <button
               type="button"

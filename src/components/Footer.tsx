@@ -31,7 +31,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </p>
             <div className="hidden sm:flex items-center gap-2 text-xs text-[#b3e5fc] font-medium">
               <ShieldCheck className="w-4 h-4 shrink-0 text-[#039be5]" />
-              <span>Studio di 12 liberi professionisti indipendenti</span>
+              <span>Studio di liberi professionisti indipendenti</span>
             </div>
           </div>
 

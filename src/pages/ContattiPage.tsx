@@ -48,7 +48,7 @@ export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
     'name': 'Contatti e indicazioni | Studio Medico 4M Bollate',
-    'description': 'Recapiti diretti dei 12 professionisti dello Studio Medico 4M a Bollate (MI) e indicazioni stradali per raggiungere la sede in Via Madonnina 17.',
+    'description': 'Recapiti diretti dei professionisti dello Studio Medico 4M a Bollate (MI) e indicazioni stradali per raggiungere la sede in Via Madonnina 17.',
     'url': `${STUDIO_CONFIG.canonicalBaseUrl}/contatti`
   };
 
@@ -56,7 +56,7 @@ export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
     <>
       <SEOHead
         title="Contatti Diretti e Sede | Studio Medico 4M Bollate"
-        description="Recapiti telefonici diretti dei 12 specialisti dello Studio Medico 4M in Via Madonnina 17 a Bollate (MI). Orari su appuntamento e indicazioni stradali."
+        description="Recapiti telefonici diretti degli specialisti dello Studio Medico 4M in Via Madonnina 17 a Bollate (MI). Orari su appuntamento e indicazioni stradali."
         canonicalPath="/contatti"
         schemaJson={contattiSchema}
       />
@@ -197,7 +197,7 @@ export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
                         <span>Rubrica Telefonica Diretta</span>
                       </div>
                       <h2 className="text-2xl font-bold text-[#01579b] font-sans">
-                        I recapiti dei nostri 12 specialisti
+                        I recapiti dei nostri specialisti
                       </h2>
                     </div>
                     <span className="text-xs font-semibold px-3 py-1 rounded-full bg-[#b3e5fc]/40 text-[#01579b] border border-[#b3e5fc]">

@@ -28,16 +28,16 @@ export const ProfessionistiListPage: React.FC<ProfessionistiListPageProps> = ({
   const listSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    'name': 'I 12 Professionisti di Studio Medico 4M a Bollate',
-    'description': 'Elenco completo dei 12 liberi professionisti sanitari e del benessere che operano presso Studio Medico 4M a Bollate.',
+    'name': 'I Professionisti di Studio Medico 4M a Bollate',
+    'description': 'Elenco completo dei liberi professionisti sanitari e del benessere che operano presso Studio Medico 4M a Bollate.',
     'url': `${STUDIO_CONFIG.canonicalBaseUrl}/professionisti`
   };
 
   return (
     <>
       <SEOHead
-        title="I 12 Professionisti dello Studio Medico 4M a Bollate"
-        description="Consulta l'elenco dei 12 specialisti operanti presso lo Studio Medico 4M a Bollate (MI). Ortopedia, riabilitazione, osteopatia, nutrizione, psicologia e benessere."
+        title="I Professionisti dello Studio Medico 4M a Bollate"
+        description="Consulta l'elenco dei professionisti operanti presso lo Studio Medico 4M a Bollate (MI). Ortopedia, riabilitazione, osteopatia, nutrizione, psicologia e benessere."
         canonicalPath="/professionisti"
         schemaJson={listSchema}
       />
@@ -56,10 +56,10 @@ export const ProfessionistiListPage: React.FC<ProfessionistiListPageProps> = ({
                 La Sede di Bollate
               </span>
               <h1 className="text-2xl sm:text-4xl lg:text-5xl font-normal text-[#01579b] tracking-tight font-heading mt-1 sm:mt-2 mb-2 sm:mb-3">
-                I 12 Professionisti
+                I Professionisti
               </h1>
               <p className="text-xs sm:text-base text-slate-600 leading-relaxed">
-                Studio Medico 4M ospita 12 liberi professionisti indipendenti dedicati alla salute e alla cura del corpo e della mente. Ciascuno gestisce individualmente i propri appuntamenti e percorsi assistenziali.
+                Presso Studio Medico 4M trovi liberi professionisti indipendenti dedicati alla salute e alla cura del corpo e della mente. Ciascuno gestisce individualmente i propri appuntamenti e percorsi assistenziali.
               </p>
             </div>
           </div>

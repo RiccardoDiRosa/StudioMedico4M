@@ -30,11 +30,15 @@
   h1, h2, h3, .font-heading {
     font-family: 'Playfair Display', Georgia, serif;
     letter-spacing: -0.015em;
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum" 1;
   }
 
   .font-brand {
-    font-family: 'Cinzel', Georgia, serif;
+    font-family: 'Cinzel', serif;
     letter-spacing: 0.05em;
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum" 1;
   }
 }
 
