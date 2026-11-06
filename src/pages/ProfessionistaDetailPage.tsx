@@ -145,16 +145,16 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                     <img
                       src={professional.photoUrl}
                       alt={`${professional.title} ${fullName}`}
-                      className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover object-top ring-4 ring-[#b3e5fc] shadow-md"
+                      className="w-28 h-28 sm:w-36 sm:h-36 lg:w-44 lg:h-44 rounded-full object-cover object-top ring-4 sm:ring-6 ring-[#b3e5fc] shadow-lg"
                     />
                   ) : (
-                    <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-gradient-to-tr from-[#01579b] via-[#0277bd] to-[#039be5] text-white font-serif font-bold text-2xl sm:text-3xl flex items-center justify-center ring-4 ring-[#b3e5fc] shadow-md">
+                    <div className="w-28 h-28 sm:w-36 sm:h-36 lg:w-44 lg:h-44 rounded-full bg-gradient-to-tr from-[#01579b] via-[#0277bd] to-[#039be5] text-white font-serif font-bold text-3xl sm:text-4xl lg:text-5xl flex items-center justify-center ring-4 sm:ring-6 ring-[#b3e5fc] shadow-lg">
                       {initials}
                     </div>
                   )}
                   {professional.isComplete && (
-                    <div className="absolute -bottom-1 -right-1 w-8 h-8 rounded-full bg-[#0277bd] text-white flex items-center justify-center shadow-md ring-2 ring-white" title="Specialista Confermato">
-                      <ShieldCheck className="w-4 h-4" />
+                    <div className="absolute -bottom-1 -right-1 sm:-bottom-1.5 sm:-right-1.5 w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#0277bd] text-white flex items-center justify-center shadow-md ring-2 sm:ring-3 ring-white" title="Specialista Confermato">
+                      <ShieldCheck className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
                   )}
                 </div>

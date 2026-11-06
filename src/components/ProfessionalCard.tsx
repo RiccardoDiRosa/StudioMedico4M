@@ -30,21 +30,21 @@ export const ProfessionalCard: React.FC<ProfessionalCardProps> = ({
               <img
                 src={professional.photoUrl}
                 alt={`${professional.title} ${professional.firstName} ${professional.lastName}`}
-                className="w-11 h-11 sm:w-16 sm:h-16 rounded-full object-cover object-top ring-2 sm:ring-4 ring-[#b3e5fc] shadow-sm group-hover:scale-105 transition-transform"
+                className="w-14 h-14 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-full object-cover object-top ring-2 sm:ring-4 ring-[#b3e5fc] shadow-md group-hover:scale-105 transition-transform"
                 loading="lazy"
               />
             ) : (
-              <div className="w-11 h-11 sm:w-16 sm:h-16 rounded-full bg-gradient-to-tr from-[#01579b] via-[#0277bd] to-[#039be5] text-white font-serif font-bold text-xs sm:text-lg flex items-center justify-center ring-2 sm:ring-4 ring-[#b3e5fc] shadow-sm group-hover:scale-105 transition-transform">
+              <div className="w-14 h-14 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-full bg-gradient-to-tr from-[#01579b] via-[#0277bd] to-[#039be5] text-white font-serif font-bold text-sm sm:text-xl lg:text-2xl flex items-center justify-center ring-2 sm:ring-4 ring-[#b3e5fc] shadow-md group-hover:scale-105 transition-transform">
                 {initials}
               </div>
             )}
-            <div className="absolute -bottom-0.5 -right-0.5 sm:-bottom-1 sm:-right-1 w-4 h-4 sm:w-6 sm:h-6 rounded-full bg-white border border-[#b3e5fc] flex items-center justify-center shadow-xs">
-              <UserCheck className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 text-[#0277bd]" aria-hidden="true" />
+            <div className="absolute -bottom-0.5 -right-0.5 sm:-bottom-1 sm:-right-1 w-5 h-5 sm:w-7 sm:h-7 rounded-full bg-white border border-[#b3e5fc] flex items-center justify-center shadow-xs">
+              <UserCheck className="w-3 h-3 sm:w-4 sm:h-4 text-[#0277bd]" aria-hidden="true" />
             </div>
           </div>
 
           {/* Category metadata badge */}
-          <span className="inline-flex items-center justify-center text-center text-[9px] sm:text-[11px] text-[#01579b] font-semibold bg-[#b3e5fc]/35 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full border border-[#b3e5fc] leading-tight">
+          <span className="inline-flex items-center justify-center text-center text-[9px] sm:text-[11px] text-[#01579b] font-semibold bg-[#b3e5fc]/35 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full border border-[#b3e5fc] leading-tight shrink-0">
             {professional.categoryLabel}
           </span>
         </div>

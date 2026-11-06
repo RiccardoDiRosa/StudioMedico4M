@@ -273,15 +273,15 @@ export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
                                 <img
                                   src={prof.photoUrl}
                                   alt={`${prof.title} ${prof.firstName} ${prof.lastName}`}
-                                  className="w-12 h-12 rounded-full object-cover object-top ring-2 ring-[#b3e5fc]"
+                                  className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover object-top ring-2 sm:ring-3 ring-[#b3e5fc] shadow-xs"
                                 />
                               ) : (
-                                <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-[#01579b] to-[#039be5] text-white font-serif font-bold text-sm flex items-center justify-center ring-2 ring-[#b3e5fc] shadow-xs">
+                                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-tr from-[#01579b] to-[#039be5] text-white font-serif font-bold text-sm sm:text-base flex items-center justify-center ring-2 sm:ring-3 ring-[#b3e5fc] shadow-xs">
                                   {initials}
                                 </div>
                               )}
                               {prof.isComplete && (
-                                <div className="absolute -bottom-1 -right-1 w-4 h-4 rounded-full bg-[#0277bd] text-white flex items-center justify-center text-[9px] ring-1 ring-white" title="Verificato">
+                                <div className="absolute -bottom-1 -right-1 w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-[#0277bd] text-white flex items-center justify-center text-[9px] sm:text-[10px] ring-1 ring-white" title="Verificato">
                                   ✓
                                 </div>
                               )}
