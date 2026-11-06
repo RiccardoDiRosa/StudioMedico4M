@@ -44,11 +44,9 @@ export const ProfessionalCard: React.FC<ProfessionalCardProps> = ({
           </div>
 
           {/* Category metadata badge */}
-          <div className="text-right">
-            <span className="text-[9px] sm:text-xs text-[#01579b] font-semibold bg-[#b3e5fc]/35 px-1.5 sm:px-2.5 py-0.5 rounded-full border border-[#b3e5fc] line-clamp-1">
-              {professional.categoryLabel}
-            </span>
-          </div>
+          <span className="inline-flex items-center justify-center text-center text-[9px] sm:text-[11px] text-[#01579b] font-semibold bg-[#b3e5fc]/35 px-2 sm:px-2.5 py-0.5 sm:py-1 rounded-full border border-[#b3e5fc] leading-tight">
+            {professional.categoryLabel}
+          </span>
         </div>
 
         {/* Name and Title */}
@@ -69,16 +67,27 @@ export const ProfessionalCard: React.FC<ProfessionalCardProps> = ({
           {professional.shortDescription}
         </p>
 
-        {/* Top Doctors Verified Badge */}
-        {professional.topDoctorsUrl && (
-          <div className="mb-1.5 sm:mb-3">
-            <span
-              className="inline-flex items-center gap-1 px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-md sm:rounded-lg bg-[#b3e5fc]/30 text-[#01579b] text-[9px] sm:text-[11px] font-bold border border-[#b3e5fc]"
-            >
-              <ShieldCheck className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 text-[#0277bd]" />
-              <span className="hidden sm:inline">Top Doctors® Verificato</span>
-              <span className="sm:hidden">Top Doctors®</span>
-            </span>
+        {/* Top Doctors / MioDottore Verified Badge */}
+        {(professional.topDoctorsUrl || professional.mioDottoreUrl) && (
+          <div className="mb-1.5 sm:mb-3 flex flex-wrap gap-1.5">
+            {professional.topDoctorsUrl && (
+              <span
+                className="inline-flex items-center gap-1 px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-md sm:rounded-lg bg-[#b3e5fc]/30 text-[#01579b] text-[9px] sm:text-[11px] font-bold border border-[#b3e5fc]"
+              >
+                <ShieldCheck className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 text-[#0277bd]" />
+                <span className="hidden sm:inline">Top Doctors® Verificato</span>
+                <span className="sm:hidden">Top Doctors®</span>
+              </span>
+            )}
+            {professional.mioDottoreUrl && (
+              <span
+                className="inline-flex items-center gap-1 px-1.5 sm:px-2.5 py-0.5 sm:py-1 rounded-md sm:rounded-lg bg-[#b3e5fc]/30 text-[#01579b] text-[9px] sm:text-[11px] font-bold border border-[#b3e5fc]"
+              >
+                <ShieldCheck className="w-2.5 h-2.5 sm:w-3.5 sm:h-3.5 text-[#0277bd]" />
+                <span className="hidden sm:inline">MioDottore Verificato</span>
+                <span className="sm:hidden">MioDottore</span>
+              </span>
+            )}
           </div>
         )}
 

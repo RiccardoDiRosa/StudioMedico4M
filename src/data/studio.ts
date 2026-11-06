@@ -60,19 +60,35 @@ export interface StudioPhotoItem {
 
 export const STUDIO_PHOTOS: StudioPhotoItem[] = [
   {
-    id: 'studio-hero',
-    title: 'Accoglienza & Spazi Comuni',
-    area: 'Area Consultazione & Ingresso',
-    tagline: 'Uno spazio curato, silenzioso e luminoso per accogliere i pazienti con il massimo comfort e riservatezza.',
-    url: '/images/studio/studio-hero.jpg',
-    badge: 'Sede di Bollate'
+    id: 'studio-accoglienza',
+    title: 'Sala d\'attesa e accoglienza',
+    area: 'Ingresso',
+    tagline: 'Un ambiente caldo e riservato dove attendere con tranquillità prima della visita.',
+    url: '/images/studio/studio1.webp',
+    badge: 'Accoglienza'
   },
   {
     id: 'studio-ambulatorio',
-    title: 'Ambulatorio & Sale Trattamenti',
-    area: 'Spazi Visite & Terapia',
-    tagline: 'Ambienti moderni e igienizzati, predisposti per visite specialistiche, fisioterapia e trattamenti benessere.',
-    url: '/images/studio/studio-room.jpg',
-    badge: 'Massimo Comfort'
+    title: 'Ambulatorio con lettino',
+    area: 'Sala visite',
+    tagline: 'Sala visite attrezzata con lettino professionale e scrivania per il colloquio e la valutazione.',
+    url: '/images/studio/studio2.webp',
+    badge: 'Ambulatorio'
+  },
+  {
+    id: 'studio-colloqui',
+    title: 'Studio per colloqui',
+    area: 'Sala consulenze',
+    tagline: 'Stanza luminosa e raccolta, pensata per colloqui, consulenze e percorsi individuali.',
+    url: '/images/studio/studio3.webp',
+    badge: 'Consulenze'
+  },
+  {
+    id: 'studio-trattamenti',
+    title: 'Sala trattamenti',
+    area: 'Sala terapie',
+    tagline: 'Spazio confortevole per visite, trattamenti e sedute riabilitative.',
+    url: '/images/studio/studio4.webp',
+    badge: 'Trattamenti'
   }
 ];

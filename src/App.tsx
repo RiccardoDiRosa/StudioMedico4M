@@ -94,7 +94,7 @@ export default function App() {
     // 5. Individual Professional Detail
     if (currentPath.startsWith('/professionisti/')) {
       const slug = currentPath.replace('/professionisti/', '').replace(/\/$/, '');
-      const prof = PROFESSIONISTI.find(p => p.slug === slug || (slug === 'specialista-ortopedia-traumatologia' && p.id === 'prof-01-ortopedia'));
+      const prof = PROFESSIONISTI.find(p => p.slug === slug || (slug === 'giulia-concetta-gentile' && p.slug === 'giulia-gentile') || (slug === 'specialista-ortopedia-traumatologia' && p.id === 'prof-01-ortopedia'));
       if (prof) {
         return (
           <ProfessionistaDetailPage 

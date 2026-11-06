@@ -118,7 +118,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             <div className="relative mt-4 mb-4 rounded-2xl overflow-hidden border-2 border-[#b3e5fc] shadow-xl shadow-[#0277bd]/15 group bg-white">
               <div className="aspect-[16/10] relative overflow-hidden bg-slate-100">
                 <img
-                  src="/images/studio/studio-hero.jpg"
+                  src="/images/studio/studio2.webp"
                   alt="Interni dello Studio Medico 4M a Bollate"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   loading="eager"
@@ -198,10 +198,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
           {/* ========================================================= */}
           {/* DESKTOP HERO VIEW (hidden lg:grid) - The Approved Layout  */}
           {/* ========================================================= */}
-          <div className="hidden lg:grid grid-cols-12 gap-8 items-center">
+          <div className="hidden lg:grid grid-cols-12 gap-8 xl:gap-12 items-center">
             
             {/* Left Column: Presentation & CTAs */}
-            <div className="col-span-7 space-y-6">
+            <div className="col-span-6 space-y-6">
               
               {/* Pill Location Kicker */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#b3e5fc]/45 border border-[#039be5]/30 text-xs font-semibold tracking-wider uppercase text-[#01579b]">
@@ -210,22 +210,22 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               </div>
 
               {/* Main Headline */}
-              <h1 className="text-5xl lg:text-6xl font-normal text-[#01579b] tracking-tight leading-[1.15] text-balance font-heading">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-normal text-[#01579b] tracking-tight leading-[1.15] text-balance font-heading">
                 Studio Medico <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums"><span className="inline-block">4</span><span className="inline-block">M</span></span>
               </h1>
 
               {/* Payoff */}
-              <p className="text-2xl text-[#0277bd] font-serif italic tracking-tight font-medium">
+              <p className="text-xl lg:text-2xl text-[#0277bd] font-serif italic tracking-tight font-medium">
                 “Dove mente e corpo ritrovano equilibrio”
               </p>
 
               {/* Verified Editorial Copy */}
-              <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+              <p className="text-base text-slate-600 leading-relaxed">
                 Presso Studio Medico 4M trovi professionisti che operano in diversi ambiti della salute e del benessere. Scopri i servizi disponibili e le competenze dei professionisti presenti nella sede di Bollate.
               </p>
 
               {/* Transparent Clinic Model Note */}
-              <div className="p-4 rounded-2xl bg-white/90 border border-[#b3e5fc] shadow-xs flex items-start gap-3 text-xs text-slate-700 max-w-xl backdrop-blur-xs">
+              <div className="p-4 rounded-2xl bg-white/90 border border-[#b3e5fc] shadow-xs flex items-start gap-3 text-xs text-slate-700 backdrop-blur-xs">
                 <Users className="w-4 h-4 text-[#0277bd] shrink-0 mt-0.5" aria-hidden="true" />
                 <p>
                   Sede condivisa da <strong className="text-[#01579b]">liberi professionisti indipendenti</strong>. Ciascuno gestisce i propri appuntamenti in autonomia, senza segreteria centralizzata.
@@ -233,11 +233,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               </div>
 
               {/* Action Buttons: 2 Distinct CTAs */}
-              <div className="flex flex-wrap items-center gap-4 pt-2">
+              <div className="flex flex-wrap items-center gap-3.5 pt-2">
                 <a
                   href="#professionisti"
                   onClick={(e) => scrollToSection(e, 'professionisti')}
-                  className="inline-flex items-center gap-2 px-7 py-3.5 text-sm font-semibold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] active:scale-[0.99] rounded-xl transition-all shadow-md shadow-[#0277bd]/25 hover:shadow-lg hover:shadow-[#039be5]/30 focus-ring whitespace-nowrap"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-semibold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] active:scale-[0.99] rounded-xl transition-all shadow-md shadow-[#0277bd]/25 hover:shadow-lg hover:shadow-[#039be5]/30 focus-ring whitespace-nowrap"
                 >
                   <span>Scopri i professionisti</span>
                   <ArrowRight className="w-4 h-4 text-[#b3e5fc]" aria-hidden="true" />
@@ -247,7 +247,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                   href={STUDIO_CONFIG.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-semibold text-[#01579b] bg-white hover:bg-[#b3e5fc]/25 active:scale-[0.99] border-2 border-[#b3e5fc] hover:border-[#039be5] rounded-xl transition-all shadow-xs focus-ring whitespace-nowrap"
+                  className="inline-flex items-center gap-2 px-5 py-3.5 text-sm font-semibold text-[#01579b] bg-white hover:bg-[#b3e5fc]/25 active:scale-[0.99] border-2 border-[#b3e5fc] hover:border-[#039be5] rounded-xl transition-all shadow-xs focus-ring whitespace-nowrap"
                 >
                   <Navigation className="w-4 h-4 text-[#039be5]" aria-hidden="true" />
                   <span>Come raggiungerci</span>
@@ -256,14 +256,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             </div>
 
             {/* Right Column: Visual Composition with Studio Showcase & Emblem Badge */}
-            <div className="col-span-5 flex justify-end">
-              <div className="relative w-full max-w-md">
+            <div className="col-span-6 flex justify-end">
+              <div className="relative w-full max-w-lg xl:max-w-xl">
                 
                 {/* Main Framed Studio Showcase Card */}
                 <div className="relative rounded-3xl p-2.5 bg-gradient-to-tr from-[#01579b] via-[#039be5] to-[#b3e5fc] shadow-2xl shadow-[#0277bd]/25 overflow-hidden group">
                   <div className="relative aspect-[4/3] rounded-[22px] overflow-hidden bg-slate-100">
                     <img
-                      src="/images/studio/studio-hero.jpg"
+                      src="/images/studio/studio2.webp"
                       alt="Interni dello Studio Medico 4M a Bollate"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       loading="eager"
@@ -407,96 +407,38 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             </p>
           </div>
 
-          {/* Studio Photos Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-8">
-            
-            {/* Photo 1: Accoglienza & Ricevimento */}
-            <div className="group bg-white rounded-3xl overflow-hidden border border-[#b3e5fc]/80 hover:border-[#039be5] shadow-sm hover:shadow-xl hover:shadow-[#039be5]/10 transition-all flex flex-col">
-              <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
+          {/* Studio Photos Gallery (foto ufficiali definitive) */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6">
+            {[
+              { photo: STUDIO_PHOTOS[0], span: 'md:col-span-7', ratio: 'aspect-[4/3]', pos: 'object-center' },
+              { photo: STUDIO_PHOTOS[2], span: 'md:col-span-5', ratio: 'aspect-[4/5] md:aspect-auto', pos: 'object-center' },
+              { photo: STUDIO_PHOTOS[3], span: 'md:col-span-5', ratio: 'aspect-[4/3] md:aspect-auto', pos: 'object-center' },
+              { photo: STUDIO_PHOTOS[1], span: 'md:col-span-7', ratio: 'aspect-[16/10] md:aspect-[16/9]', pos: 'object-center' }
+            ].map(({ photo, span, ratio, pos }) => (
+              <figure
+                key={photo.id}
+                className={`group relative ${span} ${ratio} rounded-3xl overflow-hidden border border-[#b3e5fc]/80 hover:border-[#039be5] shadow-sm hover:shadow-xl hover:shadow-[#039be5]/10 transition-all bg-slate-100`}
+              >
                 <img
-                  src="/images/studio/studio-hero.jpg"
-                  alt="Area Accoglienza Studio Medico 4M Bollate"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  src={photo.url}
+                  alt={`${photo.title} - Studio Medico 4M Bollate`}
+                  className={`absolute inset-0 w-full h-full object-cover ${pos} group-hover:scale-105 transition-transform duration-700`}
                   loading="lazy"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/85 via-[#01579b]/10 to-transparent pointer-events-none" />
                 <span className="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-white/95 backdrop-blur-md text-[11px] font-bold text-[#01579b] border border-[#b3e5fc] shadow-xs">
-                  Accoglienza & Ricevimento
+                  {photo.badge}
                 </span>
-              </div>
-              <div className="p-4 sm:p-6 flex-1 flex flex-col justify-between">
-                <div>
-                  <h3 className="text-sm sm:text-base font-bold text-[#01579b] mb-1 sm:mb-1.5">
-                    Ambiente Luminoso e Confortevole
+                <figcaption className="absolute bottom-0 inset-x-0 p-4 sm:p-5 text-white">
+                  <h3 className="text-sm sm:text-base font-bold leading-tight drop-shadow-sm">
+                    {photo.title}
                   </h3>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Spazi pensati per accogliere con tranquillità, offrendo la massima privacy e rispetto dei tempi di ciascun paziente prima dell'incontro con il medico.
+                  <p className="text-[11px] sm:text-xs text-sky-100 leading-relaxed mt-1 max-w-md">
+                    {photo.tagline}
                   </p>
-                </div>
-                <div className="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-[#b3e5fc]/40 flex items-center justify-between text-[11px] text-[#0277bd] font-medium">
-                  <span>Luce naturale & comfort</span>
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#039be5]" />
-                </div>
-              </div>
-            </div>
-
-            {/* Photo 2: Ambulatorio & Trattamenti */}
-            <div className="group bg-white rounded-3xl overflow-hidden border border-[#b3e5fc]/80 hover:border-[#039be5] shadow-sm hover:shadow-xl hover:shadow-[#039be5]/10 transition-all flex flex-col">
-              <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
-                <img
-                  src="/images/studio/studio-room.jpg"
-                  alt="Ambulatorio e sala visite Studio Medico 4M Bollate"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                />
-                <span className="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-white/95 backdrop-blur-md text-[11px] font-bold text-[#01579b] border border-[#b3e5fc] shadow-xs">
-                  Ambulatori & Trattamenti
-                </span>
-              </div>
-              <div className="p-4 sm:p-6 flex-1 flex flex-col justify-between">
-                <div>
-                  <h3 className="text-sm sm:text-base font-bold text-[#01579b] mb-1 sm:mb-1.5">
-                    Spazi Visite e Sedute Specialistici
-                  </h3>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Sale attrezzate per visite ortopediche, valutazioni posturali, osteopatia, fisioterapia e percorsi nutrizionali e psicologici individuali.
-                  </p>
-                </div>
-                <div className="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-[#b3e5fc]/40 flex items-center justify-between text-[11px] text-[#0277bd] font-medium">
-                  <span>Attrezzature igienizzate</span>
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#039be5]" />
-                </div>
-              </div>
-            </div>
-
-            {/* Photo 3: Cura della Persona & Visite (dal Volantino Ufficiale) */}
-            <div className="group bg-white rounded-3xl overflow-hidden border border-[#b3e5fc]/80 hover:border-[#039be5] shadow-sm hover:shadow-xl hover:shadow-[#039be5]/10 transition-all flex flex-col">
-              <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
-                <img
-                  src="/images/studio/doctor-flyer.png"
-                  alt="Cura della persona e visite specialistiche Studio Medico 4M"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                />
-                <span className="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-white/95 backdrop-blur-md text-[11px] font-bold text-[#01579b] border border-[#b3e5fc] shadow-xs">
-                  Cura della Persona
-                </span>
-              </div>
-              <div className="p-4 sm:p-6 flex-1 flex flex-col justify-between">
-                <div>
-                  <h3 className="text-sm sm:text-base font-bold text-[#01579b] mb-1 sm:mb-1.5">
-                    Attenzione Specialistica e Riservatezza
-                  </h3>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Percorsi diagnostici e riabilitativi concordati direttamente con i singoli professionisti, con attenzione dedicata al benessere globale e all'ascolto di ogni paziente.
-                  </p>
-                </div>
-                <div className="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-[#b3e5fc]/40 flex items-center justify-between text-[11px] text-[#0277bd] font-medium">
-                  <span>Esperienza & Dedizione</span>
-                  <CheckCircle2 className="w-3.5 h-3.5 text-[#039be5]" />
-                </div>
-              </div>
-            </div>
-
+                </figcaption>
+              </figure>
+            ))}
           </div>
 
           {/* Quick Info Strip */}

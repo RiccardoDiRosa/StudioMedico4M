@@ -93,8 +93,12 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
       }
     },
     'description': professional.shortDescription,
-    ...(professional.topDoctorsUrl && {
-      'sameAs': [professional.topDoctorsUrl]
+    ...((professional.topDoctorsUrl || professional.mioDottoreUrl || professional.websiteUrl) && {
+      'sameAs': [
+        professional.topDoctorsUrl,
+        professional.mioDottoreUrl,
+        professional.websiteUrl
+      ].filter(Boolean)
     })
   };
 
@@ -203,22 +207,50 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                 </div>
               </div>
 
-              {/* Header Right Actions (Top Doctors Button) */}
-              {professional.topDoctorsUrl && (
-                <div className="shrink-0 w-full sm:w-auto flex flex-col gap-2 pt-2 lg:pt-0">
-                  <a
-                    href={professional.topDoctorsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2.5 px-5 py-3 rounded-xl bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] hover:from-[#0277bd] hover:to-[#01579b] text-white text-xs font-bold tracking-wide shadow-md shadow-[#0277bd]/25 transition-all hover:scale-[1.02] focus-ring"
-                  >
-                    <ShieldCheck className="w-4 h-4 text-sky-200" />
-                    <span>Profilo su Top Doctors®</span>
-                    <ExternalLink className="w-3.5 h-3.5 text-sky-200 ml-1" />
-                  </a>
-                  <span className="text-[11px] text-center text-slate-500">
-                    Profilo certificato e recensioni verificate
-                  </span>
+              {/* Header Right Actions (Top Doctors / MioDottore / Website Buttons) */}
+              {(professional.topDoctorsUrl || professional.mioDottoreUrl || professional.websiteUrl) && (
+                <div className="shrink-0 w-full sm:w-auto flex flex-col gap-2.5 pt-2 lg:pt-0">
+                  {professional.topDoctorsUrl && (
+                    <a
+                      href={professional.topDoctorsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2.5 px-5 py-3 rounded-xl bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] hover:from-[#0277bd] hover:to-[#01579b] text-white text-xs font-bold tracking-wide shadow-md shadow-[#0277bd]/25 transition-all hover:scale-[1.02] focus-ring"
+                    >
+                      <ShieldCheck className="w-4 h-4 text-sky-200" />
+                      <span>Profilo su Top Doctors®</span>
+                      <ExternalLink className="w-3.5 h-3.5 text-sky-200 ml-1" />
+                    </a>
+                  )}
+                  {professional.mioDottoreUrl && (
+                    <a
+                      href={professional.mioDottoreUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2.5 px-5 py-3 rounded-xl bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] hover:from-[#0277bd] hover:to-[#01579b] text-white text-xs font-bold tracking-wide shadow-md shadow-[#0277bd]/25 transition-all hover:scale-[1.02] focus-ring"
+                    >
+                      <ShieldCheck className="w-4 h-4 text-sky-200" />
+                      <span>Profilo su MioDottore</span>
+                      <ExternalLink className="w-3.5 h-3.5 text-sky-200 ml-1" />
+                    </a>
+                  )}
+                  {professional.websiteUrl && (
+                    <a
+                      href={professional.websiteUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-white hover:bg-[#f4f9fd] text-[#01579b] border-2 border-[#b3e5fc] hover:border-[#039be5] text-xs font-bold tracking-wide transition-all focus-ring"
+                    >
+                      <Globe2 className="w-4 h-4 text-[#0277bd]" />
+                      <span>Sito web personale</span>
+                      <ExternalLink className="w-3.5 h-3.5 text-[#039be5] ml-0.5" />
+                    </a>
+                  )}
+                  {(professional.topDoctorsUrl || professional.mioDottoreUrl) && (
+                    <span className="text-[11px] text-center text-slate-500">
+                      Profilo certificato e recensioni verificate
+                    </span>
+                  )}
                 </div>
               )}
 
@@ -353,7 +385,9 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                       )}
 
                       <div className="pt-2 text-xs text-[#0277bd] font-medium italic border-t border-[#b3e5fc]/40">
-                        Svolge attività clinica e chirurgica in ambito ospedaliero ed esercita come libero professionista indipendente presso la sede di Studio Medico 4M a Bollate.
+                        {isMiranda
+                          ? 'Svolge attività clinica e chirurgica in ambito ospedaliero ed esercita come libero professionista indipendente presso la sede di Studio Medico 4M a Bollate.'
+                          : 'Esercita come libero professionista indipendente presso la sede di Studio Medico 4M a Bollate.'}
                       </div>
                     </div>
                   </div>
@@ -517,7 +551,9 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                         Prestazioni ed Ambiti di Trattamento
                       </h2>
                       <p className="text-xs sm:text-sm text-[#0277bd] font-medium mt-0.5 line-clamp-1 sm:line-clamp-none">
-                        Diagnosi clinica, chirurgia specialistica e follow-up dedicato
+                        {isMiranda
+                          ? 'Diagnosi clinica, chirurgia specialistica e follow-up dedicato'
+                          : 'Consulenza specialistica, inquadramento clinico e percorsi personalizzati'}
                       </p>
                     </div>
                   </div>
@@ -540,7 +576,9 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                   <div className="overflow-hidden">
                     <div className="p-6 sm:p-8 pt-3 sm:pt-4 border-t border-[#b3e5fc]/60 space-y-4">
                       <p className="text-xs text-slate-600">
-                        Ambiti diagnostici, clinici e chirurgici trattati presso Studio Medico 4M a Bollate e in sede ospedaliera:
+                        {isMiranda
+                          ? 'Ambiti diagnostici, clinici e chirurgici trattati presso Studio Medico 4M a Bollate e in sede ospedaliera:'
+                          : 'Prestazioni specialistiche e ambiti di intervento presso Studio Medico 4M a Bollate:'}
                       </p>
                       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1" aria-label="Elenco prestazioni">
                         {professional.services.map((srv, idx) => (
@@ -589,6 +627,63 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                     <span>Apri profilo Top Doctors®</span>
                     <ExternalLink className="w-3.5 h-3.5 text-[#0277bd] group-hover:translate-x-0.5 transition-transform" />
                   </a>
+                </div>
+              )}
+
+              {/* MioDottore & Website Dedicated Card */}
+              {(professional.mioDottoreUrl || professional.websiteUrl) && (
+                <div className="bg-gradient-to-br from-[#01579b] via-[#0277bd] to-[#01579b] text-white rounded-3xl p-6 sm:p-7 shadow-lg shadow-[#0277bd]/20 space-y-4 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 -mr-10 -mt-10 w-40 h-40 rounded-full bg-white/10 blur-xl pointer-events-none" />
+                  
+                  <div className="flex items-center gap-2">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-sky-200">
+                      Canali Ufficiali & Prenotazioni
+                    </span>
+                  </div>
+
+                  <h3 className="text-lg font-bold font-sans">
+                    {professional.mioDottoreUrl && professional.websiteUrl
+                      ? 'Prenota su MioDottore o visita il sito'
+                      : professional.mioDottoreUrl
+                        ? 'Profilo verificato su MioDottore'
+                        : 'Sito web ufficiale'}
+                  </h3>
+
+                  <p className="text-xs text-sky-100 leading-relaxed">
+                    {professional.mioDottoreUrl && professional.websiteUrl
+                      ? `Consulta il profilo verificato di ${professional.title} ${fullName} su MioDottore per le recensioni dei pazienti e l'agenda online, oppure approfondisci sul sito web personale.`
+                      : professional.mioDottoreUrl
+                        ? `Consulta il profilo verificato di ${professional.title} ${fullName} su MioDottore per consultare le recensioni dei pazienti e le informazioni professionali.`
+                        : `Visita il sito web ufficiale di ${professional.title} ${fullName} per approfondire le consulenze, le terapie naturali e gli ambiti di trattamento.`}
+                  </p>
+
+                  <div className="space-y-2.5">
+                    {professional.mioDottoreUrl && (
+                      <a
+                        href={professional.mioDottoreUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 text-xs font-bold text-[#01579b] bg-white hover:bg-sky-50 rounded-xl transition-all shadow-md group"
+                      >
+                        <ShieldCheck className="w-4 h-4 text-[#0277bd]" />
+                        <span>Apri profilo MioDottore</span>
+                        <ExternalLink className="w-3.5 h-3.5 text-[#0277bd] group-hover:translate-x-0.5 transition-transform" />
+                      </a>
+                    )}
+
+                    {professional.websiteUrl && (
+                      <a
+                        href={professional.websiteUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-bold text-white bg-white/15 hover:bg-white/25 border border-white/30 rounded-xl transition-all group"
+                      >
+                        <Globe2 className="w-4 h-4 text-sky-200" />
+                        <span>{professional.websiteUrl.replace(/^https?:\/\/(www\.)?/, '')}</span>
+                        <ExternalLink className="w-3.5 h-3.5 text-sky-200 group-hover:translate-x-0.5 transition-transform" />
+                      </a>
+                    )}
+                  </div>
                 </div>
               )}
 

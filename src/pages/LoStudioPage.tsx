@@ -104,7 +104,7 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
                 <div className="relative w-full max-w-md rounded-3xl p-2 bg-gradient-to-tr from-[#01579b] via-[#039be5] to-[#b3e5fc] shadow-xl overflow-hidden group">
                   <div className="relative aspect-[4/3] rounded-[22px] overflow-hidden bg-slate-100">
                     <img
-                      src="/images/studio/studio-room.jpg"
+                      src="/images/studio/studio2.webp"
                       alt="Ambulatorio e sala trattamenti Studio Medico 4M"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       loading="lazy"

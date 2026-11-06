@@ -45,6 +45,8 @@ export interface Professional {
   isPublished: boolean;
   noteForConfirmation?: string;
   topDoctorsUrl?: string;
+  mioDottoreUrl?: string;
+  websiteUrl?: string;
   curriculumVitae?: ProfessionalCV;
 }
 
