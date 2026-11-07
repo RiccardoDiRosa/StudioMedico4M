@@ -84,20 +84,56 @@ export const PROFESSIONISTI: Professional[] = [
     title: 'Dr',
     firstName: 'Enrico',
     lastName: 'Lovati',
-    role: 'Medico Chirurgo – Agopuntura e Terapia Antalgica Riabilitativa con ENF',
+    role: 'Medico Chirurgo – Esperto in Agopuntura',
     category: 'agopuntura',
     categoryLabel: 'Agopuntura',
     phone: '335 1270226',
-    shortDescription: 'Medico Chirurgo esperto in Agopuntura e terapia antalgica riabilitativa con tecnologia ENF (Electro Neuro Feedback).',
-    fullBio: 'Il Dott. Enrico Lovati è Medico Chirurgo specializzato in agopuntura clinica e percorsi integrati di terapia antalgica e riabilitativa. Presso Studio Medico 4M a Bollate applica trattamenti personalizzati di agopuntura e metodiche all\'avanguardia basate sulla tecnologia ENF (Electro Neuro Feedback), offrendo un supporto concreto ed efficace nella gestione del dolore muscolo-scheletrico acuto e cronico, delle contratture, delle cefalee e nel recupero funzionale della persona.',
-    services: [
-      'Visita medica preliminare e inquadramento clinico',
-      'Sedute di agopuntura medica antalgica',
-      'Terapia antalgica riabilitativa con tecnologia ENF (Electro Neuro Feedback)',
-      'Trattamento del dolore articolare e muscolo-scheletrico acuto e cronico',
-      'Trattamento di cefalee muscolo-tensive ed emicranie',
-      'Riequilibrio funzionale e rilascio delle contratture'
+    photoUrl: '/images/enricolovati.webp',
+    shortDescription: 'Medico Chirurgo con oltre 40 anni di esperienza clinica e medico di medicina generale SSN fino al 2024. Diplomato in Agopuntura presso la scuola SOWEN di Milano.',
+    fullBio: 'Il Dott. Enrico Lovati è Medico Chirurgo con oltre quarant’anni di esperienza clinica e di assistenza sanitaria territoriale. Laureato in Medicina e Chirurgia presso l’Università degli Studi di Milano nel 1982, ha esercitato la professione odontoiatrica presso il proprio studio dal 1982 al 2020 e, dal 1987 al 2024, ha operato come Medico di Medicina Generale convenzionato con il Servizio Sanitario Nazionale (SSN). Dal 2022 ha integrato la propria attività con la specialità di Agopuntura medica, conseguendo il diploma quadriennale presso la prestigiosa scuola SOWEN di Milano. Presso Studio Medico 4M a Bollate applica le pratiche dell’agopuntura classica e olistica per ristabilire lo stato di salute e di equilibrio dell’organismo attraverso l’inserimento di aghi sottili lungo i meridiani energetici. L’agopuntura favorisce la corretta circolazione di energia e sangue, potenziando le difese naturali del corpo e trovando efficace applicazione in patologie muscolo-tendinee e articolari, dolore cronico, cefalee ed emicranie, disturbi emotivi come ansia, stress, insonnia e depressione, nonché affezioni organiche, digestive, allergiche e ginecologiche, con piani terapeutici personalizzati adatti a ogni fascia d’età, dai bambini agli adulti.',
+    bioParagraphs: [
+      'Il Dott. Enrico Lovati è Medico Chirurgo con oltre quarant’anni di esperienza nella tutela della salute della persona. Ha conseguito la Laurea in Medicina e Chirurgia presso l’Università degli Studi di Milano il 12 marzo 1982.',
+      'Dal 1982 al 2020 ha esercitato la professione odontoiatrica presso il proprio studio medico e, dal 1987 al 2024, ha svolto con dedizione il ruolo di Medico di Medicina Generale convenzionato con il Servizio Sanitario Nazionale (SSN), accompagnando generazioni di pazienti con una visione clinica attenta alla persona nella sua globalità.',
+      'Dal 2022 ad oggi ha affiancato la specialità di Agopuntura, dopo aver conseguito il diploma presso la storica e rinomata scuola SOWEN di Milano.',
+      'Lo scopo dell’agopuntura è ristabilire lo stato di salute e di benessere del paziente mediante l’inserimento di sottili aghi in specifici punti del corpo. Per la medicina tradizionale cinese, lo stato di malattia viene causato da una cattiva o alterata circolazione dell’energia e del sangue, con conseguente accumulo o carenza tra i vari distretti corporei.',
+      'Inoculando sottili aghi lungo l’asse dei meridiani, l’agopuntura ripristina l’equilibrio energetico dell’individuo, stimolando e potenziando le difese naturali dell’organismo per difenderlo dalle malattie e garantire un recupero funzionale duraturo.',
+      'L’agopuntura trova efficace applicazione in patologie muscolo-tendinee (mal di schiena, dolori articolari, contratture), dolore cronico, cefalee ed emicranie, disturbi psichici ed emotivi (stress, ansia, depressione, insonnia, dipendenze) e patologie organiche come disturbi digestivi, allergie, sindrome premestruale, sintomi della menopausa e percorsi di fertilità. Presso Studio Medico 4M si sviluppano programmi adatti a ogni fascia d’età, dai bambini agli adulti.'
     ],
+    services: [
+      'Visita medica preliminare e inquadramento energetico in medicina tradizionale cinese',
+      'Sedute di agopuntura medica per il riequilibrio energetico e funzionale',
+      'Trattamento del dolore acuto e cronico, lesioni e tensioni muscolo-tendinee',
+      'Cura di lombalgie, cervicalgie, dorsalgie e problematiche articolari',
+      'Trattamento di cefalee muscolo-tensive, emicranie e nevralgie',
+      'Supporto per disturbi emotivi: ansia, stress, insonnia, depressione e dipendenze',
+      'Trattamento di disturbi funzionali ed organici: problemi digestivi e allergie',
+      'Supporto per sindrome premestruale, sintomi della menopausa e percorsi di fertilità',
+      'Piani di trattamento personalizzati per bambini, giovani, adulti e anziani'
+    ],
+    curriculumVitae: {
+      experienceYears: 'Oltre 40 anni di esperienza medica',
+      experiences: [
+        'Medico Chirurgo ed esperto in Agopuntura presso Studio Medico 4M (Bollate)',
+        'Medico di Medicina Generale (MMG) convenzionato con il SSN (1987–2024)',
+        'Attività professionale odontoiatrica presso proprio studio medico (1982–2020)',
+        'Diploma quadriennale in Agopuntura presso la Scuola SOWEN di Milano (2022)'
+      ],
+      academicMilestones: [
+        'Diploma in Agopuntura – Scuola SOWEN di Milano (2022)',
+        'Laurea in Medicina e Chirurgia – Università degli Studi di Milano (12/03/1982)'
+      ],
+      subSpecializations: [
+        'Agopuntura medica tradizionale cinese',
+        'Riequilibrio energetico lungo i meridiani',
+        'Terapia antalgica del dolore cronico e muscolo-scheletrico',
+        'Trattamento di cefalee ed emicranie',
+        'Gestione di ansia, insonnia e disturbi correlati allo stress',
+        'Medicina generale e presa in carico globale della persona'
+      ],
+      languages: [
+        'Italiano'
+      ]
+    },
     consultationDays: 'Riceve su appuntamento',
     isComplete: true,
     isPublished: true

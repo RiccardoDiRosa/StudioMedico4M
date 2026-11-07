@@ -19,12 +19,13 @@ export const STUDIO_SERVICES: ServiceItem[] = [
     slug: 'agopuntura',
     title: 'Agopuntura',
     flyerOrder: 2,
-    shortDescription: 'Pratica medica tradizionale finalizzata al riequilibrio energetico e al sollievo da dolori acuti e cronici.',
-    fullDescription: 'Sedute di agopuntura medica per il trattamento del dolore cronico, cefalee, stati tensivi muscolari e disturbi legati a stress o disarmonie funzionali.',
+    shortDescription: 'Pratica medica tradizionale cinese finalizzata a ristabilire il benessere, ridurre il dolore e potenziare le difese dell’organismo.',
+    fullDescription: 'L’agopuntura medica favorisce il ripristino della corretta circolazione di energia e sangue attraverso l’inserimento di aghi sottili lungo i meridiani. Stimolando le difese naturali dell’organismo, tratta efficacemente dolori acuti e cronici, mal di schiena, contratture muscolo-tendinee, cefalee ed emicranie, ma anche allergie, disturbi digestivi, insonnia, ansia, stress, sindrome premestruale e menopausa, con programmi di cura personalizzati adatti a tutte le età, dai bambini agli adulti.',
     keyPoints: [
-      'Gestione integrata del dolore',
-      'Approccio al benessere complessivo della persona',
-      'Applicazione secondo protocolli rigorosi'
+      'Riequilibrio energetico e stimolazione delle difese naturali dell’organismo',
+      'Trattamento efficace di dolori muscolo-tendinei, lesioni, contratture ed emicranie',
+      'Supporto per ansia, stress, insonnia, dipendenze, allergie e disturbi digestivi',
+      'Piani di cura individualizzati per bambini, giovani, adulti e anziani'
     ]
   },
   {
