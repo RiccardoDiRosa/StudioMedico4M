@@ -118,7 +118,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             <div className="relative mt-4 mb-4 rounded-2xl overflow-hidden border-2 border-[#b3e5fc] shadow-xl shadow-[#0277bd]/15 group bg-white">
               <div className="aspect-[16/10] relative overflow-hidden bg-slate-100">
                 <img
-                  src="/images/studio/studio2.webp"
+                  src="/images/studio/studio1.webp"
                   alt="Interni dello Studio Medico 4M a Bollate"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   loading="eager"
@@ -263,7 +263,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                 <div className="relative rounded-3xl p-2.5 bg-gradient-to-tr from-[#01579b] via-[#039be5] to-[#b3e5fc] shadow-2xl shadow-[#0277bd]/25 overflow-hidden group">
                   <div className="relative aspect-[4/3] rounded-[22px] overflow-hidden bg-slate-100">
                     <img
-                      src="/images/studio/studio2.webp"
+                      src="/images/studio/studio1.webp"
                       alt="Interni dello Studio Medico 4M a Bollate"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       loading="eager"
@@ -425,18 +425,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                   className={`absolute inset-0 w-full h-full object-cover ${pos} group-hover:scale-105 transition-transform duration-700`}
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/85 via-[#01579b]/10 to-transparent pointer-events-none" />
                 <span className="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-white/95 backdrop-blur-md text-[11px] font-bold text-[#01579b] border border-[#b3e5fc] shadow-xs">
                   {photo.badge}
                 </span>
-                <figcaption className="absolute bottom-0 inset-x-0 p-4 sm:p-5 text-white">
-                  <h3 className="text-sm sm:text-base font-bold leading-tight drop-shadow-sm">
-                    {photo.title}
-                  </h3>
-                  <p className="text-[11px] sm:text-xs text-sky-100 leading-relaxed mt-1 max-w-md">
-                    {photo.tagline}
-                  </p>
-                </figcaption>
               </figure>
             ))}
           </div>

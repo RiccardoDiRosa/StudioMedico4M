@@ -10,7 +10,6 @@ import {
   Car, 
   ExternalLink, 
   Phone, 
-  MessageCircle, 
   Mail,
   Search, 
   CalendarCheck,
@@ -206,7 +205,7 @@ export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
                     </span>
                   </div>
                   <p className="text-xs text-slate-600 mt-2">
-                    Clicca su <strong>Chiama</strong> o <strong>WhatsApp</strong> accanto al professionista desiderato per concordare data e orario della visita.
+                    Contatta direttamente lo specialista via telefono o email per concordare data e orario della visita.
                   </p>
                 </div>
 
@@ -310,44 +309,38 @@ export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
                             </div>
                           </div>
 
-                          {/* Action Buttons (Call, WhatsApp, View Profile) */}
+                          {/* Action Buttons (Call, Email, View Profile) */}
                           <div className="flex flex-row sm:flex-col items-center sm:items-end gap-2 shrink-0 pt-2 sm:pt-0 border-t sm:border-t-0 border-[#b3e5fc]/50">
                             
-                            {prof.phone ? (
+                            {(prof.phone || prof.email) && (
                               <div className="flex items-center gap-2 w-full sm:w-auto">
                                 {/* Call Button */}
-                                <a
-                                  href={`tel:${cleanPhone}`}
-                                  className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] transition-all shadow-xs"
-                                  title={`Chiama ${prof.title} ${prof.lastName}`}
-                                >
-                                  <Phone className="w-3.5 h-3.5 text-[#b3e5fc]" />
-                                  <span>{prof.phone}</span>
-                                </a>
-
-                                {/* WhatsApp Quick Link */}
-                                <a
-                                  href={`https://wa.me/39${cleanPhone}`}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="inline-flex items-center justify-center p-2 rounded-xl text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-colors shadow-2xs"
-                                  title="Scrivi su WhatsApp"
-                                >
-                                  <MessageCircle className="w-4 h-4 text-emerald-600" />
-                                </a>
+                                {prof.phone && (
+                                  <a
+                                    href={`tel:${cleanPhone}`}
+                                    className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] transition-all shadow-xs"
+                                    title={`Chiama ${prof.title} ${prof.lastName}`}
+                                  >
+                                    <Phone className="w-3.5 h-3.5 text-[#b3e5fc]" />
+                                    <span>{prof.phone}</span>
+                                  </a>
+                                )}
 
                                 {/* Direct Email Link if available */}
                                 {prof.email && (
                                   <a
                                     href={`mailto:${prof.email}?subject=Richiesta%20informazioni%20-%20Studio%20Medico%204M`}
-                                    className="inline-flex items-center justify-center p-2 rounded-xl text-[#01579b] bg-sky-50 hover:bg-sky-100 border border-[#b3e5fc] transition-colors shadow-2xs"
+                                    className={`inline-flex items-center justify-center gap-1.5 rounded-xl text-[#01579b] bg-sky-50 hover:bg-sky-100 border border-[#b3e5fc] transition-colors shadow-2xs ${
+                                      prof.phone ? 'p-2' : 'px-3.5 py-2 text-xs font-semibold'
+                                    }`}
                                     title={`Invia email a ${prof.email}`}
                                   >
-                                    <Mail className="w-4 h-4 text-[#039be5]" />
+                                    <Mail className="w-3.5 h-3.5 text-[#039be5]" />
+                                    {!prof.phone && <span>Invia Email</span>}
                                   </a>
                                 )}
                               </div>
-                            ) : null}
+                            )}
 
                             {/* View Profile Link */}
                             <button
