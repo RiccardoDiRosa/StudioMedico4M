@@ -108,11 +108,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
 
             {/* Mobile Title & Payoff */}
             <h1 className="text-3xl sm:text-4xl font-normal text-[#01579b] tracking-tight leading-tight font-heading mt-2.5">
-              Studio Medico <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums"><span className="inline-block">4</span><span className="inline-block">M</span></span>
+              Studio Medico <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#f26522] font-brand tracking-wide inline-flex items-baseline lining-nums"><span className="inline-block">4</span><span className="inline-block">M</span></span>
             </h1>
             <p className="text-base sm:text-lg text-[#0277bd] font-serif italic mt-1 font-medium">
               “Dove mente e corpo ritrovano equilibrio”
             </p>
+            <div className="w-12 h-1 rounded-full bg-gradient-to-r from-[#0277bd] via-[#039be5] to-[#f26522] mt-2 mb-1" />
 
             {/* HERO VISUAL STUDIO SHOWCASE CARD - Mobile Above-the-fold */}
             <div className="relative mt-4 mb-4 rounded-2xl overflow-hidden border-2 border-[#b3e5fc] shadow-xl shadow-[#0277bd]/15 group bg-white">
@@ -132,8 +133,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                 <span className="text-[11px] font-bold text-[#01579b]">Professionisti della Salute</span>
               </div>
 
-              <div className="absolute top-2.5 right-2.5 bg-white/95 backdrop-blur-md px-2 py-1 rounded-lg border border-[#b3e5fc] shadow-sm flex items-center gap-1">
-                <span className="text-[10px] font-bold text-[#0277bd]">8 Discipline</span>
+              <div className="absolute top-2.5 right-2.5 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-lg border border-orange-200/90 shadow-sm flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#f26522]" />
+                <span className="text-[10px] font-bold text-[#01579b]">8 Discipline</span>
               </div>
 
               {/* Bottom text bar over image */}
@@ -211,13 +213,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
 
               {/* Main Headline */}
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-normal text-[#01579b] tracking-tight leading-[1.15] text-balance font-heading">
-                Studio Medico <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums"><span className="inline-block">4</span><span className="inline-block">M</span></span>
+                Studio Medico <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#f26522] font-brand tracking-wide inline-flex items-baseline lining-nums"><span className="inline-block">4</span><span className="inline-block">M</span></span>
               </h1>
 
               {/* Payoff */}
-              <p className="text-xl lg:text-2xl text-[#0277bd] font-serif italic tracking-tight font-medium">
-                “Dove mente e corpo ritrovano equilibrio”
-              </p>
+              <div className="space-y-2">
+                <p className="text-xl lg:text-2xl text-[#0277bd] font-serif italic tracking-tight font-medium">
+                  “Dove mente e corpo ritrovano equilibrio”
+                </p>
+                <div className="w-16 h-1 rounded-full bg-gradient-to-r from-[#0277bd] via-[#039be5] to-[#f26522]" />
+              </div>
 
               {/* Verified Editorial Copy */}
               <p className="text-base text-slate-600 leading-relaxed">
@@ -259,8 +264,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             <div className="col-span-6 flex justify-end">
               <div className="relative w-full max-w-lg xl:max-w-xl">
                 
+                {/* Warm ambient glow behind card echoing the studio's orange wall */}
+                <div className="absolute -top-8 -right-8 w-72 h-72 rounded-full bg-orange-500/15 blur-3xl pointer-events-none" />
+
                 {/* Main Framed Studio Showcase Card */}
-                <div className="relative rounded-3xl p-2.5 bg-gradient-to-tr from-[#01579b] via-[#039be5] to-[#b3e5fc] shadow-2xl shadow-[#0277bd]/25 overflow-hidden group">
+                <div className="relative rounded-3xl p-2.5 bg-gradient-to-tr from-[#01579b] via-[#0277bd] to-[#f26522] shadow-2xl shadow-[#0277bd]/25 overflow-hidden group">
                   <div className="relative aspect-[4/3] rounded-[22px] overflow-hidden bg-slate-100">
                     <img
                       src="/images/studio/studio1.webp"
@@ -303,7 +311,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                 </div>
 
                 {/* Floating pill badge for the 8 services */}
-                <div className="absolute -top-3 -right-2 bg-white/95 backdrop-blur-md px-4 py-2 rounded-2xl border-2 border-[#b3e5fc] shadow-lg flex items-center">
+                <div className="absolute -top-3 -right-2 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-2xl border-2 border-orange-200/90 shadow-lg flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-[#f26522] animate-pulse" />
                   <span className="text-xs font-bold text-[#01579b]">
                     8 Aree di Servizio
                   </span>
@@ -322,8 +331,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
       <section className="py-10 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center space-y-2 sm:space-y-4 mb-6 sm:mb-14">
-            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd]">
-              Chi Siamo
+            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd] inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#b3e5fc]/30 border border-[#039be5]/20">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#f26522]" />
+              <span>Chi Siamo</span>
             </span>
             <h2 className="text-2xl sm:text-4xl font-normal text-[#01579b] tracking-tight font-heading">
               Uno spazio dedicato al benessere di mente e corpo
@@ -414,22 +424,30 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               { photo: STUDIO_PHOTOS[2], span: 'md:col-span-5', ratio: 'aspect-[4/5] md:aspect-auto', pos: 'object-center' },
               { photo: STUDIO_PHOTOS[3], span: 'md:col-span-5', ratio: 'aspect-[4/3] md:aspect-auto', pos: 'object-center' },
               { photo: STUDIO_PHOTOS[1], span: 'md:col-span-7', ratio: 'aspect-[16/10] md:aspect-[16/9]', pos: 'object-center' }
-            ].map(({ photo, span, ratio, pos }) => (
-              <figure
-                key={photo.id}
-                className={`group relative ${span} ${ratio} rounded-3xl overflow-hidden border border-[#b3e5fc]/80 hover:border-[#039be5] shadow-sm hover:shadow-xl hover:shadow-[#039be5]/10 transition-all bg-slate-100`}
-              >
-                <img
-                  src={photo.url}
-                  alt={`${photo.title} - Studio Medico 4M Bollate`}
-                  className={`absolute inset-0 w-full h-full object-cover ${pos} group-hover:scale-105 transition-transform duration-700`}
-                  loading="lazy"
-                />
-                <span className="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-white/95 backdrop-blur-md text-[11px] font-bold text-[#01579b] border border-[#b3e5fc] shadow-xs">
-                  {photo.badge}
-                </span>
-              </figure>
-            ))}
+            ].map(({ photo, span, ratio, pos }) => {
+              const isReception = photo.id === 'studio-accoglienza';
+              return (
+                <figure
+                  key={photo.id}
+                  className={`group relative ${span} ${ratio} rounded-3xl overflow-hidden border ${
+                    isReception ? 'border-orange-200/90 hover:border-[#f26522]' : 'border-[#b3e5fc]/80 hover:border-[#039be5]'
+                  } shadow-sm hover:shadow-xl hover:shadow-[#039be5]/10 transition-all bg-slate-100`}
+                >
+                  <img
+                    src={photo.url}
+                    alt={`${photo.title} - Studio Medico 4M Bollate`}
+                    className={`absolute inset-0 w-full h-full object-cover ${pos} group-hover:scale-105 transition-transform duration-700`}
+                    loading="lazy"
+                  />
+                  <span className={`absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-white/95 backdrop-blur-md text-[11px] font-bold border shadow-xs flex items-center gap-1.5 ${
+                    isReception ? 'text-orange-700 border-orange-200' : 'text-[#01579b] border-[#b3e5fc]'
+                  }`}>
+                    {isReception && <span className="w-1.5 h-1.5 rounded-full bg-[#f26522]" />}
+                    {photo.badge}
+                  </span>
+                </figure>
+              );
+            })}
           </div>
 
           {/* Quick Info Strip */}
