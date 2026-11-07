@@ -265,20 +265,56 @@ export const PROFESSIONISTI: Professional[] = [
     title: 'Dr',
     firstName: 'Stefano',
     lastName: 'Rizzi',
-    role: 'Tecnico Ortopedico – Esame Baropodometrico, Studio del Passo e Plantari',
+    role: 'Tecnico Ortopedico – Esame Baropodometrico, Studio del Passo e Plantari su Misura',
     category: 'plantari',
     categoryLabel: 'Plantari su Misura',
     phone: '345 5825127',
-    shortDescription: 'Tecnico Ortopedico: esame baropodometrico, studio computerizzato del passo e realizzazione artigianale di plantari su misura.',
-    fullBio: 'Il Dott. Stefano Rizzi è tecnico ortopedico operante presso lo Studio Medico 4M in Via Madonnina 17 a Bollate. Specializzato nella biomeccanica dell\'appoggio podalico, esegue esami baropodometrici sia statici che dinamici e progetta plantari su misura per la correzione, lo scarico del dolore e l\'ottimizzazione dell\'efficienza in cammino e durante l\'attività sportiva.',
-    services: [
-      'Esame baropodometrico statico e dinamico computerizzato',
-      'Studio approfondito della biomeccanica del passo e dell\'appoggio',
-      'Progettazione e realizzazione di plantari ortopedici su misura',
-      'Plantari personalizzati per lo sport (corsa, calcio, tennis, sci)',
-      'Ortesi di scarico per metatarsalgie, fasciti plantari e talloniti',
-      'Controlli periodici e adattamenti progressivi dell\'ortesi'
+    email: 'orthoticsmilano@gmail.com',
+    websiteUrl: 'https://www.orthoticsmilano.com',
+    photoUrl: '/images/stefanorizzi.webp',
+    shortDescription: 'Tecnico Ortopedico abilitato dal Ministero della Salute. Specializzato in esame baropodometrico statico e dinamico, studio computerizzato del passo e realizzazione di plantari ortopedici su misura.',
+    fullBio: 'Il Dott. Stefano Rizzi è Tecnico Ortopedico abilitato dal Ministero della Salute, laureato in Tecniche Ortopediche presso la Facoltà di Medicina e Chirurgia. Presso lo Studio Medico 4M a Bollate e attraverso Orthotics Milano, si occupa della valutazione biomeccanica e posturale del piede e della progettazione e realizzazione artigianale di plantari ortopedici su misura, previa prescrizione medica. Attraverso l’impiego di una pedana baropodometrica avanzata per rilevazioni statiche, dinamiche e stabilometriche, analizza la distribuzione dei carichi e la biomeccanica del passo, identificando l’ortesi ideale per prevenire e correggere atteggiamenti posturali patologici, risolvere il dolore podalico e ottimizzare le prestazioni sportive. Tratta problematiche diffuse come piede piatto, piede cavo, alluce valgo, metatarsalgia, neuroma di Morton, fascite plantare, tallodinia e instabilità articolare.',
+    bioParagraphs: [
+      'Il Dott. Stefano Rizzi è un Tecnico Ortopedico abilitato dal Ministero della Salute, operatore sanitario specializzato nella progettazione, realizzazione e adattamento di ortesi su misura e ausili correttivi e di sostegno dell’apparato locomotore.',
+      'Ha conseguito la Laurea in Tecniche Ortopediche presso la Facoltà di Medicina e Chirurgia, titolo con valore di esame di Stato abilitante alla professione sanitaria ai sensi del D.M. 14/09/1994.',
+      'Il plantare ortopedico su misura viene progettato e realizzato, previa prescrizione medica, per prevenire, compensare e correggere atteggiamenti posturali, biomeccanici e patologici. Rappresenta la soluzione più efficace per combattere i dolori ai piedi, prevenire sovraccarichi posturali alle articolazioni e migliorare le prestazioni sportive.',
+      'Per identificare la migliore ortesi adatta al piede di ciascun paziente, il Dott. Rizzi esegue una valutazione approfondita con pedana baropodometrica statica, dinamica e stabilometrica. L’esame si sviluppa in due fasi consequenziali: la fase statica, in cui il paziente rimane per alcuni secondi sulla pedana con entrambi i piedi poggiati e paralleli per rilevare la distribuzione delle pressioni, e la fase dinamica, in cui passeggia avanzando alternativamente prima con un piede e poi con l’altro per studiare lo svolgimento del passo e i punti di massimo carico.',
+      'La rilevazione computerizzata delle impronte baropodometriche consente una realizzazione estremamente precisa dei plantari prescritti dal medico, evitando l’acquisto di supporti generici inadeguati e garantendo un ausilio personalizzato per risolvere le patologie podaliche e posturali.'
     ],
+    services: [
+      'Esame baropodometrico statico, dinamico e stabilometrico con pedana computerizzata',
+      'Analisi approfondita della biomeccanica del passo e della postura corporea',
+      'Progettazione e realizzazione di plantari ortopedici su misura (su prescrizione medica)',
+      'Trattamento e compensazione per piede piatto e piede cavo',
+      'Ortesi plantari personalizzate per alluce valgo, metatarsalgia e neuroma di Morton',
+      'Trattamento mirato per fascite plantare e tallodinia / tallonite',
+      'Plantari ortopedici su misura per instabilità dell’appoggio e prevenzione infortuni',
+      'Plantari biomeccanici personalizzati per atleti e sportivi (corsa, calcio, tennis, sci)',
+      'Controlli periodici, verifica dell’efficacia riabilitativa e adattamenti progressivi dell’ortesi'
+    ],
+    curriculumVitae: {
+      experienceYears: 'Tecnico Ortopedico Abilitato',
+      experiences: [
+        'Tecnico Ortopedico presso Studio Medico 4M (Bollate)',
+        'Titolare e responsabile di Orthotics Milano (www.orthoticsmilano.com)',
+        'Valutazione baropodometrica computerizzata statica e dinamica del passo',
+        'Progettazione e fornitura artigianale di plantari ortopedici su misura e sportivi'
+      ],
+      academicMilestones: [
+        'Laurea in Tecniche Ortopediche – Facoltà di Medicina e Chirurgia (abilitante alla professione sanitaria, D.M. 14/09/1994)',
+        'Abilitazione all’esercizio della professione sanitaria di Tecnico Ortopedico – Ministero della Salute'
+      ],
+      subSpecializations: [
+        'Baropodometria statica, dinamica e stabilometrica computerizzata',
+        'Plantari ortopedici su misura correttivi, biomeccanici e compensativi',
+        'Ortesi plantari per metatarsalgie, fasciti plantari, alluce valgo e neuroma di Morton',
+        'Biomeccanica dello sport e ottimizzazione dell’appoggio nel gesto atletico',
+        'Analisi del passo e correzione delle alterazioni posturali'
+      ],
+      languages: [
+        'Italiano'
+      ]
+    },
     consultationDays: 'Riceve su appuntamento',
     isComplete: true,
     isPublished: true
