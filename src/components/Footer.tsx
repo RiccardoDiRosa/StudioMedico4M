@@ -22,7 +22,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-10 pb-8 sm:pb-16">
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10 lg:gap-12">
-          
+
           {/* Col 1: Identity & Payoff */}
           <div className="col-span-2 md:col-span-1 space-y-3 sm:space-y-4">
             <Logo variant="white" showPayoff={false} />
@@ -42,45 +42,45 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </h3>
             <ul className="space-y-1.5 sm:space-y-2.5 text-xs text-sky-100">
               <li>
-                <a 
-                  href="/" 
-                  onClick={(e) => handleLink(e, '/')} 
+                <a
+                  href="/"
+                  onClick={(e) => handleLink(e, '/')}
                   className="hover:text-white hover:underline transition-colors flex items-center gap-1.5"
                 >
                   <span>Home</span>
                 </a>
               </li>
               <li>
-                <a 
-                  href="/lo-studio" 
-                  onClick={(e) => handleLink(e, '/lo-studio')} 
+                <a
+                  href="/lo-studio"
+                  onClick={(e) => handleLink(e, '/lo-studio')}
                   className="hover:text-white hover:underline transition-colors"
                 >
                   Lo Studio
                 </a>
               </li>
               <li>
-                <a 
-                  href="/#servizi" 
-                  onClick={(e) => handleLink(e, '/#servizi')} 
+                <a
+                  href="/#servizi"
+                  onClick={(e) => handleLink(e, '/#servizi')}
                   className="hover:text-white hover:underline transition-colors"
                 >
                   Servizi
                 </a>
               </li>
               <li>
-                <a 
-                  href="/professionisti" 
-                  onClick={(e) => handleLink(e, '/professionisti')} 
+                <a
+                  href="/professionisti"
+                  onClick={(e) => handleLink(e, '/professionisti')}
                   className="hover:text-white hover:underline transition-colors"
                 >
                   Professionisti
                 </a>
               </li>
               <li>
-                <a 
-                  href="/contatti" 
-                  onClick={(e) => handleLink(e, '/contatti')} 
+                <a
+                  href="/contatti"
+                  onClick={(e) => handleLink(e, '/contatti')}
                   className="hover:text-white hover:underline transition-colors"
                 >
                   Contatti
@@ -145,16 +145,16 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             © {new Date().getFullYear()} {STUDIO_CONFIG.name} — Bollate (MI)
           </p>
           <div className="flex items-center gap-4 sm:gap-6">
-            <a 
-              href="/privacy-policy" 
+            <a
+              href="/privacy-policy"
               onClick={(e) => handleLink(e, '/privacy-policy')}
               className="hover:text-white transition-colors"
             >
               Privacy Policy
             </a>
             <span className="text-[#0277bd]" aria-hidden="true">·</span>
-            <a 
-              href="/cookie-policy" 
+            <a
+              href="/cookie-policy"
               onClick={(e) => handleLink(e, '/cookie-policy')}
               className="hover:text-white transition-colors"
             >
@@ -166,14 +166,14 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* Small credit link */}
         <div className="mt-4 pt-3 border-t border-[#0277bd]/40 text-center">
           <p className="text-[10px] text-sky-200/50">
-            Realizzato da{' '}
+            {' '}
             <a
               href="https://www.linkedin.com/in/riccardo-di-rosa-4b972439a"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-sky-100 hover:underline transition-colors"
             >
-              Di Rosa Riccardo
+              Realizzato da Di Rosa Riccardo
             </a>
           </p>
         </div>
