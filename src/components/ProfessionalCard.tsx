@@ -1,6 +1,6 @@
 import React from 'react';
 import { Professional } from '../types';
-import { UserCheck, ArrowRight, Clock, Info, ShieldCheck, ExternalLink, Phone } from 'lucide-react';
+import { UserCheck, ArrowRight, Clock, Info, ShieldCheck, ExternalLink, Phone, Mail } from 'lucide-react';
 
 interface ProfessionalCardProps {
   professional: Professional;
@@ -91,15 +91,22 @@ export const ProfessionalCard: React.FC<ProfessionalCardProps> = ({
           </div>
         )}
 
-        {/* Direct Phone Contact (desktop / tablet) */}
-        {professional.phone && (
+        {/* Direct Phone / Email Contact (desktop / tablet) */}
+        {professional.phone ? (
           <div className="hidden sm:flex items-center gap-1.5 text-xs text-slate-600 mb-2.5">
             <Phone className="w-3.5 h-3.5 text-[#039be5] shrink-0" aria-hidden="true" />
             <span className="text-[#01579b] font-semibold">
               {professional.phone}
             </span>
           </div>
-        )}
+        ) : professional.email ? (
+          <div className="hidden sm:flex items-center gap-1.5 text-xs text-slate-600 mb-2.5">
+            <Mail className="w-3.5 h-3.5 text-[#039be5] shrink-0" aria-hidden="true" />
+            <span className="text-[#01579b] font-semibold truncate text-[11px]">
+              {professional.email}
+            </span>
+          </div>
+        ) : null}
 
         {/* Consultation days (desktop / tablet) */}
         {professional.consultationDays && (

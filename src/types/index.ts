@@ -1,9 +1,13 @@
 export type ProfessionalCategory = 
   | 'ortopedia' 
+  | 'agopuntura'
+  | 'osteopatia'
   | 'riabilitazione' 
-  | 'benessere' 
+  | 'naturopatia-riflessologia'
+  | 'nutrizione'
   | 'psicologia' 
-  | 'nutrizione' 
+  | 'plantari'
+  | 'benessere' 
   | 'specialistico';
 
 export interface ProfessionalSocial {

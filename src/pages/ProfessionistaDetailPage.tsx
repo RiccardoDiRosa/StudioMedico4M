@@ -723,6 +723,14 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                     <Phone className="w-4 h-4 text-[#b3e5fc]" />
                     <span>Chiama {professional.phone}</span>
                   </a>
+                ) : professional.email ? (
+                  <a
+                    href={`mailto:${professional.email}?subject=Richiesta%20informazioni%20-%20Studio%20Medico%204M`}
+                    className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 text-xs font-semibold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] rounded-xl transition-all shadow-md shadow-[#0277bd]/25"
+                  >
+                    <Mail className="w-4 h-4 text-[#b3e5fc]" />
+                    <span>Invia Email</span>
+                  </a>
                 ) : (
                   <button
                     type="button"
