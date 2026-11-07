@@ -170,6 +170,24 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               </a>
             </div>
 
+            {/* Mobile Holistic Emblem Card */}
+            <div className="mt-3 p-3.5 rounded-2xl bg-white border border-[#b3e5fc] shadow-xs flex items-center gap-3.5">
+              <div className="shrink-0 p-1.5 rounded-xl bg-[#f4f9fd] border border-[#b3e5fc]/80 shadow-2xs">
+                <HolisticEmblem size={64} />
+              </div>
+              <div className="min-w-0">
+                <h3 className="text-xs sm:text-sm font-bold text-[#01579b] leading-tight font-sans">
+                  Mente e Corpo in Equilibrio
+                </h3>
+                <p className="text-[11px] text-[#0277bd] font-semibold mt-0.5">
+                  Approccio integrato alla salute
+                </p>
+                <p className="text-[10px] text-slate-500 mt-1 line-clamp-1">
+                  Discipline sanitarie e benessere psicofisico
+                </p>
+              </div>
+            </div>
+
             {/* Key Trust Pillars Strip */}
             <div className="grid grid-cols-3 gap-2 pt-3">
               <div className="bg-white/80 backdrop-blur-xs p-2.5 rounded-xl border border-[#b3e5fc]/70 text-center flex flex-col items-center justify-center">
@@ -255,9 +273,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               </div>
             </div>
 
-            {/* Right Column: Visual Composition with Studio Showcase & Emblem Badge */}
+            {/* Right Column: Visual Composition with Studio Showcase & Emblem Card */}
             <div className="col-span-6 flex justify-end">
-              <div className="relative w-full max-w-lg xl:max-w-xl">
+              <div className="relative w-full max-w-lg xl:max-w-xl space-y-3.5">
                 
                 {/* Main Framed Studio Showcase Card */}
                 <div className="relative rounded-3xl p-2.5 bg-gradient-to-tr from-[#01579b] via-[#039be5] to-[#b3e5fc] shadow-2xl shadow-[#0277bd]/25 overflow-hidden group">
@@ -285,29 +303,33 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                       </span>
                     </div>
                   </div>
+
+                  {/* Floating pill badge for the 8 services */}
+                  <div className="absolute -top-3 -right-2 bg-white/95 backdrop-blur-md px-4 py-2 rounded-2xl border-2 border-[#b3e5fc] shadow-lg flex items-center">
+                    <span className="text-xs font-bold text-[#01579b]">
+                      8 Aree di Servizio
+                    </span>
+                  </div>
                 </div>
 
-                {/* Overlaid Authentic Holistic Emblem Badge */}
-                <div className="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md p-3 rounded-2xl border-2 border-[#b3e5fc] shadow-xl flex items-center gap-3 max-w-[240px]">
-                  <div className="shrink-0 scale-90">
-                    <HolisticEmblem size={52} />
+                {/* Dedicated Authentic Holistic Emblem Card (Posizionata sotto la foto, logo ingrandito a 80px) */}
+                <div className="p-4 rounded-2xl bg-white/95 backdrop-blur-md border-2 border-[#b3e5fc] hover:border-[#039be5] shadow-md hover:shadow-lg transition-all flex items-center gap-4">
+                  <div className="shrink-0 p-2 rounded-2xl bg-[#f4f9fd] border border-[#b3e5fc]/80 shadow-2xs">
+                    <HolisticEmblem size={80} />
                   </div>
-                  <div>
-                    <span className="text-[11px] font-bold text-[#01579b] block leading-tight">
+                  <div className="min-w-0">
+                    <h3 className="text-base font-bold text-[#01579b] leading-tight font-sans">
                       Mente e Corpo in Equilibrio
-                    </span>
-                    <span className="text-[10px] text-[#0277bd] font-medium block mt-0.5">
+                    </h3>
+                    <p className="text-xs sm:text-sm text-[#0277bd] font-semibold mt-0.5">
                       Approccio integrato alla salute
-                    </span>
+                    </p>
+                    <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                      L'unione di discipline mediche, riabilitative e del benessere per prendersi cura della persona nella sua totalità.
+                    </p>
                   </div>
                 </div>
 
-                {/* Floating pill badge for the 8 services */}
-                <div className="absolute -top-3 -right-2 bg-white/95 backdrop-blur-md px-4 py-2 rounded-2xl border-2 border-[#b3e5fc] shadow-lg flex items-center">
-                  <span className="text-xs font-bold text-[#01579b]">
-                    8 Aree di Servizio
-                  </span>
-                </div>
               </div>
             </div>
 

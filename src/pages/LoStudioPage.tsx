@@ -125,6 +125,24 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
                     </div>
                   </div>
                 </div>
+
+                {/* Holistic Emblem Card in Lo Studio */}
+                <div className="mt-4 p-4 rounded-2xl bg-[#f4f9fd] border border-[#b3e5fc] flex items-center gap-4 shadow-xs">
+                  <div className="shrink-0 p-2 rounded-xl bg-white border border-[#b3e5fc]/80 shadow-2xs">
+                    <HolisticEmblem size={70} />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-bold text-[#01579b] leading-tight font-sans">
+                      Mente e Corpo in Equilibrio
+                    </h3>
+                    <p className="text-xs text-[#0277bd] font-semibold mt-0.5">
+                      Approccio integrato alla salute
+                    </p>
+                    <p className="text-[11px] text-slate-500 mt-1">
+                      Il logo e il motto ufficiale dello Studio Medico 4M a Bollate.
+                    </p>
+                  </div>
+                </div>
               </div>
 
             </div>
