@@ -11,6 +11,7 @@ import {
   ExternalLink, 
   Phone, 
   MessageCircle, 
+  Mail,
   Search, 
   CalendarCheck,
   ShieldCheck,
@@ -334,6 +335,17 @@ export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
                                 >
                                   <MessageCircle className="w-4 h-4 text-emerald-600" />
                                 </a>
+
+                                {/* Direct Email Link if available */}
+                                {prof.email && (
+                                  <a
+                                    href={`mailto:${prof.email}?subject=Richiesta%20informazioni%20-%20Studio%20Medico%204M`}
+                                    className="inline-flex items-center justify-center p-2 rounded-xl text-[#01579b] bg-sky-50 hover:bg-sky-100 border border-[#b3e5fc] transition-colors shadow-2xs"
+                                    title={`Invia email a ${prof.email}`}
+                                  >
+                                    <Mail className="w-4 h-4 text-[#039be5]" />
+                                  </a>
+                                )}
                               </div>
                             ) : null}
 

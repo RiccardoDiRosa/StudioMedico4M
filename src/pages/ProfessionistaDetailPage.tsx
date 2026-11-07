@@ -21,7 +21,9 @@ import {
   Sparkles,
   Globe2,
   ChevronDown,
-  Layers
+  Layers,
+  Copy,
+  Check
 } from 'lucide-react';
 
 interface ProfessionistaDetailPageProps {
@@ -64,6 +66,15 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
       cv: nextState,
       services: nextState
     });
+  };
+
+  const [copiedEmail, setCopiedEmail] = useState(false);
+  const handleCopyEmail = (email: string) => {
+    if (navigator?.clipboard?.writeText) {
+      navigator.clipboard.writeText(email);
+      setCopiedEmail(true);
+      setTimeout(() => setCopiedEmail(false), 2500);
+    }
   };
 
   const isMiranda = professional.id === 'prof-01-ortopedia' || professional.slug === 'michele-roberto-miranda';
@@ -724,13 +735,54 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                 )}
 
                 {professional.email && (
-                  <a
-                    href={`mailto:${professional.email}`}
-                    className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-bold text-[#01579b] bg-white hover:bg-[#b3e5fc]/25 border-2 border-[#b3e5fc] hover:border-[#039be5] rounded-xl transition-colors"
-                  >
-                    <Mail className="w-4 h-4 text-[#039be5]" />
-                    <span>Invia email al professionista</span>
-                  </a>
+                  <div className="space-y-2 pt-1 border-t border-[#b3e5fc]/50">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#0277bd] block">
+                      Email diretta
+                    </span>
+
+                    {/* Primary direct email link */}
+                    <a
+                      href={`mailto:${professional.email}?subject=Richiesta%20informazioni%20-%20Studio%20Medico%204M`}
+                      className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-bold text-[#01579b] bg-white hover:bg-[#b3e5fc]/25 border-2 border-[#b3e5fc] hover:border-[#039be5] rounded-xl transition-colors shadow-2xs group"
+                      title={`Invia email a ${professional.email}`}
+                    >
+                      <Mail className="w-4 h-4 text-[#039be5] group-hover:scale-110 transition-transform" />
+                      <span className="truncate">Invia email: {professional.email}</span>
+                    </a>
+
+                    {/* Quick helper buttons for browser webmail or clipboard copy */}
+                    <div className="grid grid-cols-2 gap-2 text-[11px]">
+                      <a
+                        href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(professional.email)}&su=${encodeURIComponent('Richiesta informazioni - Studio Medico 4M')}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center gap-1.5 py-1.5 px-2.5 rounded-lg bg-sky-50 hover:bg-sky-100 text-[#01579b] border border-[#b3e5fc] font-semibold transition-colors shadow-2xs"
+                        title="Apri in Gmail sul browser"
+                      >
+                        <ExternalLink className="w-3 h-3 text-[#039be5]" />
+                        <span>Apri con Gmail</span>
+                      </a>
+
+                      <button
+                        type="button"
+                        onClick={() => handleCopyEmail(professional.email!)}
+                        className="inline-flex items-center justify-center gap-1.5 py-1.5 px-2.5 rounded-lg bg-slate-50 hover:bg-slate-100 text-slate-700 border border-slate-200 font-semibold transition-colors shadow-2xs active:scale-95"
+                        title="Copia l'indirizzo email negli appunti"
+                      >
+                        {copiedEmail ? (
+                          <>
+                            <Check className="w-3.5 h-3.5 text-emerald-600" />
+                            <span className="text-emerald-700 font-bold">Copiata!</span>
+                          </>
+                        ) : (
+                          <>
+                            <Copy className="w-3.5 h-3.5 text-slate-500" />
+                            <span>Copia email</span>
+                          </>
+                        )}
+                      </button>
+                    </div>
+                  </div>
                 )}
 
                 <div className="pt-3 border-t border-[#b3e5fc]/50 text-[11px] text-slate-500 space-y-1">
@@ -770,6 +822,18 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                       <span className="text-slate-500 shrink-0">Recapito:</span>
                       <a href={`tel:${professional.phone.replace(/\s+/g, '')}`} className="font-semibold text-[#01579b] hover:underline">
                         {professional.phone}
+                      </a>
+                    </div>
+                  )}
+                  {professional.email && (
+                    <div className="flex justify-between border-b border-[#b3e5fc]/40 pb-1.5 gap-2 items-center">
+                      <span className="text-slate-500 shrink-0">Email:</span>
+                      <a 
+                        href={`mailto:${professional.email}?subject=Richiesta%20informazioni%20-%20Studio%20Medico%204M`} 
+                        className="font-semibold text-[#01579b] hover:underline truncate max-w-[200px]"
+                        title={professional.email}
+                      >
+                        {professional.email}
                       </a>
                     </div>
                   )}
