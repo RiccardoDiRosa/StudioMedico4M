@@ -162,6 +162,21 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </a>
           </div>
         </div>
+
+        {/* Small credit link */}
+        <div className="mt-4 pt-3 border-t border-[#0277bd]/40 text-center">
+          <p className="text-[10px] text-sky-200/50">
+            Realizzato da{' '}
+            <a
+              href="https://www.linkedin.com/in/riccardo-di-rosa-4b972439a"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-sky-100 hover:underline transition-colors"
+            >
+              Di Rosa Riccardo
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
