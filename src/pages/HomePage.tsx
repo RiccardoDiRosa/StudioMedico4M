@@ -203,14 +203,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                 <span className="block text-[10px] text-slate-600 font-medium">Senza Attese</span>
               </div>
             </div>
-
-            {/* Informative model pill */}
-            <div className="mt-3.5 p-3 rounded-xl bg-white/90 border border-[#b3e5fc] shadow-xs flex items-start gap-2.5 text-[11px] text-slate-700">
-              <Users className="w-3.5 h-3.5 text-[#0277bd] shrink-0 mt-0.5" aria-hidden="true" />
-              <p>
-                Sede condivisa da <strong className="text-[#01579b]">liberi professionisti indipendenti</strong>. Ciascuno gestisce i propri appuntamenti in autonomia, senza segreteria centralizzata.
-              </p>
-            </div>
           </div>
 
           {/* ========================================================= */}
@@ -241,14 +233,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               <p className="text-base text-slate-600 leading-relaxed">
                 Presso Studio Medico 4M trovi professionisti che operano in diversi ambiti della salute e del benessere. Scopri i servizi disponibili e le competenze dei professionisti presenti nella sede di Bollate.
               </p>
-
-              {/* Transparent Clinic Model Note */}
-              <div className="p-4 rounded-2xl bg-white/90 border border-[#b3e5fc] shadow-xs flex items-start gap-3 text-xs text-slate-700 backdrop-blur-xs">
-                <Users className="w-4 h-4 text-[#0277bd] shrink-0 mt-0.5" aria-hidden="true" />
-                <p>
-                  Sede condivisa da <strong className="text-[#01579b]">liberi professionisti indipendenti</strong>. Ciascuno gestisce i propri appuntamenti in autonomia, senza segreteria centralizzata.
-                </p>
-              </div>
 
               {/* Action Buttons: 2 Distinct CTAs */}
               <div className="flex flex-wrap items-center gap-3.5 pt-2">
