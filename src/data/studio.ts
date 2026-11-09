@@ -40,7 +40,7 @@ export const STUDIO_CONFIG: StudioConfig = {
 
 export const STUDIO_MODEL_NOTE = {
   title: 'Come funzionano gli appuntamenti',
-  summary: 'Presso Studio 4M operano liberi professionisti indipendenti. Non è presente una segreteria centralizzata: ogni professionista gestisce in piena autonomia le visite, le tariffe e il proprio calendario.',
+  summary: 'Presso lo studio professionale Studio 4M operano liberi professionisti indipendenti. Non è presente una segreteria centralizzata: ogni professionista gestisce in piena autonomia le visite, le tariffe e il proprio calendario.',
   instructions: 'Per richiedere un appuntamento, una visita specialistica o informazioni su un trattamento, contatta direttamente il professionista di riferimento tramite i suoi recapiti dedicati.'
 };
 

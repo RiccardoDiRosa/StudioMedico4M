@@ -29,16 +29,16 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
   const loStudioSchema = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
-    'name': 'Lo Studio 4M a Bollate | I professionisti e la struttura',
-    'description': 'Informazioni sulla struttura di Studio 4M a Bollate (MI). Spazio polifunzionale per professionisti della salute e del benessere.',
+    'name': 'Lo Studio Professionale 4M a Bollate | I professionisti e la struttura',
+    'description': 'Informazioni sullo Studio Professionale 4M a Bollate (MI). Sede di professionisti della salute e del benessere.',
     'url': `${STUDIO_CONFIG.canonicalBaseUrl}/lo-studio`
   };
 
   return (
     <>
       <SEOHead
-        title="Lo Studio 4M a Bollate | I professionisti e la sede"
-        description="Scopri la filosofia e la struttura di Studio 4M a Bollate (MI). Spazio professionale dove trovi specialisti della salute e del benessere psicofisico."
+        title="Lo Studio Professionale 4M a Bollate | I professionisti e la sede"
+        description="Scopri la filosofia e la struttura di Studio Professionale 4M a Bollate (MI). Studio dove trovi specialisti della salute e del benessere psicofisico."
         canonicalPath="/lo-studio"
         schemaJson={loStudioSchema}
       />
@@ -54,16 +54,16 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <span className="text-xs font-bold uppercase tracking-wider text-[#0277bd]">
-                La Struttura
+                Lo Studio Professionale
               </span>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-[#01579b] tracking-tight font-heading mt-2 mb-4">
-                Lo Studio 4M a Bollate
+                Lo Studio Professionale 4M a Bollate
               </h1>
               <p className="text-lg text-[#0277bd] font-serif italic mb-4 font-medium">
                 “Dove mente e corpo ritrovano equilibrio”
               </p>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-                Studio 4M è uno spazio professionale pensato per accogliere persone che desiderano prendersi cura della propria salute, della riabilitazione fisica e del benessere psicofisico in un contesto ordinato, riservato e facilmente accessibile a Bollate.
+                Studio 4M è uno studio professionale pensato per accogliere persone che desiderano prendersi cura della propria salute, della riabilitazione fisica e del benessere psicofisico in un contesto ordinato, riservato e facilmente accessibile a Bollate.
               </p>
             </div>
           </div>
@@ -231,7 +231,7 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
               Sede e recapiti a Bollate
             </h2>
             <p className="text-sm text-slate-600 max-w-lg mx-auto leading-relaxed">
-              Studio 4M si trova in <strong>{STUDIO_CONFIG.address}</strong>. Per informazioni dettagliate su come raggiungere lo studio o per inviare una richiesta, consulta la pagina dedicata.
+              Lo Studio Professionale 4M si trova in <strong>{STUDIO_CONFIG.address}</strong>. Per informazioni dettagliate su come raggiungere lo studio o per inviare una richiesta, consulta la pagina dedicata.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
               <button

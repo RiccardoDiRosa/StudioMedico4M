@@ -47,9 +47,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
   // Structured Data Schema for Local Medical Practice
   const homeSchema = {
     '@context': 'https://schema.org',
-    '@type': 'MedicalBusiness',
-    'name': STUDIO_CONFIG.name,
-    'description': 'Studio 4M a Bollate (MI). Spazio polifunzionale per la salute e il benessere dove trovi liberi professionisti indipendenti.',
+    '@type': 'ProfessionalService',
+    'name': 'Studio Professionale 4M',
+    'description': 'Studio Professionale 4M a Bollate (MI). Studio di liberi professionisti per la salute e il benessere dove trovi specialisti indipendenti.',
     'url': STUDIO_CONFIG.canonicalBaseUrl,
     'slogan': STUDIO_CONFIG.payoff,
     'address': {
@@ -66,7 +66,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
     },
     'hasOfferCatalog': {
       '@type': 'OfferCatalog',
-      'name': 'Servizi Studio 4M',
+      'name': 'Servizi Studio Professionale 4M',
       'itemListElement': STUDIO_SERVICES.map((s, index) => ({
         '@type': 'Offer',
         'itemOffered': {
@@ -82,8 +82,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
   return (
     <>
       <SEOHead
-        title="Studio 4M a Bollate | Professionisti e servizi per la salute"
-        description="Studio 4M a Bollate (MI): spazio professionale per la salute e il benessere dove trovi professionisti della salute. Ortopedia, Fisioterapia, Osteopatia, Nutrizione, Psicologia."
+        title="Studio Professionale 4M a Bollate | Professionisti e servizi per la salute"
+        description="Studio Professionale 4M a Bollate (MI): studio di liberi professionisti per la salute e il benessere. Ortopedia, Fisioterapia, Osteopatia, Nutrizione, Psicologia."
         canonicalPath="/"
         schemaJson={homeSchema}
       />
@@ -231,7 +231,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
 
               {/* Verified Editorial Copy */}
               <p className="text-base text-slate-600 leading-relaxed">
-                Presso Studio 4M trovi professionisti che operano in diversi ambiti della salute e del benessere. Scopri i servizi disponibili e le competenze dei professionisti presenti nella sede di Bollate.
+                Presso lo studio professionale Studio 4M trovi professionisti che operano in diversi ambiti della salute e del benessere. Scopri i servizi disponibili e le competenze dei professionisti presenti nella sede di Bollate.
               </p>
 
               {/* Action Buttons: 2 Distinct CTAs */}
@@ -334,13 +334,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center space-y-2 sm:space-y-4 mb-6 sm:mb-14">
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd]">
-              Chi Siamo
+              Chi Siamo · Studio Professionale
             </span>
             <h2 className="text-2xl sm:text-4xl font-normal text-[#01579b] tracking-tight font-heading">
               Uno spazio dedicato al benessere di mente e corpo
             </h2>
             <p className="text-xs sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
-              Studio 4M nasce con l'intento di offrire a Bollate una sede confortevole e professionale dove differenti discipline sanitarie e del benessere convivono armoniosamente.
+              Studio 4M è uno studio professionale nato con l'intento di offrire a Bollate una sede confortevole dove differenti discipline sanitarie e del benessere convivono armoniosamente.
             </p>
           </div>
 
@@ -656,7 +656,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                 Nel cuore di Bollate
               </h2>
               <p className="text-base text-slate-600 leading-relaxed">
-                Lo Studio 4M si trova in <strong>{STUDIO_CONFIG.address}</strong>. La sede è facilmente accessibile da tutta l'area a nord di Milano, Rho, Novate Milanese, Baranzate, Senago e Cormano.
+                Lo Studio Professionale 4M si trova in <strong>{STUDIO_CONFIG.address}</strong>. La sede è facilmente accessibile da tutta l'area a nord di Milano, Rho, Novate Milanese, Baranzate, Senago e Cormano.
               </p>
 
               <div className="space-y-4 pt-2">
@@ -707,7 +707,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                     </div>
                     <div>
                       <span className="text-xs sm:text-sm font-bold text-[#01579b] block leading-tight">
-                        Studio 4M · Bollate
+                        Studio Professionale 4M · Bollate
                       </span>
                       <span className="text-[10px] sm:text-[11px] text-slate-500 block mt-0.5">
                         Via Madonnina 17 (a pochi minuti dalla stazione)

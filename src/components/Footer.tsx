@@ -27,11 +27,11 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="col-span-2 md:col-span-1 space-y-3 sm:space-y-4">
             <Logo variant="white" showPayoff={false} />
             <p className="text-xs text-sky-100/90 leading-relaxed max-w-sm">
-              Spazio polifunzionale a Bollate dedicato alla salute, alla riabilitazione e al benessere della persona.
+              Studio professionale a Bollate dedicato alla salute, alla riabilitazione e al benessere della persona.
             </p>
             <div className="hidden sm:flex items-center gap-2 text-xs text-[#b3e5fc] font-medium">
               <ShieldCheck className="w-4 h-4 shrink-0 text-[#039be5]" />
-              <span>Studio di liberi professionisti indipendenti</span>
+              <span>Studio professionale di liberi professionisti indipendenti</span>
             </div>
           </div>
 

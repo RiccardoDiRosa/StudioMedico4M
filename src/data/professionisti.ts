@@ -1,7 +1,7 @@
 import { Professional } from '../types';
 
 /**
- * Registro dei 12 liberi professionisti sanitari e del benessere operanti presso Studio 4M a Bollate (MI).
+ * Registro dei 12 liberi professionisti sanitari e del benessere operanti presso lo Studio Professionale 4M a Bollate (MI).
  * Dati ufficiali verificati dal volantino del team ("IL NOSTRO TEAM").
  */
 export const PROFESSIONISTI: Professional[] = [

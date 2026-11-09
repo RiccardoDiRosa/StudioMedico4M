@@ -28,16 +28,16 @@ export const ProfessionistiListPage: React.FC<ProfessionistiListPageProps> = ({
   const listSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    'name': 'I Professionisti di Studio 4M a Bollate',
-    'description': 'Elenco completo dei liberi professionisti sanitari e del benessere che operano presso Studio 4M a Bollate.',
+    'name': 'I Professionisti dello Studio Professionale 4M a Bollate',
+    'description': 'Elenco completo dei liberi professionisti sanitari e del benessere che operano presso lo Studio Professionale 4M a Bollate.',
     'url': `${STUDIO_CONFIG.canonicalBaseUrl}/professionisti`
   };
 
   return (
     <>
       <SEOHead
-        title="I Professionisti dello Studio 4M a Bollate"
-        description="Consulta l'elenco dei professionisti operanti presso lo Studio 4M a Bollate (MI). Ortopedia, riabilitazione, osteopatia, nutrizione, psicologia e benessere."
+        title="I Professionisti dello Studio Professionale 4M a Bollate"
+        description="Consulta l'elenco dei professionisti operanti presso lo Studio Professionale 4M a Bollate (MI). Ortopedia, riabilitazione, osteopatia, nutrizione, psicologia e benessere."
         canonicalPath="/professionisti"
         schemaJson={listSchema}
       />
@@ -53,13 +53,13 @@ export const ProfessionistiListPage: React.FC<ProfessionistiListPageProps> = ({
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
               <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd]">
-                La Sede di Bollate
+                Studio Professionale a Bollate
               </span>
               <h1 className="text-2xl sm:text-4xl lg:text-5xl font-normal text-[#01579b] tracking-tight font-heading mt-1 sm:mt-2 mb-2 sm:mb-3">
                 I Professionisti
               </h1>
               <p className="text-xs sm:text-base text-slate-600 leading-relaxed">
-                Presso Studio 4M trovi liberi professionisti indipendenti dedicati alla salute e alla cura del corpo e della mente. Ciascuno gestisce individualmente i propri appuntamenti e percorsi assistenziali.
+                Presso lo studio professionale Studio 4M trovi liberi professionisti indipendenti dedicati alla salute e alla cura del corpo e della mente. Ciascuno gestisce individualmente i propri appuntamenti e percorsi assistenziali.
               </p>
             </div>
           </div>
