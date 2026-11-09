@@ -10,8 +10,8 @@ export const NotFoundPage: React.FC<NotFoundPageProps> = ({ onNavigate }) => {
   return (
     <>
       <SEOHead
-        title="Pagina non trovata (404) | Studio Medico 4M Bollate"
-        description="La pagina richiesta non è stata trovata. Esplora i servizi e i professionisti di Studio Medico 4M a Bollate."
+        title="Pagina non trovata (404) | Studio 4M Bollate"
+        description="La pagina richiesta non è stata trovata. Esplora i servizi e i professionisti di Studio 4M a Bollate."
         canonicalPath="/404"
         noindex={true}
       />

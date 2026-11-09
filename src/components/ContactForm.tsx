@@ -91,7 +91,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
           contact: formData.contact,
           recipient: formData.professionalId,
           message: formData.message,
-          source: 'Studio Medico 4M Web Form',
+          source: 'Studio 4M Web Form',
           timestamp: new Date().toISOString()
         })
       });
@@ -263,7 +263,7 @@ export const ContactForm: React.FC<ContactFormProps> = ({
               onChange={(e) => setFormData({ ...formData, professionalId: e.target.value })}
               className="w-full px-4 py-3 text-sm rounded-xl border border-[#b3e5fc] bg-white hover:border-[#039be5] focus:border-[#039be5] focus:ring-2 focus:ring-[#039be5]/20 focus:outline-none"
             >
-              <option value="general">Studio Medico 4M (Informazioni generali sulla sede)</option>
+              <option value="general">Studio 4M (Informazioni generali sulla sede)</option>
               {PROFESSIONISTI.map((prof) => (
                 <option key={prof.id} value={prof.id}>
                   {prof.title} {prof.firstName} {prof.lastName} — {prof.role}

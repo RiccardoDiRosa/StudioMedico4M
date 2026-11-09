@@ -28,16 +28,16 @@ export const ProfessionistiListPage: React.FC<ProfessionistiListPageProps> = ({
   const listSchema = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    'name': 'I Professionisti di Studio Medico 4M a Bollate',
-    'description': 'Elenco completo dei liberi professionisti sanitari e del benessere che operano presso Studio Medico 4M a Bollate.',
+    'name': 'I Professionisti di Studio 4M a Bollate',
+    'description': 'Elenco completo dei liberi professionisti sanitari e del benessere che operano presso Studio 4M a Bollate.',
     'url': `${STUDIO_CONFIG.canonicalBaseUrl}/professionisti`
   };
 
   return (
     <>
       <SEOHead
-        title="I Professionisti dello Studio Medico 4M a Bollate"
-        description="Consulta l'elenco dei professionisti operanti presso lo Studio Medico 4M a Bollate (MI). Ortopedia, riabilitazione, osteopatia, nutrizione, psicologia e benessere."
+        title="I Professionisti dello Studio 4M a Bollate"
+        description="Consulta l'elenco dei professionisti operanti presso lo Studio 4M a Bollate (MI). Ortopedia, riabilitazione, osteopatia, nutrizione, psicologia e benessere."
         canonicalPath="/professionisti"
         schemaJson={listSchema}
       />
@@ -59,7 +59,7 @@ export const ProfessionistiListPage: React.FC<ProfessionistiListPageProps> = ({
                 I Professionisti
               </h1>
               <p className="text-xs sm:text-base text-slate-600 leading-relaxed">
-                Presso Studio Medico 4M trovi liberi professionisti indipendenti dedicati alla salute e alla cura del corpo e della mente. Ciascuno gestisce individualmente i propri appuntamenti e percorsi assistenziali.
+                Presso Studio 4M trovi liberi professionisti indipendenti dedicati alla salute e alla cura del corpo e della mente. Ciascuno gestisce individualmente i propri appuntamenti e percorsi assistenziali.
               </p>
             </div>
           </div>

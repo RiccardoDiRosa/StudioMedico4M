@@ -56,7 +56,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
           href="/" 
           onClick={(e) => handleLinkClick(e, '/')}
           className="focus-ring rounded-lg shrink-0 transition-opacity hover:opacity-95"
-          aria-label="Studio Medico 4M - Home"
+          aria-label="Studio 4M - Home"
         >
           <Logo variant="full" showPayoff={false} />
         </a>

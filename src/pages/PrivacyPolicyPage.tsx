@@ -16,8 +16,8 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
   return (
     <>
       <SEOHead
-        title="Informativa sulla Privacy | Studio Medico 4M Bollate"
-        description="Informativa sul trattamento dei dati personali del sito web di Studio Medico 4M a Bollate (MI), ai sensi del Regolamento UE 2016/679 (GDPR)."
+        title="Informativa sulla Privacy | Studio 4M Bollate"
+        description="Informativa sul trattamento dei dati personali del sito web di Studio 4M a Bollate (MI), ai sensi del Regolamento UE 2016/679 (GDPR)."
         canonicalPath="/privacy-policy"
       />
 

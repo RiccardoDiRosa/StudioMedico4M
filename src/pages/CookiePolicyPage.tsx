@@ -16,8 +16,8 @@ export const CookiePolicyPage: React.FC<CookiePolicyPageProps> = ({ onNavigate }
   return (
     <>
       <SEOHead
-        title="Informativa sui Cookie | Studio Medico 4M Bollate"
-        description="Informativa trasparente sull'uso dei cookie tecnici nel sito web di Studio Medico 4M a Bollate (MI). Zero cookie di profilazione o tracciamento pubblicitario."
+        title="Informativa sui Cookie | Studio 4M Bollate"
+        description="Informativa trasparente sull'uso dei cookie tecnici nel sito web di Studio 4M a Bollate (MI). Zero cookie di profilazione o tracciamento pubblicitario."
         canonicalPath="/cookie-policy"
       />
 
@@ -49,7 +49,7 @@ export const CookiePolicyPage: React.FC<CookiePolicyPageProps> = ({ onNavigate }
               <div className="space-y-1">
                 <p className="font-semibold text-emerald-950">Nessun cookie di profilazione o tracciamento pubblicitario:</p>
                 <p className="leading-relaxed">
-                  Il sito web di Studio Medico 4M è progettato nel pieno rispetto della privacy dei visitatori: non vengono installati cookie di terze parti a fini commerciali né strumenti invasivi di fingerprinting o profilazione pubblicitaria.
+                  Il sito web di Studio 4M è progettato nel pieno rispetto della privacy dei visitatori: non vengono installati cookie di terze parti a fini commerciali né strumenti invasivi di fingerprinting o profilazione pubblicitaria.
                 </p>
               </div>
             </div>

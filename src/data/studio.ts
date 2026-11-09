@@ -1,7 +1,7 @@
 import { StudioConfig } from '../types';
 
 export const STUDIO_CONFIG: StudioConfig = {
-  name: 'Studio Medico 4M',
+  name: 'Studio 4M',
   payoff: 'Dove mente e corpo ritrovano equilibrio',
   address: 'Via Madonnina 17, 20021 Bollate (MI)',
   street: 'Via Madonnina',
@@ -40,12 +40,12 @@ export const STUDIO_CONFIG: StudioConfig = {
 
 export const STUDIO_MODEL_NOTE = {
   title: 'Come funzionano gli appuntamenti',
-  summary: 'Presso Studio Medico 4M operano liberi professionisti indipendenti. Non è presente una segreteria centralizzata: ogni professionista gestisce in piena autonomia le visite, le tariffe e il proprio calendario.',
+  summary: 'Presso Studio 4M operano liberi professionisti indipendenti. Non è presente una segreteria centralizzata: ogni professionista gestisce in piena autonomia le visite, le tariffe e il proprio calendario.',
   instructions: 'Per richiedere un appuntamento, una visita specialistica o informazioni su un trattamento, contatta direttamente il professionista di riferimento tramite i suoi recapiti dedicati.'
 };
 
 /**
- * Galleria fotografica dello Studio Medico 4M
+ * Galleria fotografica dello Studio 4M
  * File posizionati in public/images/studio/
  * Sostituibili direttamente quando l'utente fornirà le foto definitive della sede
  */

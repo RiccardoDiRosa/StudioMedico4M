@@ -49,7 +49,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
     '@context': 'https://schema.org',
     '@type': 'MedicalBusiness',
     'name': STUDIO_CONFIG.name,
-    'description': 'Studio Medico 4M a Bollate (MI). Spazio polifunzionale per la salute e il benessere dove trovi liberi professionisti indipendenti.',
+    'description': 'Studio 4M a Bollate (MI). Spazio polifunzionale per la salute e il benessere dove trovi liberi professionisti indipendenti.',
     'url': STUDIO_CONFIG.canonicalBaseUrl,
     'slogan': STUDIO_CONFIG.payoff,
     'address': {
@@ -66,7 +66,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
     },
     'hasOfferCatalog': {
       '@type': 'OfferCatalog',
-      'name': 'Servizi Studio Medico 4M',
+      'name': 'Servizi Studio 4M',
       'itemListElement': STUDIO_SERVICES.map((s, index) => ({
         '@type': 'Offer',
         'itemOffered': {
@@ -82,8 +82,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
   return (
     <>
       <SEOHead
-        title="Studio Medico 4M a Bollate | Professionisti e servizi per la salute"
-        description="Studio Medico 4M a Bollate (MI): spazio professionale per la salute e il benessere dove trovi professionisti della salute. Ortopedia, Fisioterapia, Osteopatia, Nutrizione, Psicologia."
+        title="Studio 4M a Bollate | Professionisti e servizi per la salute"
+        description="Studio 4M a Bollate (MI): spazio professionale per la salute e il benessere dove trovi professionisti della salute. Ortopedia, Fisioterapia, Osteopatia, Nutrizione, Psicologia."
         canonicalPath="/"
         schemaJson={homeSchema}
       />
@@ -108,7 +108,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
 
             {/* Mobile Title & Payoff */}
             <h1 className="text-3xl sm:text-4xl font-normal text-[#01579b] tracking-tight leading-tight font-heading mt-2.5">
-              Studio Medico <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums"><span className="inline-block">4</span><span className="inline-block">M</span></span>
+              Studio <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums"><span className="inline-block">4</span><span className="inline-block">M</span></span>
             </h1>
             <p className="text-base sm:text-lg text-[#0277bd] font-serif italic mt-1 font-medium">
               “Dove mente e corpo ritrovano equilibrio”
@@ -119,7 +119,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               <div className="aspect-[16/10] relative overflow-hidden bg-slate-100">
                 <img
                   src="/images/studio/studio1.webp"
-                  alt="Interni dello Studio Medico 4M a Bollate"
+                  alt="Interni dello Studio 4M a Bollate"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   loading="eager"
                 />
@@ -221,7 +221,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
 
               {/* Main Headline */}
               <h1 className="text-4xl lg:text-5xl xl:text-6xl font-normal text-[#01579b] tracking-tight leading-[1.15] text-balance font-heading">
-                Studio Medico <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums"><span className="inline-block">4</span><span className="inline-block">M</span></span>
+                Studio <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums"><span className="inline-block">4</span><span className="inline-block">M</span></span>
               </h1>
 
               {/* Payoff */}
@@ -231,7 +231,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
 
               {/* Verified Editorial Copy */}
               <p className="text-base text-slate-600 leading-relaxed">
-                Presso Studio Medico 4M trovi professionisti che operano in diversi ambiti della salute e del benessere. Scopri i servizi disponibili e le competenze dei professionisti presenti nella sede di Bollate.
+                Presso Studio 4M trovi professionisti che operano in diversi ambiti della salute e del benessere. Scopri i servizi disponibili e le competenze dei professionisti presenti nella sede di Bollate.
               </p>
 
               {/* Action Buttons: 2 Distinct CTAs */}
@@ -266,7 +266,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                   <div className="relative aspect-[4/3] rounded-[22px] overflow-hidden bg-slate-100">
                     <img
                       src="/images/studio/studio1.webp"
-                      alt="Interni dello Studio Medico 4M a Bollate"
+                      alt="Interni dello Studio 4M a Bollate"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       loading="eager"
                     />
@@ -288,7 +288,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                     <div className="absolute bottom-3 left-3 right-3 text-white flex items-center justify-between">
                       <div>
                         <span className="text-xs font-bold font-brand tracking-wider uppercase block text-white">
-                          Studio Medico 4M
+                          Studio 4M
                         </span>
                         <span className="text-[11px] text-sky-200 block">
                           Bollate · Via Madonnina 17
@@ -340,7 +340,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               Uno spazio dedicato al benessere di mente e corpo
             </h2>
             <p className="text-xs sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
-              Studio Medico 4M nasce con l'intento di offrire a Bollate una sede confortevole e professionale dove differenti discipline sanitarie e del benessere convivono armoniosamente.
+              Studio 4M nasce con l'intento di offrire a Bollate una sede confortevole e professionale dove differenti discipline sanitarie e del benessere convivono armoniosamente.
             </p>
           </div>
 
@@ -432,7 +432,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               >
                 <img
                   src={photo.url}
-                  alt={`${photo.title} - Studio Medico 4M Bollate`}
+                  alt={`${photo.title} - Studio 4M Bollate`}
                   className={`absolute inset-0 w-full h-full object-cover ${pos} group-hover:scale-105 transition-transform duration-700`}
                   loading="lazy"
                 />
@@ -656,7 +656,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                 Nel cuore di Bollate
               </h2>
               <p className="text-base text-slate-600 leading-relaxed">
-                Lo Studio Medico 4M si trova in <strong>{STUDIO_CONFIG.address}</strong>. La sede è facilmente accessibile da tutta l'area a nord di Milano, Rho, Novate Milanese, Baranzate, Senago e Cormano.
+                Lo Studio 4M si trova in <strong>{STUDIO_CONFIG.address}</strong>. La sede è facilmente accessibile da tutta l'area a nord di Milano, Rho, Novate Milanese, Baranzate, Senago e Cormano.
               </p>
 
               <div className="space-y-4 pt-2">
@@ -707,7 +707,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                     </div>
                     <div>
                       <span className="text-xs sm:text-sm font-bold text-[#01579b] block leading-tight">
-                        Studio Medico 4M · Bollate
+                        Studio 4M · Bollate
                       </span>
                       <span className="text-[10px] sm:text-[11px] text-slate-500 block mt-0.5">
                         Via Madonnina 17 (a pochi minuti dalla stazione)
@@ -729,7 +729,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                 {/* Embedded Interactive Google Maps senza elementi sovrapposti */}
                 <div className="w-full h-[360px] sm:h-[440px] bg-slate-100">
                   <iframe
-                    title="Posizione di Studio Medico 4M su Google Maps"
+                    title="Posizione di Studio 4M su Google Maps"
                     src={STUDIO_CONFIG.googleMapsEmbedUrl || "https://maps.google.com/maps?q=Via%20Madonnina%2017%2C%2020021%20Bollate%20MI&t=&z=16&ie=UTF8&iwloc=&output=embed"}
                     className="w-full h-full border-0"
                     loading="lazy"

@@ -47,16 +47,16 @@ export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
   const contattiSchema = {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
-    'name': 'Contatti e indicazioni | Studio Medico 4M Bollate',
-    'description': 'Recapiti diretti dei professionisti dello Studio Medico 4M a Bollate (MI) e indicazioni stradali per raggiungere la sede in Via Madonnina 17.',
+    'name': 'Contatti e indicazioni | Studio 4M Bollate',
+    'description': 'Recapiti diretti dei professionisti dello Studio 4M a Bollate (MI) e indicazioni stradali per raggiungere la sede in Via Madonnina 17.',
     'url': `${STUDIO_CONFIG.canonicalBaseUrl}/contatti`
   };
 
   return (
     <>
       <SEOHead
-        title="Contatti Diretti e Sede | Studio Medico 4M Bollate"
-        description="Recapiti telefonici diretti degli specialisti dello Studio Medico 4M in Via Madonnina 17 a Bollate (MI). Orari su appuntamento e indicazioni stradali."
+        title="Contatti Diretti e Sede | Studio 4M Bollate"
+        description="Recapiti telefonici diretti degli specialisti dello Studio 4M in Via Madonnina 17 a Bollate (MI). Orari su appuntamento e indicazioni stradali."
         canonicalPath="/contatti"
         schemaJson={contattiSchema}
       />
@@ -78,7 +78,7 @@ export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
                 Contatti e come raggiungerci
               </h1>
               <p className="text-base text-slate-600 leading-relaxed">
-                Presso lo Studio Medico 4M non è presente una segreteria centralizzata: ogni professionista riceve su appuntamento e gestisce direttamente le proprie prenotazioni. Trova qui sotto i recapiti diretti di ciascun medico e le indicazioni per raggiungere la nostra sede a Bollate.
+                Presso lo Studio 4M non è presente una segreteria centralizzata: ogni professionista riceve su appuntamento e gestisce direttamente le proprie prenotazioni. Trova qui sotto i recapiti diretti di ciascun medico e le indicazioni per raggiungere la nostra sede a Bollate.
               </p>
             </div>
           </div>
@@ -379,7 +379,7 @@ export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
                 <div className="p-4 rounded-2xl bg-sky-50 border border-[#b3e5fc] text-xs text-slate-700 flex items-start gap-2.5">
                   <ShieldCheck className="w-4 h-4 text-[#0277bd] shrink-0 mt-0.5" />
                   <p className="leading-relaxed">
-                    Tutti i numeri riportati sono i recapiti professionali autorizzati per la prenotazione di visite e trattamenti presso lo <strong>Studio Medico 4M di Bollate (MI)</strong>.
+                    Tutti i numeri riportati sono i recapiti professionali autorizzati per la prenotazione di visite e trattamenti presso lo <strong>Studio 4M di Bollate (MI)</strong>.
                   </p>
                 </div>
 

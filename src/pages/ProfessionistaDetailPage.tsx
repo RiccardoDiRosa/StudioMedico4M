@@ -84,8 +84,8 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
     { label: `${professional.title} ${fullName}` }
   ];
 
-  const pageTitle = `${professional.title} ${fullName}, ${professional.role} a Bollate | Studio Medico 4M`;
-  const pageDescription = `Profilo di ${professional.title} ${fullName}, ${professional.role} presso Studio Medico 4M a Bollate (MI). Ambiti di attività, prestazioni e informazioni per appuntamenti.`;
+  const pageTitle = `${professional.title} ${fullName}, ${professional.role} a Bollate | Studio 4M`;
+  const pageDescription = `Profilo di ${professional.title} ${fullName}, ${professional.role} presso Studio 4M a Bollate (MI). Ambiti di attività, prestazioni e informazioni per appuntamenti.`;
 
   const personSchema = {
     '@context': 'https://schema.org',
@@ -326,7 +326,7 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                       <p className="text-xs sm:text-sm text-[#0277bd] font-medium mt-0.5 line-clamp-1 sm:line-clamp-none">
                         {isMiranda 
                           ? "Alta Specialità Chirurgia della Spalla · Ospedale Niguarda di Milano"
-                          : `${professional.role} · Studio Medico 4M`}
+                          : `${professional.role} · Studio 4M`}
                       </p>
                     </div>
                   </div>
@@ -397,8 +397,8 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
 
                       <div className="pt-2 text-xs text-[#0277bd] font-medium italic border-t border-[#b3e5fc]/40">
                         {isMiranda
-                          ? 'Svolge attività clinica e chirurgica in ambito ospedaliero ed esercita come libero professionista indipendente presso la sede di Studio Medico 4M a Bollate.'
-                          : 'Esercita come libero professionista indipendente presso la sede di Studio Medico 4M a Bollate.'}
+                          ? 'Svolge attività clinica e chirurgica in ambito ospedaliero ed esercita come libero professionista indipendente presso la sede di Studio 4M a Bollate.'
+                          : 'Esercita come libero professionista indipendente presso la sede di Studio 4M a Bollate.'}
                       </div>
                     </div>
                   </div>
@@ -571,8 +571,8 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                     <div className="p-6 sm:p-8 pt-3 sm:pt-4 border-t border-[#b3e5fc]/60 space-y-4">
                       <p className="text-xs text-slate-600">
                         {isMiranda
-                          ? 'Ambiti diagnostici, clinici e chirurgici trattati presso Studio Medico 4M a Bollate e in sede ospedaliera:'
-                          : 'Prestazioni specialistiche e ambiti di intervento presso Studio Medico 4M a Bollate:'}
+                          ? 'Ambiti diagnostici, clinici e chirurgici trattati presso Studio 4M a Bollate e in sede ospedaliera:'
+                          : 'Prestazioni specialistiche e ambiti di intervento presso Studio 4M a Bollate:'}
                       </p>
                       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1" aria-label="Elenco prestazioni">
                         {professional.services.map((srv, idx) => (
@@ -693,7 +693,7 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                     <span>Riceve su appuntamento</span>
                   </div>
                   <p className="text-slate-600 leading-relaxed">
-                    Le visite specialistiche presso Studio Medico 4M a Bollate vengono concordate nel rispetto della disponibilità del professionista.
+                    Le visite specialistiche presso Studio 4M a Bollate vengono concordate nel rispetto della disponibilità del professionista.
                   </p>
                 </div>
 
@@ -708,7 +708,7 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                   </a>
                 ) : professional.email ? (
                   <a
-                    href={`mailto:${professional.email}?subject=Richiesta%20informazioni%20-%20Studio%20Medico%204M`}
+                    href={`mailto:${professional.email}?subject=Richiesta%20informazioni%20-%20Studio%204M`}
                     className="w-full inline-flex items-center justify-center gap-2 px-4 py-3 text-xs font-semibold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] rounded-xl transition-all shadow-md shadow-[#0277bd]/25"
                   >
                     <Mail className="w-4 h-4 text-[#b3e5fc]" />
@@ -733,7 +733,7 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
 
                     {/* Primary direct email link */}
                     <a
-                      href={`mailto:${professional.email}?subject=Richiesta%20informazioni%20-%20Studio%20Medico%204M`}
+                      href={`mailto:${professional.email}?subject=Richiesta%20informazioni%20-%20Studio%204M`}
                       className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 text-xs font-bold text-[#01579b] bg-white hover:bg-[#b3e5fc]/25 border-2 border-[#b3e5fc] hover:border-[#039be5] rounded-xl transition-colors shadow-2xs group"
                       title={`Invia email a ${professional.email}`}
                     >
@@ -744,7 +744,7 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                     {/* Quick helper buttons for browser webmail or clipboard copy */}
                     <div className="grid grid-cols-2 gap-2 text-[11px]">
                       <a
-                        href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(professional.email)}&su=${encodeURIComponent('Richiesta informazioni - Studio Medico 4M')}`}
+                        href={`https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(professional.email)}&su=${encodeURIComponent('Richiesta informazioni - Studio 4M')}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center gap-1.5 py-1.5 px-2.5 rounded-lg bg-sky-50 hover:bg-sky-100 text-[#01579b] border border-[#b3e5fc] font-semibold transition-colors shadow-2xs"

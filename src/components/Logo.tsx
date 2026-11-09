@@ -15,11 +15,11 @@ export const Logo: React.FC<LogoProps> = ({
 
   return (
     <div className={`inline-flex items-center gap-3 select-none ${className}`}>
-      {/* Authentic Official Studio Medico 4M Shield Emblem */}
+      {/* Authentic Official Studio 4M Shield Emblem */}
       <div className="relative shrink-0 w-9 h-10 sm:w-11 sm:h-12 flex items-center justify-center">
         <img
           src="/images/logo/studio-medico-4m-emblem.png"
-          alt="Logo Ufficiale Studio Medico 4M"
+          alt="Logo Ufficiale Studio 4M"
           className="w-full h-full object-contain drop-shadow-sm transition-transform hover:scale-105"
           loading="eager"
           draggable={false}
@@ -30,7 +30,7 @@ export const Logo: React.FC<LogoProps> = ({
       <div className="flex flex-col">
         <div className="flex items-baseline gap-1 sm:gap-1.5 leading-none">
           <span className={`text-[16px] sm:text-[19px] font-bold font-brand tracking-wider uppercase ${isWhite ? 'text-white' : 'text-[#01579b]'}`}>
-            Studio Medico
+            Studio
           </span>
           <span className="text-[17px] sm:text-[20px] font-bold text-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums">
             <span className="inline-block">4</span><span className="inline-block">M</span>

@@ -17,7 +17,7 @@ export const HolisticEmblem: React.FC<HolisticEmblemProps> = ({
     >
       <img
         src="/images/logo/holistic-emblem.png"
-        alt="Simbolo Ufficiale Studio Medico 4M"
+        alt="Simbolo Ufficiale Studio 4M"
         className="w-full h-full object-contain drop-shadow-md"
         loading="lazy"
         draggable={false}
