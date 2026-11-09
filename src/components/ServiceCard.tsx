@@ -1,46 +1,11 @@
 import React from 'react';
 import { ServiceItem } from '../types';
-import { 
-  Activity, 
-  Sparkles, 
-  HeartHandshake, 
-  Compass, 
-  Apple, 
-  Footprints, 
-  Smile, 
-  Leaf 
-} from 'lucide-react';
 
 interface ServiceCardProps {
   service: ServiceItem;
 }
 
 export const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
-  // Map service IDs to appropriate medical/wellness icons
-  const getIcon = (id: string) => {
-    const iconClass = "w-4 h-4 sm:w-4.5 sm:h-4.5 text-[#01579b]";
-    switch (id) {
-      case 'ortopedia-traumatologia':
-        return <Activity className={iconClass} />;
-      case 'agopuntura':
-        return <Sparkles className={iconClass} />;
-      case 'fisioterapia':
-        return <HeartHandshake className={iconClass} />;
-      case 'osteopatia':
-        return <Compass className={iconClass} />;
-      case 'nutrizione':
-        return <Apple className={iconClass} />;
-      case 'plantari-su-misura':
-        return <Footprints className={iconClass} />;
-      case 'supporto-psicologico':
-        return <Smile className={iconClass} />;
-      case 'naturopatia-riflessologia':
-        return <Leaf className={iconClass} />;
-      default:
-        return <Activity className={iconClass} />;
-    }
-  };
-
   return (
     <article className="group bg-white rounded-2xl sm:rounded-3xl border border-[#b3e5fc]/80 hover:border-[#039be5] shadow-xs hover:shadow-xl hover:shadow-[#039be5]/15 transition-all duration-300 flex flex-col overflow-hidden">
       {/* Large Visual Header Image */}
@@ -53,12 +18,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
             loading="lazy"
           />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/45 via-transparent to-black/10 pointer-events-none" />
-
-        {/* Top-left Icon Badge */}
-        <div className="absolute top-2.5 left-2.5 sm:top-3.5 sm:left-3.5 w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-white/95 backdrop-blur-md border border-[#b3e5fc] flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
-          {getIcon(service.id)}
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/40 via-transparent to-black/10 pointer-events-none" />
 
         {/* Top-right Order Pill */}
         <span className="absolute top-2.5 right-2.5 sm:top-3.5 sm:right-3.5 text-[10px] sm:text-xs font-mono font-bold text-[#01579b] px-2 py-0.5 rounded-full bg-white/95 backdrop-blur-md border border-[#b3e5fc] shadow-sm">

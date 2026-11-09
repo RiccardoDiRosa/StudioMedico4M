@@ -120,16 +120,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                 <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/85 via-transparent to-black/20" />
               </div>
 
-              {/* Badges on top of the image */}
-              <div className="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-lg border border-[#b3e5fc] shadow-sm flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-[11px] font-bold text-[#01579b]">Professionisti della Salute</span>
-              </div>
-
-              <div className="absolute top-2.5 right-2.5 bg-white/95 backdrop-blur-md px-2 py-1 rounded-lg border border-[#b3e5fc] shadow-sm flex items-center gap-1">
-                <span className="text-[10px] font-bold text-[#0277bd]">8 Discipline</span>
-              </div>
-
               {/* Bottom text bar over image */}
               <div className="absolute bottom-0 inset-x-0 p-3 text-white flex items-center justify-between">
                 <div>
@@ -265,18 +255,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                       loading="eager"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/80 via-transparent to-black/15 pointer-events-none" />
-
-                    {/* Top Badges on photo */}
-                    <div className="absolute top-3.5 left-3.5 bg-white/95 backdrop-blur-md px-3 py-1.5 rounded-xl border border-[#b3e5fc] shadow-sm flex items-center gap-2">
-                      <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                      <span className="text-xs font-bold text-[#01579b]">Sede di Bollate</span>
-                    </div>
-
-                    <div className="absolute top-3.5 right-3.5 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-[#b3e5fc] shadow-md flex items-center gap-1.5">
-                      <span className="text-xs font-bold text-[#01579b]">
-                        8 Aree di Servizio
-                      </span>
-                    </div>
 
                     {/* Overlay info tag */}
                     <div className="absolute bottom-3 left-3 right-3 text-white flex items-center justify-between">
