@@ -100,46 +100,34 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
                 </div>
               </div>
 
-              <div className="lg:col-span-5 flex justify-center">
-                <div className="relative w-full max-w-md rounded-3xl p-2 bg-gradient-to-tr from-[#01579b] via-[#039be5] to-[#b3e5fc] shadow-xl overflow-hidden group">
-                  <div className="relative aspect-[4/3] rounded-[22px] overflow-hidden bg-slate-100">
+              <div className="lg:col-span-5 flex flex-col space-y-4 max-w-lg w-full mx-auto">
+                {/* Clean photo card without heavy borders or overlaid text boxes */}
+                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-[#b3e5fc] shadow-md hover:shadow-xl hover:border-[#039be5] transition-all bg-white group">
+                  <div className="relative aspect-[16/10] sm:aspect-[4/3] overflow-hidden bg-slate-100">
                     <img
                       src="/images/studio/studio2.webp"
-                      alt="Ambulatorio e sala trattamenti Studio 4M"
+                      alt="Interni dello Studio 4M a Bollate"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       loading="lazy"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/80 via-transparent to-black/10 pointer-events-none" />
-                    <div className="absolute bottom-3 left-3 right-3 text-white flex items-center justify-between">
-                      <div>
-                        <span className="text-xs font-bold font-brand tracking-wider uppercase block text-white">
-                          Ambulatori & Trattamenti
-                        </span>
-                        <span className="text-[10px] text-sky-200 block">
-                          Igiene, comfort e privacy per ogni visita
-                        </span>
-                      </div>
-                      <span className="text-[10px] font-semibold bg-white/20 backdrop-blur-md px-2 py-0.5 rounded border border-white/30">
-                        Via Madonnina 17
-                      </span>
-                    </div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/35 via-transparent to-transparent pointer-events-none" />
                   </div>
                 </div>
 
-                {/* Holistic Emblem Card in Lo Studio */}
-                <div className="mt-4 p-4 rounded-2xl bg-[#f4f9fd] border border-[#b3e5fc] flex items-center gap-4 shadow-xs">
-                  <div className="shrink-0 p-2 rounded-xl bg-white border border-[#b3e5fc]/80 shadow-2xs">
-                    <HolisticEmblem size={70} />
+                {/* Holistic Emblem Card: Clean, balanced, elegant */}
+                <div className="p-4 sm:p-5 rounded-2xl sm:rounded-3xl bg-white border border-[#b3e5fc] hover:border-[#039be5] shadow-sm hover:shadow-md transition-all flex items-center gap-4">
+                  <div className="shrink-0 p-2.5 rounded-2xl bg-[#f4f9fd] border border-[#b3e5fc]/80 shadow-2xs">
+                    <HolisticEmblem size={72} />
                   </div>
-                  <div>
-                    <h3 className="text-sm font-bold text-[#01579b] leading-tight font-sans">
+                  <div className="min-w-0">
+                    <h3 className="text-sm sm:text-base font-bold text-[#01579b] leading-tight font-sans">
                       Mente e Corpo in Equilibrio
                     </h3>
-                    <p className="text-xs text-[#0277bd] font-semibold mt-0.5">
+                    <p className="text-xs sm:text-sm text-[#0277bd] font-semibold mt-0.5">
                       Approccio integrato alla salute
                     </p>
-                    <p className="text-[11px] text-slate-500 mt-1">
-                      Il logo e il motto ufficiale dello Studio 4M a Bollate.
+                    <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                      L'unione di discipline mediche, riabilitative e del benessere per prendersi cura della persona nella sua totalità.
                     </p>
                   </div>
                 </div>
