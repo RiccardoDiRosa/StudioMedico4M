@@ -85,7 +85,7 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
                   Il payoff dello studio — <em>“Dove mente e corpo ritrovano equilibrio”</em> — sintetizza la volontà di riunire in uno stesso luogo professionisti con percorsi e metodologie complementari.
                 </p>
                 <p className="text-sm text-slate-600 leading-relaxed">
-                  Il benessere di una persona non è mai un fatto unicamente articolare o meramente psicologico: posture alterate, tensioni emotive, abitudini alimentari e disordini muscolari sono spesso profondamente correlati. L'offerta di discipline differenti permette a ciascun utente di trovare la risposta più coerente al proprio momento di vita.
+                  Il benessere di una persona non è mai un fatto unicamente articolare o meramente psicologico: posture alterate, tensioni emotive, abitudini alimentari e disordini muscolari sono spesso profondamente correlati. L'offerta di discipline differenti permette a ciascun individuo di trovare la risposta più coerente al proprio momento di vita.
                 </p>
 
                 <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-700">
@@ -186,7 +186,7 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
                   Rapporto diretto e senza intermediari
                 </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Non essendo presente un centralino unico o una segreteria sanitaria centralizzata, l'utente concorda date, orari, quesiti clinici e tariffe direttamente con il libero professionista di riferimento.
+                  Non essendo presente un centralino unico o una segreteria, l'individuo concorda date, orari, quesiti clinici e tariffe direttamente con il libero professionista di riferimento.
                 </p>
               </div>
 

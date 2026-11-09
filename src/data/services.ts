@@ -10,7 +10,7 @@ export const STUDIO_SERVICES: ServiceItem[] = [
     fullDescription: 'Presso lo studio sono disponibili consulenze specialistiche per la prevenzione, la diagnosi e il trattamento conservativo o post-traumatico delle patologie a carico di articolazioni, ossa e legamenti.',
     keyPoints: [
       'Valutazione patologie articolari e ossee',
-      'Esiti di traumi sportivi e infortuni',
+      'Traumi sportivi ed infortuni acuti e cronici',
       'Piani terapeutici individuali'
     ]
   },

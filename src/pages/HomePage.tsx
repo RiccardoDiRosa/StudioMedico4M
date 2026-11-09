@@ -436,9 +436,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                   className={`absolute inset-0 w-full h-full object-cover ${pos} group-hover:scale-105 transition-transform duration-700`}
                   loading="lazy"
                 />
-                <span className="absolute top-3 left-3 px-2.5 py-1 rounded-lg bg-white/95 backdrop-blur-md text-[11px] font-bold text-[#01579b] border border-[#b3e5fc] shadow-xs">
-                  {photo.badge}
-                </span>
               </figure>
             ))}
           </div>
