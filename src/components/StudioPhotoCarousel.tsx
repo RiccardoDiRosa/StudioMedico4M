@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { STUDIO_PHOTOS } from '../data/studio';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export const StudioPhotoCarousel: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -64,7 +64,7 @@ export const StudioPhotoCarousel: React.FC = () => {
     >
       {/* Main framed carousel container */}
       <div 
-        className="relative aspect-[16/10] sm:aspect-[16/9] w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-[#b3e5fc] shadow-xl bg-slate-900 group select-none"
+        className="relative aspect-[16/10] sm:aspect-[16/9] w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-[#b3e5fc] shadow-2xl bg-slate-950 group select-none"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
@@ -84,11 +84,11 @@ export const StudioPhotoCarousel: React.FC = () => {
                 className="w-full h-full object-cover"
                 loading={index === 0 ? 'eager' : 'lazy'}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/10 pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-slate-950/20 pointer-events-none" />
               
               {/* Room label at bottom left */}
               <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 text-white max-w-md pointer-events-none drop-shadow-md">
-                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#b3e5fc] bg-[#01579b]/70 backdrop-blur-md px-2.5 py-0.5 rounded-full inline-block mb-1 border border-white/20">
+                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#b3e5fc] bg-[#01579b]/80 backdrop-blur-md px-2.5 py-0.5 rounded-full inline-block mb-1 border border-white/20 shadow-xs">
                   {photo.badge}
                 </span>
                 <h3 className="text-sm sm:text-lg font-bold font-sans leading-tight">
@@ -99,43 +99,43 @@ export const StudioPhotoCarousel: React.FC = () => {
           );
         })}
 
-        {/* Freccia Sinistra (Prev) */}
+        {/* Freccia Sinistra (Prev) - Design moderno Glassmorphic */}
         <button
           type="button"
           onClick={prevSlide}
-          className="absolute left-3 sm:left-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/90 hover:bg-white text-[#01579b] hover:text-[#0277bd] shadow-lg border border-[#b3e5fc] flex items-center justify-center transition-all active:scale-95 focus-ring"
+          className="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-slate-950/40 hover:bg-white text-white hover:text-[#01579b] backdrop-blur-md border border-white/30 hover:border-white shadow-xl hover:shadow-2xl flex items-center justify-center transition-all duration-300 active:scale-90 group/btn focus-ring"
           aria-label="Foto precedente"
         >
-          <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
+          <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-200 group-hover/btn:-translate-x-0.5" strokeWidth={2} />
         </button>
 
-        {/* Freccia Destra (Next) */}
+        {/* Freccia Destra (Next) - Design moderno Glassmorphic */}
         <button
           type="button"
           onClick={nextSlide}
-          className="absolute right-3 sm:right-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/90 hover:bg-white text-[#01579b] hover:text-[#0277bd] shadow-lg border border-[#b3e5fc] flex items-center justify-center transition-all active:scale-95 focus-ring"
+          className="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 z-20 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-slate-950/40 hover:bg-white text-white hover:text-[#01579b] backdrop-blur-md border border-white/30 hover:border-white shadow-xl hover:shadow-2xl flex items-center justify-center transition-all duration-300 active:scale-90 group/btn focus-ring"
           aria-label="Foto successiva"
         >
-          <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
+          <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 transition-transform duration-200 group-hover/btn:translate-x-0.5" strokeWidth={2} />
         </button>
 
         {/* Counter pill at top right */}
-        <div className="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 bg-black/60 backdrop-blur-md text-white text-[11px] sm:text-xs font-mono font-bold px-2.5 py-1 rounded-full border border-white/20">
+        <div className="absolute top-3 right-3 sm:top-5 sm:right-5 z-20 bg-slate-950/50 backdrop-blur-md text-white text-[11px] sm:text-xs font-mono font-bold px-3 py-1 rounded-full border border-white/20 shadow-xs">
           {currentIndex + 1} / {STUDIO_PHOTOS.length}
         </div>
       </div>
 
-      {/* Dots Indicator below */}
+      {/* Modern Sleek Dots Indicator */}
       <div className="flex items-center justify-center gap-2 mt-4 sm:mt-5">
         {STUDIO_PHOTOS.map((photo, index) => (
           <button
             key={photo.id}
             type="button"
             onClick={() => goToSlide(index)}
-            className={`transition-all rounded-full focus-ring ${
+            className={`h-1.5 transition-all duration-300 rounded-full focus-ring ${
               index === currentIndex
-                ? 'w-8 h-2.5 bg-gradient-to-r from-[#01579b] to-[#039be5]'
-                : 'w-2.5 h-2.5 bg-[#b3e5fc] hover:bg-[#039be5]/60'
+                ? 'w-10 bg-gradient-to-r from-[#01579b] to-[#039be5]'
+                : 'w-2.5 bg-slate-300 hover:bg-[#039be5]/60'
             }`}
             aria-label={`Vai a foto ${index + 1}: ${photo.title}`}
           />
