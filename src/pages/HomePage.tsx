@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { STUDIO_CONFIG, STUDIO_MODEL_NOTE, STUDIO_PHOTOS } from '../data/studio';
+import { STUDIO_CONFIG, STUDIO_MODEL_NOTE } from '../data/studio';
 import { STUDIO_SERVICES } from '../data/services';
 import { PROFESSIONISTI, CATEGORIES_CONFIG } from '../data/professionisti';
 import { ServiceCard } from '../components/ServiceCard';
 import { ProfessionalCard } from '../components/ProfessionalCard';
+import { StudioPhotoCarousel } from '../components/StudioPhotoCarousel';
 import { HolisticEmblem } from '../components/HolisticEmblem';
 import { WaveDivider } from '../components/WaveDivider';
 import { SEOHead } from '../components/SEOHead';
@@ -551,27 +552,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             </p>
           </div>
 
-          {/* Studio Photos Gallery (foto ufficiali definitive) */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6">
-            {[
-              { photo: STUDIO_PHOTOS[0], span: 'md:col-span-7', ratio: 'aspect-[4/3]', pos: 'object-center' },
-              { photo: STUDIO_PHOTOS[2], span: 'md:col-span-5', ratio: 'aspect-[4/5] md:aspect-auto', pos: 'object-center' },
-              { photo: STUDIO_PHOTOS[3], span: 'md:col-span-5', ratio: 'aspect-[4/3] md:aspect-auto', pos: 'object-center' },
-              { photo: STUDIO_PHOTOS[1], span: 'md:col-span-7', ratio: 'aspect-[16/10] md:aspect-[16/9]', pos: 'object-center' }
-            ].map(({ photo, span, ratio, pos }) => (
-              <figure
-                key={photo.id}
-                className={`group relative ${span} ${ratio} rounded-3xl overflow-hidden border border-[#b3e5fc]/80 hover:border-[#039be5] shadow-sm hover:shadow-xl hover:shadow-[#039be5]/10 transition-all bg-slate-100`}
-              >
-                <img
-                  src={photo.url}
-                  alt={`${photo.title} - Studio 4M Bollate`}
-                  className={`absolute inset-0 w-full h-full object-cover ${pos} group-hover:scale-105 transition-transform duration-700`}
-                  loading="lazy"
-                />
-              </figure>
-            ))}
-          </div>
+          {/* Studio Photos Interactive Carousel with 4s autoplay & arrows */}
+          <StudioPhotoCarousel />
 
           {/* Quick Info Strip */}
           <div className="mt-6 sm:mt-10 p-4 sm:p-5 rounded-2xl bg-white border border-[#b3e5fc] shadow-xs flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-xs text-slate-700">
