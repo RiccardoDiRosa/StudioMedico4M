@@ -65,10 +65,6 @@ export const PROFESSIONISTI: Professional[] = [
       ],
       publicationsAndConferences: [
         'Partecipa costantemente a congressi, corsi e cadaver-lab nazionali ed internazionali con ruolo di discente, relatore, moderatore e istruttore'
-      ],
-      languages: [
-        'Italiano',
-        'Francese'
       ]
     },
     consultationDays: 'Riceve su appuntamento',
@@ -129,9 +125,6 @@ export const PROFESSIONISTI: Professional[] = [
         'Trattamento di cefalee ed emicranie',
         'Gestione di ansia, insonnia e disturbi correlati allo stress',
         'Medicina generale e presa in carico globale della persona'
-      ],
-      languages: [
-        'Italiano'
       ]
     },
     consultationDays: 'Riceve su appuntamento',
@@ -310,9 +303,6 @@ export const PROFESSIONISTI: Professional[] = [
         'Ortesi plantari per metatarsalgie, fasciti plantari, alluce valgo e neuroma di Morton',
         'Biomeccanica dello sport e ottimizzazione dell’appoggio nel gesto atletico',
         'Analisi del passo e correzione delle alterazioni posturali'
-      ],
-      languages: [
-        'Italiano'
       ]
     },
     consultationDays: 'Riceve su appuntamento',
@@ -548,9 +538,6 @@ export const PROFESSIONISTI: Professional[] = [
         'Master di II livello in Psicodiagnostica Clinica e Forense (formazione specialistica CTU e CTP)',
         'Laurea Specialistica in Psicologia per il benessere: empowerment, riabilitazione e tecnologia positiva',
         'Laurea Triennale in Scienze e Tecniche di Psicologia Cognitiva'
-      ],
-      languages: [
-        'Italiano'
       ]
     },
     consultationDays: 'Riceve su appuntamento (in studio e online)',

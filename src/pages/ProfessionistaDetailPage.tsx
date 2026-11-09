@@ -522,23 +522,6 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                           </div>
                         )}
 
-                        {/* Lingue */}
-                        {professional.curriculumVitae.languages && professional.curriculumVitae.languages.length > 0 && (
-                          <div className="space-y-2 pt-2 border-t border-[#b3e5fc]/40">
-                            <span className="text-xs font-bold uppercase tracking-wider text-[#01579b] flex items-center gap-1.5">
-                              <Globe2 className="w-3.5 h-3.5 text-[#0277bd]" />
-                              <span>Lingue parlate</span>
-                            </span>
-                            <div className="flex flex-wrap gap-2 pt-1">
-                              {professional.curriculumVitae.languages.map((lang, idx) => (
-                                <span key={idx} className="px-3 py-1 rounded-lg bg-white border border-[#b3e5fc] text-xs font-semibold text-[#01579b] capitalize shadow-xs">
-                                  {lang}
-                                </span>
-                              ))}
-                            </div>
-                          </div>
-                        )}
-
                       </div>
                     </div>
                   </div>
@@ -849,12 +832,6 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                     <div className="flex justify-between border-b border-[#b3e5fc]/40 pb-1.5 gap-2">
                       <span className="text-slate-500 shrink-0">Esperienza:</span>
                       <span className="font-semibold text-emerald-700">{professional.curriculumVitae.experienceYears}</span>
-                    </div>
-                  )}
-                  {professional.curriculumVitae?.languages && (
-                    <div className="flex justify-between gap-2">
-                      <span className="text-slate-500 shrink-0">Lingue:</span>
-                      <span className="font-semibold text-slate-800">{professional.curriculumVitae.languages.join(', ')}</span>
                     </div>
                   )}
                 </div>
