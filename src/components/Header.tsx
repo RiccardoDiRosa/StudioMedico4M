@@ -32,9 +32,9 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
 
   const navLinks = [
     { label: 'Home', path: '/' },
-    { label: 'Lo Studio', path: '/lo-studio' },
     { label: 'Servizi', path: '/#servizi' },
     { label: 'Professionisti', path: '/professionisti' },
+    { label: 'Lo Studio', path: '/lo-studio' },
     { label: 'Contatti', path: '/contatti' }
   ];
 

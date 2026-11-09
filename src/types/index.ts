@@ -62,6 +62,7 @@ export interface ServiceItem {
   fullDescription: string;
   keyPoints: string[];
   flyerOrder: number;
+  imageUrl?: string;
 }
 
 export interface StudioConfig {

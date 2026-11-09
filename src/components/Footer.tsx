@@ -52,15 +52,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               </li>
               <li>
                 <a
-                  href="/lo-studio"
-                  onClick={(e) => handleLink(e, '/lo-studio')}
-                  className="hover:text-white hover:underline transition-colors"
-                >
-                  Lo Studio
-                </a>
-              </li>
-              <li>
-                <a
                   href="/#servizi"
                   onClick={(e) => handleLink(e, '/#servizi')}
                   className="hover:text-white hover:underline transition-colors"
@@ -75,6 +66,15 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   className="hover:text-white hover:underline transition-colors"
                 >
                   Professionisti
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/lo-studio"
+                  onClick={(e) => handleLink(e, '/lo-studio')}
+                  className="hover:text-white hover:underline transition-colors"
+                >
+                  Lo Studio
                 </a>
               </li>
               <li>

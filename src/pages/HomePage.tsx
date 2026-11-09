@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { STUDIO_CONFIG, STUDIO_MODEL_NOTE, STUDIO_PHOTOS } from '../data/studio';
 import { STUDIO_SERVICES } from '../data/services';
 import { PROFESSIONISTI, CATEGORIES_CONFIG } from '../data/professionisti';
-import { ServiceItem } from '../types';
 import { ServiceCard } from '../components/ServiceCard';
 import { ProfessionalCard } from '../components/ProfessionalCard';
 import { HolisticEmblem } from '../components/HolisticEmblem';
@@ -12,15 +11,11 @@ import {
   MapPin, 
   ArrowRight, 
   Users, 
-  Sparkles, 
   Navigation, 
   Clock, 
   HelpCircle,
   ExternalLink,
-  Camera,
-  CheckCircle2,
-  Calendar,
-  ShieldCheck
+  Camera
 } from 'lucide-react';
 
 interface HomePageProps {
@@ -30,7 +25,6 @@ interface HomePageProps {
 
 export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessional }) => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
-  const [activeServiceModal, setActiveServiceModal] = useState<ServiceItem | null>(null);
 
   const filteredProfessionals = selectedCategory === 'all'
     ? PROFESSIONISTI
@@ -329,141 +323,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
       {/* Wave transition */}
       <WaveDivider position="bottom" fillColor="#FFFFFF" accentColor="#039be5" height={42} className="bg-transparent" />
 
-      {/* 2. PRESENTAZIONE DELLO STUDIO */}
-      <section className="py-10 sm:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center space-y-2 sm:space-y-4 mb-6 sm:mb-14">
-            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd]">
-              Chi Siamo · Studio Professionale
-            </span>
-            <h2 className="text-2xl sm:text-4xl font-normal text-[#01579b] tracking-tight font-heading">
-              Uno spazio dedicato al benessere di mente e corpo
-            </h2>
-            <p className="text-xs sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
-              Studio 4M è uno studio professionale nato con l'intento di offrire a Bollate una sede confortevole dove differenti discipline sanitarie e del benessere convivono armoniosamente.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-8">
-            <div className="bg-[#f4f9fd]/80 rounded-2xl p-4 sm:p-7 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-lg hover:shadow-[#039be5]/10 transition-all flex md:flex-col items-start gap-3.5 md:gap-0">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 flex items-center justify-center shrink-0 md:mb-4 shadow-xs">
-                <Users className="w-5 h-5 sm:w-6 sm:h-6 text-[#0277bd]" />
-              </div>
-              <div>
-                <h3 className="text-sm sm:text-base font-bold text-[#01579b] font-sans mb-1 sm:mb-2">
-                  Liberi Professionisti
-                </h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Competenze qualificate e approcci mirati per ogni specifica esigenza, in piena autonomia professionale.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-[#f4f9fd]/80 rounded-2xl p-4 sm:p-7 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-lg hover:shadow-[#039be5]/10 transition-all flex md:flex-col items-start gap-3.5 md:gap-0">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 flex items-center justify-center shrink-0 md:mb-4 shadow-xs">
-                <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-[#0277bd]" />
-              </div>
-              <div>
-                <h3 className="text-sm sm:text-base font-bold text-[#01579b] font-sans mb-1 sm:mb-2">
-                  Gestione Diretta Appuntamenti
-                </h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Visite concordate direttamente con lo specialista scelto, garantendo contatto immediato e massima riservatezza.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-[#f4f9fd]/80 rounded-2xl p-4 sm:p-7 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-lg hover:shadow-[#039be5]/10 transition-all flex md:flex-col items-start gap-3.5 md:gap-0">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 flex items-center justify-center shrink-0 md:mb-4 shadow-xs">
-                <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-[#0277bd]" />
-              </div>
-              <div>
-                <h3 className="text-sm sm:text-base font-bold text-[#01579b] font-sans mb-1 sm:mb-2">
-                  Posizione Strategica a Bollate
-                </h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  In Via Madonnina 17, a breve distanza dalla stazione di Bollate Centro, facilmente raggiungibile in treno o in auto.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-6 sm:mt-10 text-center">
-            <button
-              type="button"
-              onClick={() => onNavigate('/lo-studio')}
-              className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0277bd] hover:text-[#039be5] focus-ring py-1.5 px-3 rounded-xl hover:bg-[#b3e5fc]/25 transition-colors"
-            >
-              <span>Approfondisci la presentazione dello studio</span>
-              <ArrowRight className="w-3.5 h-3.5 text-[#039be5]" />
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* 2.5 GLI SPAZI DELLO STUDIO (FOTO E AMBIENTI) */}
-      <section className="py-10 sm:py-20 bg-gradient-to-b from-white via-[#f4f9fd] to-white border-t border-[#b3e5fc]/60">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
-          <div className="max-w-3xl mx-auto text-center space-y-2 sm:space-y-3 mb-6 sm:mb-16">
-            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd] inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#b3e5fc]/35 border border-[#039be5]/20">
-              <Camera className="w-3.5 h-3.5 text-[#039be5]" />
-              <span>La Nostra Sede a Bollate</span>
-            </span>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-[#01579b] tracking-tight font-heading">
-              Gli ambienti e gli spazi dello studio
-            </h2>
-            <p className="text-xs sm:text-base text-slate-600 leading-relaxed">
-              Un contesto curato, riservato e rilassante nel centro di Bollate, progettato per accogliere visite specialistiche, sedute riabilitative e consulenze per il benessere della persona.
-            </p>
-          </div>
-
-          {/* Studio Photos Gallery (foto ufficiali definitive) */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6">
-            {[
-              { photo: STUDIO_PHOTOS[0], span: 'md:col-span-7', ratio: 'aspect-[4/3]', pos: 'object-center' },
-              { photo: STUDIO_PHOTOS[2], span: 'md:col-span-5', ratio: 'aspect-[4/5] md:aspect-auto', pos: 'object-center' },
-              { photo: STUDIO_PHOTOS[3], span: 'md:col-span-5', ratio: 'aspect-[4/3] md:aspect-auto', pos: 'object-center' },
-              { photo: STUDIO_PHOTOS[1], span: 'md:col-span-7', ratio: 'aspect-[16/10] md:aspect-[16/9]', pos: 'object-center' }
-            ].map(({ photo, span, ratio, pos }) => (
-              <figure
-                key={photo.id}
-                className={`group relative ${span} ${ratio} rounded-3xl overflow-hidden border border-[#b3e5fc]/80 hover:border-[#039be5] shadow-sm hover:shadow-xl hover:shadow-[#039be5]/10 transition-all bg-slate-100`}
-              >
-                <img
-                  src={photo.url}
-                  alt={`${photo.title} - Studio 4M Bollate`}
-                  className={`absolute inset-0 w-full h-full object-cover ${pos} group-hover:scale-105 transition-transform duration-700`}
-                  loading="lazy"
-                />
-              </figure>
-            ))}
-          </div>
-
-          {/* Quick Info Strip */}
-          <div className="mt-6 sm:mt-10 p-4 sm:p-5 rounded-2xl bg-white border border-[#b3e5fc] shadow-xs flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-xs text-slate-700">
-            <div className="flex items-center gap-3">
-              <MapPin className="w-5 h-5 text-[#0277bd] shrink-0" />
-              <p>
-                La sede si trova in <strong>Via Madonnina 17 a Bollate</strong>, facilmente raggiungibile a piedi dalla stazione o con parcheggi auto vicini.
-              </p>
-            </div>
-            <a
-              href={STUDIO_CONFIG.googleMapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#01579b] hover:text-[#039be5] font-bold inline-flex items-center gap-1 underline whitespace-nowrap"
-            >
-              <span>Vedi posizione esatta</span>
-              <ExternalLink className="w-3.5 h-3.5" />
-            </a>
-          </div>
-
-        </div>
-      </section>
-
-      {/* 3. PANORAMICA DEI SERVIZI (I NOSTRI SERVIZI DAL VOLANTINO) */}
-      <section id="servizi" className="py-10 sm:py-20 bg-gradient-to-b from-[#f4f9fd] to-white border-t border-[#b3e5fc]/60 scroll-mt-20">
+      {/* 2. PANORAMICA DEI SERVIZI (I NOSTRI SERVIZI) */}
+      <section id="servizi" className="py-10 sm:py-20 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center space-y-2 sm:space-y-4 mb-6 sm:mb-14">
             <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd]">
@@ -478,68 +339,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
           </div>
 
           {/* 8 Services Grid: 2 columns on mobile, 4 on desktop */}
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
             {STUDIO_SERVICES.map((service) => (
               <ServiceCard 
                 key={service.id} 
                 service={service} 
-                onSelect={(s) => setActiveServiceModal(s)}
               />
             ))}
           </div>
         </div>
       </section>
 
-      {/* Service Details Modal */}
-      {activeServiceModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#01579b]/60 backdrop-blur-xs animate-in fade-in">
-          <div className="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border-2 border-[#b3e5fc] relative animate-in zoom-in-95 duration-150">
-            <button
-              type="button"
-              onClick={() => setActiveServiceModal(null)}
-              className="absolute top-5 right-5 text-slate-400 hover:text-[#01579b] p-1.5 rounded-lg focus-ring"
-              aria-label="Chiudi dettaglio servizio"
-            >
-              ✕
-            </button>
-            <div className="mb-4">
-              <span className="text-xs font-mono font-bold text-[#039be5] block mb-1">
-                Servizio #{String(activeServiceModal.flyerOrder).padStart(2, '0')}
-              </span>
-              <h3 className="text-2xl font-normal text-[#01579b] font-heading">
-                {activeServiceModal.title}
-              </h3>
-            </div>
-            <p className="text-sm text-slate-600 leading-relaxed mb-6">
-              {activeServiceModal.fullDescription}
-            </p>
-            <div className="bg-[#b3e5fc]/30 rounded-2xl p-4 border border-[#b3e5fc] text-xs text-[#01579b] mb-6">
-              <p className="font-bold mb-1">Punti chiave:</p>
-              <ul className="list-disc list-inside space-y-1 text-slate-700">
-                {activeServiceModal.keyPoints.map((pt, i) => (
-                  <li key={i}>{pt}</li>
-                ))}
-              </ul>
-            </div>
-            <div className="flex items-center justify-end gap-3 pt-2">
-              <button
-                type="button"
-                onClick={() => {
-                  setActiveServiceModal(null);
-                  const el = document.getElementById('professionisti');
-                  if (el) el.scrollIntoView({ behavior: 'smooth' });
-                }}
-                className="px-5 py-2.5 text-xs font-semibold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] rounded-xl transition-all shadow-sm"
-              >
-                Vedi i professionisti
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* 4. PRESENTAZIONE DEI PROFESSIONISTI */}
-      <section id="professionisti" className="py-10 sm:py-24 bg-white border-t border-[#b3e5fc]/60 scroll-mt-20">
+      {/* 3. PRESENTAZIONE DEI PROFESSIONISTI */}
+      <section id="professionisti" className="py-10 sm:py-24 bg-gradient-to-b from-[#f4f9fd] to-white border-t border-[#b3e5fc]/60 scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-3 sm:gap-6 mb-4 sm:mb-10">
@@ -614,7 +426,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
         </div>
       </section>
 
-      {/* 5. SEZIONE INFORMATIVA SUL FUNZIONAMENTO DEI CONTATTI */}
+      {/* 4. SEZIONE INFORMATIVA SUL FUNZIONAMENTO DEI CONTATTI (TRASPARENZA E ORGANIZZAZIONE) */}
       <section className="py-16 sm:py-20 bg-gradient-to-br from-[#01579b] via-[#0277bd] to-[#01579b] text-white relative overflow-hidden">
         {/* Subtle decorative glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[#039be5]/20 blur-3xl pointer-events-none" />
@@ -642,7 +454,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
         </div>
       </section>
 
-      {/* 6. POSIZIONE E INDICAZIONI STRADALI (DOVE TROVARCI DAL VOLANTINO) */}
+      {/* 5. POSIZIONE E INDICAZIONI STRADALI (MAPPA E DOVE TROVARCI) */}
       <section id="sede" className="py-16 sm:py-24 bg-white scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -744,7 +556,140 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
         </div>
       </section>
 
-      {/* 7. CALL TO ACTION FINALE */}
+      {/* 6. GLI SPAZI DELLO STUDIO (FOTO E AMBIENTI) */}
+      <section className="py-10 sm:py-20 bg-gradient-to-b from-white via-[#f4f9fd] to-white border-t border-[#b3e5fc]/60">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div className="max-w-3xl mx-auto text-center space-y-2 sm:space-y-3 mb-6 sm:mb-16">
+            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd] inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#b3e5fc]/35 border border-[#039be5]/20">
+              <Camera className="w-3.5 h-3.5 text-[#039be5]" />
+              <span>La Nostra Sede a Bollate</span>
+            </span>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-normal text-[#01579b] tracking-tight font-heading">
+              Gli ambienti e gli spazi dello studio
+            </h2>
+            <p className="text-xs sm:text-base text-slate-600 leading-relaxed">
+              Un contesto curato, riservato e rilassante nel centro di Bollate, progettato per accogliere visite specialistiche, sedute riabilitative e consulenze per il benessere della persona.
+            </p>
+          </div>
+
+          {/* Studio Photos Gallery (foto ufficiali definitive) */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6">
+            {[
+              { photo: STUDIO_PHOTOS[0], span: 'md:col-span-7', ratio: 'aspect-[4/3]', pos: 'object-center' },
+              { photo: STUDIO_PHOTOS[2], span: 'md:col-span-5', ratio: 'aspect-[4/5] md:aspect-auto', pos: 'object-center' },
+              { photo: STUDIO_PHOTOS[3], span: 'md:col-span-5', ratio: 'aspect-[4/3] md:aspect-auto', pos: 'object-center' },
+              { photo: STUDIO_PHOTOS[1], span: 'md:col-span-7', ratio: 'aspect-[16/10] md:aspect-[16/9]', pos: 'object-center' }
+            ].map(({ photo, span, ratio, pos }) => (
+              <figure
+                key={photo.id}
+                className={`group relative ${span} ${ratio} rounded-3xl overflow-hidden border border-[#b3e5fc]/80 hover:border-[#039be5] shadow-sm hover:shadow-xl hover:shadow-[#039be5]/10 transition-all bg-slate-100`}
+              >
+                <img
+                  src={photo.url}
+                  alt={`${photo.title} - Studio 4M Bollate`}
+                  className={`absolute inset-0 w-full h-full object-cover ${pos} group-hover:scale-105 transition-transform duration-700`}
+                  loading="lazy"
+                />
+              </figure>
+            ))}
+          </div>
+
+          {/* Quick Info Strip */}
+          <div className="mt-6 sm:mt-10 p-4 sm:p-5 rounded-2xl bg-white border border-[#b3e5fc] shadow-xs flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-xs text-slate-700">
+            <div className="flex items-center gap-3">
+              <MapPin className="w-5 h-5 text-[#0277bd] shrink-0" />
+              <p>
+                La sede si trova in <strong>Via Madonnina 17 a Bollate</strong>, facilmente raggiungibile a piedi dalla stazione o con parcheggi auto vicini.
+              </p>
+            </div>
+            <a
+              href={STUDIO_CONFIG.googleMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#01579b] hover:text-[#039be5] font-bold inline-flex items-center gap-1 underline whitespace-nowrap"
+            >
+              <span>Vedi posizione esatta</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      {/* 7. PRESENTAZIONE DELLO STUDIO (CHI SIAMO) */}
+      <section className="py-10 sm:py-20 bg-white border-t border-[#b3e5fc]/60">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto text-center space-y-2 sm:space-y-4 mb-6 sm:mb-14">
+            <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd]">
+              Chi Siamo · Studio Professionale
+            </span>
+            <h2 className="text-2xl sm:text-4xl font-normal text-[#01579b] tracking-tight font-heading">
+              Uno spazio dedicato al benessere di mente e corpo
+            </h2>
+            <p className="text-xs sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
+              Studio 4M è uno studio professionale nato con l'intento di offrire a Bollate una sede confortevole dove differenti discipline sanitarie e del benessere convivono armoniosamente.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-8">
+            <div className="bg-[#f4f9fd]/80 rounded-2xl p-4 sm:p-7 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-lg hover:shadow-[#039be5]/10 transition-all flex md:flex-col items-start gap-3.5 md:gap-0">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 flex items-center justify-center shrink-0 md:mb-4 shadow-xs">
+                <Users className="w-5 h-5 sm:w-6 sm:h-6 text-[#0277bd]" />
+              </div>
+              <div>
+                <h3 className="text-sm sm:text-base font-bold text-[#01579b] font-sans mb-1 sm:mb-2">
+                  Liberi Professionisti
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Competenze qualificate e approcci mirati per ogni specifica esigenza, in piena autonomia professionale.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-[#f4f9fd]/80 rounded-2xl p-4 sm:p-7 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-lg hover:shadow-[#039be5]/10 transition-all flex md:flex-col items-start gap-3.5 md:gap-0">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 flex items-center justify-center shrink-0 md:mb-4 shadow-xs">
+                <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-[#0277bd]" />
+              </div>
+              <div>
+                <h3 className="text-sm sm:text-base font-bold text-[#01579b] font-sans mb-1 sm:mb-2">
+                  Gestione Diretta Appuntamenti
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  Visite concordate direttamente con lo specialista scelto, garantendo contatto immediato e massima riservatezza.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-[#f4f9fd]/80 rounded-2xl p-4 sm:p-7 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-lg hover:shadow-[#039be5]/10 transition-all flex md:flex-col items-start gap-3.5 md:gap-0">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 flex items-center justify-center shrink-0 md:mb-4 shadow-xs">
+                <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-[#0277bd]" />
+              </div>
+              <div>
+                <h3 className="text-sm sm:text-base font-bold text-[#01579b] font-sans mb-1 sm:mb-2">
+                  Posizione Strategica a Bollate
+                </h3>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  In Via Madonnina 17, a breve distanza dalla stazione di Bollate Centro, facilmente raggiungibile in treno o in auto.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-6 sm:mt-10 text-center">
+            <button
+              type="button"
+              onClick={() => onNavigate('/lo-studio')}
+              className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0277bd] hover:text-[#039be5] focus-ring py-1.5 px-3 rounded-xl hover:bg-[#b3e5fc]/25 transition-colors"
+            >
+              <span>Approfondisci la presentazione dello studio</span>
+              <ArrowRight className="w-3.5 h-3.5 text-[#039be5]" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 8. CALL TO ACTION FINALE */}
       <section className="py-16 sm:py-20 bg-gradient-to-r from-[#b3e5fc]/30 via-white to-[#b3e5fc]/30 border-t border-[#b3e5fc]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
           <h2 className="text-3xl font-normal text-[#01579b] tracking-tight font-heading">

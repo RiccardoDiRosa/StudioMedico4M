@@ -8,19 +8,17 @@ import {
   Apple, 
   Footprints, 
   Smile, 
-  Leaf, 
-  CheckCircle2 
+  Leaf 
 } from 'lucide-react';
 
 interface ServiceCardProps {
   service: ServiceItem;
-  onSelect?: (service: ServiceItem) => void;
 }
 
-export const ServiceCard: React.FC<ServiceCardProps> = ({ service, onSelect }) => {
+export const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
   // Map service IDs to appropriate medical/wellness icons
   const getIcon = (id: string) => {
-    const iconClass = "w-4 h-4 sm:w-5 sm:h-5 text-[#0277bd]";
+    const iconClass = "w-4 h-4 sm:w-4.5 sm:h-4.5 text-[#01579b]";
     switch (id) {
       case 'ortopedia-traumatologia':
         return <Activity className={iconClass} />;
@@ -44,62 +42,38 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service, onSelect }) =
   };
 
   return (
-    <article 
-      onClick={() => onSelect && onSelect(service)}
-      className="group bg-white rounded-2xl p-3.5 sm:p-6 lg:p-7 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-xl hover:shadow-[#039be5]/15 transition-all duration-300 flex flex-col justify-between relative overflow-hidden cursor-pointer active:scale-[0.98]"
-    >
-      {/* Top subtle highlight gradient bar on hover */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#01579b] via-[#039be5] to-[#b3e5fc] opacity-0 group-hover:opacity-100 transition-opacity" />
+    <article className="group bg-white rounded-2xl sm:rounded-3xl border border-[#b3e5fc]/80 hover:border-[#039be5] shadow-xs hover:shadow-xl hover:shadow-[#039be5]/15 transition-all duration-300 flex flex-col overflow-hidden">
+      {/* Large Visual Header Image */}
+      <div className="relative aspect-[4/3] w-full overflow-hidden bg-[#f4f9fd]">
+        {service.imageUrl && (
+          <img
+            src={service.imageUrl}
+            alt={`${service.title} - Studio 4M Bollate`}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            loading="lazy"
+          />
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/45 via-transparent to-black/10 pointer-events-none" />
 
-      <div>
-        {/* Header with icon and order */}
-        <div className="flex items-center justify-between gap-2 sm:gap-4 mb-2 sm:mb-4">
-          <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-[#b3e5fc]/60 to-[#b3e5fc]/20 border border-[#039be5]/30 flex items-center justify-center shrink-0 group-hover:scale-105 group-hover:bg-[#b3e5fc] transition-transform shadow-xs">
-            {getIcon(service.id)}
-          </div>
-          <span className="text-[10px] sm:text-xs font-mono font-bold text-[#039be5] px-1.5 sm:px-2 py-0.5 rounded-full bg-[#b3e5fc]/30 border border-[#b3e5fc]">
-            {String(service.flyerOrder).padStart(2, '0')}
-          </span>
+        {/* Top-left Icon Badge */}
+        <div className="absolute top-2.5 left-2.5 sm:top-3.5 sm:left-3.5 w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-white/95 backdrop-blur-md border border-[#b3e5fc] flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+          {getIcon(service.id)}
         </div>
 
-        {/* Title */}
-        <h3 className="text-xs sm:text-lg font-bold sm:font-semibold text-[#01579b] group-hover:text-[#0277bd] transition-colors font-sans mb-1 sm:mb-2.5 line-clamp-2 leading-tight">
-          {service.title}
-        </h3>
-
-        {/* Short description */}
-        <p className="text-[11px] sm:text-sm text-slate-600 leading-relaxed mb-2 sm:mb-5 line-clamp-2 sm:line-clamp-none">
-          {service.shortDescription}
-        </p>
-
-        {/* Key bullets - visible on tablet and desktop */}
-        <ul className="hidden sm:block space-y-2 mb-6" aria-label={`Punti chiave di ${service.title}`}>
-          {service.keyPoints.map((point, index) => (
-            <li key={index} className="flex items-start gap-2 text-xs text-slate-600">
-              <CheckCircle2 className="w-3.5 h-3.5 text-[#039be5] shrink-0 mt-0.5" aria-hidden="true" />
-              <span>{point}</span>
-            </li>
-          ))}
-        </ul>
+        {/* Top-right Order Pill */}
+        <span className="absolute top-2.5 right-2.5 sm:top-3.5 sm:right-3.5 text-[10px] sm:text-xs font-mono font-bold text-[#01579b] px-2 py-0.5 rounded-full bg-white/95 backdrop-blur-md border border-[#b3e5fc] shadow-sm">
+          {String(service.flyerOrder).padStart(2, '0')}
+        </span>
       </div>
 
-      {/* Footer link to professionals / details */}
-      <div className="pt-2 sm:pt-4 border-t border-[#b3e5fc]/50 flex items-center justify-between text-[11px] sm:text-xs">
-        <span className="hidden sm:inline text-[#0277bd] font-medium">Disponibile a Bollate</span>
-        <span className="sm:hidden text-[10px] text-[#0277bd] font-semibold">Dettagli →</span>
-        {onSelect && (
-          <button
-            type="button"
-            onClick={(e) => {
-              e.stopPropagation();
-              onSelect(service);
-            }}
-            className="hidden sm:inline-flex text-[#0277bd] hover:text-[#039be5] font-semibold items-center gap-1 focus-ring rounded transition-colors"
-          >
-            <span>Dettagli</span>
-            <span aria-hidden="true">→</span>
-          </button>
-        )}
+      {/* Concise Text Content */}
+      <div className="p-3.5 sm:p-5 flex-1 flex flex-col">
+        <h3 className="text-sm sm:text-lg font-bold text-[#01579b] group-hover:text-[#0277bd] transition-colors font-sans mb-1.5 leading-snug">
+          {service.title}
+        </h3>
+        <p className="text-[11px] sm:text-xs lg:text-[13px] text-slate-600 leading-relaxed">
+          {service.shortDescription}
+        </p>
       </div>
     </article>
   );
