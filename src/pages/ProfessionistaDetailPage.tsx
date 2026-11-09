@@ -46,7 +46,7 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
     cv: boolean;
     services: boolean;
   }>({
-    bio: false,
+    bio: true,
     cv: false,
     services: false
   });
@@ -78,6 +78,7 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
   };
 
   const isMiranda = professional.id === 'prof-01-ortopedia' || professional.slug === 'michele-roberto-miranda';
+  const isLovati = professional.id === 'prof-02-agopuntura' || professional.slug === 'enrico-lovati';
 
   const breadcrumbItems = [
     { label: 'Professionisti', path: '/professionisti' },
@@ -395,6 +396,71 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                         </div>
                       )}
 
+                      {/* Visual Gallery of Clinical Practice for Dr. Enrico Lovati */}
+                      {isLovati && (
+                        <div className="pt-2 space-y-3.5 border-t border-[#b3e5fc]/60">
+                          <div className="flex items-center justify-between">
+                            <div className="flex items-center gap-2">
+                              <Sparkles className="w-4 h-4 text-[#039be5]" />
+                              <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#01579b]">
+                                Trattamento e Pratica Clinica dell'Agopuntura
+                              </h3>
+                            </div>
+                            <span className="text-[10px] sm:text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-[#b3e5fc]/35 text-[#01579b] border border-[#b3e5fc]">
+                              Scuola SOWEN Milano
+                            </span>
+                          </div>
+
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            {/* Photo 1: agolovati.webp */}
+                            <figure className="group rounded-2xl overflow-hidden border border-[#b3e5fc] bg-[#f4f9fd] shadow-xs hover:shadow-md transition-all">
+                              <div className="aspect-[4/3] overflow-hidden bg-slate-100 relative">
+                                <img
+                                  src="/images/agolovati.webp"
+                                  alt="Applicazione degli aghi di agopuntura medica lungo i meridiani energetici - Dr. Enrico Lovati"
+                                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                  loading="lazy"
+                                />
+                                <div className="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-lg border border-[#b3e5fc] text-[10px] font-bold text-[#01579b] shadow-2xs">
+                                  Applicazione Aghi
+                                </div>
+                              </div>
+                              <figcaption className="p-3.5 space-y-1">
+                                <p className="text-xs font-bold text-[#01579b]">
+                                  Inserimento mirato dei sottili aghi
+                                </p>
+                                <p className="text-[11px] text-slate-600 leading-relaxed">
+                                  Stimolazione puntiforme lungo l'asse dei meridiani per ristabilire l'equilibrio energetico e ridurre la sintomatologia dolorosa.
+                                </p>
+                              </figcaption>
+                            </figure>
+
+                            {/* Photo 2: manolovati.webp */}
+                            <figure className="group rounded-2xl overflow-hidden border border-[#b3e5fc] bg-[#f4f9fd] shadow-xs hover:shadow-md transition-all">
+                              <div className="aspect-[4/3] overflow-hidden bg-slate-100 relative">
+                                <img
+                                  src="/images/manolovati.webp"
+                                  alt="Trattamento dei punti periferici di agopuntura sulla mano - Dr. Enrico Lovati"
+                                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                  loading="lazy"
+                                />
+                                <div className="absolute top-2.5 left-2.5 bg-white/95 backdrop-blur-md px-2.5 py-1 rounded-lg border border-[#b3e5fc] text-[10px] font-bold text-[#01579b] shadow-2xs">
+                                  Punti Periferici
+                                </div>
+                              </div>
+                              <figcaption className="p-3.5 space-y-1">
+                                <p className="text-xs font-bold text-[#01579b]">
+                                  Trattamento e riequilibrio periferico
+                                </p>
+                                <p className="text-[11px] text-slate-600 leading-relaxed">
+                                  Punti di stimolazione su mani e articolazioni per il trattamento di contratture, cefalee, dolori muscolo-tendinei e tensioni acute.
+                                </p>
+                              </figcaption>
+                            </figure>
+                          </div>
+                        </div>
+                      )}
+
                       <div className="pt-2 text-xs text-[#0277bd] font-medium italic border-t border-[#b3e5fc]/40">
                         {isMiranda
                           ? 'Svolge attività clinica e chirurgica in ambito ospedaliero ed esercita come libero professionista indipendente presso la sede dello studio professionale Studio 4M a Bollate.'
@@ -678,6 +744,50 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                       </a>
                     )}
                   </div>
+                </div>
+              )}
+
+              {/* Lovati Visual Highlight Spotlight Card */}
+              {isLovati && (
+                <div className="bg-gradient-to-br from-white to-[#f4f9fd] rounded-3xl p-5 sm:p-6 border-2 border-[#b3e5fc] shadow-sm space-y-3.5">
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0277bd]">
+                      <Sparkles className="w-3.5 h-3.5 text-[#039be5]" />
+                      <span>Sedute di Agopuntura</span>
+                    </div>
+                    <span className="text-[10px] font-bold text-[#01579b] bg-[#b3e5fc]/30 px-2 py-0.5 rounded-full border border-[#b3e5fc]">
+                      Studio 4M
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-2.5">
+                    <div className="rounded-xl overflow-hidden border border-[#b3e5fc] aspect-square relative group">
+                      <img
+                        src="/images/agolovati.webp"
+                        alt="Applicazione aghi agopuntura Dr. Enrico Lovati"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/80 via-transparent to-transparent flex items-end p-2">
+                        <span className="text-[10px] font-bold text-white leading-tight">Applicazione Aghi</span>
+                      </div>
+                    </div>
+                    <div className="rounded-xl overflow-hidden border border-[#b3e5fc] aspect-square relative group">
+                      <img
+                        src="/images/manolovati.webp"
+                        alt="Trattamento agopuntura mano Dr. Enrico Lovati"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/80 via-transparent to-transparent flex items-end p-2">
+                        <span className="text-[10px] font-bold text-white leading-tight">Punti Riflessi</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    Trattamenti con aghi sterili monouso mirati a ripristinare il flusso energetico, stimolare le difese dell'organismo e alleviare stati dolorosi o infiammatori.
+                  </p>
                 </div>
               )}
 
