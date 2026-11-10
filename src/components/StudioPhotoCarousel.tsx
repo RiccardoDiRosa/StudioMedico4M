@@ -84,17 +84,6 @@ export const StudioPhotoCarousel: React.FC = () => {
                 className="w-full h-full object-cover"
                 loading={index === 0 ? 'eager' : 'lazy'}
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-slate-950/20 pointer-events-none" />
-              
-              {/* Room label at bottom left */}
-              <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 text-white max-w-md pointer-events-none drop-shadow-md">
-                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#b3e5fc] bg-[#01579b]/80 backdrop-blur-md px-2.5 py-0.5 rounded-full inline-block mb-1 border border-white/20 shadow-xs">
-                  {photo.badge}
-                </span>
-                <h3 className="text-sm sm:text-lg font-bold font-sans leading-tight">
-                  {photo.title}
-                </h3>
-              </div>
             </div>
           );
         })}
