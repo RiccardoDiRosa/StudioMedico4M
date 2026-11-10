@@ -177,32 +177,28 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
         {mobileMenuOpen && (
           <motion.div
             key="mobile-drawer"
-            initial={{ opacity: 0, y: -16, scale: 0.99 }}
+            initial={{ opacity: 0, y: -10 }}
             animate={{ 
               opacity: 1, 
-              y: 0, 
-              scale: 1,
+              y: 0,
               transition: {
-                type: "spring",
-                stiffness: 420,
-                damping: 32,
-                mass: 0.7
+                duration: 0.26,
+                ease: [0.16, 1, 0.3, 1]
               }
             }}
             exit={{ 
               opacity: 0, 
-              y: -10, 
-              scale: 0.99,
+              y: -8,
               transition: {
-                duration: 0.18,
-                ease: [0.32, 0, 0.67, 0]
+                duration: 0.16,
+                ease: [0.36, 0, 0.66, 0]
               }
             }}
             style={{ 
               willChange: "transform, opacity",
               transformOrigin: "top center"
             }}
-            className="absolute top-full left-0 right-0 bg-white/98 backdrop-blur-md border-b border-[#b3e5fc] shadow-2xl z-50 md:hidden"
+            className="absolute top-full left-0 right-0 bg-white/98 backdrop-blur-md border-b border-[#b3e5fc] shadow-2xl z-50 md:hidden transform-gpu"
           >
             <motion.nav
               initial="hidden"
@@ -213,7 +209,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
                 visible: {
                   opacity: 1,
                   transition: {
-                    staggerChildren: 0.025,
+                    staggerChildren: 0.035,
                     delayChildren: 0.02
                   }
                 }
@@ -232,9 +228,8 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
                         opacity: 1,
                         y: 0,
                         transition: { 
-                          type: "spring", 
-                          stiffness: 480, 
-                          damping: 32 
+                          duration: 0.22,
+                          ease: [0.16, 1, 0.3, 1]
                         }
                       }
                     }}
@@ -259,9 +254,8 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
                     opacity: 1,
                     y: 0,
                     transition: { 
-                      type: "spring", 
-                      stiffness: 480, 
-                      damping: 32 
+                      duration: 0.22,
+                      ease: [0.16, 1, 0.3, 1]
                     }
                   }
                 }}

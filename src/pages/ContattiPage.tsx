@@ -146,13 +146,19 @@ export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
 
                 {/* Mezzi Pubblici & Orari (Collapsible on Mobile) */}
                 <details className="sm:hidden border-t border-[#b3e5fc]/50 pt-2.5 group">
-                  <summary className="flex items-center justify-between text-xs font-bold text-[#01579b] cursor-pointer py-1 select-none">
+                  <summary className="flex items-center justify-between text-xs font-bold text-[#01579b] cursor-pointer py-1.5 select-none list-none [&::-webkit-details-marker]:hidden">
                     <span className="flex items-center gap-1.5">
-                      <Train className="w-3.5 h-3.5 text-[#039be5]" />
-                      <span>Come arrivare e orari</span>
+                      <Train className="w-4 h-4 text-[#039be5]" />
+                      <span className="text-xs font-bold text-[#01579b]">Come arrivare e orari</span>
                     </span>
-                    <span className="text-[10px] text-[#0277bd] font-normal group-open:hidden">Dettagli ↓</span>
-                    <span className="text-[10px] text-[#0277bd] font-normal hidden group-open:inline">Chiudi ↑</span>
+                    <span className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-lg bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 group-open:hidden shadow-2xs">
+                      <span>Dettagli</span>
+                      <span className="text-[#039be5] text-[10px]">▼</span>
+                    </span>
+                    <span className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-lg bg-[#01579b] text-white hidden group-open:inline-flex shadow-2xs">
+                      <span>Chiudi</span>
+                      <span className="text-[#b3e5fc] text-[10px]">▲</span>
+                    </span>
                   </summary>
                   <div className="space-y-2.5 pt-2 text-[11px] text-slate-600">
                     <div>
