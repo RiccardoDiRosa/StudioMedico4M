@@ -15,7 +15,8 @@ import {
   CalendarCheck,
   ShieldCheck,
   ArrowRight,
-  Info
+  Info,
+  ChevronDown
 } from 'lucide-react';
 
 interface ContattiPageProps {
@@ -25,6 +26,7 @@ interface ContattiPageProps {
 export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [showTransportDetails, setShowTransportDetails] = useState(false);
 
   const breadcrumbItems = [
     { label: 'Contatti e Sede' }
@@ -145,36 +147,48 @@ export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
                 </div>
 
                 {/* Mezzi Pubblici & Orari (Collapsible on Mobile) */}
-                <details className="sm:hidden border-t border-[#b3e5fc]/50 pt-2.5 group">
-                  <summary className="flex items-center justify-between text-xs font-bold text-[#01579b] cursor-pointer py-1.5 select-none list-none [&::-webkit-details-marker]:hidden">
+                <div className="sm:hidden border-t border-[#b3e5fc]/50 pt-2.5">
+                  <button
+                    type="button"
+                    onClick={() => setShowTransportDetails(!showTransportDetails)}
+                    className="w-full flex items-center justify-between text-xs font-bold text-[#01579b] py-1 select-none focus-ring rounded-lg text-left"
+                    aria-expanded={showTransportDetails}
+                  >
                     <span className="flex items-center gap-1.5">
                       <Train className="w-4 h-4 text-[#039be5]" />
                       <span className="text-xs font-bold text-[#01579b]">Come arrivare e orari</span>
                     </span>
-                    <span className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-lg bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 group-open:hidden shadow-2xs">
+                    <span className={`inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-lg border shadow-2xs transition-all duration-300 ${
+                      showTransportDetails
+                        ? 'bg-[#01579b] text-white border-[#01579b]'
+                        : 'bg-[#b3e5fc]/50 text-[#01579b] border-[#039be5]/30'
+                    }`}>
                       <span>Dettagli</span>
-                      <span className="text-[#039be5] text-[10px]">▼</span>
+                      <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-300 ease-out ${
+                        showTransportDetails ? 'rotate-180 text-white' : 'rotate-0 text-[#0277bd]'
+                      }`} />
                     </span>
-                    <span className="inline-flex items-center gap-1 text-xs font-semibold px-2.5 py-1 rounded-lg bg-[#01579b] text-white hidden group-open:inline-flex shadow-2xs">
-                      <span>Chiudi</span>
-                      <span className="text-[#b3e5fc] text-[10px]">▲</span>
-                    </span>
-                  </summary>
-                  <div className="space-y-2.5 pt-2 text-[11px] text-slate-600">
-                    <div>
-                      <strong className="text-[#01579b] block">In treno (Trenord):</strong>
-                      <span>Fermata <em>Bollate Centro</em> (Linee S1 e S3), distante circa 8-10 minuti a piedi.</span>
-                    </div>
-                    <div>
-                      <strong className="text-[#01579b] block">In automobile:</strong>
-                      <span>Dalla SS233 Varesina, Tangenziale Nord (A52) e SP46. Parcheggi nelle vicinanze.</span>
-                    </div>
-                    <div className="border-t border-[#b3e5fc]/40 pt-2">
-                      <strong className="text-[#01579b] block">Orari di visita:</strong>
-                      <span>{STUDIO_CONFIG.publicHours}</span>
+                  </button>
+
+                  <div className={`grid transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] overflow-hidden ${
+                    showTransportDetails ? 'grid-rows-[1fr] opacity-100 pt-2.5' : 'grid-rows-[0fr] opacity-0'
+                  }`}>
+                    <div className="overflow-hidden space-y-2.5 text-[11px] text-slate-600">
+                      <div>
+                        <strong className="text-[#01579b] block">In treno (Trenord):</strong>
+                        <span>Fermata <em>Bollate Centro</em> (Linee S1 e S3), distante circa 8-10 minuti a piedi.</span>
+                      </div>
+                      <div>
+                        <strong className="text-[#01579b] block">In automobile:</strong>
+                        <span>Dalla SS233 Varesina, Tangenziale Nord (A52) e SP46. Parcheggi nelle vicinanze.</span>
+                      </div>
+                      <div className="border-t border-[#b3e5fc]/40 pt-2">
+                        <strong className="text-[#01579b] block">Orari di visita:</strong>
+                        <span>{STUDIO_CONFIG.publicHours}</span>
+                      </div>
                     </div>
                   </div>
-                </details>
+                </div>
 
                 {/* Mezzi Pubblici & Accesso (Desktop only) */}
                 <div className="hidden sm:block pt-4 border-t border-[#b3e5fc]/50 space-y-4">
