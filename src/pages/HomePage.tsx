@@ -122,14 +122,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               </div>
 
               {/* Bottom text bar over image */}
-              <div className="absolute bottom-0 inset-x-0 p-2.5 sm:p-3 text-white flex items-center justify-between">
-                <div>
-                  <p className="text-xs font-semibold leading-tight drop-shadow-sm">Sede di Bollate · Via Madonnina 17</p>
-                  <p className="text-[10px] text-sky-200">Accoglienza, riservatezza e cura della persona</p>
-                </div>
-                <div className="shrink-0 bg-white/20 backdrop-blur-md px-2 py-0.5 rounded text-[10px] font-medium text-white border border-white/30">
-                  Visite su appuntamento
-                </div>
+              <div className="absolute bottom-0 inset-x-0 p-2.5 sm:p-3 text-white">
+                <p className="text-xs font-semibold leading-tight drop-shadow-sm">Sede di Bollate · Via Madonnina 17</p>
+                <p className="text-[10px] text-sky-200">Accoglienza, riservatezza e cura della persona</p>
               </div>
             </div>
 
