@@ -84,7 +84,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
       />
 
       {/* 1. HERO SECTION */}
-      <section className="relative bg-gradient-to-b from-[#b3e5fc]/35 via-white to-[#f4f9fd] pt-6 sm:pt-12 lg:pt-16 pb-12 sm:pb-16 lg:pb-24 overflow-hidden">
+      <section className="relative bg-gradient-to-b from-[#b3e5fc]/35 via-white to-[#f4f9fd] pt-4 sm:pt-12 lg:pt-16 pb-6 sm:pb-16 lg:pb-24 overflow-hidden">
         {/* Subtle background decorative shapes with palette colors */}
         <div className="absolute top-0 right-0 -mr-24 -mt-24 w-96 h-96 rounded-full bg-[#039be5]/15 blur-3xl pointer-events-none" />
         <div className="absolute bottom-10 left-0 -ml-24 w-80 h-80 rounded-full bg-[#b3e5fc]/50 blur-2xl pointer-events-none" />
@@ -96,21 +96,21 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
           {/* ========================================================= */}
           <div className="block lg:hidden">
             {/* Top location kicker */}
-            <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#b3e5fc]/50 border border-[#039be5]/30 text-[11px] font-semibold tracking-wide uppercase text-[#01579b]">
-              <MapPin className="w-3.5 h-3.5 text-[#039be5]" aria-hidden="true" />
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#b3e5fc]/50 border border-[#039be5]/30 text-[11px] font-semibold tracking-wide uppercase text-[#01579b]">
+              <MapPin className="w-3 h-3 text-[#039be5]" aria-hidden="true" />
               <span>Bollate · Via Madonnina 17</span>
             </div>
 
             {/* Mobile Title & Payoff */}
-            <h1 className="text-3xl sm:text-4xl font-normal text-[#01579b] tracking-tight leading-tight font-heading mt-2.5">
+            <h1 className="text-2xl sm:text-4xl font-normal text-[#01579b] tracking-tight leading-tight font-heading mt-2">
               Studio <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums"><span className="inline-block">4</span><span className="inline-block">M</span></span>
             </h1>
-            <p className="text-base sm:text-lg text-[#0277bd] font-serif italic mt-1 font-medium">
+            <p className="text-sm sm:text-lg text-[#0277bd] font-serif italic mt-0.5 font-medium">
               “Dove mente e corpo ritrovano equilibrio”
             </p>
 
             {/* HERO VISUAL STUDIO SHOWCASE CARD - Mobile Above-the-fold */}
-            <div className="relative mt-4 mb-4 rounded-2xl overflow-hidden border-2 border-[#b3e5fc] shadow-xl shadow-[#0277bd]/15 group bg-white">
+            <div className="relative mt-3 mb-3 rounded-2xl overflow-hidden border-2 border-[#b3e5fc] shadow-lg shadow-[#0277bd]/10 group bg-white">
               <div className="aspect-[16/10] relative overflow-hidden bg-slate-100">
                 <img
                   src="/images/studio/studiohome.webp"
@@ -122,7 +122,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               </div>
 
               {/* Bottom text bar over image */}
-              <div className="absolute bottom-0 inset-x-0 p-3 text-white flex items-center justify-between">
+              <div className="absolute bottom-0 inset-x-0 p-2.5 sm:p-3 text-white flex items-center justify-between">
                 <div>
                   <p className="text-xs font-semibold leading-tight drop-shadow-sm">Sede di Bollate · Via Madonnina 17</p>
                   <p className="text-[10px] text-sky-200">Accoglienza, riservatezza e cura della persona</p>
@@ -134,11 +134,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             </div>
 
             {/* Mobile Action Buttons */}
-            <div className="grid grid-cols-2 gap-2.5 pt-1">
+            <div className="grid grid-cols-2 gap-2 pt-0.5">
               <a
                 href="#professionisti"
                 onClick={(e) => scrollToSection(e, 'professionisti')}
-                className="inline-flex items-center justify-center gap-1.5 py-3 px-3 text-xs font-bold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] active:scale-[0.98] rounded-xl shadow-md shadow-[#0277bd]/25 text-center focus-ring"
+                className="inline-flex items-center justify-center gap-1.5 py-2.5 px-3 text-xs font-bold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] active:scale-[0.98] rounded-xl shadow-md shadow-[#0277bd]/25 text-center focus-ring"
               >
                 <span>I Professionisti</span>
                 <ArrowRight className="w-3.5 h-3.5 text-[#b3e5fc]" aria-hidden="true" />
@@ -148,7 +148,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                 href={STUDIO_CONFIG.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-1.5 py-3 px-3 text-xs font-bold text-[#01579b] bg-white active:scale-[0.98] border border-[#b3e5fc] rounded-xl shadow-xs text-center focus-ring"
+                className="inline-flex items-center justify-center gap-1.5 py-2.5 px-3 text-xs font-bold text-[#01579b] bg-white active:scale-[0.98] border border-[#b3e5fc] rounded-xl shadow-xs text-center focus-ring"
               >
                 <Navigation className="w-3.5 h-3.5 text-[#039be5]" aria-hidden="true" />
                 <span>Come Arrivare</span>
@@ -156,9 +156,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             </div>
 
             {/* Mobile Holistic Emblem Card */}
-            <div className="mt-3 p-3.5 rounded-2xl bg-white border border-[#b3e5fc] shadow-xs flex items-center gap-3.5">
+            <div className="mt-2.5 p-3 rounded-2xl bg-white border border-[#b3e5fc] shadow-xs flex items-center gap-3">
               <div className="shrink-0 p-1.5 rounded-xl bg-[#f4f9fd] border border-[#b3e5fc]/80 shadow-2xs">
-                <HolisticEmblem size={64} />
+                <HolisticEmblem size={56} />
               </div>
               <div className="min-w-0">
                 <h3 className="text-xs sm:text-sm font-bold text-[#01579b] leading-tight font-sans">
@@ -167,25 +167,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                 <p className="text-[11px] text-[#0277bd] font-semibold mt-0.5">
                   Approccio integrato alla salute
                 </p>
-                <p className="text-[10px] text-slate-500 mt-1 line-clamp-1">
+                <p className="text-[10px] text-slate-500 mt-0.5 line-clamp-1">
                   Discipline sanitarie e benessere psicofisico
                 </p>
-              </div>
-            </div>
-
-            {/* Key Trust Pillars Strip */}
-            <div className="grid grid-cols-3 gap-2 pt-3">
-              <div className="bg-white/80 backdrop-blur-xs p-2.5 rounded-xl border border-[#b3e5fc]/70 text-center flex flex-col items-center justify-center">
-                <Users className="w-4 h-4 text-[#01579b] mb-0.5" aria-hidden="true" />
-                <span className="block text-[10px] text-slate-600 font-medium">Professionisti</span>
-              </div>
-              <div className="bg-white/80 backdrop-blur-xs p-2.5 rounded-xl border border-[#b3e5fc]/70 text-center">
-                <span className="block text-sm font-bold text-[#01579b]">8</span>
-                <span className="block text-[10px] text-slate-600 font-medium">Aree Mediche</span>
-              </div>
-              <div className="bg-white/80 backdrop-blur-xs p-2.5 rounded-xl border border-[#b3e5fc]/70 text-center">
-                <span className="block text-sm font-bold text-[#039be5]">Diretto</span>
-                <span className="block text-[10px] text-slate-600 font-medium">Senza Attese</span>
               </div>
             </div>
           </div>
