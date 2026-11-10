@@ -129,41 +129,45 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
         </section>
 
         {/* Section 2: Spazio fisico e modello operativo */}
-        <section className="py-8 sm:py-16 bg-[#f4f9fd]">
+        <section className="py-6 sm:py-12 lg:py-16 bg-[#f4f9fd]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto text-center space-y-4 mb-12">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#0277bd]">
+            <div className="max-w-3xl mx-auto text-center space-y-1.5 sm:space-y-3 mb-6 sm:mb-10">
+              <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd]">
                 L'Organizzazione
               </span>
-              <h2 className="text-2xl sm:text-3xl font-normal text-[#01579b] tracking-tight font-heading">
+              <h2 className="text-xl sm:text-3xl font-normal text-[#01579b] tracking-tight font-heading">
                 Come è strutturato lo studio
               </h2>
-              <p className="text-sm text-slate-600 leading-relaxed">
+              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                 Una gestione trasparente, pensata per mettere sempre al centro la relazione diretta tra paziente/cliente e professionista.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-6 max-w-4xl mx-auto">
               
-              <div className="bg-white rounded-2xl p-7 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-lg hover:shadow-[#039be5]/10 transition-all space-y-3">
-                <div className="w-12 h-12 rounded-xl bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 flex items-center justify-center shadow-xs">
-                  <ShieldCheck className="w-6 h-6 text-[#0277bd]" />
+              <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-lg hover:shadow-[#039be5]/10 transition-all">
+                <div className="flex items-center gap-3 mb-2.5">
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 flex items-center justify-center shrink-0 shadow-xs">
+                    <ShieldCheck className="w-5 h-5 text-[#0277bd]" />
+                  </div>
+                  <h3 className="text-sm sm:text-base font-bold text-[#01579b] font-sans leading-tight">
+                    Spazi per visite e trattamenti
+                  </h3>
                 </div>
-                <h3 className="text-base font-bold text-[#01579b] font-sans">
-                  Spazi per visite e trattamenti
-                </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
                   Lo studio in Via Madonnina 17 dispone di ambienti dedicati alle visite specialistiche, ai trattamenti di fisioterapia, osteopatia e riflessologia, nonché a colloqui di sostegno psicologico in totale riservatezza.
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl p-7 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-lg hover:shadow-[#039be5]/10 transition-all space-y-3">
-                <div className="w-12 h-12 rounded-xl bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 flex items-center justify-center shadow-xs">
-                  <Compass className="w-6 h-6 text-[#0277bd]" />
+              <div className="bg-white rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-[#b3e5fc]/80 hover:border-[#039be5] hover:shadow-lg hover:shadow-[#039be5]/10 transition-all">
+                <div className="flex items-center gap-3 mb-2.5">
+                  <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-[#b3e5fc]/50 text-[#01579b] border border-[#039be5]/30 flex items-center justify-center shrink-0 shadow-xs">
+                    <Compass className="w-5 h-5 text-[#0277bd]" />
+                  </div>
+                  <h3 className="text-sm sm:text-base font-bold text-[#01579b] font-sans leading-tight">
+                    Rapporto diretto e senza intermediari
+                  </h3>
                 </div>
-                <h3 className="text-base font-bold text-[#01579b] font-sans">
-                  Rapporto diretto e senza intermediari
-                </h3>
                 <p className="text-xs text-slate-600 leading-relaxed">
                   Non essendo presente un centralino unico o una segreteria, l'individuo concorda date, orari, quesiti clinici e tariffe direttamente con il libero professionista di riferimento.
                 </p>
