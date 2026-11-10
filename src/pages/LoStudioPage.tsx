@@ -3,6 +3,7 @@ import { Breadcrumb } from '../components/Breadcrumb';
 import { SEOHead } from '../components/SEOHead';
 import { HolisticEmblem } from '../components/HolisticEmblem';
 import { ProfessionalCard } from '../components/ProfessionalCard';
+import { StudioPhotoCarousel } from '../components/StudioPhotoCarousel';
 import { PROFESSIONISTI } from '../data/professionisti';
 import { STUDIO_CONFIG } from '../data/studio';
 import { 
@@ -45,24 +46,24 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
 
       <div className="bg-[#f4f9fd] min-h-screen">
         {/* Breadcrumb Bar */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-2 sm:pt-4">
           <Breadcrumb items={breadcrumbItems} onNavigate={onNavigate} />
         </div>
 
-        {/* Hero Header Section */}
-        <section className="pt-8 pb-14 bg-gradient-to-b from-[#b3e5fc]/35 to-transparent">
+        {/* Hero Header Section - Compact on mobile */}
+        <section className="pt-4 pb-6 sm:pt-8 sm:pb-14 bg-gradient-to-b from-[#b3e5fc]/35 to-transparent">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#0277bd]">
+              <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd]">
                 Lo Studio Professionale
               </span>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-normal text-[#01579b] tracking-tight font-heading mt-2 mb-4">
+              <h1 className="text-2xl sm:text-4xl lg:text-5xl font-normal text-[#01579b] tracking-tight font-heading mt-1 sm:mt-2 mb-2 sm:mb-4">
                 Lo Studio Professionale 4M a Bollate
               </h1>
-              <p className="text-lg text-[#0277bd] font-serif italic mb-4 font-medium">
+              <p className="text-base sm:text-lg text-[#0277bd] font-serif italic mb-2 sm:mb-4 font-medium">
                 “Dove mente e corpo ritrovano equilibrio”
               </p>
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+              <p className="text-xs sm:text-base text-slate-600 leading-relaxed">
                 Studio 4M è uno studio professionale pensato per accogliere persone che desiderano prendersi cura della propria salute, della riabilitazione fisica e del benessere psicofisico in un contesto ordinato, riservato e facilmente accessibile a Bollate.
               </p>
             </div>
@@ -70,30 +71,30 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
         </section>
 
         {/* Section 1: Filosofia & Payoff */}
-        <section className="py-16 bg-white border-y border-[#b3e5fc]/60">
+        <section className="py-8 sm:py-16 bg-white border-y border-[#b3e5fc]/60">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               
-              <div className="lg:col-span-7 space-y-5">
-                <span className="text-xs font-bold uppercase tracking-wider text-[#0277bd]">
+              <div className="lg:col-span-7 space-y-3 sm:space-y-5">
+                <span className="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-[#0277bd]">
                   La Nostra Visione
                 </span>
-                <h2 className="text-2xl sm:text-3xl font-normal text-[#01579b] tracking-tight font-heading">
+                <h2 className="text-xl sm:text-3xl font-normal text-[#01579b] tracking-tight font-heading">
                   L'equilibrio integrato tra mente e corpo
                 </h2>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Il payoff dello studio — <em>“Dove mente e corpo ritrovano equilibrio”</em> — sintetizza la volontà di riunire in uno stesso luogo professionisti con percorsi e metodologie complementari.
                 </p>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Il benessere di una persona non è mai un fatto unicamente articolare o meramente psicologico: posture alterate, tensioni emotive, abitudini alimentari e disordini muscolari sono spesso profondamente correlati. L'offerta di discipline differenti permette a ciascun individuo di trovare la risposta più coerente al proprio momento di vita.
                 </p>
 
-                <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-700">
-                  <div className="flex items-start gap-2.5 p-4 rounded-2xl bg-[#f4f9fd] border border-[#b3e5fc]/80 hover:border-[#039be5] transition-colors">
+                <div className="pt-1 sm:pt-2 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 text-[11px] sm:text-xs text-slate-700">
+                  <div className="flex items-start gap-2 sm:gap-2.5 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f9fd] border border-[#b3e5fc]/80 hover:border-[#039be5] transition-colors">
                     <CheckCircle2 className="w-4 h-4 text-[#039be5] shrink-0 mt-0.5" />
                     <span>Rispetto della libera professione di ogni specialista</span>
                   </div>
-                  <div className="flex items-start gap-2.5 p-4 rounded-2xl bg-[#f4f9fd] border border-[#b3e5fc]/80 hover:border-[#039be5] transition-colors">
+                  <div className="flex items-start gap-2 sm:gap-2.5 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-[#f4f9fd] border border-[#b3e5fc]/80 hover:border-[#039be5] transition-colors">
                     <CheckCircle2 className="w-4 h-4 text-[#039be5] shrink-0 mt-0.5" />
                     <span>Ambiente accogliente, pulito e riservato</span>
                   </div>
@@ -101,23 +102,13 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
               </div>
 
               <div className="lg:col-span-5 flex flex-col space-y-4 max-w-lg w-full mx-auto">
-                {/* Clean photo card without heavy borders or overlaid text boxes */}
-                <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-[#b3e5fc] shadow-md hover:shadow-xl hover:border-[#039be5] transition-all bg-white group">
-                  <div className="relative aspect-[16/10] sm:aspect-[4/3] overflow-hidden bg-slate-100">
-                    <img
-                      src="/images/studio/studio2.webp"
-                      alt="Interni dello Studio 4M a Bollate"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                      loading="lazy"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/35 via-transparent to-transparent pointer-events-none" />
-                  </div>
-                </div>
+                {/* Carosello fotografico interattivo con le foto degli spazi */}
+                <StudioPhotoCarousel />
 
                 {/* Holistic Emblem Card: Clean, balanced, elegant */}
-                <div className="p-4 sm:p-5 rounded-2xl sm:rounded-3xl bg-white border border-[#b3e5fc] hover:border-[#039be5] shadow-sm hover:shadow-md transition-all flex items-center gap-4">
-                  <div className="shrink-0 p-2.5 rounded-2xl bg-[#f4f9fd] border border-[#b3e5fc]/80 shadow-2xs">
-                    <HolisticEmblem size={72} />
+                <div className="p-3.5 sm:p-5 rounded-2xl sm:rounded-3xl bg-white border border-[#b3e5fc] hover:border-[#039be5] shadow-sm hover:shadow-md transition-all flex items-center gap-3.5 sm:gap-4">
+                  <div className="shrink-0 p-2 sm:p-2.5 rounded-2xl bg-[#f4f9fd] border border-[#b3e5fc]/80 shadow-2xs">
+                    <HolisticEmblem size={64} />
                   </div>
                   <div className="min-w-0">
                     <h3 className="text-sm sm:text-base font-bold text-[#01579b] leading-tight font-sans">
@@ -138,7 +129,7 @@ export const LoStudioPage: React.FC<LoStudioPageProps> = ({
         </section>
 
         {/* Section 2: Spazio fisico e modello operativo */}
-        <section className="py-16 bg-[#f4f9fd]">
+        <section className="py-8 sm:py-16 bg-[#f4f9fd]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center space-y-4 mb-12">
               <span className="text-xs font-bold uppercase tracking-wider text-[#0277bd]">
