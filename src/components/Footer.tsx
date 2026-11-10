@@ -2,7 +2,7 @@ import React from 'react';
 import { Logo } from './Logo';
 import { WaveDivider } from './WaveDivider';
 import { STUDIO_CONFIG } from '../data/studio';
-import { MapPin, ShieldCheck, HeartPulse, ExternalLink } from 'lucide-react';
+import { MapPin, HeartPulse, ExternalLink } from 'lucide-react';
 
 interface FooterProps {
   onNavigate: (path: string) => void;
@@ -29,10 +29,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <p className="text-xs text-sky-100/90 leading-relaxed max-w-sm">
               Studio professionale a Bollate dedicato alla salute, alla riabilitazione e al benessere della persona.
             </p>
-            <div className="hidden sm:flex items-center gap-2 text-xs text-[#b3e5fc] font-medium">
-              <ShieldCheck className="w-4 h-4 shrink-0 text-[#039be5]" />
-              <span>Studio professionale di liberi professionisti indipendenti</span>
-            </div>
           </div>
 
           {/* Col 2: Navigazione rapida */}

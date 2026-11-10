@@ -310,34 +310,46 @@ export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
                           </div>
 
                           {/* Action Buttons (Call, Email, View Profile) */}
-                          <div className="flex flex-row sm:flex-col items-center sm:items-end gap-2 shrink-0 pt-2 sm:pt-0 border-t sm:border-t-0 border-[#b3e5fc]/50">
+                          <div className="flex flex-col sm:items-end gap-2 shrink-0 pt-2 sm:pt-0 border-t sm:border-t-0 border-[#b3e5fc]/50 sm:w-56">
                             
                             {(prof.phone || prof.email) && (
-                              <div className="flex items-center gap-2 w-full sm:w-auto">
+                              <div className="flex items-center gap-2 w-full justify-between sm:justify-end">
                                 {/* Call Button */}
-                                {prof.phone && (
+                                {prof.phone ? (
                                   <a
                                     href={`tel:${cleanPhone}`}
-                                    className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] transition-all shadow-xs"
+                                    className="flex-1 sm:flex-initial sm:w-44 inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] transition-all shadow-xs shrink-0"
                                     title={`Chiama ${prof.title} ${prof.lastName}`}
                                   >
-                                    <Phone className="w-3.5 h-3.5 text-[#b3e5fc]" />
-                                    <span>{prof.phone}</span>
+                                    <Phone className="w-3.5 h-3.5 text-[#b3e5fc] shrink-0" />
+                                    <span className="tabular-nums tracking-wide">{prof.phone}</span>
                                   </a>
+                                ) : (
+                                  prof.email && (
+                                    <a
+                                      href={`mailto:${prof.email}?subject=Richiesta%20informazioni%20-%20Studio%204M`}
+                                      className="flex-1 sm:flex-initial sm:w-44 inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] transition-all shadow-xs shrink-0"
+                                      title={`Invia email a ${prof.email}`}
+                                    >
+                                      <Mail className="w-3.5 h-3.5 text-[#b3e5fc] shrink-0" />
+                                      <span>Invia Email</span>
+                                    </a>
+                                  )
                                 )}
 
                                 {/* Direct Email Link if available */}
-                                {prof.email && (
+                                {prof.phone && prof.email ? (
                                   <a
-                                    href={`mailto:${prof.email}?subject=Richiesta%20informazioni%20-%20Studio%20Medico%204M`}
-                                    className={`inline-flex items-center justify-center gap-1.5 rounded-xl text-[#01579b] bg-sky-50 hover:bg-sky-100 border border-[#b3e5fc] transition-colors shadow-2xs ${
-                                      prof.phone ? 'p-2' : 'px-3.5 py-2 text-xs font-semibold'
-                                    }`}
+                                    href={`mailto:${prof.email}?subject=Richiesta%20informazioni%20-%20Studio%204M`}
+                                    className="w-10 h-10 inline-flex items-center justify-center rounded-xl text-[#01579b] bg-sky-50 hover:bg-sky-100 border border-[#b3e5fc] transition-colors shadow-2xs shrink-0"
                                     title={`Invia email a ${prof.email}`}
+                                    aria-label={`Invia email a ${prof.title} ${prof.lastName}`}
                                   >
-                                    <Mail className="w-3.5 h-3.5 text-[#039be5]" />
-                                    {!prof.phone && <span>Invia Email</span>}
+                                    <Mail className="w-4 h-4 text-[#039be5]" />
                                   </a>
+                                ) : (
+                                  /* Slot spacer on desktop to keep all phone buttons strictly aligned */
+                                  <div className="hidden sm:block w-10 h-10 shrink-0" aria-hidden="true" />
                                 )}
                               </div>
                             )}
@@ -346,7 +358,7 @@ export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
                             <button
                               type="button"
                               onClick={() => onNavigate(`/professionisti/${prof.slug}`)}
-                              className="text-[11px] font-semibold text-[#0277bd] hover:text-[#01579b] hover:underline inline-flex items-center gap-1 mt-0.5"
+                              className="text-[11px] font-semibold text-[#0277bd] hover:text-[#01579b] hover:underline inline-flex items-center justify-center sm:justify-end gap-1 mt-0.5 sm:pr-12 w-full sm:w-auto"
                             >
                               <span>Vedi scheda completa</span>
                               <ArrowRight className="w-3 h-3 text-[#039be5]" />

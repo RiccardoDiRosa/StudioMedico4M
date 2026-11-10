@@ -3,14 +3,14 @@ import { Professional } from '../types';
 import { Breadcrumb } from '../components/Breadcrumb';
 import { SEOHead } from '../components/SEOHead';
 import { STUDIO_CONFIG } from '../data/studio';
-import { 
-  MapPin, 
-  Clock, 
-  Phone, 
-  Mail, 
-  CheckCircle2, 
-  ArrowLeft, 
-  ShieldAlert, 
+import {
+  MapPin,
+  Clock,
+  Phone,
+  Mail,
+  CheckCircle2,
+  ArrowLeft,
+  ShieldAlert,
   Calendar,
   Building2,
   ExternalLink,
@@ -149,7 +149,7 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
             <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#01579b] via-[#039be5] to-[#b3e5fc]" />
 
             <div className="flex flex-col lg:flex-row items-start justify-between gap-8">
-              
+
               <div className="flex flex-col sm:flex-row items-start gap-6 sm:gap-8 flex-1">
                 {/* Doctor Avatar */}
                 <div className="shrink-0 relative">
@@ -289,10 +289,10 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
         {/* Detailed Sections: Bio, CV, Services, Contact Modalities */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            
+
             {/* Left 8 Cols: Overview, CV, and Services in Accordions */}
             <div className="lg:col-span-8 space-y-4 sm:space-y-5">
-              
+
               {/* Quick utility bar to expand / collapse all */}
               <div className="flex items-center justify-between px-1 pb-1">
                 <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#0277bd]">
@@ -325,27 +325,25 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                         {isMiranda ? "Perché è uno specialista di prim'ordine" : "Presentazione e Profilo Professionale"}
                       </h2>
                       <p className="text-xs sm:text-sm text-[#0277bd] font-medium mt-0.5 line-clamp-1 sm:line-clamp-none">
-                        {isMiranda 
+                        {isMiranda
                           ? "Alta Specialità Chirurgia della Spalla · Ospedale Niguarda di Milano"
                           : `${professional.role} · Studio Professionale 4M`}
                       </p>
                     </div>
                   </div>
 
-                  <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 border transition-all duration-300 ${
-                    openSections.bio 
-                      ? 'bg-[#01579b] text-white border-[#01579b] shadow-xs' 
-                      : 'bg-[#f4f9fd] text-[#0277bd] border-[#b3e5fc] hover:bg-[#b3e5fc]/30'
-                  }`}>
+                  <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 border transition-all duration-300 ${openSections.bio
+                    ? 'bg-[#01579b] text-white border-[#01579b] shadow-xs'
+                    : 'bg-[#f4f9fd] text-[#0277bd] border-[#b3e5fc] hover:bg-[#b3e5fc]/30'
+                    }`}>
                     <ChevronDown className={`w-5 h-5 transition-transform duration-300 ease-in-out ${openSections.bio ? 'rotate-180' : 'rotate-0'}`} />
                   </div>
                 </button>
 
                 {/* Collapsible Content */}
                 <div
-                  className={`grid transition-all duration-300 ease-in-out ${
-                    openSections.bio ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0 pointer-events-none'
-                  }`}
+                  className={`grid transition-all duration-300 ease-in-out ${openSections.bio ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0 pointer-events-none'
+                    }`}
                 >
                   <div className="overflow-hidden">
                     <div className="p-6 sm:p-8 pt-3 sm:pt-4 border-t border-[#b3e5fc]/60 space-y-6">
@@ -494,24 +492,22 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                       </div>
                     </div>
 
-                    <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 border transition-all duration-300 ${
-                      openSections.cv 
-                        ? 'bg-[#01579b] text-white border-[#01579b] shadow-xs' 
-                        : 'bg-[#f4f9fd] text-[#0277bd] border-[#b3e5fc] hover:bg-[#b3e5fc]/30'
-                    }`}>
+                    <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 border transition-all duration-300 ${openSections.cv
+                      ? 'bg-[#01579b] text-white border-[#01579b] shadow-xs'
+                      : 'bg-[#f4f9fd] text-[#0277bd] border-[#b3e5fc] hover:bg-[#b3e5fc]/30'
+                      }`}>
                       <ChevronDown className={`w-5 h-5 transition-transform duration-300 ease-in-out ${openSections.cv ? 'rotate-180' : 'rotate-0'}`} />
                     </div>
                   </button>
 
                   {/* Collapsible Content */}
                   <div
-                    className={`grid transition-all duration-300 ease-in-out ${
-                      openSections.cv ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0 pointer-events-none'
-                    }`}
+                    className={`grid transition-all duration-300 ease-in-out ${openSections.cv ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0 pointer-events-none'
+                      }`}
                   >
                     <div className="overflow-hidden">
                       <div className="p-6 sm:p-8 pt-3 sm:pt-4 border-t border-[#b3e5fc]/60 space-y-6">
-                        
+
                         {/* Esperienza professionale */}
                         {professional.curriculumVitae.experiences && professional.curriculumVitae.experiences.length > 0 && (
                           <div className="space-y-3">
@@ -618,20 +614,18 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                     </div>
                   </div>
 
-                  <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 border transition-all duration-300 ${
-                    openSections.services 
-                      ? 'bg-[#01579b] text-white border-[#01579b] shadow-xs' 
-                      : 'bg-[#f4f9fd] text-[#0277bd] border-[#b3e5fc] hover:bg-[#b3e5fc]/30'
-                  }`}>
+                  <div className={`w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 border transition-all duration-300 ${openSections.services
+                    ? 'bg-[#01579b] text-white border-[#01579b] shadow-xs'
+                    : 'bg-[#f4f9fd] text-[#0277bd] border-[#b3e5fc] hover:bg-[#b3e5fc]/30'
+                    }`}>
                     <ChevronDown className={`w-5 h-5 transition-transform duration-300 ease-in-out ${openSections.services ? 'rotate-180' : 'rotate-0'}`} />
                   </div>
                 </button>
 
                 {/* Collapsible Content */}
                 <div
-                  className={`grid transition-all duration-300 ease-in-out ${
-                    openSections.services ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0 pointer-events-none'
-                  }`}
+                  className={`grid transition-all duration-300 ease-in-out ${openSections.services ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0 pointer-events-none'
+                    }`}
                 >
                   <div className="overflow-hidden">
                     <div className="p-6 sm:p-8 pt-3 sm:pt-4 border-t border-[#b3e5fc]/60 space-y-4">
@@ -657,12 +651,12 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
 
             {/* Right 4 Cols: Top Doctors CTA, Contact Box & Directions */}
             <div className="lg:col-span-4 space-y-6">
-              
+
               {/* Top Doctors Dedicated Card */}
               {professional.topDoctorsUrl && (
                 <div className="bg-gradient-to-br from-[#01579b] via-[#0277bd] to-[#01579b] text-white rounded-3xl p-6 sm:p-7 shadow-lg shadow-[#0277bd]/20 space-y-4 relative overflow-hidden">
                   <div className="absolute top-0 right-0 -mr-10 -mt-10 w-40 h-40 rounded-full bg-white/10 blur-xl pointer-events-none" />
-                  
+
                   <div className="flex items-center gap-2">
                     <span className="text-[11px] font-bold uppercase tracking-wider text-sky-200">
                       Piattaforma Medica Certificata
@@ -694,7 +688,7 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
               {(professional.mioDottoreUrl || professional.websiteUrl) && (
                 <div className="bg-gradient-to-br from-[#01579b] via-[#0277bd] to-[#01579b] text-white rounded-3xl p-6 sm:p-7 shadow-lg shadow-[#0277bd]/20 space-y-4 relative overflow-hidden">
                   <div className="absolute top-0 right-0 -mr-10 -mt-10 w-40 h-40 rounded-full bg-white/10 blur-xl pointer-events-none" />
-                  
+
                   <div className="flex items-center gap-2">
                     <span className="text-[11px] font-bold uppercase tracking-wider text-sky-200">
                       Canali Ufficiali & Prenotazioni
@@ -765,23 +759,17 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                       <img
                         src="/images/agolovati.webp"
                         alt="Applicazione aghi agopuntura Dr. Enrico Lovati"
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/80 via-transparent to-transparent flex items-end p-2">
-                        <span className="text-[10px] font-bold text-white leading-tight">Applicazione Aghi</span>
-                      </div>
                     </div>
                     <div className="rounded-xl overflow-hidden border border-[#b3e5fc] aspect-square relative group">
                       <img
                         src="/images/manolovati.webp"
                         alt="Trattamento agopuntura mano Dr. Enrico Lovati"
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/80 via-transparent to-transparent flex items-end p-2">
-                        <span className="text-[10px] font-bold text-white leading-tight">Punti Riflessi</span>
-                      </div>
                     </div>
                   </div>
 
@@ -929,8 +917,8 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                   {professional.email && (
                     <div className="flex justify-between border-b border-[#b3e5fc]/40 pb-1.5 gap-2 items-center">
                       <span className="text-slate-500 shrink-0">Email:</span>
-                      <a 
-                        href={`mailto:${professional.email}?subject=Richiesta%20informazioni%20-%20Studio%20Medico%204M`} 
+                      <a
+                        href={`mailto:${professional.email}?subject=Richiesta%20informazioni%20-%20Studio%204M`}
                         className="font-semibold text-[#01579b] hover:underline truncate max-w-[200px]"
                         title={professional.email}
                       >
