@@ -39,6 +39,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
     }
   };
 
+  const handleHeroCategoryClick = (categoryId: string) => {
+    setSelectedCategory(categoryId);
+    const element = document.getElementById('professionisti');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   // Structured Data Schema for Local Medical Practice
   const homeSchema = {
     '@context': 'https://schema.org',
@@ -83,178 +91,287 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
         schemaJson={homeSchema}
       />
 
-      {/* 1. HERO SECTION */}
-      <section className="relative bg-gradient-to-b from-[#b3e5fc]/35 via-white to-[#f4f9fd] pt-4 sm:pt-12 lg:pt-16 pb-6 sm:pb-16 lg:pb-24 overflow-hidden">
-        {/* Subtle background decorative shapes with palette colors */}
-        <div className="absolute top-0 right-0 -mr-24 -mt-24 w-96 h-96 rounded-full bg-[#039be5]/15 blur-3xl pointer-events-none" />
-        <div className="absolute bottom-10 left-0 -ml-24 w-80 h-80 rounded-full bg-[#b3e5fc]/50 blur-2xl pointer-events-none" />
+      {/* 1. HERO SECTION - FULL-SCREEN IMMERSIVE ARCHITECTURAL SHOWCASE */}
+      <section className="relative bg-[#031b33] overflow-hidden group/hero">
+        
+        {/* ========================================================= */}
+        {/* MOBILE FULL-SCREEN HERO VIEW (< lg)                       */}
+        {/* ========================================================= */}
+        <div className="block lg:hidden relative min-h-[calc(100svh-4rem)] flex flex-col justify-between">
+          
+          {/* Upper/Middle Immersive Studio Photo with Soft Feathered Blend ("Sfumata") */}
+          <div className="relative w-full h-[46svh] min-h-[270px] max-h-[400px] overflow-hidden shrink-0">
+            <img
+              src="/images/studio/studiohome.webp"
+              alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
+              className="w-full h-full object-cover object-[68%_center] scale-[1.02] transition-transform duration-1000 ease-out"
+              loading="eager"
+              fetchPriority="high"
+            />
+            {/* Top subtle vignette for status/location pill readability */}
+            <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#031b33]/80 via-[#031b33]/30 to-transparent pointer-events-none" />
+            {/* Deep bottom feathered fade ("sfumatura morbida") into the midnight-azure stage */}
+            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#031b33] via-[#031b33]/80 to-transparent pointer-events-none" />
+            {/* Subtle radial warm-to-cool atmospheric veil */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#031b33]/45 via-transparent to-[#031b33]/25 pointer-events-none" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            {/* Floating Top Location Pill over the image */}
+            <div className="absolute top-3.5 left-4 right-4 flex items-center justify-between z-10">
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#031b33]/65 backdrop-blur-md border border-white/25 text-[11px] font-semibold tracking-wide uppercase text-white shadow-lg">
+                <span className="w-2 h-2 rounded-full bg-[#38bdf8] animate-pulse" />
+                <MapPin className="w-3 h-3 text-[#38bdf8]" aria-hidden="true" />
+                <span>Bollate · Via Madonnina 17</span>
+              </div>
+            </div>
+          </div>
 
-          {/* ========================================================= */}
-          {/* MOBILE HERO VIEW (< lg) - Optimized for First Impression  */}
-          {/* ========================================================= */}
-          <div className="block lg:hidden">
-            {/* Top location kicker */}
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#b3e5fc]/50 border border-[#039be5]/30 text-[11px] font-semibold tracking-wide uppercase text-[#01579b]">
-              <MapPin className="w-3 h-3 text-[#039be5]" aria-hidden="true" />
-              <span>Bollate · Via Madonnina 17</span>
+          {/* Lower Editorial Stage (Seamlessly blended with the faded image above) */}
+          <div className="relative z-10 px-4 pb-6 -mt-12 flex-1 flex flex-col justify-between space-y-4">
+            
+            {/* Monumental Mobile Headline & Payoff */}
+            <div>
+              <span className="inline-block text-[10px] font-bold uppercase tracking-[0.2em] text-[#38bdf8] mb-1">
+                Studio Professionale · Salute e Benessere
+              </span>
+              <h1 className="text-3xl sm:text-4xl font-normal text-white tracking-tight leading-[1.1] font-heading drop-shadow-sm">
+                Studio{' '}
+                <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-[#bae6fd] to-[#38bdf8] font-brand tracking-wide inline-flex items-baseline lining-nums">
+                  <span>4</span><span>M</span>
+                </span>
+              </h1>
+              <p className="text-base sm:text-lg text-[#7dd3fc] font-serif italic mt-1 font-medium">
+                “Dove mente e corpo ritrovano equilibrio”
+              </p>
+              <p className="text-xs text-slate-300/90 leading-relaxed mt-2">
+                Un unico spazio riservato e accogliente a Bollate dove specialisti della salute e del benessere collaborano per prendersi cura della persona.
+              </p>
             </div>
 
-            {/* Mobile Title & Payoff */}
-            <h1 className="text-2xl sm:text-4xl font-normal text-[#01579b] tracking-tight leading-tight font-heading mt-2">
-              Studio <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums"><span className="inline-block">4</span><span className="inline-block">M</span></span>
-            </h1>
-            <p className="text-sm sm:text-lg text-[#0277bd] font-serif italic mt-0.5 font-medium">
-              “Dove mente e corpo ritrovano equilibrio”
-            </p>
-
-            {/* HERO VISUAL STUDIO SHOWCASE CARD - Mobile Above-the-fold */}
-            <div className="relative mt-3 mb-3 rounded-2xl overflow-hidden shadow-md bg-white group">
-              <img
-                src="/images/studio/studiohome.webp"
-                alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
-                className="w-full h-auto block transition-transform duration-700 ease-out group-hover:scale-105"
-                loading="eager"
-                fetchPriority="high"
-              />
-            </div>
-
-            {/* Mobile Action Buttons */}
-            <div className="grid grid-cols-2 gap-2 pt-0.5">
+            {/* Mobile Primary CTAs */}
+            <div className="grid grid-cols-2 gap-2.5">
               <a
                 href="#professionisti"
                 onClick={(e) => scrollToSection(e, 'professionisti')}
-                className="inline-flex items-center justify-center gap-1.5 py-2.5 px-3 text-xs font-bold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] active:scale-[0.98] rounded-xl shadow-md shadow-[#0277bd]/25 text-center focus-ring"
+                className="inline-flex items-center justify-center gap-1.5 py-3 px-3.5 text-xs font-bold text-[#012a4a] bg-gradient-to-r from-white via-[#e0f2fe] to-[#bae6fd] active:scale-[0.98] rounded-xl shadow-lg shadow-[#0284c7]/25 text-center focus-ring"
               >
                 <span>I Professionisti</span>
-                <ArrowRight className="w-3.5 h-3.5 text-[#b3e5fc]" aria-hidden="true" />
+                <ArrowRight className="w-3.5 h-3.5 text-[#0284c7]" aria-hidden="true" />
               </a>
 
               <a
                 href={STUDIO_CONFIG.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-1.5 py-2.5 px-3 text-xs font-bold text-[#01579b] bg-white active:scale-[0.98] border border-[#b3e5fc] rounded-xl shadow-xs text-center focus-ring"
+                className="inline-flex items-center justify-center gap-1.5 py-3 px-3.5 text-xs font-bold text-white bg-white/10 hover:bg-white/15 backdrop-blur-md active:scale-[0.98] border border-white/25 rounded-xl shadow-sm text-center focus-ring"
               >
-                <Navigation className="w-3.5 h-3.5 text-[#039be5]" aria-hidden="true" />
+                <Navigation className="w-3.5 h-3.5 text-[#38bdf8]" aria-hidden="true" />
                 <span>Come Arrivare</span>
               </a>
             </div>
 
-            {/* Mobile Holistic Emblem Card */}
-            <div className="mt-2.5 p-3 rounded-2xl bg-white border border-[#b3e5fc] shadow-xs flex items-center gap-3">
-              <div className="shrink-0 p-1.5 rounded-xl bg-[#f4f9fd] border border-[#b3e5fc]/80 shadow-2xs">
-                <HolisticEmblem size={56} />
+            {/* Frosted Glass Holistic Emblem Card */}
+            <div className="p-3 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl flex items-center gap-3">
+              <div className="shrink-0 p-1.5 rounded-xl bg-white/95 shadow-sm">
+                <HolisticEmblem size={50} />
               </div>
               <div className="min-w-0">
-                <h3 className="text-xs sm:text-sm font-bold text-[#01579b] leading-tight font-sans">
+                <h3 className="text-xs font-bold text-white leading-tight font-sans">
                   Mente e Corpo in Equilibrio
                 </h3>
-                <p className="text-[11px] text-[#0277bd] font-semibold mt-0.5">
+                <p className="text-[11px] text-[#7dd3fc] font-semibold mt-0.5">
                   Approccio integrato alla salute
                 </p>
-                <p className="text-[10px] text-slate-500 mt-0.5 line-clamp-1">
-                  Discipline sanitarie e benessere psicofisico
+                <p className="text-[10px] text-slate-300 mt-0.5 line-clamp-1">
+                  8 aree specialistiche · Contatto diretto
                 </p>
               </div>
             </div>
-          </div>
 
-          {/* ========================================================= */}
-          {/* DESKTOP HERO VIEW (hidden lg:grid) - The Approved Layout  */}
-          {/* ========================================================= */}
-          <div className="hidden lg:grid grid-cols-12 gap-8 xl:gap-12 items-center">
-            
-            {/* Left Column: Presentation & CTAs */}
-            <div className="col-span-6 space-y-6">
-              
-              {/* Pill Location Kicker */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#b3e5fc]/45 border border-[#039be5]/30 text-xs font-semibold tracking-wider uppercase text-[#01579b]">
-                <MapPin className="w-3.5 h-3.5 text-[#039be5]" aria-hidden="true" />
-                <span>Bollate (Milano) · Via Madonnina 17</span>
-              </div>
-
-              {/* Main Headline */}
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-normal text-[#01579b] tracking-tight leading-[1.15] text-balance font-heading">
-                Studio <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums"><span className="inline-block">4</span><span className="inline-block">M</span></span>
-              </h1>
-
-              {/* Payoff */}
-              <p className="text-xl lg:text-2xl text-[#0277bd] font-serif italic tracking-tight font-medium">
-                “Dove mente e corpo ritrovano equilibrio”
-              </p>
-
-              {/* Verified Editorial Copy */}
-              <p className="text-base text-slate-600 leading-relaxed">
-                Presso lo studio professionale Studio 4M trovi professionisti che operano in diversi ambiti della salute e del benessere. Scopri i servizi disponibili e le competenze dei professionisti presenti nella sede di Bollate.
-              </p>
-
-              {/* Action Buttons: 2 Distinct CTAs */}
-              <div className="flex flex-wrap items-center gap-3.5 pt-2">
-                <a
-                  href="#professionisti"
-                  onClick={(e) => scrollToSection(e, 'professionisti')}
-                  className="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-semibold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] active:scale-[0.99] rounded-xl transition-all shadow-md shadow-[#0277bd]/25 hover:shadow-lg hover:shadow-[#039be5]/30 focus-ring whitespace-nowrap"
-                >
-                  <span>Scopri i professionisti</span>
-                  <ArrowRight className="w-4 h-4 text-[#b3e5fc]" aria-hidden="true" />
-                </a>
-
-                <a
-                  href={STUDIO_CONFIG.googleMapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-3.5 text-sm font-semibold text-[#01579b] bg-white hover:bg-[#b3e5fc]/25 active:scale-[0.99] border-2 border-[#b3e5fc] hover:border-[#039be5] rounded-xl transition-all shadow-xs focus-ring whitespace-nowrap"
-                >
-                  <Navigation className="w-4 h-4 text-[#039be5]" aria-hidden="true" />
-                  <span>Come raggiungerci</span>
-                </a>
-              </div>
-            </div>
-
-            {/* Right Column: Visual Composition with Studio Showcase & Emblem Card */}
-            <div className="col-span-6 flex justify-end">
-              <div className="relative w-full max-w-lg xl:max-w-xl space-y-3.5">
-                
-                {/* Main Studio Showcase Card - Natural proportions, smooth hover zoom */}
-                <div className="relative rounded-2xl overflow-hidden shadow-lg bg-white group cursor-pointer">
-                  <img
-                    src="/images/studio/studiohome.webp"
-                    alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
-                    className="w-full h-auto block transition-transform duration-700 ease-out group-hover:scale-105"
-                    loading="eager"
-                    fetchPriority="high"
-                  />
-                </div>
-
-                {/* Dedicated Authentic Holistic Emblem Card (Posizionata sotto la foto, logo ingrandito a 80px) */}
-                <div className="p-4 rounded-2xl bg-white/95 backdrop-blur-md border-2 border-[#b3e5fc] hover:border-[#039be5] shadow-md hover:shadow-lg transition-all flex items-center gap-4">
-                  <div className="shrink-0 p-2 rounded-2xl bg-[#f4f9fd] border border-[#b3e5fc]/80 shadow-2xs">
-                    <HolisticEmblem size={80} />
-                  </div>
-                  <div className="min-w-0">
-                    <h3 className="text-base font-bold text-[#01579b] leading-tight font-sans">
-                      Mente e Corpo in Equilibrio
-                    </h3>
-                    <p className="text-xs sm:text-sm text-[#0277bd] font-semibold mt-0.5">
-                      Approccio integrato alla salute
-                    </p>
-                    <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                      L'unione di discipline mediche, riabilitative e del benessere per prendersi cura della persona nella sua totalità.
-                    </p>
-                  </div>
-                </div>
-
+            {/* Quick-Jump Interactive Specialties Strip */}
+            <div className="pt-0.5">
+              <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
+                {CATEGORIES_CONFIG.filter(c => c.id !== 'all').map((cat) => (
+                  <button
+                    key={cat.id}
+                    type="button"
+                    onClick={() => handleHeroCategoryClick(cat.id)}
+                    className="px-2.5 py-1 rounded-lg bg-white/8 hover:bg-white/20 border border-white/15 text-[10px] font-medium text-sky-100 whitespace-nowrap shrink-0 transition-colors"
+                  >
+                    {cat.label}
+                  </button>
+                ))}
               </div>
             </div>
 
           </div>
         </div>
-      </section>
 
-      {/* Wave transition */}
-      <WaveDivider position="bottom" fillColor="#FFFFFF" accentColor="#039be5" height={42} className="bg-transparent" />
+        {/* ========================================================= */}
+        {/* DESKTOP FULL-SCREEN HERO VIEW (hidden lg:flex)            */}
+        {/* ========================================================= */}
+        <div className="hidden lg:flex relative min-h-[calc(100vh-4.5rem)] flex-col justify-between">
+          
+          {/* Full-Bleed Background Photograph with Slow Cinematic Hover Zoom */}
+          <div className="absolute inset-0 z-0 overflow-hidden">
+            <img
+              src="/images/studio/studiohome.webp"
+              alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
+              className="w-full h-full object-cover object-[65%_center] scale-[1.01] group-hover/hero:scale-[1.05] transition-transform duration-[2000ms] ease-out"
+              loading="eager"
+              fetchPriority="high"
+            />
+            
+            {/* Multi-layer Architectural Gradient Veil ("Sfumatura Editoriale") */}
+            {/* 1. Left-to-right silky dark-azure blend: covers the bright curtain on the left so text is 100% legible, while leaving the orange STUDIO 4M wall & sofa crystal clear on the right */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#031b33]/95 via-[#05294a]/80 via-48% to-transparent pointer-events-none" />
+            
+            {/* 2. Top & bottom atmospheric vignette to frame the console */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#031b33]/95 via-[#031b33]/15 to-[#031b33]/40 pointer-events-none" />
+
+            {/* 3. Subtle ambient radial glow on the bottom left */}
+            <div className="absolute -bottom-24 -left-24 w-[32rem] h-[32rem] rounded-full bg-[#0284c7]/20 blur-3xl pointer-events-none" />
+          </div>
+
+          {/* Main Desktop Content Stage */}
+          <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-12 xl:pt-16 pb-8 w-full flex-1 flex flex-col justify-between">
+            
+            {/* Upper/Center Grid */}
+            <div className="grid grid-cols-12 gap-8 items-center my-auto py-6">
+              
+              {/* Left Column: Editorial Presentation over the Softly Faded Curtain */}
+              <div className="col-span-7 xl:col-span-6 space-y-6">
+                
+                {/* Frosted Location Badge */}
+                <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-xl border border-white/25 text-xs font-semibold tracking-wider uppercase text-white shadow-lg">
+                  <span className="w-2 h-2 rounded-full bg-[#38bdf8] animate-pulse" />
+                  <MapPin className="w-3.5 h-3.5 text-[#38bdf8]" aria-hidden="true" />
+                  <span>Bollate (Milano) · Via Madonnina 17</span>
+                </div>
+
+                {/* Monumental Display Headline */}
+                <div className="space-y-3">
+                  <span className="block text-xs font-bold uppercase tracking-[0.25em] text-[#38bdf8]">
+                    Studio Professionale Multidisciplinare
+                  </span>
+                  <h1 className="text-5xl xl:text-7xl font-normal text-white tracking-tight leading-[1.08] font-heading drop-shadow-md">
+                    Studio{' '}
+                    <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-[#bae6fd] to-[#38bdf8] font-brand tracking-wide inline-flex items-baseline lining-nums">
+                      <span>4</span><span>M</span>
+                    </span>
+                  </h1>
+                </div>
+
+                {/* Poetic Payoff with Accent Line */}
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-[2px] bg-gradient-to-r from-[#38bdf8] to-transparent rounded-full" />
+                  <p className="text-2xl xl:text-3xl text-[#bae6fd] font-serif italic tracking-tight font-normal drop-shadow-xs">
+                    “Dove mente e corpo ritrovano equilibrio”
+                  </p>
+                </div>
+
+                {/* Editorial Lead Paragraph */}
+                <p className="text-base xl:text-lg text-slate-200/95 leading-relaxed max-w-xl font-normal">
+                  Presso lo Studio Professionale 4M a Bollate trovi specialisti che operano in diversi ambiti della salute, della riabilitazione e del benessere psicofisico, in un ambiente moderno, riservato e facilmente accessibile.
+                </p>
+
+                {/* High-Impact Action Buttons */}
+                <div className="flex flex-wrap items-center gap-4 pt-2">
+                  <a
+                    href="#professionisti"
+                    onClick={(e) => scrollToSection(e, 'professionisti')}
+                    className="inline-flex items-center gap-2.5 px-7 py-4 text-sm font-bold text-[#012a4a] bg-gradient-to-r from-white via-[#e0f2fe] to-[#bae6fd] hover:from-[#e0f2fe] hover:to-white active:scale-[0.99] rounded-2xl transition-all shadow-xl shadow-[#0284c7]/30 hover:shadow-2xl hover:shadow-[#38bdf8]/40 focus-ring whitespace-nowrap group/btn"
+                  >
+                    <span>Scopri i Professionisti</span>
+                    <ArrowRight className="w-4 h-4 text-[#0284c7] group-hover/btn:translate-x-1 transition-transform" aria-hidden="true" />
+                  </a>
+
+                  <a
+                    href="#servizi"
+                    onClick={(e) => scrollToSection(e, 'servizi')}
+                    className="inline-flex items-center gap-2 px-6 py-4 text-sm font-semibold text-white bg-white/12 hover:bg-white/22 backdrop-blur-xl active:scale-[0.99] border border-white/30 hover:border-white/50 rounded-2xl transition-all shadow-lg focus-ring whitespace-nowrap"
+                  >
+                    <span>Esplora gli 8 Servizi</span>
+                  </a>
+
+                  <a
+                    href={STUDIO_CONFIG.googleMapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-4 text-sm font-semibold text-sky-200 hover:text-white bg-slate-950/35 hover:bg-slate-950/55 backdrop-blur-xl border border-white/15 hover:border-white/35 rounded-2xl transition-all focus-ring whitespace-nowrap"
+                  >
+                    <Navigation className="w-4 h-4 text-[#38bdf8]" aria-hidden="true" />
+                    <span>Come Raggiungerci</span>
+                  </a>
+                </div>
+
+              </div>
+
+              {/* Right Column: Open Visual Window onto the Studio Room */}
+              <div className="col-span-5 xl:col-span-6 flex justify-end items-end h-full">
+                {/* Subtle floating architectural caption that doesn't cover the wall or sofa */}
+                <div className="mt-auto ml-auto bg-slate-950/45 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-2.5 text-right shadow-xl">
+                  <span className="block text-[11px] font-bold uppercase tracking-widest text-[#38bdf8]">
+                    Sede di Bollate (MI)
+                  </span>
+                  <span className="block text-xs text-white/90 font-medium">
+                    Accoglienza, riservatezza e cura della persona
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+            {/* Bottom Floating Glassmorphic Console: Emblem + Interactive Specialties Dock */}
+            <div className="mt-6 rounded-3xl bg-white/10 backdrop-blur-2xl border border-white/25 p-4 xl:p-5 shadow-2xl flex items-center justify-between gap-6">
+              
+              {/* Left: Holistic Emblem & Identity */}
+              <div className="flex items-center gap-4 shrink-0 pr-6 border-r border-white/15">
+                <div className="shrink-0 p-2 rounded-2xl bg-white shadow-md">
+                  <HolisticEmblem size={64} />
+                </div>
+                <div>
+                  <h2 className="text-base font-bold text-white leading-tight font-sans">
+                    Mente e Corpo in Equilibrio
+                  </h2>
+                  <p className="text-xs text-[#7dd3fc] font-semibold mt-0.5">
+                    Approccio integrato alla salute
+                  </p>
+                  <p className="text-[11px] text-slate-300 mt-0.5 max-w-xs">
+                    Discipline mediche, riabilitative e del benessere in sinergia.
+                  </p>
+                </div>
+              </div>
+
+              {/* Right: Interactive Quick-Select Specialties */}
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-sky-200/90">
+                    Filtra subito per area specialistica:
+                  </span>
+                  <span className="text-[11px] text-slate-300">
+                    12 Professionisti · Contatto diretto
+                  </span>
+                </div>
+                <div className="flex flex-wrap items-center gap-2">
+                  {CATEGORIES_CONFIG.filter(c => c.id !== 'all').map((cat) => (
+                    <button
+                      key={cat.id}
+                      type="button"
+                      onClick={() => handleHeroCategoryClick(cat.id)}
+                      className="px-3.5 py-1.5 rounded-xl bg-white/10 hover:bg-white text-white hover:text-[#01579b] border border-white/20 hover:border-white text-xs font-semibold transition-all duration-200 shadow-2xs hover:shadow-md active:scale-95 cursor-pointer"
+                    >
+                      {cat.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </section>
 
       {/* 2. PANORAMICA DEI SERVIZI (I NOSTRI SERVIZI) */}
       <section id="servizi" className="py-10 sm:py-20 bg-white scroll-mt-20">
