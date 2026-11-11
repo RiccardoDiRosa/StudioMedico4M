@@ -91,16 +91,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
         schemaJson={homeSchema}
       />
 
-      {/* 1. HERO SECTION - FULL-SCREEN IMMERSIVE ARCHITECTURAL SHOWCASE */}
-      <section className="relative bg-[#031b33] overflow-hidden group/hero">
+      {/* 1. HERO SECTION - LUMINOUS LIGHT-AZURE IMMERSIVE ARCHITECTURAL SHOWCASE */}
+      <section className="relative bg-[#f0f9ff] overflow-hidden group/hero border-b border-[#b3e5fc]/60">
         
         {/* ========================================================= */}
         {/* MOBILE FULL-SCREEN HERO VIEW (< lg)                       */}
         {/* ========================================================= */}
-        <div className="block lg:hidden relative min-h-[calc(100svh-4rem)] flex flex-col justify-between">
+        <div className="block lg:hidden relative min-h-[calc(100svh-4rem)] flex flex-col justify-between bg-gradient-to-b from-[#e0f2fe]/60 via-[#f0f9ff] to-white">
           
-          {/* Upper/Middle Immersive Studio Photo with Soft Feathered Blend ("Sfumata") */}
-          <div className="relative w-full h-[46svh] min-h-[270px] max-h-[400px] overflow-hidden shrink-0">
+          {/* Upper/Middle Immersive Studio Photo with Soft Light Feathered Blend */}
+          <div className="relative w-full h-[45svh] min-h-[260px] max-h-[380px] overflow-hidden shrink-0">
             <img
               src="/images/studio/studiohome.webp"
               alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
@@ -108,41 +108,39 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               loading="eager"
               fetchPriority="high"
             />
-            {/* Top subtle vignette for status/location pill readability */}
-            <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#031b33]/80 via-[#031b33]/30 to-transparent pointer-events-none" />
-            {/* Deep bottom feathered fade ("sfumatura morbida") into the midnight-azure stage */}
-            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#031b33] via-[#031b33]/80 to-transparent pointer-events-none" />
-            {/* Subtle radial warm-to-cool atmospheric veil */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#031b33]/45 via-transparent to-[#031b33]/25 pointer-events-none" />
+            {/* Top subtle light-azure fade */}
+            <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-[#e0f2fe]/70 via-[#e0f2fe]/20 to-transparent pointer-events-none" />
+            {/* Soft luminous light-blue bottom feathered fade into the light azure stage */}
+            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#f0f9ff] via-[#f0f9ff]/80 to-transparent pointer-events-none" />
 
             {/* Floating Top Location Pill over the image */}
             <div className="absolute top-3.5 left-4 right-4 flex items-center justify-between z-10">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#031b33]/65 backdrop-blur-md border border-white/25 text-[11px] font-semibold tracking-wide uppercase text-white shadow-lg">
-                <span className="w-2 h-2 rounded-full bg-[#38bdf8] animate-pulse" />
-                <MapPin className="w-3 h-3 text-[#38bdf8]" aria-hidden="true" />
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-md border border-[#b3e5fc] text-[11px] font-semibold tracking-wide uppercase text-[#01579b] shadow-md shadow-[#01579b]/10">
+                <span className="w-2 h-2 rounded-full bg-[#039be5] animate-pulse" />
+                <MapPin className="w-3 h-3 text-[#039be5]" aria-hidden="true" />
                 <span>Bollate · Via Madonnina 17</span>
               </div>
             </div>
           </div>
 
-          {/* Lower Editorial Stage (Seamlessly blended with the faded image above) */}
-          <div className="relative z-10 px-4 pb-6 -mt-12 flex-1 flex flex-col justify-between space-y-4">
+          {/* Lower Editorial Stage (Luminous light-blue background) */}
+          <div className="relative z-10 px-4 pb-6 -mt-10 flex-1 flex flex-col justify-between space-y-4">
             
             {/* Monumental Mobile Headline & Payoff */}
             <div>
-              <span className="inline-block text-[10px] font-bold uppercase tracking-[0.2em] text-[#38bdf8] mb-1">
+              <span className="inline-block text-[10px] font-bold uppercase tracking-[0.2em] text-[#0277bd] mb-1">
                 Studio Professionale · Salute e Benessere
               </span>
-              <h1 className="text-3xl sm:text-4xl font-normal text-white tracking-tight leading-[1.1] font-heading drop-shadow-sm">
+              <h1 className="text-3xl sm:text-4xl font-normal text-[#01579b] tracking-tight leading-[1.1] font-heading">
                 Studio{' '}
-                <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-[#bae6fd] to-[#38bdf8] font-brand tracking-wide inline-flex items-baseline lining-nums">
+                <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums">
                   <span>4</span><span>M</span>
                 </span>
               </h1>
-              <p className="text-base sm:text-lg text-[#7dd3fc] font-serif italic mt-1 font-medium">
+              <p className="text-base sm:text-lg text-[#0277bd] font-serif italic mt-1 font-medium">
                 “Dove mente e corpo ritrovano equilibrio”
               </p>
-              <p className="text-xs text-slate-300/90 leading-relaxed mt-2">
+              <p className="text-xs text-slate-600 leading-relaxed mt-2">
                 Un unico spazio riservato e accogliente a Bollate dove specialisti della salute e del benessere collaborano per prendersi cura della persona.
               </p>
             </div>
@@ -152,36 +150,36 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               <a
                 href="#professionisti"
                 onClick={(e) => scrollToSection(e, 'professionisti')}
-                className="inline-flex items-center justify-center gap-1.5 py-3 px-3.5 text-xs font-bold text-[#012a4a] bg-gradient-to-r from-white via-[#e0f2fe] to-[#bae6fd] active:scale-[0.98] rounded-xl shadow-lg shadow-[#0284c7]/25 text-center focus-ring"
+                className="inline-flex items-center justify-center gap-1.5 py-3 px-3.5 text-xs font-bold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] active:scale-[0.98] rounded-xl shadow-md shadow-[#0277bd]/25 text-center focus-ring"
               >
                 <span>I Professionisti</span>
-                <ArrowRight className="w-3.5 h-3.5 text-[#0284c7]" aria-hidden="true" />
+                <ArrowRight className="w-3.5 h-3.5 text-[#b3e5fc]" aria-hidden="true" />
               </a>
 
               <a
                 href={STUDIO_CONFIG.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-1.5 py-3 px-3.5 text-xs font-bold text-white bg-white/10 hover:bg-white/15 backdrop-blur-md active:scale-[0.98] border border-white/25 rounded-xl shadow-sm text-center focus-ring"
+                className="inline-flex items-center justify-center gap-1.5 py-3 px-3.5 text-xs font-bold text-[#01579b] bg-white active:scale-[0.98] border border-[#b3e5fc] rounded-xl shadow-xs text-center focus-ring"
               >
-                <Navigation className="w-3.5 h-3.5 text-[#38bdf8]" aria-hidden="true" />
+                <Navigation className="w-3.5 h-3.5 text-[#039be5]" aria-hidden="true" />
                 <span>Come Arrivare</span>
               </a>
             </div>
 
-            {/* Frosted Glass Holistic Emblem Card */}
-            <div className="p-3 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-xl flex items-center gap-3">
-              <div className="shrink-0 p-1.5 rounded-xl bg-white/95 shadow-sm">
+            {/* Frosted White/Sky Emblem Card */}
+            <div className="p-3 rounded-2xl bg-white/85 backdrop-blur-md border border-[#b3e5fc] shadow-sm flex items-center gap-3">
+              <div className="shrink-0 p-1.5 rounded-xl bg-[#f0f9ff] border border-[#b3e5fc]/60 shadow-2xs">
                 <HolisticEmblem size={50} />
               </div>
               <div className="min-w-0">
-                <h3 className="text-xs font-bold text-white leading-tight font-sans">
+                <h3 className="text-xs font-bold text-[#01579b] leading-tight font-sans">
                   Mente e Corpo in Equilibrio
                 </h3>
-                <p className="text-[11px] text-[#7dd3fc] font-semibold mt-0.5">
+                <p className="text-[11px] text-[#0277bd] font-semibold mt-0.5">
                   Approccio integrato alla salute
                 </p>
-                <p className="text-[10px] text-slate-300 mt-0.5 line-clamp-1">
+                <p className="text-[10px] text-slate-500 mt-0.5 line-clamp-1">
                   8 aree specialistiche · Contatto diretto
                 </p>
               </div>
@@ -195,7 +193,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                     key={cat.id}
                     type="button"
                     onClick={() => handleHeroCategoryClick(cat.id)}
-                    className="px-2.5 py-1 rounded-lg bg-white/8 hover:bg-white/20 border border-white/15 text-[10px] font-medium text-sky-100 whitespace-nowrap shrink-0 transition-colors"
+                    className="px-2.5 py-1 rounded-lg bg-white hover:bg-[#b3e5fc]/30 border border-[#b3e5fc] text-[10px] font-semibold text-[#01579b] whitespace-nowrap shrink-0 transition-colors shadow-2xs"
                   >
                     {cat.label}
                   </button>
@@ -209,7 +207,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
         {/* ========================================================= */}
         {/* DESKTOP FULL-SCREEN HERO VIEW (hidden lg:flex)            */}
         {/* ========================================================= */}
-        <div className="hidden lg:flex relative min-h-[calc(100vh-4.5rem)] flex-col justify-between">
+        <div className="hidden lg:flex relative min-h-[calc(100vh-4.5rem)] flex-col justify-between bg-gradient-to-br from-[#e0f2fe]/90 via-[#f0f9ff] to-white">
           
           {/* Full-Bleed Background Photograph with Slow Cinematic Hover Zoom */}
           <div className="absolute inset-0 z-0 overflow-hidden">
@@ -221,15 +219,15 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               fetchPriority="high"
             />
             
-            {/* Multi-layer Architectural Gradient Veil ("Sfumatura Editoriale") */}
-            {/* 1. Left-to-right silky dark-azure blend: covers the bright curtain on the left so text is 100% legible, while leaving the orange STUDIO 4M wall & sofa crystal clear on the right */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#031b33]/95 via-[#05294a]/80 via-48% to-transparent pointer-events-none" />
+            {/* Luminous Light-Blue Multi-layer Gradient Veil ("Sfumatura Blu Chiaro") */}
+            {/* 1. Left-to-right light azure-to-transparent fade: covers the curtain on the left with a soft fresh sky-blue layer, so text in dark clinical blue (#01579b) has maximum contrast, while leaving the orange STUDIO 4M wall & sofa on the right completely visible */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#e0f2fe]/98 via-[#e0f2fe]/90 via-48% to-transparent pointer-events-none" />
             
-            {/* 2. Top & bottom atmospheric vignette to frame the console */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#031b33]/95 via-[#031b33]/15 to-[#031b33]/40 pointer-events-none" />
+            {/* 2. Top & bottom soft atmospheric vignette to frame the console */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#f0f9ff]/90 via-transparent to-[#e0f2fe]/40 pointer-events-none" />
 
-            {/* 3. Subtle ambient radial glow on the bottom left */}
-            <div className="absolute -bottom-24 -left-24 w-[32rem] h-[32rem] rounded-full bg-[#0284c7]/20 blur-3xl pointer-events-none" />
+            {/* 3. Subtle ambient light-cyan radial glow on the bottom left */}
+            <div className="absolute -bottom-24 -left-24 w-[36rem] h-[36rem] rounded-full bg-[#039be5]/15 blur-3xl pointer-events-none" />
           </div>
 
           {/* Main Desktop Content Stage */}
@@ -238,24 +236,24 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             {/* Upper/Center Grid */}
             <div className="grid grid-cols-12 gap-8 items-center my-auto py-6">
               
-              {/* Left Column: Editorial Presentation over the Softly Faded Curtain */}
+              {/* Left Column: Editorial Presentation over the Soft Light-Azure Fade */}
               <div className="col-span-7 xl:col-span-6 space-y-6">
                 
-                {/* Frosted Location Badge */}
-                <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-xl border border-white/25 text-xs font-semibold tracking-wider uppercase text-white shadow-lg">
-                  <span className="w-2 h-2 rounded-full bg-[#38bdf8] animate-pulse" />
-                  <MapPin className="w-3.5 h-3.5 text-[#38bdf8]" aria-hidden="true" />
+                {/* Frosted Light Location Badge */}
+                <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/85 backdrop-blur-xl border border-[#b3e5fc] text-xs font-semibold tracking-wider uppercase text-[#01579b] shadow-sm">
+                  <span className="w-2 h-2 rounded-full bg-[#039be5] animate-pulse" />
+                  <MapPin className="w-3.5 h-3.5 text-[#039be5]" aria-hidden="true" />
                   <span>Bollate (Milano) · Via Madonnina 17</span>
                 </div>
 
                 {/* Monumental Display Headline */}
                 <div className="space-y-3">
-                  <span className="block text-xs font-bold uppercase tracking-[0.25em] text-[#38bdf8]">
+                  <span className="block text-xs font-bold uppercase tracking-[0.25em] text-[#0277bd]">
                     Studio Professionale Multidisciplinare
                   </span>
-                  <h1 className="text-5xl xl:text-7xl font-normal text-white tracking-tight leading-[1.08] font-heading drop-shadow-md">
+                  <h1 className="text-5xl xl:text-7xl font-normal text-[#01579b] tracking-tight leading-[1.08] font-heading drop-shadow-xs">
                     Studio{' '}
-                    <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-[#bae6fd] to-[#38bdf8] font-brand tracking-wide inline-flex items-baseline lining-nums">
+                    <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums">
                       <span>4</span><span>M</span>
                     </span>
                   </h1>
@@ -263,14 +261,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
 
                 {/* Poetic Payoff with Accent Line */}
                 <div className="flex items-center gap-4">
-                  <div className="w-10 h-[2px] bg-gradient-to-r from-[#38bdf8] to-transparent rounded-full" />
-                  <p className="text-2xl xl:text-3xl text-[#bae6fd] font-serif italic tracking-tight font-normal drop-shadow-xs">
+                  <div className="w-10 h-[2px] bg-gradient-to-r from-[#039be5] to-transparent rounded-full" />
+                  <p className="text-2xl xl:text-3xl text-[#0277bd] font-serif italic tracking-tight font-medium">
                     “Dove mente e corpo ritrovano equilibrio”
                   </p>
                 </div>
 
                 {/* Editorial Lead Paragraph */}
-                <p className="text-base xl:text-lg text-slate-200/95 leading-relaxed max-w-xl font-normal">
+                <p className="text-base xl:text-lg text-slate-700 leading-relaxed max-w-xl font-normal">
                   Presso lo Studio Professionale 4M a Bollate trovi specialisti che operano in diversi ambiti della salute, della riabilitazione e del benessere psicofisico, in un ambiente moderno, riservato e facilmente accessibile.
                 </p>
 
@@ -279,16 +277,16 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                   <a
                     href="#professionisti"
                     onClick={(e) => scrollToSection(e, 'professionisti')}
-                    className="inline-flex items-center gap-2.5 px-7 py-4 text-sm font-bold text-[#012a4a] bg-gradient-to-r from-white via-[#e0f2fe] to-[#bae6fd] hover:from-[#e0f2fe] hover:to-white active:scale-[0.99] rounded-2xl transition-all shadow-xl shadow-[#0284c7]/30 hover:shadow-2xl hover:shadow-[#38bdf8]/40 focus-ring whitespace-nowrap group/btn"
+                    className="inline-flex items-center gap-2.5 px-7 py-4 text-sm font-bold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] active:scale-[0.99] rounded-2xl transition-all shadow-md shadow-[#0277bd]/25 hover:shadow-lg hover:shadow-[#039be5]/30 focus-ring whitespace-nowrap group/btn"
                   >
                     <span>Scopri i Professionisti</span>
-                    <ArrowRight className="w-4 h-4 text-[#0284c7] group-hover/btn:translate-x-1 transition-transform" aria-hidden="true" />
+                    <ArrowRight className="w-4 h-4 text-[#b3e5fc] group-hover/btn:translate-x-1 transition-transform" aria-hidden="true" />
                   </a>
 
                   <a
                     href="#servizi"
                     onClick={(e) => scrollToSection(e, 'servizi')}
-                    className="inline-flex items-center gap-2 px-6 py-4 text-sm font-semibold text-white bg-white/12 hover:bg-white/22 backdrop-blur-xl active:scale-[0.99] border border-white/30 hover:border-white/50 rounded-2xl transition-all shadow-lg focus-ring whitespace-nowrap"
+                    className="inline-flex items-center gap-2 px-6 py-4 text-sm font-semibold text-[#01579b] bg-white/90 hover:bg-white backdrop-blur-xl active:scale-[0.99] border border-[#b3e5fc] hover:border-[#039be5] rounded-2xl transition-all shadow-xs focus-ring whitespace-nowrap"
                   >
                     <span>Esplora gli 8 Servizi</span>
                   </a>
@@ -297,9 +295,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                     href={STUDIO_CONFIG.googleMapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-4 text-sm font-semibold text-sky-200 hover:text-white bg-slate-950/35 hover:bg-slate-950/55 backdrop-blur-xl border border-white/15 hover:border-white/35 rounded-2xl transition-all focus-ring whitespace-nowrap"
+                    className="inline-flex items-center gap-2 px-5 py-4 text-sm font-semibold text-[#0277bd] hover:text-[#01579b] bg-[#b3e5fc]/30 hover:bg-[#b3e5fc]/50 backdrop-blur-xl border border-[#b3e5fc] rounded-2xl transition-all focus-ring whitespace-nowrap"
                   >
-                    <Navigation className="w-4 h-4 text-[#38bdf8]" aria-hidden="true" />
+                    <Navigation className="w-4 h-4 text-[#039be5]" aria-hidden="true" />
                     <span>Come Raggiungerci</span>
                   </a>
                 </div>
@@ -308,12 +306,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
 
               {/* Right Column: Open Visual Window onto the Studio Room */}
               <div className="col-span-5 xl:col-span-6 flex justify-end items-end h-full">
-                {/* Subtle floating architectural caption that doesn't cover the wall or sofa */}
-                <div className="mt-auto ml-auto bg-slate-950/45 backdrop-blur-md border border-white/20 rounded-2xl px-4 py-2.5 text-right shadow-xl">
-                  <span className="block text-[11px] font-bold uppercase tracking-widest text-[#38bdf8]">
+                {/* Floating architectural caption with frosted white/light-blue background */}
+                <div className="mt-auto ml-auto bg-white/85 backdrop-blur-md border border-[#b3e5fc] rounded-2xl px-4 py-2.5 text-right shadow-lg shadow-[#01579b]/5">
+                  <span className="block text-[11px] font-bold uppercase tracking-widest text-[#0277bd]">
                     Sede di Bollate (MI)
                   </span>
-                  <span className="block text-xs text-white/90 font-medium">
+                  <span className="block text-xs text-slate-700 font-medium">
                     Accoglienza, riservatezza e cura della persona
                   </span>
                 </div>
@@ -321,22 +319,22 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
 
             </div>
 
-            {/* Bottom Floating Glassmorphic Console: Emblem + Interactive Specialties Dock */}
-            <div className="mt-6 rounded-3xl bg-white/10 backdrop-blur-2xl border border-white/25 p-4 xl:p-5 shadow-2xl flex items-center justify-between gap-6">
+            {/* Bottom Floating Glassmorphic Console: Light-Blue/White Theme */}
+            <div className="mt-6 rounded-3xl bg-white/85 backdrop-blur-2xl border border-[#b3e5fc] p-4 xl:p-5 shadow-xl shadow-[#0284c7]/10 flex items-center justify-between gap-6">
               
               {/* Left: Holistic Emblem & Identity */}
-              <div className="flex items-center gap-4 shrink-0 pr-6 border-r border-white/15">
-                <div className="shrink-0 p-2 rounded-2xl bg-white shadow-md">
+              <div className="flex items-center gap-4 shrink-0 pr-6 border-r border-[#b3e5fc]/70">
+                <div className="shrink-0 p-2 rounded-2xl bg-[#f0f9ff] border border-[#b3e5fc]/60 shadow-xs">
                   <HolisticEmblem size={64} />
                 </div>
                 <div>
-                  <h2 className="text-base font-bold text-white leading-tight font-sans">
+                  <h2 className="text-base font-bold text-[#01579b] leading-tight font-sans">
                     Mente e Corpo in Equilibrio
                   </h2>
-                  <p className="text-xs text-[#7dd3fc] font-semibold mt-0.5">
+                  <p className="text-xs text-[#0277bd] font-semibold mt-0.5">
                     Approccio integrato alla salute
                   </p>
-                  <p className="text-[11px] text-slate-300 mt-0.5 max-w-xs">
+                  <p className="text-[11px] text-slate-600 mt-0.5 max-w-xs">
                     Discipline mediche, riabilitative e del benessere in sinergia.
                   </p>
                 </div>
@@ -345,10 +343,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               {/* Right: Interactive Quick-Select Specialties */}
               <div className="flex-1 min-w-0">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-sky-200/90">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#01579b]">
                     Filtra subito per area specialistica:
                   </span>
-                  <span className="text-[11px] text-slate-300">
+                  <span className="text-[11px] text-slate-500 font-medium">
                     12 Professionisti · Contatto diretto
                   </span>
                 </div>
@@ -358,7 +356,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                       key={cat.id}
                       type="button"
                       onClick={() => handleHeroCategoryClick(cat.id)}
-                      className="px-3.5 py-1.5 rounded-xl bg-white/10 hover:bg-white text-white hover:text-[#01579b] border border-white/20 hover:border-white text-xs font-semibold transition-all duration-200 shadow-2xs hover:shadow-md active:scale-95 cursor-pointer"
+                      className="px-3.5 py-1.5 rounded-xl bg-white hover:bg-gradient-to-r hover:from-[#01579b] hover:to-[#0277bd] text-[#01579b] hover:text-white border border-[#b3e5fc] hover:border-[#01579b] text-xs font-semibold transition-all duration-200 shadow-2xs hover:shadow-md active:scale-95 cursor-pointer"
                     >
                       {cat.label}
                     </button>
