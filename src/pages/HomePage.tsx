@@ -110,23 +110,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             </p>
 
             {/* HERO VISUAL STUDIO SHOWCASE CARD - Mobile Above-the-fold */}
-            <div className="relative mt-3 mb-3 rounded-2xl overflow-hidden border-2 border-[#b3e5fc] shadow-lg shadow-[#0277bd]/10 group bg-white">
-              <div className="aspect-[16/10] relative overflow-hidden bg-slate-100">
-                <img
-                  src="/images/studio/studiohome.webp"
-                  alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  loading="eager"
-                  fetchPriority="high"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/85 via-transparent to-black/20" />
-              </div>
-
-              {/* Bottom text bar over image */}
-              <div className="absolute bottom-0 inset-x-0 p-2.5 sm:p-3 text-white">
-                <p className="text-xs font-semibold leading-tight drop-shadow-sm">Sede di Bollate · Via Madonnina 17</p>
-                <p className="text-[10px] text-sky-200">Accoglienza, riservatezza e cura della persona</p>
-              </div>
+            <div className="relative mt-3 mb-3 rounded-2xl overflow-hidden shadow-md bg-white">
+              <img
+                src="/images/studio/studiohome.webp"
+                alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
+                className="w-full h-auto block"
+                loading="eager"
+                fetchPriority="high"
+              />
             </div>
 
             {/* Mobile Action Buttons */}
@@ -226,30 +217,15 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             <div className="col-span-6 flex justify-end">
               <div className="relative w-full max-w-lg xl:max-w-xl space-y-3.5">
                 
-                {/* Main Framed Studio Showcase Card */}
-                <div className="relative rounded-3xl p-2.5 bg-gradient-to-tr from-[#01579b] via-[#039be5] to-[#b3e5fc] shadow-2xl shadow-[#0277bd]/25 overflow-hidden group">
-                  <div className="relative aspect-[4/3] rounded-[22px] overflow-hidden bg-slate-100">
-                    <img
-                      src="/images/studio/studiohome.webp"
-                      alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                      loading="eager"
-                      fetchPriority="high"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/80 via-transparent to-black/15 pointer-events-none" />
-
-                    {/* Overlay info tag */}
-                    <div className="absolute bottom-3 left-3 right-3 text-white flex items-center justify-between">
-                      <div>
-                        <span className="text-xs font-bold font-brand tracking-wider uppercase block text-white">
-                          Studio 4M
-                        </span>
-                        <span className="text-[11px] text-sky-200 block">
-                          Bollate · Via Madonnina 17
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+                {/* Main Studio Showcase Card - Natural proportions, no blue frame */}
+                <div className="relative rounded-2xl overflow-hidden shadow-lg bg-white">
+                  <img
+                    src="/images/studio/studiohome.webp"
+                    alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
+                    className="w-full h-auto block"
+                    loading="eager"
+                    fetchPriority="high"
+                  />
                 </div>
 
                 {/* Dedicated Authentic Holistic Emblem Card (Posizionata sotto la foto, logo ingrandito a 80px) */}
