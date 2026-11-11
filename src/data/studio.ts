@@ -11,10 +11,10 @@ export const STUDIO_CONFIG: StudioConfig = {
   postalCode: '20021',
   country: 'Italia',
   
-  // Official Google Maps direct link with precise search address
-  googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Via+Madonnina+17+20021+Bollate+MI',
-  googleMapsDirectionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=Via+Madonnina+17+20021+Bollate+MI',
-  googleMapsEmbedUrl: 'https://maps.google.com/maps?q=Via%20Madonnina%2017%2C%2020021%20Bollate%20MI&t=&z=16&ie=UTF8&iwloc=&output=embed',
+  // Official Google Maps direct link targeting Studio 4M at Via Madonnina 17, Bollate
+  googleMapsUrl: 'https://www.google.com/maps/search/?api=1&query=Studio+4M+Via+Madonnina+17+20021+Bollate+MI',
+  googleMapsDirectionsUrl: 'https://www.google.com/maps/dir/?api=1&destination=Studio+4M+Via+Madonnina+17+20021+Bollate+MI',
+  googleMapsEmbedUrl: 'https://maps.google.com/maps?q=Studio%204M%2C%20Via%20Madonnina%2017%2C%2020021%20Bollate%20MI&t=&z=16&ie=UTF8&iwloc=&output=embed',
   
   // Explicitly tracked confirmation flags to ensure no fake contact numbers/emails are published
   publicPhoneConfirmed: false,
