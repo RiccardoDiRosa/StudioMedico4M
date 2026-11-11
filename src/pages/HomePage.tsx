@@ -110,11 +110,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             </p>
 
             {/* HERO VISUAL STUDIO SHOWCASE CARD - Mobile Above-the-fold */}
-            <div className="relative mt-3 mb-3 rounded-2xl overflow-hidden shadow-md bg-white">
+            <div className="relative mt-3 mb-3 rounded-2xl overflow-hidden shadow-md bg-white group">
               <img
                 src="/images/studio/studiohome.webp"
                 alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
-                className="w-full h-auto block"
+                className="w-full h-auto block transition-transform duration-700 ease-out group-hover:scale-105"
                 loading="eager"
                 fetchPriority="high"
               />
@@ -217,12 +217,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             <div className="col-span-6 flex justify-end">
               <div className="relative w-full max-w-lg xl:max-w-xl space-y-3.5">
                 
-                {/* Main Studio Showcase Card - Natural proportions, no blue frame */}
-                <div className="relative rounded-2xl overflow-hidden shadow-lg bg-white">
+                {/* Main Studio Showcase Card - Natural proportions, smooth hover zoom */}
+                <div className="relative rounded-2xl overflow-hidden shadow-lg bg-white group cursor-pointer">
                   <img
                     src="/images/studio/studiohome.webp"
                     alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
-                    className="w-full h-auto block"
+                    className="w-full h-auto block transition-transform duration-700 ease-out group-hover:scale-105"
                     loading="eager"
                     fetchPriority="high"
                   />
