@@ -13,7 +13,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
         {service.imageUrl && (
           <img
             src={service.imageUrl}
-            alt={`${service.title} - Studio 4M Bollate`}
+            alt={`Servizio specialistico di ${service.title} - Studio Professionale 4M a Bollate`}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
             loading="lazy"
           />

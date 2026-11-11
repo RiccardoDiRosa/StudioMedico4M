@@ -29,7 +29,7 @@ export const ProfessionalCard: React.FC<ProfessionalCardProps> = ({
             {professional.photoUrl ? (
               <img
                 src={professional.photoUrl}
-                alt={`${professional.title} ${professional.firstName} ${professional.lastName}`}
+                alt={`${professional.title} ${professional.firstName} ${professional.lastName} - ${professional.role} - Studio Professionale 4M Bollate`}
                 className="w-14 h-14 sm:w-20 sm:h-20 lg:w-24 lg:h-24 rounded-full object-cover object-top ring-2 sm:ring-4 ring-[#b3e5fc] shadow-md group-hover:scale-105 transition-transform"
                 loading="lazy"
               />

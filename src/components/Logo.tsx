@@ -19,7 +19,7 @@ export const Logo: React.FC<LogoProps> = ({
       <div className="relative shrink-0 w-9 h-10 sm:w-11 sm:h-12 flex items-center justify-center">
         <img
           src="/images/logo/studio-medico-4m-emblem.png"
-          alt="Logo Ufficiale Studio 4M"
+          alt="Logo ufficiale Studio Professionale 4M a Bollate - Centro specialistico salute e benessere"
           className="w-full h-full object-contain drop-shadow-sm transition-transform hover:scale-105"
           loading="eager"
           draggable={false}

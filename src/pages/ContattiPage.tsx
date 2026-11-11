@@ -357,8 +357,9 @@ export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
                               {prof.photoUrl ? (
                                 <img
                                   src={prof.photoUrl}
-                                  alt={`${prof.title} ${prof.firstName} ${prof.lastName}`}
+                                  alt={`${prof.title} ${prof.firstName} ${prof.lastName} - ${prof.categoryLabel} presso Studio Professionale 4M a Bollate`}
                                   className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover object-top ring-2 sm:ring-3 ring-[#b3e5fc] shadow-xs group-hover:scale-105 transition-transform"
+                                  loading="lazy"
                                 />
                               ) : (
                                 <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-gradient-to-tr from-[#01579b] to-[#039be5] text-white font-serif font-bold text-sm sm:text-base flex items-center justify-center ring-2 sm:ring-3 ring-[#b3e5fc] shadow-xs group-hover:scale-105 transition-transform">

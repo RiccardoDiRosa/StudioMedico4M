@@ -156,8 +156,9 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                   {professional.photoUrl ? (
                     <img
                       src={professional.photoUrl}
-                      alt={`${professional.title} ${fullName}`}
+                      alt={`${professional.title} ${fullName} - ${professional.role} - Studio Professionale 4M a Bollate`}
                       className="w-28 h-28 sm:w-36 sm:h-36 lg:w-44 lg:h-44 rounded-full object-cover object-top ring-4 sm:ring-6 ring-[#b3e5fc] shadow-lg"
+                      loading="eager"
                     />
                   ) : (
                     <div className="w-28 h-28 sm:w-36 sm:h-36 lg:w-44 lg:h-44 rounded-full bg-gradient-to-tr from-[#01579b] via-[#0277bd] to-[#039be5] text-white font-serif font-bold text-3xl sm:text-4xl lg:text-5xl flex items-center justify-center ring-4 sm:ring-6 ring-[#b3e5fc] shadow-lg">
@@ -415,7 +416,7 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                               <div className="aspect-[4/3] overflow-hidden bg-slate-100 relative">
                                 <img
                                   src="/images/agolovati.webp"
-                                  alt="Applicazione degli aghi di agopuntura medica lungo i meridiani energetici - Dr. Enrico Lovati"
+                                  alt="Applicazione degli aghi di agopuntura medica lungo i meridiani energetici - Dr. Enrico Lovati - Studio Professionale 4M a Bollate"
                                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                   loading="lazy"
                                 />
@@ -438,7 +439,7 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                               <div className="aspect-[4/3] overflow-hidden bg-slate-100 relative">
                                 <img
                                   src="/images/manolovati.webp"
-                                  alt="Trattamento dei punti periferici di agopuntura sulla mano - Dr. Enrico Lovati"
+                                  alt="Trattamento dei punti periferici di agopuntura sulla mano - Dr. Enrico Lovati - Studio Professionale 4M a Bollate"
                                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                   loading="lazy"
                                 />
@@ -758,7 +759,7 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                     <div className="rounded-xl overflow-hidden border border-[#b3e5fc] aspect-square relative group">
                       <img
                         src="/images/agolovati.webp"
-                        alt="Applicazione aghi agopuntura Dr. Enrico Lovati"
+                        alt="Seduta di agopuntura medica ed inserimento aghi sterili monouso - Dr. Enrico Lovati a Bollate"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                       />
@@ -766,7 +767,7 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                     <div className="rounded-xl overflow-hidden border border-[#b3e5fc] aspect-square relative group">
                       <img
                         src="/images/manolovati.webp"
-                        alt="Trattamento agopuntura mano Dr. Enrico Lovati"
+                        alt="Trattamento di agopuntura sulla mano per il riequilibrio energetico - Dr. Enrico Lovati a Bollate"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
                       />

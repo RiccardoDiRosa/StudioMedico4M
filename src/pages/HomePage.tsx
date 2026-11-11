@@ -114,9 +114,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               <div className="aspect-[16/10] relative overflow-hidden bg-slate-100">
                 <img
                   src="/images/studio/studiohome.webp"
-                  alt="Interni dello Studio 4M a Bollate"
+                  alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   loading="eager"
+                  fetchPriority="high"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/85 via-transparent to-black/20" />
               </div>
@@ -230,9 +231,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                   <div className="relative aspect-[4/3] rounded-[22px] overflow-hidden bg-slate-100">
                     <img
                       src="/images/studio/studiohome.webp"
-                      alt="Interni dello Studio 4M a Bollate"
+                      alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       loading="eager"
+                      fetchPriority="high"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#01579b]/80 via-transparent to-black/15 pointer-events-none" />
 

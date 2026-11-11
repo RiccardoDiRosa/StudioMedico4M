@@ -80,7 +80,7 @@ export const StudioPhotoCarousel: React.FC = () => {
             >
               <img
                 src={photo.url}
-                alt={`${photo.title} - Studio 4M Bollate`}
+                alt={`${photo.title} - Ambienti e ambulatori dello Studio Professionale 4M a Bollate (MI)`}
                 className="w-full h-full object-cover"
                 loading={index === 0 ? 'eager' : 'lazy'}
               />
