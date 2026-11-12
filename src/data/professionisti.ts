@@ -145,6 +145,7 @@ export const PROFESSIONISTI: Professional[] = [
     categoryLabel: 'Nutrizione',
     phone: '351 9417635',
     photoUrl: '/images/parmigiani.webp',
+    photoPosition: '50% 68%',
     shortDescription: 'Biologo Nutrizionista laureato in Scienze Biologiche con specializzazione in Nutrizione. Opera presso il reparto disturbi alimentari dell’Ospedale Niguarda ed è coinvolto nella gestione degli atleti F.C. Inter.',
     fullBio: 'Il Dott. Roberto Parmigiani è Biologo Nutrizionista, laureato in Scienze Biologiche con specializzazione in Nutrizione. Dopo svariate esperienze professionali nel settore nutrizionale, opera da marzo 2026 presso il reparto di disturbi alimentari all’Ospedale Niguarda di Milano ed è inoltre coinvolto nella gestione degli atleti della F.C. Inter. Presso lo Studio Professionale 4M a Bollate accompagna pazienti e sportivi attraverso percorsi personalizzati di educazione alimentare, nutrizione clinica e supporto nutrizionale per il benessere metabolico e la performance sportiva.',
     bioParagraphs: [

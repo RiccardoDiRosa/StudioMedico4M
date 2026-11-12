@@ -359,6 +359,7 @@ export const ContattiPage: React.FC<ContattiPageProps> = ({ onNavigate }) => {
                                   src={prof.photoUrl}
                                   alt={`${prof.title} ${prof.firstName} ${prof.lastName} - ${prof.categoryLabel} presso Studio Professionale 4M a Bollate`}
                                   className="w-14 h-14 sm:w-16 sm:h-16 rounded-full object-cover object-top ring-2 sm:ring-3 ring-[#b3e5fc] shadow-xs group-hover:scale-105 transition-transform"
+                                  style={prof.photoPosition ? { objectPosition: prof.photoPosition } : undefined}
                                   loading="lazy"
                                 />
                               ) : (
