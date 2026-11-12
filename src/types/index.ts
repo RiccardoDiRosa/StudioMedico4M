@@ -45,6 +45,7 @@ export interface Professional {
   whatsapp?: string;
   socials?: ProfessionalSocial[];
   photoUrl?: string;
+  photoPosition?: string;
   isComplete: boolean;
   isPublished: boolean;
   noteForConfirmation?: string;

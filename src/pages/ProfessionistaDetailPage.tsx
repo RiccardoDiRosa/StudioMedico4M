@@ -158,6 +158,7 @@ export const ProfessionistaDetailPage: React.FC<ProfessionistaDetailPageProps> =
                       src={professional.photoUrl}
                       alt={`${professional.title} ${fullName} - ${professional.role} - Studio Professionale 4M a Bollate`}
                       className="w-28 h-28 sm:w-36 sm:h-36 lg:w-44 lg:h-44 rounded-full object-cover object-top ring-4 sm:ring-6 ring-[#b3e5fc] shadow-lg"
+                      style={professional.photoPosition ? { objectPosition: professional.photoPosition } : undefined}
                       loading="eager"
                     />
                   ) : (
