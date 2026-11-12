@@ -99,19 +99,20 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
         {/* ========================================================= */}
         <div className="block lg:hidden relative min-h-[calc(100svh-4rem)] flex flex-col justify-between bg-gradient-to-b from-[#e0f2fe]/60 via-[#f0f9ff] to-white">
           
-          {/* Upper/Middle Immersive Studio Photo with Soft Light Feathered Blend */}
-          <div className="relative w-full h-[52svh] min-h-[300px] max-h-[460px] overflow-hidden shrink-0 bg-slate-900/5">
+          {/* Upper/Middle Immersive Studio Photo with Deep Aesthetic Feathered Fade */}
+          <div className="relative w-full h-[46svh] min-h-[270px] max-h-[390px] overflow-hidden shrink-0">
             <img
               src="/images/studio/studiohome.webp"
               alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
-              className="w-full h-full object-contain sm:object-cover object-center"
+              className="w-full h-full object-cover object-[70%_center]"
               loading="eager"
               fetchPriority="high"
             />
-            {/* Top subtle light-azure fade */}
-            <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-[#e0f2fe]/60 via-[#e0f2fe]/10 to-transparent pointer-events-none" />
-            {/* Soft luminous light-blue bottom feathered fade into the light azure stage */}
-            <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#f0f9ff] via-[#f0f9ff]/70 to-transparent pointer-events-none" />
+            {/* Top delicate light-azure atmospheric fade */}
+            <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-[#e0f2fe]/80 via-[#e0f2fe]/30 to-transparent pointer-events-none" />
+            
+            {/* Bottom seamless soft-edge feathered gradient dissolving the photo into the lower content stage */}
+            <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#f0f9ff] via-[#f0f9ff]/85 via-45% to-transparent pointer-events-none" />
 
             {/* Floating Top Location Pill over the image */}
             <div className="absolute top-3.5 left-4 right-4 flex items-center justify-between z-10">
@@ -209,25 +210,25 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
         {/* ========================================================= */}
         <div className="hidden lg:flex relative min-h-[calc(100vh-4.5rem)] flex-col justify-between bg-gradient-to-br from-[#e0f2fe]/90 via-[#f0f9ff] to-white">
           
-          {/* Full-Bleed Background Photograph with Gentle Wide Framing */}
-          <div className="absolute inset-0 z-0 overflow-hidden">
+          {/* Full-Bleed Background Photograph: natural wide aspect ratio shifted right so the orange wall and logo shine */}
+          <div className="absolute inset-0 z-0 overflow-hidden bg-gradient-to-br from-[#e0f2fe] via-[#f0f9ff] to-[#e0f2fe]">
             <img
               src="/images/studio/studiohome.webp"
               alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
-              className="w-full h-full object-cover object-[75%_center] scale-100"
+              className="w-full h-full object-contain lg:object-right"
               loading="eager"
               fetchPriority="high"
             />
             
-            {/* Luminous Light-Blue Multi-layer Gradient Veil: reduced opacity and width so the room and logo are much more visible */}
-            {/* 1. Left-to-right light azure fade: soft mask over text on the far left, tapering off fast so the entire studio room is clearly visible */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#e0f2fe]/95 via-[#e0f2fe]/75 via-35% to-transparent pointer-events-none" />
+            {/* Luminous Light-Blue Gradient Veil: confined solely to the left text zone, leaving the right side (orange wall & logo) 100% crisp and clear */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#e0f2fe] via-[#e0f2fe]/85 via-32% to-transparent to-55% pointer-events-none" />
             
-            {/* 2. Top & bottom soft atmospheric blend */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#f0f9ff]/85 via-transparent to-[#e0f2fe]/25 pointer-events-none" />
+            {/* Top & bottom soft atmospheric edge blend — transparent on the right to keep the orange wall bright */}
+            <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#f0f9ff]/90 via-[#f0f9ff]/30 to-transparent pointer-events-none" />
+            <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-[#e0f2fe]/40 to-transparent pointer-events-none" />
 
-            {/* 3. Subtle ambient light-cyan radial glow on the bottom left */}
-            <div className="absolute -bottom-24 -left-24 w-[36rem] h-[36rem] rounded-full bg-[#039be5]/10 blur-3xl pointer-events-none" />
+            {/* Subtle ambient light-cyan radial glow on the bottom left */}
+            <div className="absolute -bottom-24 -left-24 w-[32rem] h-[32rem] rounded-full bg-[#039be5]/10 blur-3xl pointer-events-none" />
           </div>
 
           {/* Main Desktop Content Stage */}
