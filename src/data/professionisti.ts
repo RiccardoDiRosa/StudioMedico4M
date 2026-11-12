@@ -144,16 +144,39 @@ export const PROFESSIONISTI: Professional[] = [
     category: 'nutrizione',
     categoryLabel: 'Nutrizione',
     phone: '351 9417635',
-    shortDescription: 'Biologo Nutrizionista: educazione alimentare, piani nutrizionali calibrati, ricomposizione corporea e nutrizione per lo sport.',
-    fullBio: 'Il Dott. Roberto Parmigiani è Biologo Nutrizionista operante presso la sede di Studio 4M a Bollate. Accompagna i pazienti in percorsi personalizzati di rieducazione alimentare e benessere metabolico, formulando piani nutrizionali scientificamente fondati e calibrati sulle abitudini di vita, sugli obiettivi di salute e sulle specifiche esigenze di chi pratica attività sportiva.',
+    photoUrl: '/images/parmigiani.webp',
+    shortDescription: 'Biologo Nutrizionista laureato in Scienze Biologiche con specializzazione in Nutrizione. Opera presso il reparto disturbi alimentari dell’Ospedale Niguarda ed è coinvolto nella gestione degli atleti F.C. Inter.',
+    fullBio: 'Il Dott. Roberto Parmigiani è Biologo Nutrizionista, laureato in Scienze Biologiche con specializzazione in Nutrizione. Dopo svariate esperienze professionali nel settore nutrizionale, opera da marzo 2026 presso il reparto di disturbi alimentari all’Ospedale Niguarda di Milano ed è inoltre coinvolto nella gestione degli atleti della F.C. Inter. Presso lo Studio Professionale 4M a Bollate accompagna pazienti e sportivi attraverso percorsi personalizzati di educazione alimentare, nutrizione clinica e supporto nutrizionale per il benessere metabolico e la performance sportiva.',
+    bioParagraphs: [
+      'Il Dott. Roberto Parmigiani è Biologo Nutrizionista, laureato in Scienze Biologiche con specializzazione in Nutrizione.',
+      'Dopo svariate esperienze professionali nel campo della nutrizione umana, da marzo 2026 svolge attività presso il reparto dedicato ai disturbi alimentari dell’Ospedale Niguarda di Milano.',
+      'Nell’ambito delle proprie attività è inoltre coinvolto nella gestione degli atleti della F.C. Inter, unendo l’esperienza clinica ospedaliera alle esigenze dello sport agonistico.',
+      'Presso Studio Professionale 4M a Bollate riceve su appuntamento per elaborare piani nutrizionali personalizzati, mirati sia all’educazione alimentare e al riequilibrio metabolico, sia all’ottimizzazione energetica e del recupero nello sportivo.'
+    ],
     services: [
       'Valutazione dello stato nutrizionale e delle abitudini alimentari',
-      'Analisi della composizione corporea',
+      'Analisi della composizione corporea e monitoraggio periodico',
       'Elaborazione di piani dietetici e nutrizionali personalizzati',
-      'Consulenza e nutrizione specifica per lo sportivo',
-      'Percorsi di educazione alimentare e gestione del peso',
-      'Monitoraggio periodico e verifiche dei risultati'
+      'Supporto nutrizionale nell’ambito dei disturbi alimentari',
+      'Consulenza e nutrizione specifica per atleti e sportivi',
+      'Percorsi di educazione alimentare, gestione del peso e ricomposizione corporea'
     ],
+    curriculumVitae: {
+      experiences: [
+        'Biologo Nutrizionista presso Studio Professionale 4M (Bollate)',
+        'Attività presso il reparto di Disturbi Alimentari dell’Ospedale Niguarda di Milano (da marzo 2026)',
+        'Coinvolto nella gestione nutrizionale degli atleti della F.C. Inter'
+      ],
+      subSpecializations: [
+        'Nutrizione clinica e disturbi del comportamento alimentare',
+        'Nutrizione applicata allo sport e gestione degli atleti',
+        'Educazione alimentare e ricomposizione corporea',
+        'Elaborazione di piani alimentari personalizzati'
+      ],
+      academicMilestones: [
+        'Laurea in Scienze Biologiche con specializzazione in Nutrizione'
+      ]
+    },
     consultationDays: 'Riceve su appuntamento',
     isComplete: true,
     isPublished: true
