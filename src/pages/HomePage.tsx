@@ -100,18 +100,18 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
         <div className="block lg:hidden relative min-h-[calc(100svh-4rem)] flex flex-col justify-between bg-gradient-to-b from-[#e0f2fe]/60 via-[#f0f9ff] to-white">
           
           {/* Upper/Middle Immersive Studio Photo with Soft Light Feathered Blend */}
-          <div className="relative w-full h-[45svh] min-h-[260px] max-h-[380px] overflow-hidden shrink-0">
+          <div className="relative w-full h-[52svh] min-h-[300px] max-h-[460px] overflow-hidden shrink-0 bg-slate-900/5">
             <img
               src="/images/studio/studiohome.webp"
               alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
-              className="w-full h-full object-cover object-[68%_center] scale-[1.02] transition-transform duration-1000 ease-out"
+              className="w-full h-full object-contain sm:object-cover object-center"
               loading="eager"
               fetchPriority="high"
             />
             {/* Top subtle light-azure fade */}
-            <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-[#e0f2fe]/70 via-[#e0f2fe]/20 to-transparent pointer-events-none" />
+            <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-[#e0f2fe]/60 via-[#e0f2fe]/10 to-transparent pointer-events-none" />
             {/* Soft luminous light-blue bottom feathered fade into the light azure stage */}
-            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[#f0f9ff] via-[#f0f9ff]/80 to-transparent pointer-events-none" />
+            <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#f0f9ff] via-[#f0f9ff]/70 to-transparent pointer-events-none" />
 
             {/* Floating Top Location Pill over the image */}
             <div className="absolute top-3.5 left-4 right-4 flex items-center justify-between z-10">
@@ -209,25 +209,25 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
         {/* ========================================================= */}
         <div className="hidden lg:flex relative min-h-[calc(100vh-4.5rem)] flex-col justify-between bg-gradient-to-br from-[#e0f2fe]/90 via-[#f0f9ff] to-white">
           
-          {/* Full-Bleed Background Photograph with Slow Cinematic Hover Zoom */}
+          {/* Full-Bleed Background Photograph with Gentle Wide Framing */}
           <div className="absolute inset-0 z-0 overflow-hidden">
             <img
               src="/images/studio/studiohome.webp"
               alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
-              className="w-full h-full object-cover object-[65%_center] scale-[1.01] group-hover/hero:scale-[1.05] transition-transform duration-[2000ms] ease-out"
+              className="w-full h-full object-cover object-[75%_center] scale-100"
               loading="eager"
               fetchPriority="high"
             />
             
-            {/* Luminous Light-Blue Multi-layer Gradient Veil ("Sfumatura Blu Chiaro") */}
-            {/* 1. Left-to-right light azure-to-transparent fade: covers the curtain on the left with a soft fresh sky-blue layer, so text in dark clinical blue (#01579b) has maximum contrast, while leaving the orange STUDIO 4M wall & sofa on the right completely visible */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#e0f2fe]/98 via-[#e0f2fe]/90 via-48% to-transparent pointer-events-none" />
+            {/* Luminous Light-Blue Multi-layer Gradient Veil: reduced opacity and width so the room and logo are much more visible */}
+            {/* 1. Left-to-right light azure fade: soft mask over text on the far left, tapering off fast so the entire studio room is clearly visible */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#e0f2fe]/95 via-[#e0f2fe]/75 via-35% to-transparent pointer-events-none" />
             
-            {/* 2. Top & bottom soft atmospheric vignette to frame the console */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#f0f9ff]/90 via-transparent to-[#e0f2fe]/40 pointer-events-none" />
+            {/* 2. Top & bottom soft atmospheric blend */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#f0f9ff]/85 via-transparent to-[#e0f2fe]/25 pointer-events-none" />
 
             {/* 3. Subtle ambient light-cyan radial glow on the bottom left */}
-            <div className="absolute -bottom-24 -left-24 w-[36rem] h-[36rem] rounded-full bg-[#039be5]/15 blur-3xl pointer-events-none" />
+            <div className="absolute -bottom-24 -left-24 w-[36rem] h-[36rem] rounded-full bg-[#039be5]/10 blur-3xl pointer-events-none" />
           </div>
 
           {/* Main Desktop Content Stage */}
@@ -272,12 +272,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                   Presso lo Studio Professionale 4M a Bollate trovi specialisti che operano in diversi ambiti della salute, della riabilitazione e del benessere psicofisico, in un ambiente moderno, riservato e facilmente accessibile.
                 </p>
 
-                {/* High-Impact Action Buttons */}
-                <div className="flex flex-wrap items-center gap-4 pt-2">
+                {/* High-Impact Action Buttons: perfectly aligned with equal height and clear prominence */}
+                <div className="flex flex-wrap items-stretch gap-3.5 pt-2">
                   <a
                     href="#professionisti"
                     onClick={(e) => scrollToSection(e, 'professionisti')}
-                    className="inline-flex items-center gap-2.5 px-7 py-4 text-sm font-bold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] active:scale-[0.99] rounded-2xl transition-all shadow-md shadow-[#0277bd]/25 hover:shadow-lg hover:shadow-[#039be5]/30 focus-ring whitespace-nowrap group/btn"
+                    className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 text-sm font-bold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] active:scale-[0.99] rounded-xl transition-all shadow-md shadow-[#0277bd]/25 hover:shadow-lg hover:shadow-[#039be5]/30 focus-ring whitespace-nowrap group/btn"
                   >
                     <span>Scopri i Professionisti</span>
                     <ArrowRight className="w-4 h-4 text-[#b3e5fc] group-hover/btn:translate-x-1 transition-transform" aria-hidden="true" />
@@ -286,7 +286,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                   <a
                     href="#servizi"
                     onClick={(e) => scrollToSection(e, 'servizi')}
-                    className="inline-flex items-center gap-2 px-6 py-4 text-sm font-semibold text-[#01579b] bg-white/90 hover:bg-white backdrop-blur-xl active:scale-[0.99] border border-[#b3e5fc] hover:border-[#039be5] rounded-2xl transition-all shadow-xs focus-ring whitespace-nowrap"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3.5 text-sm font-semibold text-[#01579b] bg-white/95 hover:bg-white backdrop-blur-xl active:scale-[0.99] border border-[#b3e5fc] hover:border-[#0277bd] rounded-xl transition-all shadow-xs focus-ring whitespace-nowrap"
                   >
                     <span>Esplora gli 8 Servizi</span>
                   </a>
@@ -295,27 +295,17 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                     href={STUDIO_CONFIG.googleMapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-5 py-4 text-sm font-semibold text-[#0277bd] hover:text-[#01579b] bg-[#b3e5fc]/30 hover:bg-[#b3e5fc]/50 backdrop-blur-xl border border-[#b3e5fc] rounded-2xl transition-all focus-ring whitespace-nowrap"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-3.5 text-sm font-bold text-white bg-gradient-to-r from-[#0284c7] to-[#039be5] hover:from-[#039be5] hover:to-[#0284c7] active:scale-[0.99] border border-[#38bdf8]/40 rounded-xl transition-all shadow-md shadow-[#0284c7]/25 hover:shadow-lg hover:shadow-[#039be5]/35 focus-ring whitespace-nowrap"
                   >
-                    <Navigation className="w-4 h-4 text-[#039be5]" aria-hidden="true" />
+                    <Navigation className="w-4 h-4 text-white" aria-hidden="true" />
                     <span>Come Raggiungerci</span>
                   </a>
                 </div>
 
               </div>
 
-              {/* Right Column: Open Visual Window onto the Studio Room */}
-              <div className="col-span-5 xl:col-span-6 flex justify-end items-end h-full">
-                {/* Floating architectural caption with frosted white/light-blue background */}
-                <div className="mt-auto ml-auto bg-white/85 backdrop-blur-md border border-[#b3e5fc] rounded-2xl px-4 py-2.5 text-right shadow-lg shadow-[#01579b]/5">
-                  <span className="block text-[11px] font-bold uppercase tracking-widest text-[#0277bd]">
-                    Sede di Bollate (MI)
-                  </span>
-                  <span className="block text-xs text-slate-700 font-medium">
-                    Accoglienza, riservatezza e cura della persona
-                  </span>
-                </div>
-              </div>
+              {/* Right Column: Empty to allow the studio room photograph to shine completely */}
+              <div className="col-span-5 xl:col-span-6" />
 
             </div>
 
