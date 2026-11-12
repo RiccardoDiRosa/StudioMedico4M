@@ -59,9 +59,9 @@ export const PROFESSIONISTI: Professional[] = [
         'Trattamento incruento patologia vertebrale e affezioni funzionali del piede'
       ],
       academicMilestones: [
-        'Laurea in Medicina e Chirurgia – Università degli Studi di Milano (03/07/1992)',
-        'Specializzazione in Ortopedia e Traumatologia II – Milano (05/11/1997)',
-        'Professore Universitario a contratto – Università degli Studi di Milano (UNIMI, Corso di Laurea in Scienze Infermieristiche)'
+        'Laurea in Medicina e Chirurgia',
+        'Specializzazione in Ortopedia e Traumatologia (29 anni di specializzazione)',
+        'Professore Universitario a contratto presso UNIMI (Corso di Laurea in Scienze Infermieristiche)'
       ],
       publicationsAndConferences: [
         'Partecipa costantemente a congressi, corsi e cadaver-lab nazionali ed internazionali con ruolo di discente, relatore, moderatore e istruttore'
@@ -85,46 +85,40 @@ export const PROFESSIONISTI: Professional[] = [
     categoryLabel: 'Agopuntura',
     phone: '335 1270226',
     photoUrl: '/images/enricolovati.webp',
-    shortDescription: 'Medico Chirurgo con oltre 40 anni di esperienza clinica e medico di medicina generale SSN fino al 2024. Diplomato in Agopuntura presso la scuola SOWEN di Milano.',
-    fullBio: 'Il Dott. Enrico Lovati è Medico Chirurgo con oltre quarant’anni di esperienza clinica e di assistenza sanitaria territoriale. Laureato in Medicina e Chirurgia presso l’Università degli Studi di Milano nel 1982, ha esercitato la professione odontoiatrica presso il proprio studio dal 1982 al 2020 e, dal 1987 al 2024, ha operato come Medico di Medicina Generale convenzionato con il Servizio Sanitario Nazionale (SSN). Dal 2022 ha integrato la propria attività con la specialità di Agopuntura medica, conseguendo il diploma quadriennale presso la prestigiosa scuola SOWEN di Milano. Presso Studio 4M a Bollate applica le pratiche dell’agopuntura classica e olistica per ristabilire lo stato di salute e di equilibrio dell’organismo attraverso l’inserimento di aghi sottili lungo i meridiani energetici. L’agopuntura favorisce la corretta circolazione di energia e sangue, potenziando le difese naturali del corpo e trovando efficace applicazione in patologie muscolo-tendinee e articolari, dolore cronico, cefalee ed emicranie, disturbi emotivi come ansia, stress, insonnia e depressione, nonché affezioni organiche, digestive, allergiche e ginecologiche, con piani terapeutici personalizzati adatti a ogni fascia d’età, dai bambini agli adulti.',
+    shortDescription: 'Medico Chirurgo laureato presso l’Università degli Studi di Milano nel 1982, già medico di medicina generale SSN fino al 2024. Diplomato in Agopuntura presso la scuola SOWEN di Milano.',
+    fullBio: 'Il Dott. Enrico Lovati è Medico Chirurgo laureato in Medicina e Chirurgia presso l’Università degli Studi di Milano il 12 marzo 1982. Dal 1982 al 2020 ha esercitato la specialità di odontoiatria presso il proprio studio e, dal 1987 al 2024, ha svolto la professione di Medico di Medicina Generale convenzionato con il Servizio Sanitario Nazionale (SSN). Dal 2022 ad oggi ha affiancato la specialità di Agopuntura, avendo conseguito il diploma presso la scuola SOWEN di Milano. Presso lo Studio Professionale 4M a Bollate applica le pratiche antiche e olistiche dell’agopuntura cinese: lo scopo dell’agopuntura è ristabilire lo stato di salute e di benessere del paziente mediante l’inserimento di sottili aghi in specifici punti del corpo lungo l’asse dei meridiani. Per la medicina cinese lo stato di malattia è causato da una cattiva circolazione dell’energia e del sangue, con conseguente accumulo o carenza energetica tra le parti del corpo; l’agopuntura ripristina l’equilibrio energetico dell’individuo e stimola o potenzia le difese dell’organismo, migliorando la sintomatologia avvertita dal paziente. Trova applicazione in numerose condizioni acute e croniche — dai bambini agli adulti — tra cui patologie muscolo-tendinee, lesioni, mal di schiena, dolore cronico, emicrania, patologie psichiche come ansia, stress, depressione, insonnia e dipendenze, oltre a patologie organiche quali problemi digestivi, allergie, sindrome premestruale, sintomi della menopausa e infertilità.',
     bioParagraphs: [
-      'Il Dott. Enrico Lovati è Medico Chirurgo con oltre quarant’anni di esperienza nella tutela della salute della persona. Ha conseguito la Laurea in Medicina e Chirurgia presso l’Università degli Studi di Milano il 12 marzo 1982.',
-      'Dal 1982 al 2020 ha esercitato la professione odontoiatrica presso il proprio studio odontoiatrico e, dal 1987 al 2024, ha svolto con dedizione il ruolo di Medico di Medicina Generale convenzionato con il Servizio Sanitario Nazionale (SSN), accompagnando generazioni di pazienti con una visione clinica attenta alla persona nella sua globalità.',
-      'Dal 2022 ad oggi ha affiancato la specialità di Agopuntura, dopo aver conseguito il diploma presso la storica e rinomata scuola SOWEN di Milano.',
-      'Lo scopo dell’agopuntura è ristabilire lo stato di salute e di benessere del paziente mediante l’inserimento di sottili aghi in specifici punti del corpo. Per la medicina tradizionale cinese, lo stato di malattia viene causato da una cattiva o alterata circolazione dell’energia e del sangue, con conseguente accumulo o carenza tra i vari distretti corporei.',
-      'Inoculando sottili aghi lungo l’asse dei meridiani, l’agopuntura ripristina l’equilibrio energetico dell’individuo, stimolando e potenziando le difese naturali dell’organismo per difenderlo dalle malattie e garantire un recupero funzionale duraturo.',
-      'L’agopuntura trova efficace applicazione in patologie muscolo-tendinee (mal di schiena, dolori articolari, contratture), dolore cronico, cefalee ed emicranie, disturbi psichici ed emotivi (stress, ansia, depressione, insonnia, dipendenze) e patologie organiche come disturbi digestivi, allergie, sindrome premestruale, sintomi della menopausa e percorsi di fertilità. Presso Studio 4M si sviluppano programmi adatti a ogni fascia d’età, dai bambini agli adulti.'
+      'Il Dott. Enrico Lovati ha conseguito la Laurea in Medicina e Chirurgia presso l’Università degli Studi di Milano il 12 marzo 1982. Dal 1982 al 2020 ha esercitato la specialità di odontoiatria presso il proprio studio e, dal 1987 al 2024, ha svolto anche la professione di Medico di Medicina Generale convenzionato con il Servizio Sanitario Nazionale (SSN).',
+      'Dal 2022 ad oggi ha affiancato alla propria attività clinica la specialità di Agopuntura, avendo conseguito il diploma presso la scuola SOWEN di Milano.',
+      'Lo scopo dell’agopuntura è ristabilire lo stato di salute e di benessere del paziente mediante l’inserimento di alcuni sottili aghi in specifici punti del corpo. Per la medicina cinese, infatti, lo stato di malattia viene causato da una cattiva circolazione dell’energia e del sangue, con conseguente accumulo o carenza di energia tra le diverse parti del corpo e uno squilibrio energetico complessivo.',
+      'Inoculando sottili aghi nei punti lungo l’asse dei meridiani, l’agopuntura è in grado di ripristinare l’equilibrio energetico dell’individuo, stimolando e potenziando le difese dell’organismo per prepararlo e difenderlo dall’aggressione delle malattie, migliorando così la sintomatologia avvertita dal paziente e garantendo lo stato di benessere.',
+      'Utilizzata negli ultimi cinquemila anni attraverso le pratiche antiche e olistiche della medicina cinese, l’agopuntura trova applicazione dal trattamento dei malesseri più comuni fino alle patologie acute o croniche: patologie muscolo-tendinee, lesioni, mal di schiena, dolore cronico ed emicrania, patologie psichiche come ansia, stress, depressione, insonnia e dipendenze, nonché patologie organiche quali problemi digestivi, allergie, sindrome premestruale, sintomi della menopausa e infertilità, con programmi di cura adatti a tutte le età, dai bambini agli adulti.'
     ],
     services: [
-      'Visita medica preliminare e inquadramento energetico in medicina tradizionale cinese',
-      'Sedute di agopuntura medica per il riequilibrio energetico e funzionale',
-      'Trattamento del dolore acuto e cronico, lesioni e tensioni muscolo-tendinee',
-      'Cura di lombalgie, cervicalgie, dorsalgie e problematiche articolari',
-      'Trattamento di cefalee muscolo-tensive, emicranie e nevralgie',
-      'Supporto per disturbi emotivi: ansia, stress, insonnia, depressione e dipendenze',
-      'Trattamento di disturbi funzionali ed organici: problemi digestivi e allergie',
-      'Supporto per sindrome premestruale, sintomi della menopausa e percorsi di fertilità',
-      'Piani di trattamento personalizzati per bambini, giovani, adulti e anziani'
+      'Sedute di agopuntura per il ripristino dell’equilibrio energetico lungo i meridiani',
+      'Trattamento di patologie muscolo-tendinee, lesioni, mal di schiena e dolore cronico',
+      'Trattamento dell’emicrania e delle sintomatologie dolorose acute e croniche',
+      'Supporto per patologie psichiche ed emotive: ansia, stress, depressione, insonnia e dipendenze',
+      'Trattamento di patologie organiche: problemi digestivi e allergie',
+      'Trattamento per sindrome premestruale, sintomi della menopausa e infertilità',
+      'Programmi di cura personalizzati adatti a tutte le età, dai bambini agli adulti'
     ],
     curriculumVitae: {
-      experienceYears: 'Oltre 40 anni di esperienza medica',
+      experienceYears: 'Oltre 40 anni di esperienza medica (dal 1982)',
       experiences: [
-        'Medico Chirurgo ed esperto in Agopuntura presso Studio 4M (Bollate)',
-        'Medico di Medicina Generale (MMG) convenzionato con il SSN (1987–2024)',
-        'Attività professionale odontoiatrica presso proprio studio odontoiatrico (1982–2020)',
-        'Diploma quadriennale in Agopuntura presso la Scuola SOWEN di Milano (2022)'
+        'Attività di Agopuntura medica dal 2022 ad oggi presso Studio Professionale 4M (Bollate)',
+        'Medico di Medicina Generale convenzionato con il SSN (1987–2024)',
+        'Esercizio della specialità di Odontoiatria presso il proprio studio (1982–2020)'
       ],
       academicMilestones: [
-        'Diploma in Agopuntura – Scuola SOWEN di Milano (2022)',
+        'Diploma in Agopuntura – Scuola SOWEN di Milano (dal 2022)',
         'Laurea in Medicina e Chirurgia – Università degli Studi di Milano (12/03/1982)'
       ],
       subSpecializations: [
-        'Agopuntura medica tradizionale cinese',
-        'Riequilibrio energetico lungo i meridiani',
-        'Terapia antalgica del dolore cronico e muscolo-scheletrico',
-        'Trattamento di cefalee ed emicranie',
-        'Gestione di ansia, insonnia e disturbi correlati allo stress',
-        'Medicina generale e presa in carico globale della persona'
+        'Agopuntura secondo la medicina cinese e riequilibrio dei meridiani',
+        'Trattamento di patologie muscolo-tendinee, mal di schiena, lesioni e dolore cronico',
+        'Trattamento di emicrania, insonnia, ansia, stress, depressione e dipendenze',
+        'Trattamento di problemi digestivi, allergie, sindrome premestruale, menopausa e infertilità'
       ]
     },
     consultationDays: 'Riceve su appuntamento',
@@ -140,39 +134,36 @@ export const PROFESSIONISTI: Professional[] = [
     title: 'Dr',
     firstName: 'Roberto',
     lastName: 'Parmigiani',
-    role: 'Biologo Nutrizionista',
+    role: 'Laureato in Scienze Biologiche con specializzazione in Nutrizione',
     category: 'nutrizione',
     categoryLabel: 'Nutrizione',
     phone: '351 9417635',
     photoUrl: '/images/parmigiani.webp',
     photoPosition: '50% 68%',
-    shortDescription: 'Biologo Nutrizionista laureato in Scienze Biologiche con specializzazione in Nutrizione. Opera presso il reparto disturbi alimentari dell’Ospedale Niguarda ed è coinvolto nella gestione degli atleti F.C. Inter.',
-    fullBio: 'Il Dott. Roberto Parmigiani è Biologo Nutrizionista, laureato in Scienze Biologiche con specializzazione in Nutrizione. Dopo svariate esperienze professionali nel settore nutrizionale, opera da marzo 2026 presso il reparto di disturbi alimentari all’Ospedale Niguarda di Milano ed è inoltre coinvolto nella gestione degli atleti della F.C. Inter. Presso lo Studio Professionale 4M a Bollate accompagna pazienti e sportivi attraverso percorsi personalizzati di educazione alimentare, nutrizione clinica e supporto nutrizionale per il benessere metabolico e la performance sportiva.',
+    shortDescription: 'Laureato in Scienze Biologiche con specializzazione in Nutrizione. Lavora da marzo 2026 presso il reparto di disturbi alimentari all’Ospedale Niguarda ed è coinvolto nella gestione degli atleti della F.C. Inter.',
+    fullBio: 'Il Dott. Roberto Parmigiani è laureato in Scienze Biologiche con specializzazione in Nutrizione. Dopo aver maturato svariate esperienze professionali nel proprio ambito, è approdato presso il reparto di disturbi alimentari all’Ospedale Niguarda di Milano, dove lavora da marzo del 2026. Parallelamente, nell’ambito delle sue varie attività professionali, è coinvolto anche nella gestione degli atleti della F.C. Inter. Presso lo Studio Professionale 4M a Bollate mette a disposizione il proprio percorso formativo e l’esperienza maturata sia in ambito ospedaliero nei disturbi alimentari sia nel contesto sportivo con atleti professionisti.',
     bioParagraphs: [
-      'Il Dott. Roberto Parmigiani è Biologo Nutrizionista, laureato in Scienze Biologiche con specializzazione in Nutrizione.',
-      'Dopo svariate esperienze professionali nel campo della nutrizione umana, da marzo 2026 svolge attività presso il reparto dedicato ai disturbi alimentari dell’Ospedale Niguarda di Milano.',
-      'Nell’ambito delle proprie attività è inoltre coinvolto nella gestione degli atleti della F.C. Inter, unendo l’esperienza clinica ospedaliera alle esigenze dello sport agonistico.',
-      'Presso Studio Professionale 4M a Bollate riceve su appuntamento per elaborare piani nutrizionali personalizzati, mirati sia all’educazione alimentare e al riequilibrio metabolico, sia all’ottimizzazione energetica e del recupero nello sportivo.'
+      'Il Dott. Roberto Parmigiani ha conseguito la laurea in Scienze Biologiche con specializzazione in Nutrizione, sviluppando nel tempo un percorso professionale dedicato all’ambito nutrizionale.',
+      'Dopo svariate esperienze sul campo, è approdato presso il reparto di disturbi alimentari all’Ospedale Niguarda di Milano, struttura in cui lavora da marzo del 2026 occupandosi delle problematiche legate ai disturbi dell’alimentazione.',
+      'Nelle varie attività che svolge è inoltre coinvolto anche nella gestione degli atleti della F.C. Inter, affiancando così all’impegno ospedaliero l’esperienza diretta con gli atleti in ambito sportivo.',
+      'Presso lo Studio Professionale 4M di Bollate riceve su appuntamento mettendo a disposizione le competenze maturate nel campo della nutrizione, dei disturbi alimentari e della gestione nutrizionale degli atleti.'
     ],
     services: [
-      'Valutazione dello stato nutrizionale e delle abitudini alimentari',
-      'Analisi della composizione corporea e monitoraggio periodico',
-      'Elaborazione di piani dietetici e nutrizionali personalizzati',
+      'Consulenza e percorsi dedicati alla nutrizione',
       'Supporto nutrizionale nell’ambito dei disturbi alimentari',
-      'Consulenza e nutrizione specifica per atleti e sportivi',
-      'Percorsi di educazione alimentare, gestione del peso e ricomposizione corporea'
+      'Gestione e supporto nutrizionale per atleti e sportivi'
     ],
     curriculumVitae: {
       experiences: [
-        'Biologo Nutrizionista presso Studio Professionale 4M (Bollate)',
-        'Attività presso il reparto di Disturbi Alimentari dell’Ospedale Niguarda di Milano (da marzo 2026)',
-        'Coinvolto nella gestione nutrizionale degli atleti della F.C. Inter'
+        'Attività presso il reparto di disturbi alimentari all’Ospedale Niguarda di Milano (da marzo 2026)',
+        'Coinvolto nella gestione degli atleti della F.C. Inter',
+        'Svariate esperienze professionali maturate nell’ambito della nutrizione',
+        'Attività professionale presso Studio Professionale 4M (Bollate)'
       ],
       subSpecializations: [
-        'Nutrizione clinica e disturbi del comportamento alimentare',
-        'Nutrizione applicata allo sport e gestione degli atleti',
-        'Educazione alimentare e ricomposizione corporea',
-        'Elaborazione di piani alimentari personalizzati'
+        'Specializzazione in Nutrizione',
+        'Disturbi alimentari',
+        'Gestione nutrizionale degli atleti'
       ],
       academicMilestones: [
         'Laurea in Scienze Biologiche con specializzazione in Nutrizione'
@@ -254,21 +245,42 @@ export const PROFESSIONISTI: Professional[] = [
     mioDottoreUrl: 'https://www.miodottore.it/profilo/davide-maria-condoleo',
     photoUrl: '/images/davidemaria.webp',
     shortDescription: 'Fisioterapista con diploma in Osteopatia e operatore in discipline bio-naturali specializzato in tecniche osteopatiche olistiche (Neuro Osteopatia®), traumatologia sportiva e riabilitazione.',
-    fullBio: 'Fisioterapista con diploma in Osteopatia e operatore in discipline bio-naturali specializzato in tecniche osteopatiche olistiche, formato in Neuro Osteopatia® presso l’accademia Aifromm di Bergamo. Promuove un’idea di salute legata alla cura e al benessere globale della persona, secondo una visione di medicina integrata, collaborando con vari specialisti tra cui ortopedici, gnatologi e psicologi per una gestione del paziente a 360°. È specializzato nella gestione delle problematiche muscolo-scheletriche (cervicali, lombalgie, colpi di frusta), neurologiche, nei trattamenti di riabilitazione post-chirurgica e nella traumatologia sportiva (con esperienza nel calcio femminile di Serie B e C). L’obiettivo è quello di riabilitare il paziente e di educarlo per favorire una miglior qualità della vita.',
+    fullBio: 'Il Dott. Davide Maria Condoleo è Fisioterapista con diploma in Osteopatia e operatore in discipline bio-naturali specializzato in tecniche osteopatiche olistiche, formato in Neuro Osteopatia® presso l’accademia Aifromm di Bergamo. Promuove un’idea di salute legata alla cura e al benessere globale della persona, secondo una visione di medicina integrata, collaborando con vari specialisti tra cui ortopedici, gnatologi e psicologi per una gestione dei pazienti a 360°. Ha lavorato presso vari ambulatori e centri medici di Milano e dell’Hinterland ed è specializzato nella gestione delle problematiche muscolo-scheletriche (cervicali, lombalgie, colpi di frusta, tendiniti, contratture, torcicollo e artrosi), neurologiche, nei trattamenti di riabilitazione post-chirurgica e nella traumatologia sportiva, ambito in cui ha maturato esperienza anche nel calcio femminile di Serie B e C. L’obiettivo del suo lavoro è riabilitare il paziente ed educarlo attraverso fisioterapia, fisiokinesiterapia e ginnastica posturale per favorire una miglior qualità della vita.',
     bioParagraphs: [
-      'Fisioterapista con diploma in Osteopatia e operatore in discipline bio-naturali specializzato in tecniche osteopatiche olistiche, formato in Neuro Osteopatia® presso l’accademia Aifromm di Bergamo.',
-      'Promuove un’idea di salute legata alla cura e al benessere globale della persona, secondo una visione di medicina integrata. Collabora con vari specialisti, tra cui gnatologi, ortopedici e psicologi, per una gestione dei pazienti a 360°.',
-      'Specializzato nella gestione delle problematiche muscolo-scheletriche, neurologiche e della traumatologia sportiva (con esperienza nel calcio femminile di Serie B e C), trattamenti di riabilitazione post-chirurgica e gestione di cervicalgie, lombalgie e colpi di frusta.',
-      'L’obiettivo è quello di riabilitare il paziente e di educarlo per favorire una miglior qualità della vita, collaborando con altri professionisti in una visione del benessere a 360°.'
+      'Il Dott. Davide Maria Condoleo è Fisioterapista con diploma in Osteopatia e operatore in discipline bio-naturali specializzato in tecniche osteopatiche olistiche, formato in Neuro Osteopatia® presso l’accademia Aifromm di Bergamo.',
+      'Promuove un’idea di salute legata alla cura e al benessere globale della persona, secondo una visione di medicina integrata. Collabora attivamente con vari specialisti, tra cui gnatologi, ortopedici e psicologi, per garantire una presa in carico e una gestione dei pazienti a 360°.',
+      'Ha lavorato presso vari ambulatori e centri medici di Milano e dell’Hinterland, acquisendo specifiche competenze nella gestione delle problematiche muscolo-scheletriche (lombalgie, cervicali, colpi di frusta, tendiniti, contratture, torcicollo e artrosi), nelle problematiche neurologiche, nei trattamenti di riabilitazione post-chirurgica e nella traumatologia sportiva, con esperienza maturata nel calcio femminile di Serie B e C.',
+      'Attraverso percorsi di fisioterapia, fisiokinesiterapia, esercizi e ginnastica posturale, il suo obiettivo è quello di riabilitare il paziente e di educarlo per favorire una miglior qualità della vita, lavorando in sinergia con gli altri professionisti in una visione del benessere a 360°.'
     ],
     services: [
+      'Fisioterapia, fisiokinesiterapia e riabilitazione post-chirurgica',
       'Tecniche osteopatiche olistiche e Neuro Osteopatia®',
-      'Trattamenti di riabilitazione post-chirurgica e fisiokinesiterapia',
-      'Gestione di patologie muscolo-scheletriche (cervicali, lombalgie, colpi di frusta)',
-      'Traumatologia sportiva (esperienza nel calcio femminile di Serie B e C)',
-      'Educazione del paziente ed esercizi posturali per la qualità della vita',
-      'Collaborazione multidisciplinare integrata (ortopedici, gnatologi, psicologi)'
+      'Gestione di patologie muscolo-scheletriche (cervicali, lombalgie, colpi di frusta, tendinite, contrattura, torcicollo, artrosi)',
+      'Riabilitazione per problematiche neurologiche e traumatologia sportiva',
+      'Ginnastica posturale, esercizi posturali ed educazione del paziente',
+      'Gestione integrata a 360° in collaborazione con ortopedici, gnatologi e psicologi'
     ],
+    curriculumVitae: {
+      experiences: [
+        'Fisioterapista e Operatore in Discipline Bio-Naturali presso Studio Professionale 4M (Bollate)',
+        'Attività clinica presso vari ambulatori e centri medici di Milano e dell’Hinterland',
+        'Esperienza in traumatologia sportiva nel calcio femminile di Serie B e C',
+        'Collaborazione multidisciplinare con ortopedici, gnatologi e psicologi per la gestione del paziente a 360°'
+      ],
+      subSpecializations: [
+        'Fisioterapia, fisiokinesiterapia e riabilitazione post-chirurgica',
+        'Tecniche osteopatiche olistiche e Neuro Osteopatia®',
+        'Ortopedia e traumatologia del sistema motorio e sportiva',
+        'Problematiche muscolo-scheletriche e neurologiche',
+        'Esercizi posturali e ginnastica posturale'
+      ],
+      academicMilestones: [
+        'Fisioterapista',
+        'Diploma in Osteopatia',
+        'Formazione in Neuro Osteopatia® – Accademia Aifromm di Bergamo',
+        'Operatore in Discipline Bio-Naturali specializzato in tecniche osteopatiche olistiche'
+      ]
+    },
     consultationDays: 'Riceve su appuntamento',
     isComplete: true,
     isPublished: true
@@ -289,44 +301,39 @@ export const PROFESSIONISTI: Professional[] = [
     email: 'orthoticsmilano@gmail.com',
     websiteUrl: 'https://www.orthoticsmilano.com',
     photoUrl: '/images/stefanorizzi.webp',
-    shortDescription: 'Tecnico Ortopedico abilitato dal Ministero della Salute. Specializzato in esame baropodometrico statico e dinamico, studio computerizzato del passo e realizzazione di plantari ortopedici su misura.',
-    fullBio: 'Il Dott. Stefano Rizzi è Tecnico Ortopedico abilitato dal Ministero della Salute, laureato in Tecniche Ortopediche presso la Facoltà di Medicina e Chirurgia. Presso lo Studio 4M a Bollate e attraverso Orthotics Milano, si occupa della valutazione biomeccanica e posturale del piede e della progettazione e realizzazione artigianale di plantari ortopedici su misura, previa prescrizione medica. Attraverso l’impiego di una pedana baropodometrica avanzata per rilevazioni statiche, dinamiche e stabilometriche, analizza la distribuzione dei carichi e la biomeccanica del passo, identificando l’ortesi ideale per prevenire e correggere atteggiamenti posturali patologici, risolvere il dolore podalico e ottimizzare le prestazioni sportive. Tratta problematiche diffuse come piede piatto, piede cavo, alluce valgo, metatarsalgia, neuroma di Morton, fascite plantare, tallodinia e instabilità articolare.',
+    shortDescription: 'Tecnico Ortopedico abilitato dal Ministero della Salute. Specializzato in esame baropodometrico statico, dinamico e stabilometrico e realizzazione di plantari ortopedici su misura.',
+    fullBio: 'Il Dott. Stefano Rizzi è Tecnico Ortopedico abilitato dal Ministero della Salute, laureato in Tecniche Ortopediche presso la Facoltà di Medicina e Chirurgia. Presso lo Studio Professionale 4M a Bollate si occupa dello studio del piede, della valutazione della postura del corpo e della progettazione e realizzazione di plantari ortopedici su misura, previa prescrizione medica. Attraverso una corretta valutazione con pedana baropodometrica statica, dinamica e stabilometrica, rileva le impronte baropodometriche per identificare la migliore ortesi adatta alla fisionomia del piede, quantificare gli effetti del progetto riabilitativo e adottare le misure utili a prevenire, compensare e correggere atteggiamenti posturali, biomeccanici e patologici, combattere i dolori ai piedi e migliorare le prestazioni sportive. Realizza plantari su misura indicati per piede piatto, piede cavo, alluce valgo, metatarsalgia, neuroma di Morton, fascite plantare, tallodinia e instabilità.',
     bioParagraphs: [
-      'Il Dott. Stefano Rizzi è un Tecnico Ortopedico abilitato dal Ministero della Salute, operatore sanitario specializzato nella progettazione, realizzazione e adattamento di ortesi su misura e ausili correttivi e di sostegno dell’apparato locomotore.',
-      'Ha conseguito la Laurea in Tecniche Ortopediche presso la Facoltà di Medicina e Chirurgia, titolo con valore di esame di Stato abilitante alla professione sanitaria ai sensi del D.M. 14/09/1994.',
-      'Il plantare ortopedico su misura viene progettato e realizzato, previa prescrizione medica, per prevenire, compensare e correggere atteggiamenti posturali, biomeccanici e patologici. Rappresenta la soluzione più efficace per combattere i dolori ai piedi, prevenire sovraccarichi posturali alle articolazioni e migliorare le prestazioni sportive.',
-      'Per identificare la migliore ortesi adatta al piede di ciascun paziente, il Dott. Rizzi esegue una valutazione approfondita con pedana baropodometrica statica, dinamica e stabilometrica. L’esame si sviluppa in due fasi consequenziali: la fase statica, in cui il paziente rimane per alcuni secondi sulla pedana con entrambi i piedi poggiati e paralleli per rilevare la distribuzione delle pressioni, e la fase dinamica, in cui passeggia avanzando alternativamente prima con un piede e poi con l’altro per studiare lo svolgimento del passo e i punti di massimo carico.',
-      'La rilevazione computerizzata delle impronte baropodometriche consente una realizzazione estremamente precisa dei plantari prescritti dal medico, evitando l’acquisto di supporti generici inadeguati e garantendo un ausilio personalizzato per risolvere le patologie podaliche e posturali.'
+      'Il Dott. Stefano Rizzi è un Tecnico Ortopedico abilitato dal Ministero della Salute, operatore sanitario specializzato nella realizzazione di dispositivi in grado di compensare o ridurre i problemi ortopedici. Ha completato il corso di laurea triennale in Tecniche Ortopediche presso la Facoltà di Medicina e Chirurgia (D.I. n. 136 del 2001), titolo abilitante alla professione sanitaria che, ai sensi del D.M. 14/09/1994, prevede su prescrizione medica e successivo collaudo la costruzione, l’adattamento, l’applicazione e la fornitura di ortesi e ausili correttivi e di sostegno dell’apparato locomotore mediante rilevamento diretto sul paziente di misure e modelli.',
+      'Il plantare ortopedico su misura viene progettato e realizzato, previa prescrizione medica, per prevenire, compensare e correggere atteggiamenti posturali, biomeccanici e patologici. Rappresenta la soluzione migliore per combattere i dolori ai piedi, prevenire problemi posturali e migliorare le proprie prestazioni sportive.',
+      'Per identificare la migliore ortesi adatta al piede di ciascun paziente viene eseguita una corretta valutazione con pedana baropodometrica statica, dinamica e stabilometrica, uno degli strumenti più importanti per lo studio del piede e della postura del corpo. L’esame si sviluppa in due fasi consequenziali: nella fase statica il paziente rimane qualche secondo sulla pedana con tutti e due i piedi poggiati e paralleli; nella fase dinamica il paziente passeggia sulla pedana avanzando alternativamente prima con un piede e poi con l’altro.',
+      'Grazie alla pedana baropodometrica è possibile quantificare gli effetti di un progetto riabilitativo nella sua interezza e adottare le relative misure utili a migliorare la postura: la rilevazione delle impronte baropodometriche consente infatti una realizzazione più precisa dei plantari prescritti dal medico, evitando l’acquisto di un supporto non adatto alla fisionomia del piede e risolvendo in modo mirato problematiche quali piede piatto, piede cavo, alluce valgo, metatarsalgia, neuroma di Morton, fascite plantare, tallodinia e instabilità.'
     ],
     services: [
-      'Esame baropodometrico statico, dinamico e stabilometrico con pedana computerizzata',
-      'Analisi approfondita della biomeccanica del passo e della postura corporea',
-      'Progettazione e realizzazione di plantari ortopedici su misura (su prescrizione medica)',
-      'Trattamento e compensazione per piede piatto e piede cavo',
-      'Ortesi plantari personalizzate per alluce valgo, metatarsalgia e neuroma di Morton',
-      'Trattamento mirato per fascite plantare e tallodinia / tallonite',
-      'Plantari ortopedici su misura per instabilità dell’appoggio e prevenzione infortuni',
-      'Plantari biomeccanici personalizzati per atleti e sportivi (corsa, calcio, tennis, sci)',
-      'Controlli periodici, verifica dell’efficacia riabilitativa e adattamenti progressivi dell’ortesi'
+      'Esame baropodometrico statico, dinamico e stabilometrico per lo studio del piede e della postura',
+      'Progettazione, realizzazione e adattamento di plantari ortopedici su misura (previa prescrizione medica)',
+      'Plantari su misura per piede piatto e piede cavo',
+      'Plantari su misura per alluce valgo, metatarsalgia e neuroma di Morton',
+      'Plantari su misura per fascite plantare, tallodinia e instabilità',
+      'Soluzioni ortesiche per combattere i dolori ai piedi, prevenire problemi posturali e migliorare le prestazioni sportive'
     ],
     curriculumVitae: {
       experienceYears: 'Tecnico Ortopedico Abilitato',
       experiences: [
-        'Tecnico Ortopedico presso Studio 4M (Bollate)',
-        'Titolare e responsabile di Orthotics Milano (www.orthoticsmilano.com)',
-        'Valutazione baropodometrica computerizzata statica e dinamica del passo',
-        'Progettazione e fornitura artigianale di plantari ortopedici su misura e sportivi'
+        'Tecnico Ortopedico presso Studio Professionale 4M (Bollate)',
+        'Attività professionale presso Orthotics Milano (www.orthoticsmilano.com)',
+        'Esame baropodometrico statico, dinamico e stabilometrico',
+        'Progettazione, realizzazione e collaudo di plantari ortopedici su misura su prescrizione medica'
       ],
       academicMilestones: [
-        'Laurea in Tecniche Ortopediche – Facoltà di Medicina e Chirurgia (abilitante alla professione sanitaria, D.M. 14/09/1994)',
+        'Laurea triennale in Tecniche Ortopediche – Facoltà di Medicina e Chirurgia (D.I. n. 136/2001, D.M. 14/09/1994)',
         'Abilitazione all’esercizio della professione sanitaria di Tecnico Ortopedico – Ministero della Salute'
       ],
       subSpecializations: [
-        'Baropodometria statica, dinamica e stabilometrica computerizzata',
-        'Plantari ortopedici su misura correttivi, biomeccanici e compensativi',
-        'Ortesi plantari per metatarsalgie, fasciti plantari, alluce valgo e neuroma di Morton',
-        'Biomeccanica dello sport e ottimizzazione dell’appoggio nel gesto atletico',
-        'Analisi del passo e correzione delle alterazioni posturali'
+        'Esame baropodometrico statico, dinamico e stabilometrico',
+        'Studio del piede e valutazione della postura del corpo',
+        'Plantari ortopedici su misura per atteggiamenti posturali, biomeccanici e patologici',
+        'Indicazioni per piede piatto, piede cavo, alluce valgo, metatarsalgia, neuroma di Morton, fascite plantare, tallodinia e instabilità'
       ]
     },
     consultationDays: 'Riceve su appuntamento',
@@ -350,39 +357,38 @@ export const PROFESSIONISTI: Professional[] = [
     websiteUrl: 'https://www.elisacorsinaturopata.it',
     photoUrl: '/images/elisacorsi.webp',
     shortDescription: 'Naturopata e riflessologa plantare diplomata SIMO Milano (percorso di 5 anni). Trattamenti secondo la medicina tradizionale cinese: colloquio naturopatico, fiori di Bach, riflessologia plantare e test intolleranze.',
-    fullBio: 'Mi chiamo Elisa Corsi, sono una naturopata e riflessologa plantare, diplomata presso la scuola SIMO “Scuola italiana di medicina olistica” dopo 5 anni di formazione. Mi occupo del benessere psicofisico della persona di tutte le fasce d’età, seguendo la medicina tradizionale cinese. I trattamenti da me offerti sono: colloquio naturopatico, in cui consiglio integratori naturali e fiori di Bach; trattamento di riflessologia plantare, ovvero la digitopressione dei piedi per ristabilire l’equilibrio all’interno dell’organismo. Dopo una laurea in comunicazione ho scelto di dedicarmi ad aiutare le persone a ritrovare equilibrio e benessere, specializzandomi in Nutrizione Vitale e diventando riflessologa certificata dal 2020. Considero l’individuo nelle sue 3 dimensioni — fisico, psichico e animico — con una visione olistica ed empatica per accompagnare la persona verso un percorso di armonia e consapevolezza.',
+    fullBio: 'Mi chiamo Elisa Corsi, sono una naturopata e riflessologa plantare, diplomata presso la scuola SIMO “Scuola italiana di medicina olistica” dopo 5 anni di formazione. Mi occupo del benessere psicofisico della persona di tutte le fasce d’età, seguendo la medicina tradizionale cinese. I trattamenti da me offerti sono: colloquio naturopatico, in cui consiglio integratori naturali e fiori di Bach; trattamento di riflessologia plantare, ovvero la digitopressione dei piedi per ristabilire l’equilibrio all’interno dell’organismo. Dopo una laurea in comunicazione ho scelto di dedicarmi a ciò che sentivo davvero mio: aiutare le persone a ritrovare equilibrio e benessere, intraprendendo il percorso di 5 anni alla scuola SIMO di Milano con specializzazione in Nutrizione Vitale e diventando riflessologa certificata dal 2020. Pongo al centro dell’indagine l’individuo nelle sue 3 dimensioni — fisico, psichico e animico — con una visione olistica volta ad agire sulle cause del sintomo attraverso l’ascolto empatico e rimedi naturali.',
     bioParagraphs: [
-      'Mi chiamo Elisa Corsi, sono una naturopata e riflessologa plantare, diplomata presso la scuola SIMO “Scuola italiana di medicina olistica” dopo 5 anni di formazione.',
-      'Mi occupo del benessere psicofisico della persona di tutte le fasce d’età, seguendo la medicina tradizionale cinese.',
-      'I trattamenti da me offerti sono: colloquio naturopatico, in cui consiglio integratori naturali e fiori di Bach; trattamento di riflessologia plantare, ovvero la digitopressione dei piedi per ristabilire l’equilibrio all’interno dell’organismo; consulenza naturopatica con test kinesiologico delle intolleranze alimentari e nutrizione consapevole.',
-      'Dopo una laurea in comunicazione ho scelto di dedicarmi a ciò che sentivo davvero mio: aiutare le persone a ritrovare equilibrio e benessere. Ho intrapreso un percorso di 5 anni alla scuola SIMO di Milano, specializzandomi in Nutrizione Vitale. Dal 2020 sono riflessologa certificata e oggi collaboro con centri olistici e benessere, accompagnando le persone nel loro percorso di crescita personale.',
-      'La naturopata è una terapeuta che si occupa del benessere psico-fisico della persona, ponendo al centro l’individuo nelle sue 3 dimensioni: fisico, psichico e animico, con una visione olistica ed empatica volta a individuare le cause del disagio e a favorire il recupero della propria armonia naturale.'
+      'Mi chiamo Elisa Corsi, sono una naturopata e riflessologa plantare, diplomata presso la scuola SIMO “Scuola italiana di medicina olistica” dopo 5 anni di formazione. Mi occupo del benessere psicofisico della persona di tutte le fasce d’età, seguendo la medicina tradizionale cinese. I trattamenti da me offerti sono: colloquio naturopatico, in cui consiglio integratori naturali e fiori di Bach; trattamento di riflessologia plantare, ovvero la digitopressione dei piedi per ristabilire l’equilibrio all’interno dell’organismo.',
+      'Dopo una laurea in comunicazione ho scelto di dedicarmi a ciò che sentivo davvero mio: aiutare le persone a ritrovare equilibrio e benessere. Ho intrapreso un percorso di 5 anni alla scuola SIMO di Milano, specializzandomi in Nutrizione Vitale. Dal 2020 sono riflessologa certificata e oggi collaboro con centri olistici e benessere, accompagnando le persone nel loro percorso di guarigione e crescita personale.',
+      'All’interno delle consulenze propongo il supporto naturale ed emozionale dei Fiori di Bach per ritrovare armonia interiore, la stimolazione dei punti riflessi del piede tramite la riflessologia plantare per riequilibrare corpo e mente, e il test kinesiologico delle intolleranze alimentari per scoprire le intolleranze nascoste e ritrovare benessere attraverso una nutrizione consapevole.',
+      'La naturopata è una terapeuta che si occupa del benessere psico-fisico della persona e pone al centro della sua indagine l’individuo nelle sue 3 dimensioni: fisico, psichico e animico, con una visione olistica. Mentre la medicina tradizionale agisce per curare il sintomo che porta alla malattia, il naturopata agisce sulle cause del sintomo per affrontare il problema alla radice, accompagnando la persona in un percorso di guarigione prima di tutto interiore utilizzando tecniche e terapie naturali, ascolto, umiltà, empatia e sensibilità.',
+      'Credo fermamente che la naturopatia non sia solo una semplice disciplina ma uno stile di vita che accompagna e sostiene la persona, passo dopo passo, durante tutto il suo percorso di vita, affrontando le difficoltà con maggiore consapevolezza verso sé stessi e ciò che ci circonda grazie alla natura e ai suoi rimedi.'
     ],
     services: [
-      'Colloquio naturopatico, consigli di integratori naturali e Fiori di Bach',
-      'Trattamento di riflessologia plantare (digitopressione dei punti riflessi del piede)',
-      'Consulenza naturopatica con test kinesiologico intolleranze alimentari',
-      'Percorsi di nutrizione vitale e consapevolezza alimentare',
-      'Riequilibrio energetico e psicofisico secondo la Medicina Tradizionale Cinese',
-      'Benessere e supporto naturale olistico per tutte le fasce d’età'
+      'Colloquio naturopatico con consiglio di integratori naturali e Fiori di Bach',
+      'Consulenza naturopatica con riflessologia plantare (digitopressione dei punti riflessi del piede)',
+      'Consulenza naturopatica con test kinesiologico delle intolleranze alimentari',
+      'Percorsi di Nutrizione Vitale e nutrizione consapevole',
+      'Riequilibrio del benessere psicofisico per tutte le fasce d’età secondo la Medicina Tradizionale Cinese'
     ],
     curriculumVitae: {
       experiences: [
-        'Attività di naturopata e riflessologa plantare presso Studio 4M (Bollate)',
-        'Collaborazione con centri olistici e benessere (tra cui Arese e Olos Spazio Olistico di Origgio)',
+        'Attività di naturopata e riflessologa plantare presso Studio Professionale 4M (Bollate)',
+        'Collaborazione con centri olistici e benessere (Arese e “Olos spazio Olistico” di Origgio)',
         'Riflessologa certificata dal 2020'
       ],
       subSpecializations: [
-        'Riflessologia plantare zonale (digitopressione del piede)',
-        'Fiori di Bach e rimedi floreali emozionali',
+        'Riflessologia plantare (digitopressione dei piedi)',
+        'Consulenza naturopatica con Fiori di Bach e integratori naturali',
         'Test kinesiologico intolleranze alimentari',
-        'Nutrizione Vitale e alimentazione consapevole',
-        'Medicina Tradizionale Cinese'
+        'Nutrizione Vitale e nutrizione consapevole',
+        'Benessere psicofisico secondo la Medicina Tradizionale Cinese'
       ],
       academicMilestones: [
-        'Diploma in Naturopatia – SIMO Scuola Italiana di Medicina Olistica Milano (percorso di 5 anni)',
-        'Specializzazione in Nutrizione Vitale (SIMO Milano)',
-        'Certificazione in Riflessologia Plantare (2020)',
+        'Diploma presso la scuola SIMO “Scuola italiana di medicina olistica” di Milano (percorso di 5 anni)',
+        'Specializzazione in Nutrizione Vitale – Scuola SIMO di Milano',
+        'Certificazione in Riflessologia Plantare (dal 2020)',
         'Laurea in Comunicazione'
       ]
     },
@@ -404,19 +410,37 @@ export const PROFESSIONISTI: Professional[] = [
     categoryLabel: 'Psicologia & Psicoterapia',
     phone: '329 1292230',
     photoUrl: '/images/barbarapalmieri.webp',
-    shortDescription: 'Psicologa e psicoterapeuta a orientamento psicodinamico. Percorsi di cura individuali per adulti, adolescenti e bambini, sostegno per minori e famiglie e trattamento dei traumi con approccio EMDR.',
-    fullBio: 'La Dr.ssa Barbara Palmieri è psicologa e psicoterapeuta a orientamento psicodinamico. Offre percorsi di cura individuali per adulti, adolescenti e bambini che affrontano periodi di vita critici e dolorosi. Gestisce da vent’anni interventi di sostegno per minori e famiglie nei servizi pubblici. Utilizza l’approccio EMDR per il trattamento dei traumi.',
+    shortDescription: 'Psicologa e psicoterapeuta a orientamento psicodinamico. Percorsi di cura individuali per adulti, adolescenti e bambini, esperienza ventennale a sostegno di minori e famiglie e approccio EMDR per i traumi.',
+    fullBio: 'La Dr.ssa Barbara Palmieri è Psicologa e Psicoterapeuta a orientamento psicodinamico. Presso lo Studio Professionale 4M a Bollate offre percorsi di cura individuali rivolti ad adulti, adolescenti e bambini che si trovano ad affrontare periodi di vita critici e dolorosi, proponendo uno spazio clinico di ascolto e di elaborazione secondo la prospettiva psicodinamica. Nel corso della sua attività professionale ha maturato una solida esperienza nei servizi pubblici, dove gestisce da vent’anni interventi di sostegno dedicati ai minori e alle famiglie. All’interno della pratica clinica e psicoterapeutica utilizza inoltre l’approccio EMDR per il trattamento dei traumi.',
     bioParagraphs: [
-      'La Dr.ssa Barbara Palmieri è psicologa e psicoterapeuta a orientamento psicodinamico.',
-      'Offre percorsi di cura individuali per adulti, adolescenti e bambini che affrontano periodi di vita critici e dolorosi.',
-      'Gestisce da vent’anni interventi di sostegno per minori e famiglie nei servizi pubblici.',
-      'Utilizza l’approccio EMDR per il trattamento dei traumi.'
+      'La Dr.ssa Barbara Palmieri è Psicologa e Psicoterapeuta a orientamento psicodinamico e svolge la propria attività clinica su appuntamento presso lo Studio Professionale 4M di Bollate.',
+      'Offre percorsi di cura individuali pensati per adulti, adolescenti e bambini che affrontano periodi di vita critici e dolorosi, accompagnando ciascuna persona in un percorso psicoterapeutico calibrato sulle specifiche esigenze della fase di vita attraversata.',
+      'Accanto all’attività clinica individuale, gestisce da vent’anni interventi di sostegno per minori e famiglie all’interno dei servizi pubblici, un’esperienza ventennale che arricchisce il lavoro di presa in carico delle fragilità evolutive, personali e familiari.',
+      'Nella propria pratica clinica utilizza inoltre l’approccio EMDR per il trattamento e l’elaborazione dei traumi.'
     ],
     services: [
-      'Percorsi di cura individuali per adulti, adolescenti e bambini che affrontano periodi di vita critici e dolorosi',
-      'Interventi di sostegno per minori e famiglie',
-      'Trattamento dei traumi con approccio EMDR'
+      'Percorsi di cura e psicoterapia individuali per adulti che affrontano periodi di vita critici e dolorosi',
+      'Percorsi di cura individuali dedicati ad adolescenti e bambini',
+      'Interventi di sostegno psicologico per minori e famiglie',
+      'Trattamento psicoterapeutico dei traumi con approccio EMDR'
     ],
+    curriculumVitae: {
+      experienceYears: '20 anni di esperienza nei servizi pubblici',
+      experiences: [
+        'Attività clinica di Psicologa e Psicoterapeuta per adulti, adolescenti e bambini presso Studio Professionale 4M (Bollate)',
+        'Gestione da vent’anni di interventi di sostegno per minori e famiglie nei servizi pubblici'
+      ],
+      subSpecializations: [
+        'Psicoterapia a orientamento psicodinamico',
+        'Percorsi di cura individuali per adulti, adolescenti e bambini',
+        'Sostegno per minori e famiglie',
+        'Approccio EMDR per il trattamento dei traumi'
+      ],
+      academicMilestones: [
+        'Psicologa e Psicoterapeuta a orientamento psicodinamico',
+        'Formazione nell’approccio EMDR per il trattamento dei traumi'
+      ]
+    },
     consultationDays: 'Riceve su appuntamento',
     isComplete: true,
     isPublished: true
@@ -436,20 +460,37 @@ export const PROFESSIONISTI: Professional[] = [
     phone: '371 4466123',
     photoUrl: '/images/paolascaturchio.webp',
     shortDescription: 'Psicologa psicoterapeuta con formazione sistemico-relazionale. Specializzata nella terapia con coppie in crisi e famiglie, percorsi con adolescenti, giovani e adulti. Terapeuta EMDR.',
-    fullBio: 'La Dr.ssa Paola Scaturchio è psicologa psicoterapeuta con formazione sistemico-relazionale. È specializzata nella terapia con le coppie in crisi e le famiglie che attraversano periodi di sofferenza. Si occupa anche di percorsi di consultazione e psicoterapia con adolescenti, giovani e adulti. Ha un’esperienza ventennale di lavoro nei servizi pubblici per l’aiuto ai minori e alle famiglie in difficoltà. È terapeuta EMDR.',
+    fullBio: 'La Dr.ssa Paola Scaturchio è Psicologa e Psicoterapeuta con formazione sistemico-relazionale. È specializzata nella terapia con le coppie in crisi e con le famiglie che attraversano periodi di sofferenza, accompagnandole nella comprensione delle dinamiche relazionali. Si occupa inoltre di percorsi individuali di consultazione e psicoterapia rivolti ad adolescenti, giovani e adulti. Ha maturato un’esperienza ventennale di lavoro nei servizi pubblici dedicati all’aiuto ai minori e alle famiglie in difficoltà ed è Terapeuta EMDR.',
     bioParagraphs: [
-      'La Dr.ssa Paola Scaturchio è psicologa psicoterapeuta con formazione sistemico-relazionale.',
-      'Specializzata nella terapia con le coppie in crisi e le famiglie che attraversano periodi di sofferenza.',
-      'Si occupa anche di percorsi di consultazione e psicoterapia con adolescenti, giovani e adulti.',
-      'Ha un’esperienza ventennale di lavoro nei servizi pubblici per l’aiuto ai minori e alle famiglie in difficoltà.',
-      'Terapeuta EMDR.'
+      'La Dr.ssa Paola Scaturchio è Psicologa e Psicoterapeuta con formazione sistemico-relazionale e riceve su appuntamento presso lo Studio Professionale 4M di Bollate.',
+      'È specializzata nella terapia con le coppie in crisi e con le famiglie che attraversano periodi di sofferenza, offrendo uno spazio terapeutico dedicato alla lettura e alla cura dei legami e delle relazioni familiari.',
+      'Accanto al lavoro con coppie e nuclei familiari, si occupa anche di percorsi di consultazione e di psicoterapia rivolti ad adolescenti, giovani e adulti.',
+      'Vanta un’esperienza ventennale di lavoro maturata nei servizi pubblici per l’aiuto ai minori e alle famiglie in difficoltà ed è inoltre Terapeuta EMDR.'
     ],
     services: [
-      'Terapia con le coppie in crisi e le famiglie che attraversano periodi di sofferenza',
+      'Terapia con le coppie in crisi',
+      'Terapia familiare per le famiglie che attraversano periodi di sofferenza',
       'Percorsi di consultazione e psicoterapia con adolescenti, giovani e adulti',
-      'Interventi e sostegno per minori e famiglie in difficoltà',
-      'Trattamento con metodo EMDR (Terapeuta EMDR)'
+      'Sostegno e aiuto psicologico per minori e famiglie in difficoltà',
+      'Psicoterapia con metodo EMDR (Terapeuta EMDR)'
     ],
+    curriculumVitae: {
+      experienceYears: '20 anni di esperienza nei servizi pubblici',
+      experiences: [
+        'Attività clinica e psicoterapeutica per coppie, famiglie, adolescenti, giovani e adulti presso Studio Professionale 4M (Bollate)',
+        'Esperienza ventennale di lavoro nei servizi pubblici per l’aiuto ai minori e alle famiglie in difficoltà'
+      ],
+      subSpecializations: [
+        'Psicoterapia con formazione sistemico-relazionale',
+        'Terapia con le coppie in crisi e le famiglie in periodi di sofferenza',
+        'Consultazione e psicoterapia con adolescenti, giovani e adulti',
+        'Terapeuta EMDR'
+      ],
+      academicMilestones: [
+        'Psicologa e Psicoterapeuta con formazione sistemico-relazionale',
+        'Qualifica di Terapeuta EMDR'
+      ]
+    },
     consultationDays: 'Riceve su appuntamento',
     isComplete: true,
     isPublished: true
@@ -469,34 +510,38 @@ export const PROFESSIONISTI: Professional[] = [
     email: 'maristellasantaguida@yahoo.it',
     photoUrl: '/images/mariastellasantaguida.webp',
     shortDescription: 'Psicologa dell’età evolutiva e psicoterapeuta sistemico-relazionale. Percorsi di terapia individuale, di coppia e familiare per bambini, adulti e sostegno genitoriale.',
-    fullBio: 'La Dr.ssa Maristella Santaguida è psicologa dell’età evolutiva e psicoterapeuta sistemico-relazionale. Si occupa di bambini, adulti, coppie e famiglie, offrendo uno spazio accogliente e senza giudizio per comprendere le proprie emozioni, affrontare difficoltà che possono generare ansia, frustrazione o tristezza e riscoprire le risorse necessarie a ritrovare il proprio equilibrio. La sua esperienza, maturata anche nei servizi pubblici che si occupano di minori e famiglie interessati da provvedimenti giudiziali, le ha insegnato l’importanza di guardare ogni persona nella complessità della sua storia e dei legami attraverso un ascolto empatico e attento. Intende la terapia come un percorso condiviso nel rispetto dei tempi e della storia di ciascuno, intervenendo su difficoltà relazionali ed emotive, sostegno genitoriale, disturbi d’ansia, traumi, dipendenza affettiva e separazioni conflittuali.',
+    fullBio: 'La Dr.ssa Maristella Santaguida è psicologa dell’età evolutiva e psicoterapeuta sistemico-relazionale. Si occupa di bambini, adulti, coppie e famiglie, offrendo uno spazio accogliente e senza giudizio per comprendere le proprie emozioni, affrontare difficoltà che possono generare ansia, frustrazione o tristezza e riscoprire le risorse necessarie a ritrovare il proprio equilibrio. La sua esperienza, maturata anche nei servizi pubblici che si occupano di minori e famiglie interessati da provvedimenti giudiziali, le ha insegnato l’importanza di guardare ogni persona nella complessità della sua storia e dei legami attraverso un ascolto empatico e attento. Intende la terapia come un percorso condiviso nel rispetto dei tempi e della storia di ciascuno, intervenendo su difficoltà relazionali, emotive ed evolutive, sostegno genitoriale, disturbi d’ansia, traumi, dipendenza affettiva, separazioni conflittuali e sintomi psicosomatici attraverso percorsi di terapia individuale, di coppia e familiare.',
     bioParagraphs: [
       'La Dr.ssa Maristella Santaguida è psicologa dell’età evolutiva e psicoterapeuta sistemico-relazionale. Si occupa di bambini, adulti, coppie e famiglie.',
       '«Credo che ognuno di noi, nel corso della vita, possa attraversare momenti in cui tutto sembra più difficile: un cambiamento, una perdita, una separazione, una relazione in crisi o emozioni che faticano a trovare spazio e significato.»',
       'La sua esperienza, maturata anche nei servizi pubblici che si occupano di minori e famiglie interessati da provvedimenti giudiziali, le ha insegnato quanto sia importante guardare ogni persona nella complessità della sua storia e dei legami che la accompagnano attraverso un ascolto attento ed empatico.',
       'Offre uno spazio accogliente e senza giudizio, in cui poter comprendere le proprie emozioni, affrontare difficoltà che possono generare ansia, frustrazione, tristezza, per riscoprire le risorse necessarie a ritrovare il proprio equilibrio.',
-      'Intende la terapia come a un percorso da costruire insieme, nel rispetto dei tempi e della storia di ciascuno: un luogo in cui fermarsi, dare un nome a ciò che si prova, comprendere le proprie relazioni e scoprire nuove possibilità.',
+      'Intende la terapia come un percorso da costruire insieme, nel rispetto dei tempi e della storia di ciascuno: un luogo in cui fermarsi, dare un nome a ciò che si prova, comprendere le proprie relazioni e scoprire nuove possibilità.',
       'Si occupa di difficoltà relazionali, emotive ed evolutive, sostegno genitoriale, disturbi d’ansia, traumi, dipendenza affettiva, separazioni conflittuali e sintomi psicosomatici attraverso percorsi di terapia individuale, di coppia e familiare.'
     ],
     services: [
-      'Terapia individuale per bambini, adolescenti e adulti',
+      'Percorsi di terapia individuale per bambini e adulti',
       'Terapia di coppia e supporto nelle relazioni in crisi',
-      'Psicoterapia familiare e percorsi di sostegno genitoriale',
+      'Terapia familiare e percorsi di sostegno genitoriale',
       'Interventi per disturbi d’ansia, traumi e sintomi psicosomatici',
       'Supporto per dipendenza affettiva e separazioni conflittuali',
       'Trattamento delle difficoltà relazionali, emotive ed evolutive'
     ],
     curriculumVitae: {
       experiences: [
-        'Attività clinica e psicoterapeutica per bambini, adulti, coppie e famiglie presso Studio 4M (Bollate)',
-        'Esperienza nei servizi pubblici a supporto di minori e famiglie interessati da provvedimenti giudiziali'
+        'Attività clinica e psicoterapeutica per bambini, adulti, coppie e famiglie presso Studio Professionale 4M (Bollate)',
+        'Esperienza nei servizi pubblici che si occupano di minori e famiglie interessati da provvedimenti giudiziali'
       ],
       subSpecializations: [
         'Psicoterapia sistemico-relazionale',
-        'Psicologia dell’età evolutiva (bambini e adolescenti)',
-        'Terapia di coppia e mediazione nelle separazioni conflittuali',
-        'Sostegno alla genitorialità e dinamiche familiari',
-        'Disturbi d’ansia, traumi e dipendenza affettiva'
+        'Psicologia dell’età evolutiva',
+        'Terapia individuale, di coppia e familiare',
+        'Sostegno genitoriale e separazioni conflittuali',
+        'Difficoltà relazionali, emotive ed evolutive, disturbi d’ansia, traumi, dipendenza affettiva e sintomi psicosomatici'
+      ],
+      academicMilestones: [
+        'Psicologa dell’Età Evolutiva',
+        'Psicoterapeuta Sistemico-Relazionale'
       ]
     },
     consultationDays: 'Riceve su appuntamento',
@@ -521,10 +566,10 @@ export const PROFESSIONISTI: Professional[] = [
     websiteUrl: 'https://psicologabeatricescutieri.it',
     photoUrl: '/images/beatricescutieri.webp',
     shortDescription: 'Psicologa iscritta all’Albo della Regione Lombardia, in formazione psicoterapeutica a orientamento psicoanalitico lacaniano. Colloqui individuali, di coppia e familiari, valutazioni psicodiagnostiche (ADHD, DSA) e consulenza forense (CTP).',
-    fullBio: '«C’è un privilegio raro nell’ascoltare, per la prima volta, una storia che non ha mai osato dirsi a voce alta. Ogni sintomo ha un senso: comprenderlo permette di trasformare ciò che oggi limita in qualcosa che può evolvere.» La Dr.ssa Beatrice Scutieri è Psicologa iscritta all’Albo della Regione Lombardia, attualmente in perfezionamento accademico in Psicoterapia a orientamento psicoanalitico lacaniano presso l’Istituto Freudiano per la clinica, la terapia e la scienza. Riceve in presenza presso lo Studio 4M di Bollate e online in tutta Italia, rivolgendosi a bambini, adolescenti, giovani adulti, adulti e coppie, oltre a offrire supporto ai genitori per accompagnare i più giovani nei contesti di vita, scolastici e familiari. Nel suo lavoro coniuga la conoscenza clinica e gli strumenti di valutazione psicodiagnostica con l’attenzione alla singolarità di ogni persona: la diagnosi è intesa non come un’etichetta definitoria, ma come uno strumento utile a comprendere le difficoltà e orientare interventi mirati. Guidata dall’orientamento psicoanalitico lacaniano, valorizza lo spazio di parola e di ascolto — prestando attenzione anche ai non detti e alle dinamiche che si ripetono — per accompagnare la persona a dare significato alla propria esperienza e trovare un rapporto diverso con ciò che la fa soffrire. Ha maturato esperienze in contesti clinici, educativi e scolastici, svolgendo tirocini presso Jonas Onlus Milano (di Massimo Recalcati), ADES – Associazione Diabete e Solidarietà e presso il centro Parole in Movimento – Diagnosi, Terapia e Cura, specializzato nella valutazione diagnostica delle condizioni del neurosviluppo (ADHD, DSA, disturbi dello spettro autistico e plusdotazione). Come psicologa scolastica e docente di sostegno nella scuola secondaria di primo grado, ha progettato interventi di mentoring e percorsi educativi individualizzati per il disagio adolescenziale e l’inclusione. Nell’attività privata si occupa inoltre di screening neuropsicologico, potenziamento cognitivo e Psicologia Giuridica e Forense in qualità di Consulente Tecnico di Parte (CTP) con formazione specialistica anche come CTU.',
+    fullBio: '«C’è un privilegio raro nell’ascoltare, per la prima volta, una storia che non ha mai osato dirsi a voce alta. Ogni sintomo ha un senso: comprenderlo permette di trasformare ciò che oggi limita in qualcosa che può evolvere.» La Dr.ssa Beatrice Scutieri è Psicologa iscritta all’Albo della Regione Lombardia, attualmente in perfezionamento accademico in Psicoterapia a orientamento psicoanalitico lacaniano presso l’Istituto Freudiano per la clinica, la terapia e la scienza. Riceve in presenza presso lo Studio Professionale 4M di Bollate e online in tutta Italia, rivolgendosi a bambini, adolescenti, giovani adulti, adulti e coppie, oltre a offrire supporto ai genitori per accompagnare i più giovani nei contesti di vita, scolastici e familiari. Nel suo lavoro coniuga la conoscenza clinica e gli strumenti di valutazione psicodiagnostica con l’attenzione alla singolarità di ogni persona: la diagnosi è intesa non come un’etichetta definitoria, ma come uno strumento utile a comprendere le difficoltà e orientare interventi mirati. Guidata dall’orientamento psicoanalitico lacaniano, valorizza lo spazio di parola e di ascolto — prestando attenzione anche ai non detti e alle dinamiche che si ripetono — per accompagnare la persona a dare significato alla propria esperienza e trovare un rapporto diverso con ciò che la fa soffrire. Ha maturato esperienze in contesti clinici, educativi e scolastici, svolgendo tirocini presso Jonas Onlus Milano (di Massimo Recalcati), ADES – Associazione Diabete e Solidarietà e presso il centro Parole in Movimento – Diagnosi, Terapia e Cura, specializzato nella valutazione diagnostica delle condizioni del neurosviluppo (ADHD, DSA, disturbi dello spettro autistico e plusdotazione). Come psicologa scolastica e docente di sostegno nella scuola secondaria di primo grado, ha progettato interventi di mentoring e percorsi educativi individualizzati per il disagio adolescenziale e l’inclusione. Nell’attività privata si occupa inoltre di screening neuropsicologico, percorsi di potenziamento rivolti a bambini e adulti e Psicologia Giuridica e Forense in qualità di Consulente Tecnico di Parte (CTP) con formazione specialistica anche come CTU.',
     bioParagraphs: [
       '«C’è un privilegio raro nell’ascoltare, per la prima volta, una storia che non ha mai osato dirsi a voce alta. Ogni sintomo ha un senso: comprenderlo permette di trasformare ciò che oggi limita in qualcosa che può evolvere.»',
-      'La Dr.ssa Beatrice Scutieri è Psicologa iscritta all’Albo della Regione Lombardia, attualmente in perfezionamento accademico in Psicoterapia a orientamento psicoanalitico lacaniano presso l’Istituto Freudiano per la clinica, la terapia e la scienza. Riceve in presenza presso lo Studio 4M di Bollate e online in tutta Italia, rivolgendosi a bambini, adolescenti, giovani adulti, adulti e coppie, e affiancando i genitori nel sostenere in modo consapevole i figli nei contesti familiari e scolastici.',
+      'La Dr.ssa Beatrice Scutieri è Psicologa iscritta all’Albo della Regione Lombardia, attualmente in perfezionamento accademico in Psicoterapia a orientamento psicoanalitico lacaniano presso l’Istituto Freudiano per la clinica, la terapia e la scienza. Riceve in presenza presso lo Studio Professionale 4M di Bollate e online in tutta Italia, rivolgendosi a bambini, adolescenti, giovani adulti, adulti e coppie, e affiancando i genitori nel sostenere in modo consapevole i figli nei contesti familiari e scolastici.',
       'Nel suo approccio clinico tiene insieme gli strumenti di valutazione psicodiagnostica e l’attenzione alla singolarità di ogni persona: la diagnosi non coincide mai con la persona che la riceve, ma rappresenta una bussola utile a orientare interventi mirati. L’orientamento psicoanalitico lacaniano guida l’ascolto di ciò che si manifesta attraverso la parola e di ciò che resta implicito o si ripete, offrendo uno spazio autentico in cui formulare le proprie domande, andare alla radice del disagio e trasformare il sintomo o l’incertezza in un’occasione di evoluzione personale.',
       'Ha maturato una solida esperienza nei contesti clinici, educativi e dell’età evolutiva attraverso tirocini presso Jonas Onlus Milano di Massimo Recalcati, ADES – Associazione Diabete e Solidarietà e il centro Parole in Movimento – Diagnosi, Terapia e Cura, realtà specializzata nella valutazione diagnostica di ADHD, DSA, disturbi dello spettro autistico e plusdotazione. A questo affianca l’esperienza come psicologa scolastica per il disagio adolescenziale (mentoring e percorsi individualizzati) e come docente di sostegno ed educatrice.',
       'Nell’attività clinica privata svolge colloqui psicologici, analisi della domanda, valutazioni psicodiagnostiche con screening neuropsicologico e percorsi di potenziamento per bambini e adulti, lavorando in rete con gli altri professionisti della salute. Ha inoltre conseguito un Master di II livello in Psicodiagnostica Clinica e Forense con formazione specialistica in Consulenza Tecnica d’Ufficio (CTU) e Consulenza Tecnica di Parte (CTP). Le sedute seguono il tariffario dell’Ordine degli Psicologi della Lombardia, con particolare attenzione alla sostenibilità e all’accessibilità del percorso (convenzioni assicurative: UniSalute, Allianz Global Assistance).'
@@ -541,7 +586,7 @@ export const PROFESSIONISTI: Professional[] = [
     ],
     curriculumVitae: {
       experiences: [
-        'Attività clinica privata di consulenza psicologica, psicodiagnostica e potenziamento presso Studio 4M (Bollate) e online',
+        'Attività clinica privata di consulenza psicologica, psicodiagnostica e potenziamento presso Studio Professionale 4M (Bollate) e online',
         'Tirocinio clinico presso Parole in Movimento – Diagnosi, Terapia e Cura (valutazione diagnostica di ADHD, DSA, disturbi dello spettro autistico e plusdotazione)',
         'Tirocinio clinico presso Jonas Onlus Milano (di Massimo Recalcati) e ADES – Associazione Diabete e Solidarietà',
         'Psicologa scolastica nell’ambito del disagio adolescenziale (mentoring e percorsi individualizzati in rete con famiglie e scuola)',
@@ -584,30 +629,33 @@ export const PROFESSIONISTI: Professional[] = [
     mioDottoreUrl: 'https://www.miodottore.it/profilo/giulia-gentile',
     photoUrl: '/images/giuliagentile.webp',
     shortDescription: 'Psicologa Clinica iscritta all’Ordine degli Psicologi della Lombardia (N° 28213). Percorsi psicologici ad orientamento sistemico-relazionale per adolescenti, giovani adulti, adulti, coppie e famiglie.',
-    fullBio: 'La Dr.ssa Giulia Gentile è Psicologa Clinica, iscritta all’Ordine degli Psicologi della Lombardia (N° 28213). Si occupa di sostegno e percorsi psicologici ad orientamento sistemico-relazionale presso lo Studio 4M a Bollate. Lavora con adolescenti, giovani adulti, adulti, coppie e famiglie, aiutando le persone a comprendere e superare momenti di difficoltà, blocchi evolutivi o conflitti relazionali. Il suo obiettivo è offrire uno spazio d’ascolto sicuro e personalizzato per valorizzare le risorse di ciascuno e ritrovare un nuovo equilibrio.',
+    fullBio: 'La Dr.ssa Giulia Gentile è Psicologa Clinica, iscritta all’Ordine degli Psicologi della Lombardia (N° 28213). Presso lo Studio Professionale 4M a Bollate si occupa di sostegno e percorsi psicologici ad orientamento sistemico-relazionale, rivolgendosi ad adolescenti, giovani adulti, adulti, coppie e famiglie. Attraverso il lavoro clinico aiuta le persone a comprendere e superare momenti di difficoltà, blocchi evolutivi o conflitti relazionali che possono presentarsi nelle diverse fasi della vita. Il suo obiettivo è offrire uno spazio d’ascolto sicuro e personalizzato per valorizzare le risorse di ciascuno e ritrovare un nuovo equilibrio.',
     bioParagraphs: [
-      'La Dr.ssa Giulia Gentile è Psicologa Clinica, iscritta all’Ordine degli Psicologi della Lombardia (N° 28213).',
-      'Si occupa di sostegno e percorsi psicologici ad orientamento sistemico-relazionale, lavorando con adolescenti, giovani adulti, adulti, coppie e famiglie.',
-      'Accompagna le persone nell’affrontare e superare momenti di difficoltà, blocchi evolutivi o conflitti relazionali.',
-      'Il suo obiettivo è offrire uno spazio d’ascolto sicuro e personalizzato per valorizzare le risorse di ciascuno e ritrovare un nuovo equilibrio.'
+      'La Dr.ssa Giulia Gentile è Psicologa Clinica, iscritta all’Ordine degli Psicologi della Lombardia (N° 28213), e riceve su appuntamento presso lo Studio Professionale 4M di Bollate.',
+      'Si occupa di sostegno e di percorsi psicologici ad orientamento sistemico-relazionale, lavorando con adolescenti, giovani adulti, adulti, coppie e famiglie.',
+      'Nel percorso psicologico accompagna le persone ad affrontare, comprendere e superare momenti di difficoltà, blocchi evolutivi o conflitti relazionali, tenendo conto delle relazioni e del contesto di vita di ciascuno.',
+      'Il suo obiettivo è offrire uno spazio d’ascolto sicuro, accogliente e personalizzato, pensato per valorizzare le risorse personali e relazionali di ciascuno e favorire il raggiungimento di un nuovo equilibrio.'
     ],
     services: [
-      'Colloqui di supporto e percorsi psicologici individuali (adolescenti, giovani adulti, adulti)',
-      'Consulenza e percorsi di sostegno psicologico di coppia',
-      'Sostegno psicologico familiare ad orientamento sistemico-relazionale',
-      'Superamento di blocchi evolutivi e momenti di transizione o difficoltà',
-      'Gestione dei conflitti relazionali e valorizzazione delle risorse personali'
+      'Sostegno e percorsi psicologici individuali per adolescenti, giovani adulti e adulti',
+      'Percorsi di sostegno psicologico rivolti alle coppie',
+      'Sostegno e percorsi psicologici per le famiglie ad orientamento sistemico-relazionale',
+      'Supporto per comprendere e superare momenti di difficoltà e blocchi evolutivi',
+      'Elaborazione e superamento dei conflitti relazionali e valorizzazione delle risorse personali'
     ],
     curriculumVitae: {
+      experiences: [
+        'Attività di sostegno e percorsi psicologici per adolescenti, giovani adulti, adulti, coppie e famiglie presso Studio Professionale 4M (Bollate)'
+      ],
       subSpecializations: [
-        'Orientamento sistemico-relazionale',
-        'Sostegno psicologico per adolescenti e giovani adulti',
-        'Consulenza psicologica per adulti, coppie e famiglie',
-        'Gestione delle difficoltà relazionali ed evolutive'
+        'Sostegno e percorsi psicologici ad orientamento sistemico-relazionale',
+        'Percorsi per adolescenti, giovani adulti e adulti',
+        'Sostegno psicologico per coppie e famiglie',
+        'Superamento di momenti di difficoltà, blocchi evolutivi e conflitti relazionali'
       ],
       academicMilestones: [
-        'Iscrizione all’Ordine degli Psicologi della Lombardia (N° 28213)',
-        'Laurea in Psicologia Clinica'
+        'Psicologa Clinica',
+        'Iscrizione all’Ordine degli Psicologi della Lombardia (N° 28213)'
       ]
     },
     consultationDays: 'Riceve su appuntamento',
