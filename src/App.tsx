@@ -39,7 +39,7 @@ export default function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-  // Track active section (#servizi) when scrolling on Home
+  // Track active section (#servizi, #professionisti) when scrolling on Home
   useEffect(() => {
     if (currentPath !== '/' && currentPath !== '') {
       setActiveHash('');
@@ -48,15 +48,29 @@ export default function App() {
 
     const handleScroll = () => {
       if (Date.now() < scrollLockUntilRef.current) return;
+      
+      const professionistiEl = document.getElementById('professionisti');
       const serviziEl = document.getElementById('servizi');
-      if (!serviziEl) return;
 
-      const rect = serviziEl.getBoundingClientRect();
-      if (rect.top <= 180 && rect.bottom > 140) {
-        setActiveHash('#servizi');
-      } else {
-        setActiveHash('');
+      // Check professionisti first (lower in page)
+      if (professionistiEl) {
+        const pRect = professionistiEl.getBoundingClientRect();
+        if (pRect.top <= 200 && pRect.bottom > 140) {
+          setActiveHash('#professionisti');
+          return;
+        }
       }
+
+      // Check servizi
+      if (serviziEl) {
+        const sRect = serviziEl.getBoundingClientRect();
+        if (sRect.top <= 200 && sRect.bottom > 140) {
+          setActiveHash('#servizi');
+          return;
+        }
+      }
+
+      setActiveHash('');
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });

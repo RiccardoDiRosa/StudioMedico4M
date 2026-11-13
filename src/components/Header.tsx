@@ -33,13 +33,16 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
   const navLinks = [
     { label: 'Home', path: '/' },
     { label: 'Servizi', path: '/#servizi' },
-    { label: 'Professionisti', path: '/professionisti' },
+    { label: 'Professionisti', path: '/#professionisti' },
     { label: 'Lo Studio', path: '/lo-studio' },
     { label: 'Contatti', path: '/contatti' }
   ];
 
   const isLinkActive = (linkPath: string) => {
     if (linkPath === '/') return currentPath === '/';
+    if (linkPath === '/#professionisti') {
+      return currentPath === '/#professionisti' || currentPath === '/professionisti' || currentPath.startsWith('/professionisti/');
+    }
     return currentPath === linkPath || currentPath.startsWith(`${linkPath}/`);
   };
 
