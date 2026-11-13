@@ -335,9 +335,6 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                   <span className="text-[11px] font-bold uppercase tracking-wider text-[#01579b]">
                     Filtra subito per area specialistica:
                   </span>
-                  <span className="text-[11px] text-slate-500 font-medium">
-                    12 Professionisti · Contatto diretto
-                  </span>
                 </div>
                 <div className="flex flex-wrap items-center gap-2">
                   {CATEGORIES_CONFIG.filter(c => c.id !== 'all').map((cat) => (
