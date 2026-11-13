@@ -109,10 +109,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               fetchPriority="high"
             />
             {/* Top delicate light-azure atmospheric fade */}
-            <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-[#e0f2fe]/80 via-[#e0f2fe]/30 to-transparent pointer-events-none" />
+            <div className="absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-[#e0f2fe]/45 to-transparent pointer-events-none" />
             
-            {/* Bottom seamless soft-edge feathered gradient dissolving the photo into the lower content stage */}
-            <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#f0f9ff] via-[#f0f9ff]/85 via-45% to-transparent pointer-events-none" />
+            {/* Bottom subtle edge fade blending the photo gently into the lower content stage */}
+            <div className="absolute inset-x-0 bottom-0 h-14 bg-gradient-to-t from-[#f0f9ff] via-[#f0f9ff]/50 to-transparent pointer-events-none" />
 
             {/* Floating Top Location Pill over the image */}
             <div className="absolute top-3.5 left-4 right-4 flex items-center justify-between z-10">
@@ -125,7 +125,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
           </div>
 
           {/* Lower Editorial Stage (Luminous light-blue background) */}
-          <div className="relative z-10 px-4 pb-6 -mt-10 flex-1 flex flex-col justify-between space-y-4">
+          <div className="relative z-10 px-4 pt-2 pb-6 -mt-2 flex-1 flex flex-col justify-between space-y-4">
             
             {/* Monumental Mobile Headline & Payoff */}
             <div>
@@ -181,7 +181,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                   Approccio integrato alla salute
                 </p>
                 <p className="text-[10px] text-slate-500 mt-0.5 line-clamp-1">
-                  8 aree specialistiche · Contatto diretto
+                  Aree specialistiche · Contatto diretto
                 </p>
               </div>
             </div>
