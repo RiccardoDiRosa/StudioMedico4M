@@ -114,11 +114,10 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             {/* Bottom delicate feathered edge (soft transition without hard cut) */}
             <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-[#f0f9ff] via-[#f0f9ff]/40 to-transparent pointer-events-none" />
 
-            {/* Floating Top Location Pill over the image */}
-            <div className="absolute top-3 left-3.5 right-3.5 flex items-center justify-between z-10">
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-md border border-[#b3e5fc] text-[11px] font-semibold tracking-wide uppercase text-[#01579b] shadow-md shadow-[#01579b]/10">
-                <span className="w-2 h-2 rounded-full bg-[#039be5] animate-pulse" />
-                <MapPin className="w-3 h-3 text-[#039be5]" aria-hidden="true" />
+            {/* Floating Top Location Pill over the image (compact & discreet) */}
+            <div className="absolute top-2.5 left-3 z-10">
+              <div className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-white/80 backdrop-blur-sm border border-[#b3e5fc]/80 text-[10px] font-semibold text-[#01579b] shadow-xs">
+                <MapPin className="w-2.5 h-2.5 text-[#039be5] shrink-0" aria-hidden="true" />
                 <span>Bollate · Via Madonnina 17</span>
               </div>
             </div>
@@ -241,9 +240,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
               <div className="col-span-7 xl:col-span-6 space-y-4">
                 
                 {/* Frosted Light Location Badge */}
-                <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/85 backdrop-blur-xl border border-[#b3e5fc] text-xs font-semibold tracking-wider uppercase text-[#01579b] shadow-sm">
-                  <span className="w-2 h-2 rounded-full bg-[#039be5] animate-pulse" />
-                  <MapPin className="w-3.5 h-3.5 text-[#039be5]" aria-hidden="true" />
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/80 backdrop-blur-xl border border-[#b3e5fc] text-[11px] font-semibold tracking-wide text-[#01579b] shadow-2xs">
+                  <MapPin className="w-3 h-3 text-[#039be5]" aria-hidden="true" />
                   <span>Bollate (Milano) · Via Madonnina 17</span>
                 </div>
 
