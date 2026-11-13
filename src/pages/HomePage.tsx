@@ -309,21 +309,21 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             </div>
 
             {/* Bottom Floating Glassmorphic Console: Light-Blue/White Theme */}
-            <div className="mt-6 rounded-3xl bg-white/85 backdrop-blur-2xl border border-[#b3e5fc] p-4 xl:p-5 shadow-xl shadow-[#0284c7]/10 flex items-center justify-between gap-6">
+            <div className="mt-4 rounded-2xl bg-white/85 backdrop-blur-2xl border border-[#b3e5fc] p-3 xl:p-3.5 shadow-xl shadow-[#0284c7]/10 flex items-center justify-between gap-4">
               
               {/* Left: Holistic Emblem & Identity */}
-              <div className="flex items-center gap-4 shrink-0 pr-6 border-r border-[#b3e5fc]/70">
-                <div className="shrink-0 p-2 rounded-2xl bg-[#f0f9ff] border border-[#b3e5fc]/60 shadow-xs">
-                  <HolisticEmblem size={64} />
+              <div className="flex items-center gap-3 shrink-0 pr-4 border-r border-[#b3e5fc]/70">
+                <div className="shrink-0 p-1.5 rounded-xl bg-[#f0f9ff] border border-[#b3e5fc]/60 shadow-xs">
+                  <HolisticEmblem size={52} />
                 </div>
                 <div>
-                  <h2 className="text-base font-bold text-[#01579b] leading-tight font-sans">
+                  <h2 className="text-sm font-bold text-[#01579b] leading-tight font-sans">
                     Mente e Corpo in Equilibrio
                   </h2>
-                  <p className="text-xs text-[#0277bd] font-semibold mt-0.5">
+                  <p className="text-[11px] text-[#0277bd] font-semibold mt-0.5">
                     Approccio integrato alla salute
                   </p>
-                  <p className="text-[11px] text-slate-600 mt-0.5 max-w-xs">
+                  <p className="text-[10px] text-slate-600 mt-0.5 max-w-xs">
                     Discipline mediche, riabilitative e del benessere in sinergia.
                   </p>
                 </div>
@@ -331,18 +331,18 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
 
               {/* Right: Interactive Quick-Select Specialties */}
               <div className="flex-1 min-w-0">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-[11px] font-bold uppercase tracking-wider text-[#01579b]">
+                <div className="flex items-center justify-between mb-1.5">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-[#01579b]">
                     Filtra subito per area specialistica:
                   </span>
                 </div>
-                <div className="flex flex-wrap items-center gap-2">
+                <div className="flex flex-wrap items-center gap-1.5">
                   {CATEGORIES_CONFIG.filter(c => c.id !== 'all').map((cat) => (
                     <button
                       key={cat.id}
                       type="button"
                       onClick={() => handleHeroCategoryClick(cat.id)}
-                      className="px-3.5 py-1.5 rounded-xl bg-white hover:bg-gradient-to-r hover:from-[#01579b] hover:to-[#0277bd] text-[#01579b] hover:text-white border border-[#b3e5fc] hover:border-[#01579b] text-xs font-semibold transition-all duration-200 shadow-2xs hover:shadow-md active:scale-95 cursor-pointer"
+                      className="px-2.5 py-1 rounded-lg bg-white hover:bg-gradient-to-r hover:from-[#01579b] hover:to-[#0277bd] text-[#01579b] hover:text-white border border-[#b3e5fc] hover:border-[#01579b] text-[11px] font-semibold transition-all duration-200 shadow-2xs hover:shadow-md active:scale-95 cursor-pointer"
                     >
                       {cat.label}
                     </button>
