@@ -97,7 +97,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
         {/* ========================================================= */}
         {/* MOBILE FULL-SCREEN HERO VIEW (< lg)                       */}
         {/* ========================================================= */}
-        <div className="block lg:hidden relative min-h-[calc(100svh-4rem)] flex flex-col justify-between bg-gradient-to-b from-[#e0f2fe]/60 via-[#f0f9ff] to-white">
+        <div className="block lg:hidden relative flex flex-col bg-gradient-to-b from-[#e0f2fe]/60 via-[#f0f9ff] to-white">
           
           {/* Upper/Middle Immersive Studio Photo with Gentle Edge Blend and Wide Framing */}
           <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] max-h-[380px] overflow-hidden shrink-0">
@@ -124,34 +124,34 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             </div>
           </div>
 
-          {/* Lower Editorial Stage (Luminous light-blue background) */}
-          <div className="relative z-10 px-4 pt-2.5 pb-6 flex-1 flex flex-col justify-between space-y-4">
+          {/* Lower Editorial Stage (Luminous light-blue background, compact rhythm) */}
+          <div className="relative z-10 px-4 pt-2 pb-4 flex flex-col space-y-2.5">
             
             {/* Monumental Mobile Headline & Payoff */}
             <div>
-              <span className="inline-block text-[10px] font-bold uppercase tracking-[0.2em] text-[#0277bd] mb-1">
+              <span className="inline-block text-[10px] font-bold uppercase tracking-[0.2em] text-[#0277bd] mb-0.5">
                 Studio Professionale · Salute e Benessere
               </span>
-              <h1 className="text-3xl sm:text-4xl font-normal text-[#01579b] tracking-tight leading-[1.1] font-heading">
+              <h1 className="text-3xl sm:text-4xl font-normal text-[#01579b] tracking-tight leading-[1.08] font-heading">
                 Studio{' '}
                 <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums">
                   <span>4</span><span>M</span>
                 </span>
               </h1>
-              <p className="text-base sm:text-lg text-[#0277bd] font-serif italic mt-1 font-medium">
+              <p className="text-base sm:text-lg text-[#0277bd] font-serif italic mt-0.5 font-medium">
                 “Dove mente e corpo ritrovano equilibrio”
               </p>
-              <p className="text-xs text-slate-600 leading-relaxed mt-2">
+              <p className="text-xs text-slate-600 leading-relaxed mt-1.5">
                 Un unico spazio riservato e accogliente a Bollate dove specialisti della salute e del benessere collaborano per prendersi cura della persona.
               </p>
             </div>
 
             {/* Mobile Primary CTAs */}
-            <div className="grid grid-cols-2 gap-2.5">
+            <div className="grid grid-cols-2 gap-2">
               <a
                 href="#professionisti"
                 onClick={(e) => scrollToSection(e, 'professionisti')}
-                className="inline-flex items-center justify-center gap-1.5 py-3 px-3.5 text-xs font-bold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] active:scale-[0.98] rounded-xl shadow-md shadow-[#0277bd]/25 text-center focus-ring"
+                className="inline-flex items-center justify-center gap-1.5 py-2.5 px-3 text-xs font-bold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] active:scale-[0.98] rounded-xl shadow-md shadow-[#0277bd]/25 text-center focus-ring"
               >
                 <span>I Professionisti</span>
                 <ArrowRight className="w-3.5 h-3.5 text-[#b3e5fc]" aria-hidden="true" />
@@ -161,7 +161,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                 href={STUDIO_CONFIG.googleMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-1.5 py-3 px-3.5 text-xs font-bold text-[#01579b] bg-white active:scale-[0.98] border border-[#b3e5fc] rounded-xl shadow-xs text-center focus-ring"
+                className="inline-flex items-center justify-center gap-1.5 py-2.5 px-3 text-xs font-bold text-[#01579b] bg-white active:scale-[0.98] border border-[#b3e5fc] rounded-xl shadow-xs text-center focus-ring"
               >
                 <Navigation className="w-3.5 h-3.5 text-[#039be5]" aria-hidden="true" />
                 <span>Come Arrivare</span>
@@ -169,9 +169,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             </div>
 
             {/* Frosted White/Sky Emblem Card */}
-            <div className="p-3 rounded-2xl bg-white/85 backdrop-blur-md border border-[#b3e5fc] shadow-sm flex items-center gap-3">
+            <div className="p-2.5 rounded-2xl bg-white/85 backdrop-blur-md border border-[#b3e5fc] shadow-sm flex items-center gap-3">
               <div className="shrink-0 p-1.5 rounded-xl bg-[#f0f9ff] border border-[#b3e5fc]/60 shadow-2xs">
-                <HolisticEmblem size={50} />
+                <HolisticEmblem size={46} />
               </div>
               <div className="min-w-0">
                 <h3 className="text-xs font-bold text-[#01579b] leading-tight font-sans">
@@ -187,8 +187,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
             </div>
 
             {/* Quick-Jump Interactive Specialties Strip */}
-            <div className="pt-0.5">
-              <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
+            <div>
+              <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5 scrollbar-none">
                 {CATEGORIES_CONFIG.filter(c => c.id !== 'all').map((cat) => (
                   <button
                     key={cat.id}
@@ -232,13 +232,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
           </div>
 
           {/* Main Desktop Content Stage */}
-          <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-12 xl:pt-16 pb-8 w-full flex-1 flex flex-col justify-between">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-8 xl:pt-10 pb-6 w-full flex-1 flex flex-col justify-between">
             
             {/* Upper/Center Grid */}
-            <div className="grid grid-cols-12 gap-8 items-center my-auto py-6">
+            <div className="grid grid-cols-12 gap-8 items-center my-auto py-3">
               
               {/* Left Column: Editorial Presentation over the Soft Light-Azure Fade */}
-              <div className="col-span-7 xl:col-span-6 space-y-6">
+              <div className="col-span-7 xl:col-span-6 space-y-4">
                 
                 {/* Frosted Light Location Badge */}
                 <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/85 backdrop-blur-xl border border-[#b3e5fc] text-xs font-semibold tracking-wider uppercase text-[#01579b] shadow-sm">
@@ -248,11 +248,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                 </div>
 
                 {/* Monumental Display Headline */}
-                <div className="space-y-3">
+                <div className="space-y-1.5">
                   <span className="block text-xs font-bold uppercase tracking-[0.25em] text-[#0277bd]">
                     Studio Professionale Multidisciplinare
                   </span>
-                  <h1 className="text-5xl xl:text-7xl font-normal text-[#01579b] tracking-tight leading-[1.08] font-heading drop-shadow-xs">
+                  <h1 className="text-5xl xl:text-7xl font-normal text-[#01579b] tracking-tight leading-[1.06] font-heading drop-shadow-xs">
                     Studio{' '}
                     <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#01579b] via-[#0277bd] to-[#039be5] font-brand tracking-wide inline-flex items-baseline lining-nums">
                       <span>4</span><span>M</span>
@@ -274,7 +274,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                 </p>
 
                 {/* High-Impact Action Buttons: perfectly aligned with equal height and clear prominence */}
-                <div className="flex flex-wrap items-stretch gap-3.5 pt-2">
+                <div className="flex flex-wrap items-stretch gap-3 pt-1">
                   <a
                     href="#professionisti"
                     onClick={(e) => scrollToSection(e, 'professionisti')}
