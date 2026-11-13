@@ -27,6 +27,7 @@ export default function App() {
   });
 
   const scrollLockUntilRef = useRef<number>(0);
+  const visibleSectionsRef = useRef<Record<string, boolean>>({});
 
   // Listen to browser forward/back buttons
   useEffect(() => {
@@ -39,42 +40,47 @@ export default function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-  // Track active section (#servizi, #professionisti) when scrolling on Home
+  // Track active section (#servizi, #professionisti) via IntersectionObserver (zero scroll-frame overhead)
   useEffect(() => {
     if (currentPath !== '/' && currentPath !== '') {
+      visibleSectionsRef.current = {};
       setActiveHash('');
       return;
     }
 
-    const handleScroll = () => {
-      if (Date.now() < scrollLockUntilRef.current) return;
-      
-      const professionistiEl = document.getElementById('professionisti');
-      const serviziEl = document.getElementById('servizi');
+    const serviziEl = document.getElementById('servizi');
+    const professionistiEl = document.getElementById('professionisti');
+    if (!serviziEl && !professionistiEl) return;
 
-      // Check professionisti first (lower in page)
-      if (professionistiEl) {
-        const pRect = professionistiEl.getBoundingClientRect();
-        if (pRect.top <= 200 && pRect.bottom > 140) {
-          setActiveHash('#professionisti');
-          return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          visibleSectionsRef.current[entry.target.id] = entry.isIntersecting;
         }
-      }
 
-      // Check servizi
-      if (serviziEl) {
-        const sRect = serviziEl.getBoundingClientRect();
-        if (sRect.top <= 200 && sRect.bottom > 140) {
-          setActiveHash('#servizi');
-          return;
-        }
-      }
+        if (Date.now() < scrollLockUntilRef.current) return;
 
-      setActiveHash('');
+        const nextHash = visibleSectionsRef.current.professionisti
+          ? '#professionisti'
+          : visibleSectionsRef.current.servizi
+            ? '#servizi'
+            : '';
+
+        setActiveHash((prev) => (prev === nextHash ? prev : nextHash));
+      },
+      {
+        rootMargin: '-140px 0px -65% 0px',
+        threshold: 0,
+      }
+    );
+
+    if (serviziEl) observer.observe(serviziEl);
+    if (professionistiEl) observer.observe(professionistiEl);
+
+    return () => {
+      observer.disconnect();
+      visibleSectionsRef.current = {};
     };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
   }, [currentPath]);
 
   const navigateTo = (path: string) => {

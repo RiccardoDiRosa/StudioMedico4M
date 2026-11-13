@@ -70,7 +70,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
         </a>
 
         {/* Zone 2: Navigation Links (Desktop) */}
-        <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600" aria-label="Navigazione principale">
+        <nav className="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-600" aria-label="Navigazione principale">
           {navLinks.map((link) => {
             const isActive = isLinkActive(link.path);
             return (
@@ -78,15 +78,19 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
                 key={link.path}
                 href={link.path}
                 onClick={(e) => handleLinkClick(e, link.path)}
-                className={`whitespace-nowrap shrink-0 transition-colors py-1 relative ${
-                  isActive 
-                    ? 'text-[#01579b] font-bold' 
+                className={`whitespace-nowrap shrink-0 transition-colors duration-200 py-1 relative ${
+                  isActive
+                    ? 'text-[#01579b]'
                     : 'hover:text-[#0277bd]'
                 }`}
               >
                 {link.label}
                 {isActive && (
-                  <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#039be5] rounded-full shadow-xs shadow-[#039be5]/50" />
+                  <motion.span
+                    layoutId="desktop-nav-underline"
+                    transition={{ type: 'spring', stiffness: 420, damping: 34, mass: 0.8 }}
+                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#039be5] rounded-full shadow-xs shadow-[#039be5]/50"
+                  />
                 )}
               </a>
             );
@@ -243,10 +247,10 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
                     }}
                     href={link.path}
                     onClick={(e) => handleLinkClick(e, link.path)}
-                    className={`px-3.5 py-2.5 text-sm font-semibold rounded-xl transition-colors duration-150 flex items-center justify-between active:scale-[0.98] ${
+                    className={`px-3.5 py-2.5 text-sm font-semibold rounded-xl transition-all duration-200 flex items-center justify-between active:scale-[0.98] ${
                       isActive
                         ? 'bg-gradient-to-r from-[#b3e5fc]/45 to-[#b3e5fc]/15 text-[#01579b] font-bold border-l-4 border-[#039be5] shadow-xs'
-                        : 'text-slate-700 hover:bg-[#b3e5fc]/20 hover:text-[#0277bd]'
+                        : 'text-slate-700 hover:bg-[#b3e5fc]/20 hover:text-[#0277bd] border-l-4 border-transparent'
                     }`}
                   >
                     <span>{link.label}</span>
