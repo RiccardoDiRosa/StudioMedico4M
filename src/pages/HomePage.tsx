@@ -99,23 +99,23 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
         {/* ========================================================= */}
         <div className="block lg:hidden relative min-h-[calc(100svh-4rem)] flex flex-col justify-between bg-gradient-to-b from-[#e0f2fe]/60 via-[#f0f9ff] to-white">
           
-          {/* Upper/Middle Immersive Studio Photo with Deep Aesthetic Feathered Fade */}
-          <div className="relative w-full h-[46svh] min-h-[270px] max-h-[390px] overflow-hidden shrink-0">
+          {/* Upper/Middle Immersive Studio Photo with Gentle Edge Blend and Wide Framing */}
+          <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] max-h-[380px] overflow-hidden shrink-0">
             <img
               src="/images/studio/studiohome.webp"
               alt="Interni, ambulatori e spazi specialistici dello Studio Professionale 4M a Bollate (Milano)"
-              className="w-full h-full object-cover object-[70%_center]"
+              className="w-full h-full object-cover object-[60%_center]"
               loading="eager"
               fetchPriority="high"
             />
-            {/* Top delicate light-azure atmospheric fade */}
-            <div className="absolute inset-x-0 top-0 h-10 bg-gradient-to-b from-[#e0f2fe]/45 to-transparent pointer-events-none" />
+            {/* Top very light atmospheric fade */}
+            <div className="absolute inset-x-0 top-0 h-8 bg-gradient-to-b from-[#e0f2fe]/30 to-transparent pointer-events-none" />
             
-            {/* Bottom subtle edge fade blending the photo gently into the lower content stage */}
-            <div className="absolute inset-x-0 bottom-0 h-14 bg-gradient-to-t from-[#f0f9ff] via-[#f0f9ff]/50 to-transparent pointer-events-none" />
+            {/* Bottom delicate feathered edge (soft transition without hard cut) */}
+            <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-[#f0f9ff] via-[#f0f9ff]/40 to-transparent pointer-events-none" />
 
             {/* Floating Top Location Pill over the image */}
-            <div className="absolute top-3.5 left-4 right-4 flex items-center justify-between z-10">
+            <div className="absolute top-3 left-3.5 right-3.5 flex items-center justify-between z-10">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-md border border-[#b3e5fc] text-[11px] font-semibold tracking-wide uppercase text-[#01579b] shadow-md shadow-[#01579b]/10">
                 <span className="w-2 h-2 rounded-full bg-[#039be5] animate-pulse" />
                 <MapPin className="w-3 h-3 text-[#039be5]" aria-hidden="true" />
@@ -125,7 +125,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
           </div>
 
           {/* Lower Editorial Stage (Luminous light-blue background) */}
-          <div className="relative z-10 px-4 pt-2 pb-6 -mt-2 flex-1 flex flex-col justify-between space-y-4">
+          <div className="relative z-10 px-4 pt-2.5 pb-6 flex-1 flex flex-col justify-between space-y-4">
             
             {/* Monumental Mobile Headline & Payoff */}
             <div>
