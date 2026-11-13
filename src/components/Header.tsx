@@ -38,6 +38,11 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
     { label: 'Contatti', path: '/contatti' }
   ];
 
+  const isLinkActive = (linkPath: string) => {
+    if (linkPath === '/') return currentPath === '/';
+    return currentPath === linkPath || currentPath.startsWith(`${linkPath}/`);
+  };
+
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
     e.preventDefault();
     setMobileMenuOpen(false);
@@ -64,7 +69,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
         {/* Zone 2: Navigation Links (Desktop) */}
         <nav className="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600" aria-label="Navigazione principale">
           {navLinks.map((link) => {
-            const isActive = currentPath === link.path || (link.path !== '/' && currentPath.startsWith(link.path));
+            const isActive = isLinkActive(link.path);
             return (
               <a
                 key={link.path}
@@ -218,7 +223,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPath, onNavigate }) => {
               aria-label="Menu mobile"
             >
               {navLinks.map((link) => {
-                const isActive = currentPath === link.path || (link.path !== '/' && currentPath.startsWith(link.path));
+                const isActive = isLinkActive(link.path);
                 return (
                   <motion.a
                     key={link.path}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { HomePage } from './pages/HomePage';
@@ -19,20 +19,57 @@ export default function App() {
     return '/';
   });
 
+  const [activeHash, setActiveHash] = useState<string>(() => {
+    if (typeof window !== 'undefined' && (window.location.pathname === '/' || window.location.pathname === '')) {
+      return window.location.hash || '';
+    }
+    return '';
+  });
+
+  const scrollLockUntilRef = useRef<number>(0);
+
   // Listen to browser forward/back buttons
   useEffect(() => {
     const handlePopState = () => {
       setCurrentPath(window.location.pathname || '/');
+      setActiveHash(window.location.hash || '');
     };
 
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
+  // Track active section (#servizi) when scrolling on Home
+  useEffect(() => {
+    if (currentPath !== '/' && currentPath !== '') {
+      setActiveHash('');
+      return;
+    }
+
+    const handleScroll = () => {
+      if (Date.now() < scrollLockUntilRef.current) return;
+      const serviziEl = document.getElementById('servizi');
+      if (!serviziEl) return;
+
+      const rect = serviziEl.getBoundingClientRect();
+      if (rect.top <= 180 && rect.bottom > 140) {
+        setActiveHash('#servizi');
+      } else {
+        setActiveHash('');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [currentPath]);
+
   const navigateTo = (path: string) => {
     // Check if it's an in-page hash on Home
     if (path.startsWith('/#')) {
       const hashId = path.replace('/#', '');
+      scrollLockUntilRef.current = Date.now() + 900;
+      setActiveHash(`#${hashId}`);
+
       if (currentPath !== '/') {
         window.history.pushState({}, '', '/');
         setCurrentPath('/');
@@ -47,9 +84,14 @@ export default function App() {
       return;
     }
 
+    scrollLockUntilRef.current = Date.now() + 900;
+    setActiveHash('');
+
     if (path !== currentPath) {
       window.history.pushState({}, '', path);
       setCurrentPath(path);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (path === '/' || path === '') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
@@ -121,9 +163,13 @@ export default function App() {
     return <NotFoundPage onNavigate={navigateTo} />;
   };
 
+  const activeNavPath = (currentPath === '/' || currentPath === '') && activeHash
+    ? `/${activeHash}`
+    : currentPath;
+
   return (
     <div className="min-h-screen flex flex-col bg-[#f4f9fd] selection:bg-[#b3e5fc] selection:text-[#01579b]">
-      <Header currentPath={currentPath} onNavigate={navigateTo} />
+      <Header currentPath={activeNavPath} onNavigate={navigateTo} />
       <main id="main-content" className="flex-1">
         {renderCurrentPage()}
       </main>
