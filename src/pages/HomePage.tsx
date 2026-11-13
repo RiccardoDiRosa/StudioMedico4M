@@ -263,10 +263,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                   </p>
                 </div>
 
-                {/* Editorial Lead Paragraph */}
-                <p className="text-base xl:text-lg text-slate-700 leading-relaxed max-w-xl font-normal">
-                  Presso lo Studio Professionale 4M a Bollate trovi specialisti che operano in diversi ambiti della salute, della riabilitazione e del benessere psicofisico, in un ambiente moderno, riservato e facilmente accessibile.
-                </p>
+                {/* Editorial Lead Presentation - Signature Frosted Glass Card */}
+                <div className="max-w-xl p-3.5 xl:p-4 rounded-2xl bg-white/75 backdrop-blur-md border border-[#b3e5fc]/80 shadow-xs">
+                  <p className="text-[14px] xl:text-[15px] text-slate-700 leading-relaxed font-normal">
+                    Presso lo <strong className="font-semibold text-[#01579b]">Studio Professionale 4M a Bollate</strong> trovi specialisti che operano in diversi ambiti della <span className="font-semibold text-[#0277bd]">salute</span>, della <span className="font-semibold text-[#0277bd]">riabilitazione</span> e del <span className="font-semibold text-[#0277bd]">benessere psicofisico</span>, in un ambiente moderno, riservato e facilmente accessibile.
+                  </p>
+                </div>
 
                 {/* High-Impact Action Buttons: first row main actions, second row location button */}
                 <div className="space-y-3 pt-1">
