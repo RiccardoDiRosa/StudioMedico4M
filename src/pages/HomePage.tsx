@@ -173,14 +173,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                 <HolisticEmblem size={46} />
               </div>
               <div className="min-w-0">
-                <h3 className="text-xs font-bold text-[#01579b] leading-tight font-sans">
+                <h3 className="text-[13px] font-bold text-[#01579b] leading-tight font-sans">
                   Mente e Corpo in Equilibrio
                 </h3>
-                <p className="text-[11px] text-[#0277bd] font-semibold mt-0.5">
+                <p className="text-xs text-[#0277bd] font-semibold mt-0.5">
                   Approccio integrato alla salute
-                </p>
-                <p className="text-[10px] text-slate-500 mt-0.5 line-clamp-1">
-                  Aree specialistiche · Contatto diretto
                 </p>
               </div>
             </div>
@@ -317,14 +314,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                   <HolisticEmblem size={52} />
                 </div>
                 <div>
-                  <h2 className="text-sm font-bold text-[#01579b] leading-tight font-sans">
+                  <h2 className="text-base font-bold text-[#01579b] leading-tight font-sans">
                     Mente e Corpo in Equilibrio
                   </h2>
-                  <p className="text-[11px] text-[#0277bd] font-semibold mt-0.5">
+                  <p className="text-xs text-[#0277bd] font-semibold mt-1">
                     Approccio integrato alla salute
-                  </p>
-                  <p className="text-[10px] text-slate-600 mt-0.5 max-w-xs">
-                    Discipline mediche, riabilitative e del benessere in sinergia.
                   </p>
                 </div>
               </div>
