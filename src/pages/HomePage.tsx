@@ -289,7 +289,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                     onClick={(e) => scrollToSection(e, 'servizi')}
                     className="inline-flex items-center justify-center gap-2 px-5 py-3.5 text-sm font-semibold text-[#01579b] bg-white/95 hover:bg-white backdrop-blur-xl active:scale-[0.99] border border-[#b3e5fc] hover:border-[#0277bd] rounded-xl transition-all shadow-xs focus-ring whitespace-nowrap"
                   >
-                    <span>Esplora gli 8 Servizi</span>
+                    <span>Esplora i Servizi</span>
                   </a>
 
                   <a
