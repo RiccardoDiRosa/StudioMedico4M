@@ -268,34 +268,38 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate, onSelectProfessi
                   Presso lo Studio Professionale 4M a Bollate trovi specialisti che operano in diversi ambiti della salute, della riabilitazione e del benessere psicofisico, in un ambiente moderno, riservato e facilmente accessibile.
                 </p>
 
-                {/* High-Impact Action Buttons: perfectly aligned with equal height and clear prominence */}
-                <div className="flex flex-wrap items-stretch gap-3 pt-1">
-                  <a
-                    href="#professionisti"
-                    onClick={(e) => scrollToSection(e, 'professionisti')}
-                    className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 text-sm font-bold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] active:scale-[0.99] rounded-xl transition-all shadow-md shadow-[#0277bd]/25 hover:shadow-lg hover:shadow-[#039be5]/30 focus-ring whitespace-nowrap group/btn"
-                  >
-                    <span>Scopri i Professionisti</span>
-                    <ArrowRight className="w-4 h-4 text-[#b3e5fc] group-hover/btn:translate-x-1 transition-transform" aria-hidden="true" />
-                  </a>
+                {/* High-Impact Action Buttons: first row main actions, second row location button */}
+                <div className="space-y-3 pt-1">
+                  <div className="flex flex-wrap items-stretch gap-3">
+                    <a
+                      href="#professionisti"
+                      onClick={(e) => scrollToSection(e, 'professionisti')}
+                      className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 text-sm font-bold text-white bg-gradient-to-r from-[#01579b] to-[#0277bd] hover:from-[#0277bd] hover:to-[#039be5] active:scale-[0.99] rounded-xl transition-all shadow-md shadow-[#0277bd]/25 hover:shadow-lg hover:shadow-[#039be5]/30 focus-ring whitespace-nowrap group/btn"
+                    >
+                      <span>Scopri i Professionisti</span>
+                      <ArrowRight className="w-4 h-4 text-[#b3e5fc] group-hover/btn:translate-x-1 transition-transform" aria-hidden="true" />
+                    </a>
 
-                  <a
-                    href="#servizi"
-                    onClick={(e) => scrollToSection(e, 'servizi')}
-                    className="inline-flex items-center justify-center gap-2 px-5 py-3.5 text-sm font-semibold text-[#01579b] bg-white/95 hover:bg-white backdrop-blur-xl active:scale-[0.99] border border-[#b3e5fc] hover:border-[#0277bd] rounded-xl transition-all shadow-xs focus-ring whitespace-nowrap"
-                  >
-                    <span>Esplora i Servizi</span>
-                  </a>
+                    <a
+                      href="#servizi"
+                      onClick={(e) => scrollToSection(e, 'servizi')}
+                      className="inline-flex items-center justify-center gap-2 px-5 py-3.5 text-sm font-semibold text-[#01579b] bg-white/95 hover:bg-white backdrop-blur-xl active:scale-[0.99] border border-[#b3e5fc] hover:border-[#0277bd] rounded-xl transition-all shadow-xs focus-ring whitespace-nowrap"
+                    >
+                      <span>Esplora i Servizi</span>
+                    </a>
+                  </div>
 
-                  <a
-                    href={STUDIO_CONFIG.googleMapsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-2 px-5 py-3.5 text-sm font-bold text-white bg-gradient-to-r from-[#0284c7] to-[#039be5] hover:from-[#039be5] hover:to-[#0284c7] active:scale-[0.99] border border-[#38bdf8]/40 rounded-xl transition-all shadow-md shadow-[#0284c7]/25 hover:shadow-lg hover:shadow-[#039be5]/35 focus-ring whitespace-nowrap"
-                  >
-                    <Navigation className="w-4 h-4 text-white" aria-hidden="true" />
-                    <span>Come Raggiungerci</span>
-                  </a>
+                  <div>
+                    <a
+                      href={STUDIO_CONFIG.googleMapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 px-5 py-3 text-sm font-bold text-white bg-gradient-to-r from-[#0284c7] to-[#039be5] hover:from-[#039be5] hover:to-[#0284c7] active:scale-[0.99] border border-[#38bdf8]/40 rounded-xl transition-all shadow-md shadow-[#0284c7]/25 hover:shadow-lg hover:shadow-[#039be5]/35 focus-ring whitespace-nowrap"
+                    >
+                      <Navigation className="w-4 h-4 text-white" aria-hidden="true" />
+                      <span>Come Raggiungerci</span>
+                    </a>
+                  </div>
                 </div>
 
               </div>
