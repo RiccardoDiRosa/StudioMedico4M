@@ -238,47 +238,45 @@ export const PROFESSIONISTI: Professional[] = [
     title: 'Dr',
     firstName: 'Davide Maria',
     lastName: 'Condoleo',
-    role: 'Fisioterapista e Operatore in Discipline Bio-Naturali',
+    role: 'Fisioterapista perfezionato in Osteopatia',
     category: 'riabilitazione',
     categoryLabel: 'Fisioterapia',
     phone: '329 8193901',
     mioDottoreUrl: 'https://www.miodottore.it/profilo/davide-maria-condoleo',
     photoUrl: '/images/davidemaria.webp',
-    shortDescription: 'Fisioterapista con diploma in Osteopatia e operatore in discipline bio-naturali specializzato in tecniche osteopatiche olistiche (Neuro Osteopatia®), traumatologia sportiva e riabilitazione.',
-    fullBio: 'Il Dott. Davide Maria Condoleo è Fisioterapista con diploma in Osteopatia e operatore in discipline bio-naturali specializzato in tecniche osteopatiche olistiche, formato in Neuro Osteopatia® presso l’accademia Aifromm di Bergamo. Promuove un’idea di salute legata alla cura e al benessere globale della persona, secondo una visione di medicina integrata, collaborando con vari specialisti tra cui ortopedici, gnatologi e psicologi per una gestione dei pazienti a 360°. Ha lavorato presso vari ambulatori e centri medici di Milano e dell’Hinterland ed è specializzato nella gestione delle problematiche muscolo-scheletriche (cervicali, lombalgie, colpi di frusta, tendiniti, contratture, torcicollo e artrosi), neurologiche, nei trattamenti di riabilitazione post-chirurgica e nella traumatologia sportiva, ambito in cui ha maturato esperienza anche nel calcio femminile di Serie B e C. L’obiettivo del suo lavoro è riabilitare il paziente ed educarlo attraverso fisioterapia, fisiokinesiterapia e ginnastica posturale per favorire una miglior qualità della vita.',
+    shortDescription: 'Fisioterapista perfezionato in Osteopatia, formato in Neuro Osteopatia® e Riflessologia Olografica® presso l’accademia Aifromm di Bergamo. Riabilitazione e traumatologia sportiva.',
+    fullBio: 'Il Dott. Davide Maria Condoleo è Fisioterapista perfezionato in Osteopatia, formato in Neuro Osteopatia® e Riflessologia Olografica® presso l’accademia Aifromm di Bergamo. Promuove un’idea di salute legata alla cura e al benessere globale della persona, secondo una visione di integrazione terapeutica, collaborando con vari specialisti tra cui ortopedici, gnatologi e psicologi per una gestione dei pazienti a 360°. Ha lavorato presso vari ambulatori e centri medici di Milano e dell’Hinterland ed è specializzato nella gestione delle problematiche muscolo-scheletriche (lombalgie, cervicalgie, tendiniti, contratture e artrosi), delle problematiche neurologiche, nei trattamenti di riabilitazione post-chirurgica e nella traumatologia sportiva, ambito in cui ha maturato esperienza anche nel calcio femminile di Serie B e C. L’obiettivo del suo lavoro è riabilitare il paziente ed educarlo attraverso fisioterapia, fisiokinesiterapia, esercizio terapeutico e ginnastica posturale per favorire una miglior qualità della vita.',
     bioParagraphs: [
-      'Il Dott. Davide Maria Condoleo è Fisioterapista con diploma in Osteopatia e operatore in discipline bio-naturali specializzato in tecniche osteopatiche olistiche, formato in Neuro Osteopatia® presso l’accademia Aifromm di Bergamo.',
-      'Promuove un’idea di salute legata alla cura e al benessere globale della persona, secondo una visione di medicina integrata. Collabora attivamente con vari specialisti, tra cui gnatologi, ortopedici e psicologi, per garantire una presa in carico e una gestione dei pazienti a 360°.',
-      'Ha lavorato presso vari ambulatori e centri medici di Milano e dell’Hinterland, acquisendo specifiche competenze nella gestione delle problematiche muscolo-scheletriche (lombalgie, cervicali, colpi di frusta, tendiniti, contratture, torcicollo e artrosi), nelle problematiche neurologiche, nei trattamenti di riabilitazione post-chirurgica e nella traumatologia sportiva, con esperienza maturata nel calcio femminile di Serie B e C.',
-      'Attraverso percorsi di fisioterapia, fisiokinesiterapia, esercizi e ginnastica posturale, il suo obiettivo è quello di riabilitare il paziente e di educarlo per favorire una miglior qualità della vita, lavorando in sinergia con gli altri professionisti in una visione del benessere a 360°.'
+      'Il Dott. Davide Maria Condoleo è Fisioterapista perfezionato in Osteopatia, formato in Neuro Osteopatia® e Riflessologia Olografica® presso l’accademia Aifromm di Bergamo.',
+      'Promuove un’idea di salute legata alla cura e al benessere globale della persona, secondo una visione di integrazione terapeutica. Collabora attivamente con vari specialisti, tra cui gnatologi, ortopedici e psicologi, per garantire una presa in carico e una gestione dei pazienti a 360°.',
+      'Ha lavorato presso vari ambulatori e centri medici di Milano e dell’Hinterland, acquisendo specifiche competenze nella gestione delle problematiche muscolo-scheletriche (lombalgie, cervicalgie, tendiniti, contratture e artrosi), delle problematiche neurologiche, nei trattamenti di riabilitazione post-chirurgica e nella traumatologia sportiva, con esperienza maturata nel calcio femminile di Serie B e C.',
+      'Attraverso percorsi di fisioterapia, fisiokinesiterapia, esercizio terapeutico e ginnastica posturale, il suo obiettivo è quello di riabilitare il paziente e di educarlo per favorire una miglior qualità della vita, lavorando in sinergia con gli altri professionisti in una visione del benessere a 360°.'
     ],
     services: [
       'Fisioterapia, fisiokinesiterapia e riabilitazione post-chirurgica',
-      'Tecniche osteopatiche olistiche e Neuro Osteopatia®',
-      'Gestione di patologie muscolo-scheletriche (cervicali, lombalgie, colpi di frusta, tendinite, contrattura, torcicollo, artrosi)',
+      'Neuro Osteopatia® e Riflessologia Olografica®',
+      'Gestione delle problematiche muscolo-scheletriche (lombalgie, cervicalgie, tendiniti, contratture e artrosi)',
       'Riabilitazione per problematiche neurologiche e traumatologia sportiva',
-      'Ginnastica posturale, esercizi posturali ed educazione del paziente',
+      'Esercizio terapeutico, ginnastica posturale ed educazione del paziente',
       'Gestione integrata a 360° in collaborazione con ortopedici, gnatologi e psicologi'
     ],
     curriculumVitae: {
       experiences: [
-        'Fisioterapista e Operatore in Discipline Bio-Naturali presso Studio Professionale 4M (Bollate)',
+        'Fisioterapista perfezionato in Osteopatia presso Studio Professionale 4M (Bollate)',
         'Attività clinica presso vari ambulatori e centri medici di Milano e dell’Hinterland',
         'Esperienza in traumatologia sportiva nel calcio femminile di Serie B e C',
         'Collaborazione multidisciplinare con ortopedici, gnatologi e psicologi per la gestione del paziente a 360°'
       ],
       subSpecializations: [
         'Fisioterapia, fisiokinesiterapia e riabilitazione post-chirurgica',
-        'Tecniche osteopatiche olistiche e Neuro Osteopatia®',
+        'Neuro Osteopatia® e Riflessologia Olografica®',
         'Ortopedia e traumatologia del sistema motorio e sportiva',
         'Problematiche muscolo-scheletriche e neurologiche',
-        'Esercizi posturali e ginnastica posturale'
+        'Esercizio terapeutico e ginnastica posturale'
       ],
       academicMilestones: [
-        'Fisioterapista',
-        'Diploma in Osteopatia',
-        'Formazione in Neuro Osteopatia® – Accademia Aifromm di Bergamo',
-        'Operatore in Discipline Bio-Naturali specializzato in tecniche osteopatiche olistiche'
+        'Fisioterapista perfezionato in Osteopatia',
+        'Formazione in Neuro Osteopatia® e Riflessologia Olografica® – Accademia Aifromm di Bergamo'
       ]
     },
     consultationDays: 'Riceve su appuntamento',
